@@ -1,0 +1,15 @@
+# Block the 232MB model
+outputs/rf_baseline_model.pkl
+
+# Block the 130MB+ of node_modules
+node_modules/
+frontend/node_modules/
+
+# Block the virtual environment
+.venv/
+python.exe
+
+# Block cache and temp files
+__pycache__/
+*.pyc
+.cache/
