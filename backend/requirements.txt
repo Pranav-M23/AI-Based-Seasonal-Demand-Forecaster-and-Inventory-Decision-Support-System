@@ -3,3 +3,6 @@ uvicorn[standard]
 pandas
 pydantic
 python-dateutil
+xgboost
+scikit-learn
+joblib

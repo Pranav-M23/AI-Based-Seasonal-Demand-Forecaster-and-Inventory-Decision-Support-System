@@ -1,0 +1,48 @@
+{
+  "project": "AI-Based Seasonal Demand Forecaster & Inventory Decision Support",
+  "generated": "2026-03-08",
+  "framework": "XGBoost 3.2.0 + scikit-learn 1.6.1",
+  "dataset": "Rossmann Store Sales (1,017,211 rows \u00d7 1,116 stores)",
+  "models": {
+    "RandomForest": {
+      "MAE": 885.9875292872396,
+      "RMSE": 1295.938758359062,
+      "R2": 0.8274423351905877
+    },
+    "XGBoost": {
+      "MAE": 708.4746704101562,
+      "RMSE": 1016.0660350095362,
+      "R2": 0.8939259648323059
+    },
+    "Ensemble_RF40_XGB60": {
+      "MAE": 728.6395211413419,
+      "RMSE": 1052.731304525672,
+      "R2": 0.8861323461517133
+    },
+    "Festival_XGBoost": {
+      "MAE": 0.14347127775621663,
+      "RMSE": 0.20175237146262062,
+      "R2": 0.6861261127200617
+    },
+    "Discount_XGBoost": {
+      "Accuracy": 0.9872944693572496,
+      "F1_weighted": 0.987292971978813,
+      "Precision": 0.9872930921628902,
+      "Recall": 0.9872944693572496
+    },
+    "Inventory_RF": {
+      "Accuracy": 0.99975,
+      "F1_weighted": 0.9997500019459379,
+      "Precision": 0.9997500839131923,
+      "Recall": 0.99975
+    },
+    "Stockout_XGBoost": {
+      "Accuracy": 0.9719166666666667,
+      "F1_binary": 0.9419465977605512,
+      "Precision": 0.9286684782608695,
+      "Recall": 0.9556099265990913,
+      "ROC_AUC": 0.9969506643654439
+    }
+  },
+  "eval_dir": "s:\\Pnav College\\S6\\MiniProject\\Seasonal Demand Forecaster\\outputs\\evaluation"
+}

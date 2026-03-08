@@ -69,6 +69,10 @@ class StoreDecisionRow(BaseModel):
     reorder_point: float
     safety_stock: float
     days_of_supply: float
+    current_inventory: Optional[float] = None
+    priority_score: Optional[float] = None
+    recommended_order_qty: Optional[float] = None
+    days_until_stockout: Optional[int] = None
 
 class StoreDecisionsResponse(BaseModel):
     store: int

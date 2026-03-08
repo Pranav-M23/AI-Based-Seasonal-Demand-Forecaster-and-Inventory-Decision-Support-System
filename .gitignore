@@ -1,6 +1,11 @@
 # Block the 232MB model
 outputs/rf_baseline_model.pkl
+# New ML model
+models/demand_rf.pkl
+models/*.pkl
 
+# Large CSV outputs
+outputs/yearly_forecast_indian.csv
 # Block the 130MB+ of node_modules
 node_modules/
 frontend/node_modules/
