@@ -1,259 +1,55 @@
-Store_ID,Store_Name,Chain,State,Region,Store_Type,Area_SqFt,Competition_Distance_KM,Has_Parking,Has_Online_Delivery
-1,Aadhaar - Connaught Place,Aadhaar,Delhi,North India,Hypermarket,47713,1.587936282073044,False,False
-2,Vishal Mega Mart - Connaught Place,Vishal Mega Mart,Delhi,North India,Hypermarket,11380,8.08367273785858,False,True
-3,Foodworld - Rohini,Foodworld,Delhi,North India,Hypermarket,44141,9.894462344064246,True,True
-4,DMart - Saket,DMart,Delhi,North India,Supermarket,45231,9.632658469954837,True,False
-5,DMart - Saket,DMart,Delhi,North India,Convenience,47187,0.6499821415155898,False,True
-6,Star Bazaar - Rohini,Star Bazaar,Delhi,North India,Convenience,24567,3.2636266723676957,True,True
-7,Vishal Mega Mart - Saket,Vishal Mega Mart,Delhi,North India,Supermarket,8322,3.4271226006532465,True,True
-8,Big Bazaar - Rohini,Big Bazaar,Delhi,North India,Supermarket,8707,9.762154604878157,True,True
-9,Kirana King - Connaught Place,Kirana King,Delhi,North India,Supermarket,12270,7.253632391728111,True,True
-10,Star Bazaar - Dwarka,Star Bazaar,Delhi,North India,Hypermarket,32615,3.425564120316234,False,True
-11,HyperCity - Rohini,HyperCity,Delhi,North India,Hypermarket,7658,1.990605422094761,False,True
-12,DMart - Dwarka,DMart,Delhi,North India,Supermarket,40385,4.262832086853141,True,False
-13,Star Bazaar - Ludhiana,Star Bazaar,Punjab,North India,Supermarket,35185,9.462465602803478,True,True
-14,Reliance Smart - Ludhiana,Reliance Smart,Punjab,North India,Hypermarket,17338,8.688577706087948,True,True
-15,Nilgiris - Jalandhar,Nilgiris,Punjab,North India,Convenience,19744,0.8386194012448858,False,False
-16,Kirana King - Chandigarh Sector 17,Kirana King,Punjab,North India,Convenience,47269,6.849864571551786,False,False
-17,Foodworld - Jalandhar,Foodworld,Punjab,North India,Convenience,47881,6.879983467914848,True,False
-18,Heritage Fresh - Amritsar,Heritage Fresh,Punjab,North India,Supermarket,33028,4.95235812108698,True,False
-19,Reliance Smart - Jalandhar,Reliance Smart,Punjab,North India,Hypermarket,48286,4.610724093402941,False,True
-20,Aadhaar - Amritsar,Aadhaar,Punjab,North India,Supermarket,24520,7.12080376701247,True,False
-21,HyperCity - Amritsar,HyperCity,Punjab,North India,Convenience,29650,3.059953210512994,True,False
-22,Vishal Mega Mart - Jalandhar,Vishal Mega Mart,Punjab,North India,Supermarket,8547,1.6141934409261285,True,True
-23,DMart - Amritsar,DMart,Punjab,North India,Supermarket,47375,9.20593546352493,True,True
-24,Big Bazaar - Jalandhar,Big Bazaar,Punjab,North India,Convenience,27708,1.8842253952426746,False,True
-25,HyperCity - Haryana Central,HyperCity,Haryana,North India,Supermarket,38549,1.0633883679689007,True,False
-26,Nilgiris - Haryana Central,Nilgiris,Haryana,North India,Hypermarket,37020,3.057089608097333,True,True
-27,Spencer's - Haryana Central,Spencer's,Haryana,North India,Supermarket,47917,9.491148985765498,True,False
-28,Heritage Fresh - Haryana Central,Heritage Fresh,Haryana,North India,Supermarket,27968,0.7951441622803952,True,True
-29,HyperCity - Haryana Central,HyperCity,Haryana,North India,Supermarket,8339,6.9177821877701655,False,False
-30,HyperCity - Haryana Central,HyperCity,Haryana,North India,Supermarket,17283,7.779861188084098,False,False
-31,HyperCity - Haryana Central,HyperCity,Haryana,North India,Supermarket,14700,4.340198647098195,True,True
-32,Metro Cash & Carry - Haryana Central,Metro Cash & Carry,Haryana,North India,Supermarket,31130,2.463521084879088,False,False
-33,Ratnadeep - Haryana Central,Ratnadeep,Haryana,North India,Hypermarket,22927,1.2887508239087693,False,True
-34,Reliance Smart - Haryana Central,Reliance Smart,Haryana,North India,Hypermarket,8159,4.681613666050975,True,False
-35,Aadhaar - Haryana Central,Aadhaar,Haryana,North India,Supermarket,26034,4.706087545672452,True,True
-36,More Megastore - Haryana Central,More Megastore,Haryana,North India,Supermarket,47660,2.3438714150878983,True,True
-37,Foodworld - Varanasi,Foodworld,Uttar Pradesh,North India,Convenience,45427,3.7999152934827,True,False
-38,Reliance Smart - Noida Sector 18,Reliance Smart,Uttar Pradesh,North India,Supermarket,36276,3.512165477886121,True,True
-39,Metro Cash & Carry - Lucknow Gomti Nagar,Metro Cash & Carry,Uttar Pradesh,North India,Convenience,22178,9.347619380727389,False,True
-40,Heritage Fresh - Noida Sector 18,Heritage Fresh,Uttar Pradesh,North India,Hypermarket,17812,2.8068198677065417,True,False
-41,Ratnadeep - Kanpur,Ratnadeep,Uttar Pradesh,North India,Supermarket,14624,8.99209673876081,False,True
-42,Spencer's - Lucknow Gomti Nagar,Spencer's,Uttar Pradesh,North India,Hypermarket,10004,4.771612184450114,True,False
-43,Foodworld - Varanasi,Foodworld,Uttar Pradesh,North India,Supermarket,16138,7.70297337871579,False,True
-44,Heritage Fresh - Lucknow Gomti Nagar,Heritage Fresh,Uttar Pradesh,North India,Convenience,10008,2.410224825505117,True,True
-45,Vishal Mega Mart - Lucknow Gomti Nagar,Vishal Mega Mart,Uttar Pradesh,North India,Supermarket,17400,4.40104558453692,True,True
-46,Aadhaar - Noida Sector 18,Aadhaar,Uttar Pradesh,North India,Supermarket,35361,6.706902002509393,True,True
-47,Reliance Smart - Lucknow Gomti Nagar,Reliance Smart,Uttar Pradesh,North India,Supermarket,29398,0.6705858859353941,True,True
-48,HyperCity - Varanasi,HyperCity,Uttar Pradesh,North India,Supermarket,33286,4.836077243942486,True,True
-49,Ratnadeep - Himachal Pradesh Central,Ratnadeep,Himachal Pradesh,North India,Convenience,48575,5.887308173919869,True,True
-50,Nilgiris - Himachal Pradesh Central,Nilgiris,Himachal Pradesh,North India,Supermarket,48786,5.2133813970019025,False,False
-51,HyperCity - Himachal Pradesh Central,HyperCity,Himachal Pradesh,North India,Convenience,5257,1.1328018242316462,False,True
-52,Heritage Fresh - Himachal Pradesh Central,Heritage Fresh,Himachal Pradesh,North India,Supermarket,40222,6.194249671220192,True,True
-53,Big Bazaar - Himachal Pradesh Central,Big Bazaar,Himachal Pradesh,North India,Supermarket,21710,4.568939561639447,False,True
-54,V-Mart - Himachal Pradesh Central,V-Mart,Himachal Pradesh,North India,Supermarket,29370,9.640529928216736,True,True
-55,Kirana King - Himachal Pradesh Central,Kirana King,Himachal Pradesh,North India,Convenience,7752,1.9188678186852373,True,False
-56,Vishal Mega Mart - Himachal Pradesh Central,Vishal Mega Mart,Himachal Pradesh,North India,Hypermarket,15364,4.5865960326682735,False,True
-57,Vishal Mega Mart - Himachal Pradesh Central,Vishal Mega Mart,Himachal Pradesh,North India,Hypermarket,45098,2.9803477849692843,True,True
-58,Foodworld - Himachal Pradesh Central,Foodworld,Himachal Pradesh,North India,Hypermarket,15078,6.633265125000328,True,False
-59,Spencer's - Himachal Pradesh Central,Spencer's,Himachal Pradesh,North India,Supermarket,45382,7.317805040692834,False,True
-60,Heritage Fresh - Himachal Pradesh Central,Heritage Fresh,Himachal Pradesh,North India,Supermarket,14354,8.79441348277602,True,True
-61,Aadhaar - Koramangala,Aadhaar,Karnataka,South India,Supermarket,26223,6.326804861860163,False,True
-62,Reliance Smart - Mysore Road,Reliance Smart,Karnataka,South India,Supermarket,46638,3.389448574547405,True,False
-63,Metro Cash & Carry - Mysore Road,Metro Cash & Carry,Karnataka,South India,Supermarket,29703,1.1465204675107403,True,True
-64,Ratnadeep - Koramangala,Ratnadeep,Karnataka,South India,Supermarket,11796,2.8492751072813696,False,True
-65,Star Bazaar - Mysore Road,Star Bazaar,Karnataka,South India,Hypermarket,32547,6.398344887190382,False,False
-66,V-Mart - Bangalore Central,V-Mart,Karnataka,South India,Supermarket,21730,4.6379842395442,True,True
-67,Heritage Fresh - Mysore Road,Heritage Fresh,Karnataka,South India,Supermarket,30284,9.23188978775087,True,False
-68,V-Mart - Bangalore Central,V-Mart,Karnataka,South India,Supermarket,48726,2.4622777416509223,True,False
-69,Aadhaar - Mysore Road,Aadhaar,Karnataka,South India,Convenience,6841,1.9646866126631637,False,False
-70,V-Mart - Mysore Road,V-Mart,Karnataka,South India,Supermarket,21848,1.2300288273885944,False,False
-71,Metro Cash & Carry - Koramangala,Metro Cash & Carry,Karnataka,South India,Supermarket,14252,4.546962524655872,True,True
-72,Heritage Fresh - Whitefield,Heritage Fresh,Karnataka,South India,Supermarket,7359,0.9740059275308289,False,False
-73,Kirana King - T Nagar,Kirana King,Tamil Nadu,South India,Supermarket,17342,3.5680553137052953,True,True
-74,Star Bazaar - Anna Nagar,Star Bazaar,Tamil Nadu,South India,Supermarket,39943,5.228552360732571,True,True
-75,More Megastore - Velachery,More Megastore,Tamil Nadu,South India,Hypermarket,14575,1.0531623791998277,True,True
-76,DMart - Coimbatore,DMart,Tamil Nadu,South India,Supermarket,37367,6.71133147921331,True,True
-77,Big Bazaar - T Nagar,Big Bazaar,Tamil Nadu,South India,Hypermarket,6512,9.095264038637739,False,True
-78,Ratnadeep - Velachery,Ratnadeep,Tamil Nadu,South India,Supermarket,36606,6.756372719742875,False,True
-79,Spencer's - Anna Nagar,Spencer's,Tamil Nadu,South India,Hypermarket,11328,8.613163769368292,True,False
-80,Kirana King - Coimbatore,Kirana King,Tamil Nadu,South India,Supermarket,21209,3.0963587753340116,True,False
-81,Nilgiris - Anna Nagar,Nilgiris,Tamil Nadu,South India,Convenience,42126,8.864267453553191,True,True
-82,V-Mart - Anna Nagar,V-Mart,Tamil Nadu,South India,Supermarket,36929,6.704984711582009,True,True
-83,Metro Cash & Carry - Coimbatore,Metro Cash & Carry,Tamil Nadu,South India,Convenience,17339,1.096506482355549,True,True
-84,Nilgiris - Anna Nagar,Nilgiris,Tamil Nadu,South India,Supermarket,6623,2.7544706908108707,False,True
-85,Heritage Fresh - Kochi MG Road,Heritage Fresh,Kerala,South India,Supermarket,20368,9.86986384147383,True,False
-86,Vishal Mega Mart - Trivandrum City,Vishal Mega Mart,Kerala,South India,Supermarket,22085,8.869095019579351,False,True
-87,Vishal Mega Mart - Kochi MG Road,Vishal Mega Mart,Kerala,South India,Hypermarket,39847,5.848897408361868,False,True
-88,Star Bazaar - Trivandrum City,Star Bazaar,Kerala,South India,Supermarket,20405,2.422720957055971,True,True
-89,Reliance Smart - Kozhikode Beach,Reliance Smart,Kerala,South India,Supermarket,27737,2.8659488556986497,True,False
-90,Kirana King - Kozhikode Beach,Kirana King,Kerala,South India,Supermarket,21830,8.003256207741511,True,True
-91,More Megastore - Trivandrum City,More Megastore,Kerala,South India,Supermarket,21161,7.61259178060377,False,False
-92,Aadhaar - Kozhikode Beach,Aadhaar,Kerala,South India,Supermarket,23668,8.493938872439177,True,True
-93,Kirana King - Kozhikode Beach,Kirana King,Kerala,South India,Supermarket,35832,1.4524593649278517,True,False
-94,Vishal Mega Mart - Thrissur,Vishal Mega Mart,Kerala,South India,Convenience,26361,1.9590336556200114,True,False
-95,Metro Cash & Carry - Thrissur,Metro Cash & Carry,Kerala,South India,Hypermarket,9212,2.139564517494221,True,False
-96,Heritage Fresh - Trivandrum City,Heritage Fresh,Kerala,South India,Supermarket,31751,7.550628956697994,True,False
-97,Nilgiris - Andhra Pradesh Central,Nilgiris,Andhra Pradesh,South India,Supermarket,9886,2.620877132104969,False,True
-98,Nilgiris - Andhra Pradesh Central,Nilgiris,Andhra Pradesh,South India,Convenience,23328,9.759376105062854,True,True
-99,DMart - Andhra Pradesh Central,DMart,Andhra Pradesh,South India,Convenience,7485,2.4264266649204496,True,True
-100,V-Mart - Andhra Pradesh Central,V-Mart,Andhra Pradesh,South India,Supermarket,34585,2.876743300043795,True,False
-101,Big Bazaar - Andhra Pradesh Central,Big Bazaar,Andhra Pradesh,South India,Supermarket,7624,7.705485080920482,True,False
-102,Metro Cash & Carry - Andhra Pradesh Central,Metro Cash & Carry,Andhra Pradesh,South India,Convenience,18286,9.964448772479088,True,True
-103,Metro Cash & Carry - Andhra Pradesh Central,Metro Cash & Carry,Andhra Pradesh,South India,Supermarket,20078,8.093942853822947,False,True
-104,Reliance Smart - Andhra Pradesh Central,Reliance Smart,Andhra Pradesh,South India,Supermarket,28450,0.7958900667634916,True,True
-105,More Megastore - Andhra Pradesh Central,More Megastore,Andhra Pradesh,South India,Supermarket,30065,7.437748381431508,True,True
-106,Heritage Fresh - Andhra Pradesh Central,Heritage Fresh,Andhra Pradesh,South India,Supermarket,13229,2.239286694476549,True,False
-107,Aadhaar - Andhra Pradesh Central,Aadhaar,Andhra Pradesh,South India,Hypermarket,30324,6.367597804525893,False,False
-108,DMart - Andhra Pradesh Central,DMart,Andhra Pradesh,South India,Supermarket,13646,5.030928078741967,True,True
-109,Big Bazaar - Secunderabad,Big Bazaar,Telangana,South India,Convenience,12040,6.7421181938115025,True,False
-110,Foodworld - Kukatpally,Foodworld,Telangana,South India,Convenience,25912,9.19126760730208,True,False
-111,Ratnadeep - HITEC City,Ratnadeep,Telangana,South India,Supermarket,42987,8.606942655799118,False,True
-112,Big Bazaar - Hyderabad Banjara Hills,Big Bazaar,Telangana,South India,Convenience,20308,0.8382944928722138,True,True
-113,DMart - Kukatpally,DMart,Telangana,South India,Supermarket,20201,8.137021405803623,True,True
-114,Star Bazaar - Hyderabad Banjara Hills,Star Bazaar,Telangana,South India,Supermarket,18112,6.760347881794596,True,True
-115,Reliance Smart - Secunderabad,Reliance Smart,Telangana,South India,Supermarket,48369,0.8267025170807398,True,False
-116,Big Bazaar - HITEC City,Big Bazaar,Telangana,South India,Supermarket,23461,2.0960790835222043,True,False
-117,Reliance Smart - HITEC City,Reliance Smart,Telangana,South India,Supermarket,10079,3.431891455637035,True,True
-118,Heritage Fresh - Kukatpally,Heritage Fresh,Telangana,South India,Hypermarket,13295,1.2783358790524222,True,True
-119,Ratnadeep - Hyderabad Banjara Hills,Ratnadeep,Telangana,South India,Supermarket,30878,6.008023941221509,True,True
-120,Heritage Fresh - Secunderabad,Heritage Fresh,Telangana,South India,Supermarket,45539,0.700078871532847,True,False
-121,Reliance Smart - Mumbai Andheri,Reliance Smart,Maharashtra,West India,Convenience,45486,6.364255517594191,False,True
-122,Nilgiris - Mumbai Andheri,Nilgiris,Maharashtra,West India,Supermarket,38333,5.912788472774273,True,True
-123,Aadhaar - Pune FC Road,Aadhaar,Maharashtra,West India,Supermarket,26326,8.173173500210869,True,False
-124,Nilgiris - Pune FC Road,Nilgiris,Maharashtra,West India,Convenience,16043,6.4792423446630805,False,False
-125,Kirana King - Thane,Kirana King,Maharashtra,West India,Hypermarket,37373,7.6771397237972625,True,True
-126,Big Bazaar - Mumbai Andheri,Big Bazaar,Maharashtra,West India,Convenience,32300,9.275419275124,False,True
-127,Spencer's - Nagpur Central,Spencer's,Maharashtra,West India,Supermarket,22333,2.698804029873591,True,False
-128,HyperCity - Thane,HyperCity,Maharashtra,West India,Convenience,23170,9.385501543680359,True,True
-129,V-Mart - Thane,V-Mart,Maharashtra,West India,Supermarket,34514,6.912128184666946,True,True
-130,Aadhaar - Thane,Aadhaar,Maharashtra,West India,Supermarket,18874,2.325121030437293,True,True
-131,Metro Cash & Carry - Thane,Metro Cash & Carry,Maharashtra,West India,Supermarket,31210,6.21339234830957,True,True
-132,Star Bazaar - Pune FC Road,Star Bazaar,Maharashtra,West India,Convenience,13049,6.276928752347242,False,True
-133,Ratnadeep - Mumbai Andheri,Ratnadeep,Maharashtra,West India,Hypermarket,14883,4.362554738448658,True,True
-134,Kirana King - Nagpur Central,Kirana King,Maharashtra,West India,Hypermarket,28937,8.620618512991513,False,False
-135,More Megastore - Pune FC Road,More Megastore,Maharashtra,West India,Hypermarket,16341,4.801670996046014,True,False
-136,Metro Cash & Carry - Ahmedabad SG Highway,Metro Cash & Carry,Gujarat,West India,Supermarket,8930,8.088284903524261,True,False
-137,Metro Cash & Carry - Rajkot,Metro Cash & Carry,Gujarat,West India,Convenience,33044,5.456504053643303,True,True
-138,DMart - Surat Ring Road,DMart,Gujarat,West India,Supermarket,6723,9.209963461510526,False,True
-139,Kirana King - Vadodara,Kirana King,Gujarat,West India,Convenience,33487,5.21604674461237,True,True
-140,Foodworld - Surat Ring Road,Foodworld,Gujarat,West India,Supermarket,37296,0.7302405505336087,False,True
-141,V-Mart - Ahmedabad SG Highway,V-Mart,Gujarat,West India,Convenience,10380,4.70952853722155,True,False
-142,Aadhaar - Rajkot,Aadhaar,Gujarat,West India,Supermarket,14203,8.41598562884182,False,True
-143,V-Mart - Vadodara,V-Mart,Gujarat,West India,Convenience,47025,1.1740879122659973,True,False
-144,Nilgiris - Vadodara,Nilgiris,Gujarat,West India,Convenience,27311,8.8042764089972,True,True
-145,Star Bazaar - Surat Ring Road,Star Bazaar,Gujarat,West India,Supermarket,8075,4.202602946374258,True,True
-146,Foodworld - Surat Ring Road,Foodworld,Gujarat,West India,Supermarket,49376,7.41346623321663,True,True
-147,Nilgiris - Surat Ring Road,Nilgiris,Gujarat,West India,Convenience,26744,9.221516132516781,True,True
-148,Star Bazaar - Rajkot,Star Bazaar,Gujarat,West India,Supermarket,42069,5.706346288287216,True,True
-149,Heritage Fresh - Ahmedabad SG Highway,Heritage Fresh,Gujarat,West India,Convenience,42348,6.21965420562066,False,True
-150,Reliance Smart - Ahmedabad SG Highway,Reliance Smart,Gujarat,West India,Hypermarket,42296,4.6140636405105795,False,True
-151,Aadhaar - Rajasthan Central,Aadhaar,Rajasthan,West India,Supermarket,25486,6.323764715587825,True,True
-152,Ratnadeep - Rajasthan Central,Ratnadeep,Rajasthan,West India,Supermarket,17290,9.708909967635506,False,True
-153,Vishal Mega Mart - Rajasthan Central,Vishal Mega Mart,Rajasthan,West India,Hypermarket,38358,8.233949992735521,True,False
-154,Big Bazaar - Rajasthan Central,Big Bazaar,Rajasthan,West India,Hypermarket,24982,4.225383322099274,True,False
-155,Big Bazaar - Rajasthan Central,Big Bazaar,Rajasthan,West India,Convenience,9351,9.524188825895859,True,True
-156,Spencer's - Rajasthan Central,Spencer's,Rajasthan,West India,Hypermarket,34354,6.69611558960289,False,False
-157,More Megastore - Rajasthan Central,More Megastore,Rajasthan,West India,Supermarket,38627,1.795900008099534,True,False
-158,Spencer's - Rajasthan Central,Spencer's,Rajasthan,West India,Supermarket,47334,8.112820695885677,True,False
-159,Foodworld - Rajasthan Central,Foodworld,Rajasthan,West India,Supermarket,46193,4.6378611069770495,True,True
-160,DMart - Rajasthan Central,DMart,Rajasthan,West India,Supermarket,44872,8.289455184099339,False,False
-161,Kirana King - Rajasthan Central,Kirana King,Rajasthan,West India,Hypermarket,12285,2.97704941378864,False,True
-162,Vishal Mega Mart - Rajasthan Central,Vishal Mega Mart,Rajasthan,West India,Convenience,40989,5.820350998481248,True,True
-163,More Megastore - Rajasthan Central,More Megastore,Rajasthan,West India,Hypermarket,12000,5.374264826284862,True,True
-164,HyperCity - Rajasthan Central,HyperCity,Rajasthan,West India,Convenience,42664,4.256119743804824,True,False
-165,Big Bazaar - Rajasthan Central,Big Bazaar,Rajasthan,West India,Hypermarket,9215,9.673491818571526,False,False
-166,Kirana King - Goa Central,Kirana King,Goa,West India,Hypermarket,9964,2.8500893404471745,True,True
-167,Big Bazaar - Goa Central,Big Bazaar,Goa,West India,Supermarket,35862,7.917392224530674,False,False
-168,DMart - Goa Central,DMart,Goa,West India,Supermarket,6247,0.7045516266737546,True,True
-169,Ratnadeep - Goa Central,Ratnadeep,Goa,West India,Convenience,41449,4.6533390618505965,False,False
-170,Ratnadeep - Goa Central,Ratnadeep,Goa,West India,Hypermarket,10516,1.7463033877762975,True,True
-171,Big Bazaar - Goa Central,Big Bazaar,Goa,West India,Hypermarket,37109,8.517813259903185,True,True
-172,DMart - Goa Central,DMart,Goa,West India,Convenience,41470,7.058186043893614,True,True
-173,Spencer's - Goa Central,Spencer's,Goa,West India,Hypermarket,34473,8.419770094400265,True,True
-174,Foodworld - Goa Central,Foodworld,Goa,West India,Supermarket,6519,4.3126876367023605,False,True
-175,V-Mart - Goa Central,V-Mart,Goa,West India,Supermarket,29315,8.91776443677064,False,False
-176,More Megastore - Goa Central,More Megastore,Goa,West India,Supermarket,26740,4.662811375149031,True,False
-177,Vishal Mega Mart - Goa Central,Vishal Mega Mart,Goa,West India,Hypermarket,16180,2.7707390211893306,True,False
-178,Star Bazaar - Goa Central,Star Bazaar,Goa,West India,Supermarket,41507,4.126606993411885,True,False
-179,Vishal Mega Mart - Goa Central,Vishal Mega Mart,Goa,West India,Hypermarket,17050,8.519784313991224,True,True
-180,Reliance Smart - Goa Central,Reliance Smart,Goa,West India,Hypermarket,23877,6.2455728307270295,True,False
-181,Kirana King - Siliguri,Kirana King,West Bengal,East India,Hypermarket,11367,1.080213742368061,True,False
-182,Ratnadeep - Kolkata Park Street,Ratnadeep,West Bengal,East India,Supermarket,42592,1.438493966997068,False,True
-183,Heritage Fresh - Kolkata Park Street,Heritage Fresh,West Bengal,East India,Convenience,20165,9.189496449435833,True,True
-184,DMart - Kolkata Park Street,DMart,West Bengal,East India,Hypermarket,46066,5.180693567128712,True,False
-185,Vishal Mega Mart - Howrah,Vishal Mega Mart,West Bengal,East India,Supermarket,48778,8.838385796889924,False,False
-186,Ratnadeep - Salt Lake,Ratnadeep,West Bengal,East India,Supermarket,35884,2.5114122284561233,True,False
-187,V-Mart - Salt Lake,V-Mart,West Bengal,East India,Supermarket,21047,6.412555328763008,False,True
-188,Nilgiris - Kolkata Park Street,Nilgiris,West Bengal,East India,Supermarket,46454,6.912925387641063,False,False
-189,Nilgiris - Salt Lake,Nilgiris,West Bengal,East India,Hypermarket,21665,5.6701860928643475,True,True
-190,Vishal Mega Mart - Siliguri,Vishal Mega Mart,West Bengal,East India,Convenience,45635,5.922705347694267,True,False
-191,Star Bazaar - Odisha Central,Star Bazaar,Odisha,East India,Supermarket,39192,5.822483627533767,True,True
-192,Big Bazaar - Odisha Central,Big Bazaar,Odisha,East India,Hypermarket,35696,8.219035826606767,True,True
-193,Foodworld - Odisha Central,Foodworld,Odisha,East India,Hypermarket,22660,1.8994032564973822,False,True
-194,Reliance Smart - Odisha Central,Reliance Smart,Odisha,East India,Convenience,46295,6.684667300696812,False,True
-195,Ratnadeep - Odisha Central,Ratnadeep,Odisha,East India,Convenience,42733,9.202701446667325,True,False
-196,Spencer's - Odisha Central,Spencer's,Odisha,East India,Hypermarket,39860,9.11299204383324,False,False
-197,DMart - Odisha Central,DMart,Odisha,East India,Convenience,47336,7.264509705718693,True,True
-198,Heritage Fresh - Odisha Central,Heritage Fresh,Odisha,East India,Convenience,15131,5.892342228560603,True,True
-199,DMart - Odisha Central,DMart,Odisha,East India,Hypermarket,26420,5.129971212604926,True,True
-200,Nilgiris - Odisha Central,Nilgiris,Odisha,East India,Supermarket,30282,8.248723449792603,True,False
-201,Vishal Mega Mart - Bihar Central,Vishal Mega Mart,Bihar,East India,Supermarket,9295,1.8098093902050336,True,True
-202,Metro Cash & Carry - Bihar Central,Metro Cash & Carry,Bihar,East India,Supermarket,24062,6.524976738189917,False,True
-203,Reliance Smart - Bihar Central,Reliance Smart,Bihar,East India,Hypermarket,16472,7.529331091254722,True,True
-204,Heritage Fresh - Bihar Central,Heritage Fresh,Bihar,East India,Hypermarket,35526,3.303904675748951,True,True
-205,V-Mart - Bihar Central,V-Mart,Bihar,East India,Convenience,28812,6.6146862089423335,True,False
-206,Spencer's - Bihar Central,Spencer's,Bihar,East India,Convenience,17121,4.739849522088489,False,False
-207,Star Bazaar - Bihar Central,Star Bazaar,Bihar,East India,Convenience,10208,6.990929050282496,False,True
-208,Aadhaar - Bihar Central,Aadhaar,Bihar,East India,Hypermarket,34491,8.823078645630675,True,True
-209,Spencer's - Bihar Central,Spencer's,Bihar,East India,Supermarket,40829,9.146327068015713,True,True
-210,DMart - Bihar Central,DMart,Bihar,East India,Supermarket,49684,7.063376971948542,False,True
-211,Ratnadeep - Jharkhand Central,Ratnadeep,Jharkhand,East India,Convenience,48577,9.009676357535021,True,True
-212,Metro Cash & Carry - Jharkhand Central,Metro Cash & Carry,Jharkhand,East India,Hypermarket,21809,2.7453372027491962,True,False
-213,Ratnadeep - Jharkhand Central,Ratnadeep,Jharkhand,East India,Hypermarket,7622,8.37348279636488,True,True
-214,Nilgiris - Jharkhand Central,Nilgiris,Jharkhand,East India,Supermarket,29322,6.151429826830491,False,True
-215,Foodworld - Jharkhand Central,Foodworld,Jharkhand,East India,Supermarket,38641,1.967679615494258,True,True
-216,Nilgiris - Jharkhand Central,Nilgiris,Jharkhand,East India,Convenience,25150,3.355558549310602,False,True
-217,V-Mart - Jharkhand Central,V-Mart,Jharkhand,East India,Hypermarket,48426,8.346044417047462,True,False
-218,Star Bazaar - Jharkhand Central,Star Bazaar,Jharkhand,East India,Hypermarket,32586,0.9019916164188374,True,True
-219,Aadhaar - Jharkhand Central,Aadhaar,Jharkhand,East India,Convenience,18084,0.6221345535852532,True,True
-220,Spencer's - Jharkhand Central,Spencer's,Jharkhand,East India,Supermarket,36028,1.2069016095752634,True,False
-221,Aadhaar - Madhya Pradesh Central,Aadhaar,Madhya Pradesh,Central India,Supermarket,10587,4.920947547816055,True,True
-222,Star Bazaar - Madhya Pradesh Central,Star Bazaar,Madhya Pradesh,Central India,Supermarket,14025,2.9543197400185734,True,True
-223,Metro Cash & Carry - Madhya Pradesh Central,Metro Cash & Carry,Madhya Pradesh,Central India,Convenience,12718,2.1865392930526983,True,False
-224,Ratnadeep - Madhya Pradesh Central,Ratnadeep,Madhya Pradesh,Central India,Convenience,22504,9.208817778262596,True,False
-225,HyperCity - Madhya Pradesh Central,HyperCity,Madhya Pradesh,Central India,Hypermarket,23685,0.5219445538555089,True,False
-226,Big Bazaar - Madhya Pradesh Central,Big Bazaar,Madhya Pradesh,Central India,Hypermarket,14234,3.318817005368371,True,True
-227,Kirana King - Madhya Pradesh Central,Kirana King,Madhya Pradesh,Central India,Hypermarket,22370,2.968012637998978,True,True
-228,Reliance Smart - Madhya Pradesh Central,Reliance Smart,Madhya Pradesh,Central India,Convenience,46843,4.801039148056963,True,True
-229,Vishal Mega Mart - Madhya Pradesh Central,Vishal Mega Mart,Madhya Pradesh,Central India,Supermarket,24243,4.763650949403813,True,True
-230,Ratnadeep - Madhya Pradesh Central,Ratnadeep,Madhya Pradesh,Central India,Convenience,9228,2.2868123263447737,False,True
-231,Kirana King - Chhattisgarh Central,Kirana King,Chhattisgarh,Central India,Supermarket,46085,7.26391322992853,True,True
-232,HyperCity - Chhattisgarh Central,HyperCity,Chhattisgarh,Central India,Supermarket,20270,9.2980150052433,True,True
-233,Aadhaar - Chhattisgarh Central,Aadhaar,Chhattisgarh,Central India,Supermarket,27181,9.674235411350482,False,True
-234,Vishal Mega Mart - Chhattisgarh Central,Vishal Mega Mart,Chhattisgarh,Central India,Hypermarket,44677,2.559071506567658,True,False
-235,Ratnadeep - Chhattisgarh Central,Ratnadeep,Chhattisgarh,Central India,Convenience,17923,8.888574334606576,False,True
-236,Heritage Fresh - Chhattisgarh Central,Heritage Fresh,Chhattisgarh,Central India,Supermarket,7037,8.44589639853751,False,True
-237,Ratnadeep - Chhattisgarh Central,Ratnadeep,Chhattisgarh,Central India,Supermarket,26653,1.4824629727993033,True,False
-238,V-Mart - Chhattisgarh Central,V-Mart,Chhattisgarh,Central India,Convenience,19087,3.4009454130043415,True,True
-239,DMart - Chhattisgarh Central,DMart,Chhattisgarh,Central India,Supermarket,32047,3.105713478948398,True,True
-240,Ratnadeep - Chhattisgarh Central,Ratnadeep,Chhattisgarh,Central India,Hypermarket,46681,1.2620442867938293,False,False
-241,Vishal Mega Mart - Assam Central,Vishal Mega Mart,Assam,Northeast India,Hypermarket,43277,1.065738990570394,False,False
-242,DMart - Assam Central,DMart,Assam,Northeast India,Hypermarket,46444,5.4077859961342405,True,False
-243,More Megastore - Assam Central,More Megastore,Assam,Northeast India,Supermarket,42650,9.005821503602546,False,False
-244,Ratnadeep - Assam Central,Ratnadeep,Assam,Northeast India,Convenience,39780,2.550709821635456,True,False
-245,Aadhaar - Assam Central,Aadhaar,Assam,Northeast India,Hypermarket,48932,4.5570167175863965,True,True
-246,Foodworld - Assam Central,Foodworld,Assam,Northeast India,Hypermarket,23219,5.7644755604525315,True,True
-247,V-Mart - Meghalaya Central,V-Mart,Meghalaya,Northeast India,Convenience,38303,5.754968525240327,False,False
-248,Vishal Mega Mart - Meghalaya Central,Vishal Mega Mart,Meghalaya,Northeast India,Supermarket,49558,7.579938935220045,True,True
-249,Star Bazaar - Meghalaya Central,Star Bazaar,Meghalaya,Northeast India,Supermarket,13460,4.3268823683509625,True,False
-250,Big Bazaar - Meghalaya Central,Big Bazaar,Meghalaya,Northeast India,Convenience,44407,7.409159324397894,False,True
-251,Foodworld - Meghalaya Central,Foodworld,Meghalaya,Northeast India,Supermarket,27892,6.34739105692112,True,True
-252,HyperCity - Meghalaya Central,HyperCity,Meghalaya,Northeast India,Supermarket,26919,4.072647089276651,False,False
-253,Heritage Fresh - Manipur Central,Heritage Fresh,Manipur,Northeast India,Supermarket,36517,2.1076093804077356,True,True
-254,Vishal Mega Mart - Manipur Central,Vishal Mega Mart,Manipur,Northeast India,Supermarket,14625,0.5060134933716811,True,False
-255,Star Bazaar - Manipur Central,Star Bazaar,Manipur,Northeast India,Hypermarket,6812,3.203061353308113,False,False
-256,Reliance Smart - Manipur Central,Reliance Smart,Manipur,Northeast India,Supermarket,12802,4.439232095166615,False,True
-257,Heritage Fresh - Manipur Central,Heritage Fresh,Manipur,Northeast India,Supermarket,30826,0.8825954834430427,True,False
-258,Vishal Mega Mart - Manipur Central,Vishal Mega Mart,Manipur,Northeast India,Supermarket,10158,5.374276651348976,True,True
+Store_ID,Store_Name,Chain,Store_Type,Scope,State,Region,Categories,Num_Categories,Area_SqFt,Competition_Distance_KM,Has_Parking,Has_Online_Delivery
+1,"Reliance Smart - Connaught Place, New Delhi",Reliance Smart,Hypermarket,National,Delhi / NCR,North India,Groceries & Staples|Fresh Produce|Dairy & Eggs|Snacks & Beverages|Home Care|Personal Care,6,59422,6.5,True,False
+2,"DMart - Sector 18, Noida",DMart,Hypermarket,National,Delhi / NCR,North India,Groceries & Staples|Snacks & Beverages|Home Care|Personal Care|Kitchen & Dining,5,14284,1.7,True,True
+3,"Star Bazaar - Gomti Nagar, Lucknow",Star Bazaar,Hypermarket,National,Delhi / NCR,North India,Groceries & Staples|Fresh Produce|Dairy & Eggs|Snacks & Beverages|Home Care|Kitchen & Dining,6,50191,3.0,True,False
+4,"Decathlon - Sector 17, Chandigarh",Decathlon,Sports Store,National,Delhi / NCR,North India,Clothing & Apparel|Health & Wellness,2,3769,5.9,False,True
+5,"Zudio - Saket, New Delhi",Zudio,Fashion Retail,National,Delhi / NCR,North India,Clothing & Apparel,1,40819,1.9,True,True
+6,"Max Fashion - Ludhiana, Punjab",Max Fashion,Fashion Retail,National,Delhi / NCR,North India,Clothing & Apparel,1,30480,2.7,True,True
+7,"Reliance Digital - Lajpat Nagar, New Delhi",Reliance Digital,Electronics,National,Delhi / NCR,North India,Electronics & Appliances,1,5747,3.2,True,False
+8,"Croma - Cyber Hub, Gurgaon",Croma,Electronics,National,Delhi / NCR,North India,Electronics & Appliances,1,56810,3.4,False,True
+9,"Vishal Mega Mart - Karol Bagh, New Delhi",Vishal Mega Mart,Discount Retail,North,Delhi / NCR,North India,Clothing & Apparel|Groceries & Staples,2,6556,5.1,True,True
+10,"V-Mart - Gomti Nagar, Lucknow",V-Mart,Fashion Retail,North,Delhi / NCR,North India,Clothing & Apparel,1,13627,7.6,True,True
+11,"24SEVEN - Hauz Khas, New Delhi",24SEVEN,Convenience Store,North,Delhi / NCR,North India,Snacks & Beverages|Dairy & Eggs,2,26897,1.2,True,True
+12,"Fabindia - Khan Market, New Delhi",Fabindia,Premium Handloom,North,Delhi / NCR,North India,Clothing & Apparel|Health & Wellness,2,51555,4.2,True,False
+13,"Liberty Shoes - Amritsar, Punjab",Liberty Shoes,Footwear,North,Delhi / NCR,North India,Clothing & Apparel,1,29531,1.9,False,True
+14,"Modern Bazaar - Greater Kailash, New Delhi",Modern Bazaar,Premium Grocery,North,Delhi / NCR,North India,Fresh Produce|Snacks & Beverages|Dairy & Eggs,3,46573,4.6,True,False
+15,"Reliance Smart - Whitefield, Bengaluru",Reliance Smart,Hypermarket,National,Karnataka / Tamil Nadu,South India,Groceries & Staples|Fresh Produce|Dairy & Eggs|Snacks & Beverages|Home Care|Personal Care,6,9873,3.9,True,False
+16,"DMart - Velachery, Chennai",DMart,Hypermarket,National,Karnataka / Tamil Nadu,South India,Groceries & Staples|Snacks & Beverages|Home Care|Personal Care|Kitchen & Dining,5,35606,7.4,True,True
+17,"Star Bazaar - Banjara Hills, Hyderabad",Star Bazaar,Hypermarket,National,Karnataka / Tamil Nadu,South India,Groceries & Staples|Fresh Produce|Dairy & Eggs|Snacks & Beverages|Home Care|Kitchen & Dining,6,4016,7.7,False,False
+18,"Decathlon - Koramangala, Bengaluru",Decathlon,Sports Store,National,Karnataka / Tamil Nadu,South India,Clothing & Apparel|Health & Wellness,2,20262,6.7,True,True
+19,"Zudio - T Nagar, Chennai",Zudio,Fashion Retail,National,Karnataka / Tamil Nadu,South India,Clothing & Apparel,1,11571,2.6,True,True
+20,"Max Fashion - Thrissur, Kerala",Max Fashion,Fashion Retail,National,Karnataka / Tamil Nadu,South India,Clothing & Apparel,1,51984,7.9,False,True
+21,"Reliance Digital - HITEC City, Hyderabad",Reliance Digital,Electronics,National,Karnataka / Tamil Nadu,South India,Electronics & Appliances,1,51190,6.6,True,False
+22,"Croma - Indiranagar, Bengaluru",Croma,Electronics,National,Karnataka / Tamil Nadu,South India,Electronics & Appliances,1,15666,1.1,True,True
+23,"Lulu Hypermarket - MG Road, Kochi",Lulu Hypermarket,Hypermarket,South,Karnataka / Tamil Nadu,South India,Groceries & Staples|Fresh Produce|Dairy & Eggs|Snacks & Beverages|Personal Care,5,25662,6.9,True,True
+24,"Pothys - T Nagar, Chennai",Pothys,Traditional Textile,South,Karnataka / Tamil Nadu,South India,Clothing & Apparel,1,38222,5.5,True,True
+25,"Saravana Stores - Anna Nagar, Chennai",Saravana Stores,General Retail,South,Karnataka / Tamil Nadu,South India,Kitchen & Dining|Personal Care,2,13965,7.2,True,True
+26,"Nilgiris - Jubilee Hills, Hyderabad",Nilgiris,Specialty Grocery,South,Karnataka / Tamil Nadu,South India,Dairy & Eggs|Snacks & Beverages|Fresh Produce,3,16773,6.9,True,True
+27,"Vasanth & Co - Coimbatore, Tamil Nadu",Vasanth & Co,Home Appliances,South,Karnataka / Tamil Nadu,South India,Electronics & Appliances|Kitchen & Dining,2,48453,4.2,True,True
+28,"Sangeetha Mobiles - Jayanagar, Bengaluru",Sangeetha Mobiles,Electronics,South,Karnataka / Tamil Nadu,South India,Electronics & Appliances,1,59873,3.8,True,False
+29,"Reliance Smart - Andheri, Mumbai",Reliance Smart,Hypermarket,National,Maharashtra / Gujarat,West India,Groceries & Staples|Fresh Produce|Dairy & Eggs|Snacks & Beverages|Home Care|Personal Care,6,59560,2.9,True,False
+30,"DMart - SG Highway, Ahmedabad",DMart,Hypermarket,National,Maharashtra / Gujarat,West India,Groceries & Staples|Snacks & Beverages|Home Care|Personal Care|Kitchen & Dining,5,43342,5.0,True,True
+31,"Star Bazaar - FC Road, Pune",Star Bazaar,Hypermarket,National,Maharashtra / Gujarat,West India,Groceries & Staples|Fresh Produce|Dairy & Eggs|Snacks & Beverages|Home Care|Kitchen & Dining,6,58820,1.1,True,True
+32,"Decathlon - Thane, Mumbai MMR",Decathlon,Sports Store,National,Maharashtra / Gujarat,West India,Clothing & Apparel|Health & Wellness,2,46585,5.2,True,True
+33,"Zudio - Surat Ring Road, Surat",Zudio,Fashion Retail,National,Maharashtra / Gujarat,West India,Clothing & Apparel,1,32467,6.5,True,False
+34,"Max Fashion - Vadodara, Gujarat",Max Fashion,Fashion Retail,National,Maharashtra / Gujarat,West India,Clothing & Apparel,1,24834,2.9,True,True
+35,"Reliance Digital - Bandra, Mumbai",Reliance Digital,Electronics,National,Maharashtra / Gujarat,West India,Electronics & Appliances,1,26776,2.5,True,True
+36,"Croma - Vashi, Navi Mumbai",Croma,Electronics,National,Maharashtra / Gujarat,West India,Electronics & Appliances,1,58016,2.8,True,True
+37,"Vijay Sales - Dadar, Mumbai",Vijay Sales,Electronics,West,Maharashtra / Gujarat,West India,Electronics & Appliances|Kitchen & Dining,2,56565,2.2,True,True
+38,"Sahakari Bhandar - Prabhadevi, Mumbai",Sahakari Bhandar,Cooperative Grocery,West,Maharashtra / Gujarat,West India,Groceries & Staples|Fresh Produce,2,37766,1.8,True,True
+39,"Nature's Basket - Bandra, Mumbai",Nature's Basket,Premium Grocery,West,Maharashtra / Gujarat,West India,Fresh Produce|Dairy & Eggs|Snacks & Beverages,3,55915,3.2,False,False
+40,"Bombay Dyeing - Lower Parel, Mumbai",Bombay Dyeing,Home Textiles,West,Maharashtra / Gujarat,West India,Home Care|Kitchen & Dining,2,55733,5.7,True,True
+41,"Jade Blue - CG Road, Ahmedabad",Jade Blue,Men's Fashion,West,Maharashtra / Gujarat,West India,Clothing & Apparel,1,30728,2.5,False,True
+42,"Tirumala Sweets - Chembur, Mumbai",Tirumala Sweets,Specialty Food,West,Maharashtra / Gujarat,West India,Snacks & Beverages,1,3854,2.6,False,True
+43,"Reliance Smart - Park Street, Kolkata",Reliance Smart,Hypermarket,National,West Bengal / Assam,East India,Groceries & Staples|Fresh Produce|Dairy & Eggs|Snacks & Beverages|Home Care|Personal Care,6,57401,4.5,True,True
+44,"DMart - Salt Lake, Kolkata",DMart,Hypermarket,National,West Bengal / Assam,East India,Groceries & Staples|Snacks & Beverages|Home Care|Personal Care|Kitchen & Dining,5,7931,1.1,True,True
+45,"Star Bazaar - Janpath, Bhubaneswar",Star Bazaar,Hypermarket,National,West Bengal / Assam,East India,Groceries & Staples|Fresh Produce|Dairy & Eggs|Snacks & Beverages|Home Care|Kitchen & Dining,6,40157,3.3,True,True
+46,"Decathlon - New Town, Kolkata",Decathlon,Sports Store,National,West Bengal / Assam,East India,Clothing & Apparel|Health & Wellness,2,37698,6.6,False,True
+47,"Zudio - Boring Road, Patna",Zudio,Fashion Retail,National,West Bengal / Assam,East India,Clothing & Apparel,1,23666,1.9,True,True
+48,"Max Fashion - GS Road, Guwahati",Max Fashion,Fashion Retail,National,West Bengal / Assam,East India,Clothing & Apparel,1,59250,2.2,True,False
+49,"Reliance Digital - South City Mall, Kolkata",Reliance Digital,Electronics,National,West Bengal / Assam,East India,Electronics & Appliances,1,14411,5.3,True,False
+50,"Croma - Hill Cart Road, Siliguri",Croma,Electronics,National,West Bengal / Assam,East India,Electronics & Appliances,1,8759,4.4,False,False
+51,"Spencer's Retail - Forum Mall, Kolkata",Spencer's Retail,Hypermarket,East,West Bengal / Assam,East India,Fresh Produce|Groceries & Staples|Dairy & Eggs|Snacks & Beverages,4,11120,1.4,False,False
+52,"Style Baazar - Fancy Bazar, Guwahati",Style Baazar,Fashion Retail,East,West Bengal / Assam,East India,Clothing & Apparel,1,33306,2.2,True,False
+53,"Bazaar Kolkata - Esplanade, Kolkata",Bazaar Kolkata,Discount Retail,East,West Bengal / Assam,East India,Clothing & Apparel,1,19371,4.5,True,True
+54,"Khadims - Hatibagan, Kolkata",Khadims,Footwear,East,West Bengal / Assam,East India,Clothing & Apparel,1,23932,7.3,True,True

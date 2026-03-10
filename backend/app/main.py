@@ -102,7 +102,7 @@ def meta():
         "categories": store.categories,
         "months": list(range(1, 13)),  # 1-12
         "years": [2026],  # Available years
-        "store_names": {}  # Will be populated if Store_Name column exists
+        "store_names": {str(k): v for k, v in store.store_names.items()},  # {store_id: "Chain - Location"}
     }
 
 @app.post("/refresh")
@@ -230,7 +230,7 @@ def forecast_store_category(
         df = df[(df["Store"].astype(int) == int(store_id)) & (df["Product_Category"].astype(str) == str(category))].copy()
     
     if df.empty:
-        raise HTTPException(status_code=404, detail=f"No data for store {store_id}, category {category}")
+        return {"region": "Unknown", "store": store_id, "category": category, "series": []}
     
     if start:
         df = df[df["Date"] >= pd.Timestamp(start)]
@@ -397,7 +397,11 @@ def inventory_store_decisions(
         sub = sub[sub["Category"].astype(str) == str(category)]
     
     total_rows = len(sub)
-    sub = sub.sort_values(["Decision", "Stockout_Risk"], ascending=[True, False], na_position="last")
+    sort_col = "Stockout_Risk" if "Stockout_Risk" in sub.columns else "Priority_Score"
+    if sort_col not in sub.columns:
+        sub = sub.sort_values("Decision", na_position="last")
+    else:
+        sub = sub.sort_values(["Decision", sort_col], ascending=[True, False], na_position="last")
     page = sub.iloc[offset: offset + limit].copy()
     
     rows = []
@@ -505,7 +509,7 @@ def get_store_kpi(store_id: int = Query(..., alias="store")):
     return {
         "store": store_id,
         "total_categories": int(len(inv)),
-        "avg_days_supply": round(float(inv['Days_Of_Supply'].mean()), 1),
+        "avg_days_supply": round(float(inv['Days_Of_Supply'].mean()) if 'Days_Of_Supply' in inv.columns else 0.0, 1),
         "low_stock_items": int((inv['Decision'].isin(['REORDER NOW', 'REORDER SOON'])).sum()),
         "total_current_stock": round(float(inv.get('Current_Stock', inv.get('Current_Inventory', pd.Series([0]))).sum()), 0),
         "total_reorder_point": round(float(inv['Reorder_Point'].sum()), 0),

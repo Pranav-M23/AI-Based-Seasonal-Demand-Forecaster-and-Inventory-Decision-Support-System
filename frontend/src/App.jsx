@@ -80,6 +80,7 @@ function App() {
     <div className="app-container">
       <Header
         stores={metadata.stores}
+        storeNames={metadata.store_names || {}}
         regions={metadata.regions}
         selectedStore={selectedStore}
         selectedRegion={selectedRegion}
@@ -93,7 +94,12 @@ function App() {
         <>
           <div className="store-header">
             <div className="store-icon">🏪</div>
-            <h2>Store {selectedStore} - {selectedRegion}</h2>
+            <h2>
+              {(metadata.store_names && metadata.store_names[String(selectedStore)])
+                ? metadata.store_names[String(selectedStore)]
+                : `Store ${selectedStore}`}
+              {' '}&mdash; {selectedRegion}
+            </h2>
           </div>
 
           <SummaryCards summary={summary} />

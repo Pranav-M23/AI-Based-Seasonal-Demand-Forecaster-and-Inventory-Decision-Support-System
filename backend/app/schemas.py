@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 from datetime import date
-from typing import Optional, List
+from typing import Optional, List, Dict, Any
 
 # ---------- core ----------
 class HealthResponse(BaseModel):
@@ -16,6 +16,9 @@ class MetaResponse(BaseModel):
     regions: List[str]
     stores: List[int]
     categories: List[str]
+    months: Optional[List[int]] = None
+    years: Optional[List[int]] = None
+    store_names: Optional[Dict[str, Any]] = None
 
 class RegionsResponse(BaseModel):
     regions: List[str]
@@ -29,6 +32,8 @@ class CategoriesResponse(BaseModel):
 class ForecastPoint(BaseModel):
     date: date
     value: float
+    festival: Optional[str] = None
+    fsi: Optional[float] = None
 
 class ForecastSeriesResponse(BaseModel):
     region: str

@@ -9,8 +9,9 @@ import './App.css';
 
 function App() {
   const [metadata, setMetadata] = useState(null);
-  const [selectedStore, setSelectedStore] = useState(1);
-  const [selectedRegion, setSelectedRegion] = useState('Kerala');
+  const [selectedStore, setSelectedStore] = useState(null);
+  const [selectedRegion, setSelectedRegion] = useState(null);
+  const [regionStores, setRegionStores] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [loading, setLoading] = useState(false);
   
@@ -18,6 +19,14 @@ function App() {
   const [forecastData, setForecastData] = useState(null);
   const [storeDecisions, setStoreDecisions] = useState(null);
   const [discounts, setDiscounts] = useState(null);
+  const [chartLoading, setChartLoading] = useState(false);
+
+  // Shared period filter — owned here so StockSection + ActionPanel stay in sync
+  const now = new Date();
+  const [filterMode, setFilterMode]         = useState('month');
+  const [selectedMonth, setSelectedMonth]   = useState(now.getMonth());
+  const [selectedWeek, setSelectedWeek]     = useState(Math.ceil(now.getDate() / 7) || 1);
+  const [selectedQuarter, setSelectedQuarter] = useState(Math.floor(now.getMonth() / 3));
 
   useEffect(() => {
     loadMetadata();
@@ -27,12 +36,28 @@ function App() {
     try {
       const data = await dashboardAPI.getMeta();
       setMetadata(data);
-      if (data.stores?.[0]) setSelectedStore(data.stores[0]);
-      if (data.regions?.[0]) setSelectedRegion(data.regions[0]);
       if (data.categories?.[0]) setSelectedCategory(data.categories[0]);
+      // Don't pre-select region/store — wait for user to choose
     } catch (error) {
       console.error('Error loading metadata:', error);
       alert('Cannot connect to backend. Make sure it is running on http://127.0.0.1:8000');
+    }
+  };
+
+  // When region changes: fetch stores for that region, reset store + dashboard
+  const handleRegionChange = async (region) => {
+    setSelectedRegion(region);
+    setSelectedStore(null);
+    setSummary(null);
+    setForecastData(null);
+    setStoreDecisions(null);
+    setDiscounts(null);
+    try {
+      const data = await dashboardAPI.getStoresByRegion(region);
+      setRegionStores(data.stores || []);
+      if (data.stores?.length > 0) setSelectedStore(data.stores[0]);
+    } catch (error) {
+      console.error('Error loading stores for region:', error);
     }
   };
 
@@ -41,7 +66,7 @@ function App() {
     
     setLoading(true);
     try {
-      const [summaryData, forecastData, decisionsData, discountData] = await Promise.all([
+      const [summaryData, forecastResult, decisionsData, discountData] = await Promise.all([
         dashboardAPI.getInventorySummary(),
         dashboardAPI.getStoreCategoryForecast(selectedStore, selectedCategory),
         dashboardAPI.getStoreDecisions(selectedStore, selectedCategory),
@@ -49,16 +74,37 @@ function App() {
       ]);
 
       setSummary(summaryData);
-      setForecastData(forecastData);
+      setForecastData(forecastResult);
       setStoreDecisions(decisionsData);
       setDiscounts(discountData);
     } catch (error) {
       console.error('Error loading dashboard:', error);
-      alert('Error loading dashboard. Make sure backend is running on port 8000.');
     } finally {
       setLoading(false);
     }
   };
+
+  // Auto-refresh only the forecast chart when category changes (after dashboard loaded)
+  useEffect(() => {
+    if (!summary || !selectedStore || !selectedRegion) return;
+    const fetchForecast = async () => {
+      setChartLoading(true);
+      try {
+        const [forecastResult, decisionsData] = await Promise.all([
+          dashboardAPI.getStoreCategoryForecast(selectedStore, selectedCategory),
+          dashboardAPI.getStoreDecisions(selectedStore, selectedCategory),
+        ]);
+        setForecastData(forecastResult);
+        setStoreDecisions(decisionsData);
+      } catch (error) {
+        console.error('Error refreshing forecast:', error);
+      } finally {
+        setChartLoading(false);
+      }
+    };
+    fetchForecast();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedCategory]);
 
   if (!metadata) {
     return (
@@ -72,12 +118,14 @@ function App() {
   return (
     <div className="app">
       <Header
-        stores={metadata.stores}
+        stores={regionStores}
+        allStores={metadata.stores}
+        storeNames={metadata.store_names || {}}
         regions={metadata.regions}
         selectedStore={selectedStore}
         selectedRegion={selectedRegion}
         onStoreChange={setSelectedStore}
-        onRegionChange={setSelectedRegion}
+        onRegionChange={handleRegionChange}
         onLoadDashboard={loadDashboard}
         loading={loading}
       />
@@ -86,7 +134,12 @@ function App() {
         <div className="dashboard-content">
           <div className="store-title">
             <span className="store-icon">🏪</span>
-            <h2>Store {selectedStore} - {selectedRegion}</h2>
+            <h2>
+              {(metadata.store_names && metadata.store_names[String(selectedStore)])
+                ? metadata.store_names[String(selectedStore)]
+                : `Store ${selectedStore}`}
+              {' — '}{selectedRegion}
+            </h2>
           </div>
 
           <SummaryCards summary={summary} />
@@ -98,13 +151,14 @@ function App() {
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
                 className="category-dropdown"
+                disabled={chartLoading}
               >
                 {metadata.categories.map((cat) => (
                   <option key={cat} value={cat}>{cat}</option>
                 ))}
               </select>
-              <button onClick={loadDashboard} className="refresh-btn">
-                Refresh Data
+              <button onClick={loadDashboard} className="refresh-btn" disabled={chartLoading}>
+                {chartLoading ? 'Loading...' : 'Refresh Data'}
               </button>
             </div>
 
@@ -122,11 +176,21 @@ function App() {
                 decision={storeDecisions.rows[0]}
                 category={selectedCategory}
                 discounts={discounts}
+                forecastData={forecastData}
+                filterMode={filterMode}       setFilterMode={setFilterMode}
+                selectedMonth={selectedMonth} setSelectedMonth={setSelectedMonth}
+                selectedWeek={selectedWeek}   setSelectedWeek={setSelectedWeek}
+                selectedQuarter={selectedQuarter} setSelectedQuarter={setSelectedQuarter}
               />
 
               <ActionPanel
                 decision={storeDecisions.rows[0]}
                 discounts={discounts}
+                forecastData={forecastData}
+                filterMode={filterMode}
+                selectedMonth={selectedMonth}
+                selectedWeek={selectedWeek}
+                selectedQuarter={selectedQuarter}
               />
             </>
           )}

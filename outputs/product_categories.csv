@@ -1,11 +1,11 @@
 Category_ID,Category_Name,Avg_Items_Per_Store
-1,Groceries & Staples,500
+1,Groceries & Staples,400
 2,Fresh Produce,150
 3,Dairy & Eggs,80
-4,Snacks & Beverages,300
-5,Personal Care,200
-6,Home Care,150
-7,Clothing & Apparel,100
-8,Electronics & Appliances,50
-9,Kitchen & Dining,120
-10,Health & Wellness,80
+4,Snacks & Beverages,250
+5,Personal Care,180
+6,Home Care,120
+7,Clothing & Apparel,60
+8,Electronics & Appliances,30
+9,Kitchen & Dining,100
+10,Health & Wellness,70

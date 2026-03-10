@@ -37,6 +37,11 @@ export const dashboardAPI = {
     const response = await api.get('/inventory/store-decisions', { params });
     return response.data;
   },
+
+  getStoresByRegion: async (region) => {
+    const response = await api.get('/stores', { params: { region } });
+    return response.data;
+  },
 };
 
 export default api;

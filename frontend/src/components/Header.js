@@ -1,7 +1,7 @@
 import React from 'react';
 import { Package } from 'lucide-react';
 
-function Header({ stores, regions, selectedStore, selectedRegion, onStoreChange, onRegionChange, onLoadDashboard, loading }) {
+function Header({ stores, storeNames, regions, selectedStore, selectedRegion, onStoreChange, onRegionChange, onLoadDashboard, loading }) {
   return (
     <header className="header">
       <div className="header-title">
@@ -11,35 +11,46 @@ function Header({ stores, regions, selectedStore, selectedRegion, onStoreChange,
       
       <div className="header-controls">
         <div className="control-group">
-          <label>Select Store:</label>
-          <select 
-            value={selectedStore} 
-            onChange={(e) => onStoreChange(Number(e.target.value))}
-            className="dropdown"
-          >
-            {stores.map(store => (
-              <option key={store} value={store}>Store {store}</option>
-            ))}
-          </select>
-        </div>
-
-        <div className="control-group">
           <label>Region:</label>
-          <select 
-            value={selectedRegion} 
+          <select
+            value={selectedRegion || ''}
             onChange={(e) => onRegionChange(e.target.value)}
             className="dropdown"
           >
+            <option value="" disabled>-- Select Region --</option>
             {regions.map(region => (
               <option key={region} value={region}>{region}</option>
             ))}
           </select>
         </div>
 
-        <button 
-          onClick={onLoadDashboard} 
+        <div className="control-group">
+          <label>Select Store:</label>
+          <select
+            value={selectedStore || ''}
+            onChange={(e) => onStoreChange(Number(e.target.value))}
+            className="dropdown"
+            disabled={!selectedRegion || stores.length === 0}
+          >
+            {!selectedRegion
+              ? <option value="" disabled>-- Select Region First --</option>
+              : stores.length === 0
+                ? <option value="" disabled>No stores in region</option>
+                : stores.map(storeId => (
+                    <option key={storeId} value={storeId}>
+                      {storeNames && storeNames[String(storeId)]
+                        ? storeNames[String(storeId)]
+                        : `Store ${storeId}`}
+                    </option>
+                  ))
+            }
+          </select>
+        </div>
+
+        <button
+          onClick={onLoadDashboard}
           className="load-btn"
-          disabled={loading}
+          disabled={loading || !selectedStore || !selectedRegion}
         >
           {loading ? 'Loading...' : '[Load Dashboard]'}
         </button>
