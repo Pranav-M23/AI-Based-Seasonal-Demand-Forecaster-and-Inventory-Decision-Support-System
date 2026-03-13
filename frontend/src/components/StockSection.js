@@ -13,17 +13,22 @@ export const QUARTERS = [
   { label: 'Q4 (Oct-Dec) | Peak Festive Season',     months: [9, 10, 11] },
 ];
 
-// Each Indian festival: month(0-based), name, week(1-4), FSI multiplier, ML metrics
-export const FESTIVAL_CALENDAR_FULL = [
-  { month: 0,  week: 2, name: 'Pongal / Makar Sankranti', fsiBoost: 1.35, color: '#f59e0b' },
-  { month: 2,  week: 4, name: 'Holi',                      fsiBoost: 1.20, color: '#ec4899' },
-  { month: 3,  week: 2, name: 'Vishu / Tamil New Year',    fsiBoost: 1.40, color: '#10b981' },
-  { month: 7,  week: 3, name: 'Onam Peak',                  fsiBoost: 9.50, color: '#84cc16' },  // +8500% ≈ ×9.5
-  { month: 6,  week: 4, name: 'Pre-Onam Prep',             fsiBoost: 1.60, color: '#f97316' },
-  { month: 9,  week: 1, name: 'Navaratri',                  fsiBoost: 2.20, color: '#a855f7' },
-  { month: 9,  week: 3, name: 'Diwali',                     fsiBoost: 3.50, color: '#eab308' },
-  { month: 11, week: 4, name: 'Christmas / Year-End',       fsiBoost: 1.30, color: '#06b6d4' },
-];
+function toFestivalCalendar(festivals = []) {
+  return (festivals || []).map((f) => {
+    const d = new Date(`${f.date}T00:00:00`);
+    const month = d.getMonth();
+    const week = Math.min(4, Math.ceil(d.getDate() / 7));
+    return {
+      month,
+      week,
+      name: f.name,
+      fsiBoost: Number(f.impact_multiplier || 1),
+      type: f.type,
+      color: f.type === 'pan-indian' ? '#f59e0b' : '#10b981',
+      date: f.date,
+    };
+  });
+}
 
 
 
@@ -40,29 +45,32 @@ function Tooltip({ text }) {
  * Derive the festival that best matches the selected period (if any).
  * Returns { name, fsiBoost, color } or null.
  */
-function getFestivalForPeriod(filterMode, selectedMonth, selectedWeek, selectedQuarter) {
+function getFestivalForPeriod(filterMode, selectedMonth, selectedWeek, selectedQuarter, festivalCalendar) {
   if (filterMode === 'quarter') {
     const qMonths = QUARTERS[selectedQuarter].months;
     // Return the highest-boost festival in this quarter
-    const hits = FESTIVAL_CALENDAR_FULL.filter(f => qMonths.includes(f.month));
+    const hits = festivalCalendar.filter(f => qMonths.includes(f.month));
     return hits.sort((a, b) => b.fsiBoost - a.fsiBoost)[0] || null;
   }
   // Exact week match first, then month-only
-  const exactMatch = FESTIVAL_CALENDAR_FULL.find(
+  const exactMatch = festivalCalendar.find(
     f => f.month === selectedMonth && f.week === selectedWeek
   );
   if (exactMatch) return exactMatch;
-  const monthHits = FESTIVAL_CALENDAR_FULL.filter(f => f.month === selectedMonth);
+  const monthHits = festivalCalendar.filter(f => f.month === selectedMonth);
   return monthHits.sort((a, b) => b.fsiBoost - a.fsiBoost)[0] || null;
 }
 
 function StockSection({
   decision, category, discounts, forecastData,
+  festivals = [],
   filterMode, setFilterMode,
   selectedMonth, setSelectedMonth,
   selectedWeek, setSelectedWeek,
   selectedQuarter, setSelectedQuarter,
 }) {
+  const festivalCalendar = useMemo(() => toFestivalCalendar(festivals), [festivals]);
+
   const {
     periodFsi, smartDiscount, discountPct, discountReason, daysOfStock,
     fsiLabel, fsiClass, fsiDisplay,
@@ -70,7 +78,7 @@ function StockSection({
     festivalMatch,
   } = useMemo(() => {
     // â”€â”€ 1. Locate matching festival â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-    const festivalMatch = getFestivalForPeriod(filterMode, selectedMonth, selectedWeek, selectedQuarter);
+    const festivalMatch = getFestivalForPeriod(filterMode, selectedMonth, selectedWeek, selectedQuarter, festivalCalendar);
 
     // â”€â”€ 2. Compute FSI â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     //   Priority: (a) festival calendar boost, (b) backend forecast FSI field, (c) ratio-based
@@ -108,8 +116,7 @@ function StockSection({
       // Highest backend FSI value in the period
       const maxBackendFsi = Math.max(...periodPoints.map(p => p.fsi || 0));
       if (maxBackendFsi > 0) {
-        // backend fsi field is a fractional boost (e.g. 0.85 = +85%), convert to multiplier
-        dataFsi = Math.max(dataFsi, 1 + maxBackendFsi);
+        dataFsi = Math.max(dataFsi, 1 + (maxBackendFsi / 100));
       }
     }
 
@@ -192,7 +199,7 @@ function StockSection({
       computedStatus, computedStatusClass, computedStatusIcon,
       festivalMatch,
     };
-  }, [decision, discounts, forecastData, filterMode, selectedMonth, selectedWeek, selectedQuarter]);
+  }, [decision, discounts, forecastData, filterMode, selectedMonth, selectedWeek, selectedQuarter, festivalCalendar]);
 
   const sectionBorderClass = computedStatus === 'RESTOCK NOW' ? 'stock-section--danger'
                            : computedStatus === 'CLEAR STOCK' ? 'stock-section--warn'

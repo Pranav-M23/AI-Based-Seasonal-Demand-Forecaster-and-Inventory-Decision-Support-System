@@ -1,164 +1,569 @@
-Store_ID,Store_Name,Chain,Store_Type,Scope,State,Region,Category,Num_SKUs,Current_Stock,Reorder_Point,Decision,Days_Of_Supply,Priority_Score,Stockout_Risk
-1,"Reliance Smart - Connaught Place, New Delhi",Reliance Smart,Hypermarket,National,Delhi / NCR,North India,Groceries & Staples,26,3345.48,2800.0,OK,8.4,20.3,20.3
-1,"Reliance Smart - Connaught Place, New Delhi",Reliance Smart,Hypermarket,National,Delhi / NCR,North India,Fresh Produce,30,1228.01,1050.0,OK,8.2,22.0,22.0
-1,"Reliance Smart - Connaught Place, New Delhi",Reliance Smart,Hypermarket,National,Delhi / NCR,North India,Dairy & Eggs,24,131.06,560.0,REORDER NOW,1.6,84.4,84.4
-1,"Reliance Smart - Connaught Place, New Delhi",Reliance Smart,Hypermarket,National,Delhi / NCR,North India,Snacks & Beverages,22,262.43,1750.0,REORDER NOW,1.0,90.0,90.0
-1,"Reliance Smart - Connaught Place, New Delhi",Reliance Smart,Hypermarket,National,Delhi / NCR,North India,Home Care,30,1091.38,840.0,OK,9.1,13.4,13.4
-1,"Reliance Smart - Connaught Place, New Delhi",Reliance Smart,Hypermarket,National,Delhi / NCR,North India,Personal Care,23,270.02,1260.0,REORDER NOW,1.5,85.7,85.7
-2,"DMart - Sector 18, Noida",DMart,Hypermarket,National,Delhi / NCR,North India,Groceries & Staples,22,86.45,2800.0,REORDER NOW,0.2,97.9,97.9
-2,"DMart - Sector 18, Noida",DMart,Hypermarket,National,Delhi / NCR,North India,Snacks & Beverages,21,1895.25,1750.0,OK,7.6,27.8,27.8
-2,"DMart - Sector 18, Noida",DMart,Hypermarket,National,Delhi / NCR,North India,Home Care,25,0.98,840.0,REORDER NOW,0.0,99.9,99.9
-2,"DMart - Sector 18, Noida",DMart,Hypermarket,National,Delhi / NCR,North India,Personal Care,24,1167.04,1260.0,REORDER SOON,6.5,38.3,38.3
-2,"DMart - Sector 18, Noida",DMart,Hypermarket,National,Delhi / NCR,North India,Kitchen & Dining,29,550.99,700.0,REORDER SOON,5.5,47.5,47.5
-3,"Star Bazaar - Gomti Nagar, Lucknow",Star Bazaar,Hypermarket,National,Delhi / NCR,North India,Groceries & Staples,28,1223.16,2800.0,REORDER NOW,3.1,70.9,70.9
-3,"Star Bazaar - Gomti Nagar, Lucknow",Star Bazaar,Hypermarket,National,Delhi / NCR,North India,Fresh Produce,30,629.78,1050.0,REORDER SOON,4.2,60.0,60.0
-3,"Star Bazaar - Gomti Nagar, Lucknow",Star Bazaar,Hypermarket,National,Delhi / NCR,North India,Dairy & Eggs,22,321.27,560.0,REORDER SOON,4.0,61.8,61.8
-3,"Star Bazaar - Gomti Nagar, Lucknow",Star Bazaar,Hypermarket,National,Delhi / NCR,North India,Snacks & Beverages,23,1555.09,1750.0,REORDER SOON,6.2,40.8,40.8
-3,"Star Bazaar - Gomti Nagar, Lucknow",Star Bazaar,Hypermarket,National,Delhi / NCR,North India,Home Care,22,1083.52,840.0,OK,9.0,14.0,14.0
-3,"Star Bazaar - Gomti Nagar, Lucknow",Star Bazaar,Hypermarket,National,Delhi / NCR,North India,Kitchen & Dining,26,179.05,700.0,REORDER NOW,1.8,82.9,82.9
-4,"Decathlon - Sector 17, Chandigarh",Decathlon,Sports Store,National,Delhi / NCR,North India,Clothing & Apparel,26,8.36,420.0,REORDER NOW,0.1,98.7,98.7
-4,"Decathlon - Sector 17, Chandigarh",Decathlon,Sports Store,National,Delhi / NCR,North India,Health & Wellness,28,709.74,490.0,OK,10.1,3.4,3.4
-5,"Zudio - Saket, New Delhi",Zudio,Fashion Retail,National,Delhi / NCR,North India,Clothing & Apparel,21,242.81,420.0,REORDER SOON,4.0,61.5,61.5
-6,"Max Fashion - Ludhiana, Punjab",Max Fashion,Fashion Retail,National,Delhi / NCR,North India,Clothing & Apparel,29,61.53,420.0,REORDER NOW,1.0,90.2,90.2
-7,"Reliance Digital - Lajpat Nagar, New Delhi",Reliance Digital,Electronics,National,Delhi / NCR,North India,Electronics & Appliances,23,75.92,210.0,REORDER NOW,2.5,75.9,75.9
-8,"Croma - Cyber Hub, Gurgaon",Croma,Electronics,National,Delhi / NCR,North India,Electronics & Appliances,26,192.15,210.0,REORDER SOON,6.4,39.0,39.0
-9,"Vishal Mega Mart - Karol Bagh, New Delhi",Vishal Mega Mart,Discount Retail,North,Delhi / NCR,North India,Clothing & Apparel,27,21.66,420.0,REORDER NOW,0.4,96.6,96.6
-9,"Vishal Mega Mart - Karol Bagh, New Delhi",Vishal Mega Mart,Discount Retail,North,Delhi / NCR,North India,Groceries & Staples,20,1086.88,2800.0,REORDER NOW,2.7,74.1,74.1
-10,"V-Mart - Gomti Nagar, Lucknow",V-Mart,Fashion Retail,North,Delhi / NCR,North India,Clothing & Apparel,27,475.88,420.0,OK,7.9,24.5,24.5
-11,"24SEVEN - Hauz Khas, New Delhi",24SEVEN,Convenience Store,North,Delhi / NCR,North India,Snacks & Beverages,25,545.85,1750.0,REORDER NOW,2.2,79.2,79.2
-11,"24SEVEN - Hauz Khas, New Delhi",24SEVEN,Convenience Store,North,Delhi / NCR,North India,Dairy & Eggs,23,155.28,560.0,REORDER NOW,1.9,81.5,81.5
-12,"Fabindia - Khan Market, New Delhi",Fabindia,Premium Handloom,North,Delhi / NCR,North India,Clothing & Apparel,21,488.33,420.0,OK,8.1,22.5,22.5
-12,"Fabindia - Khan Market, New Delhi",Fabindia,Premium Handloom,North,Delhi / NCR,North India,Health & Wellness,21,290.44,490.0,REORDER SOON,4.1,60.5,60.5
-13,"Liberty Shoes - Amritsar, Punjab",Liberty Shoes,Footwear,North,Delhi / NCR,North India,Clothing & Apparel,23,376.68,420.0,REORDER SOON,6.3,40.2,40.2
-14,"Modern Bazaar - Greater Kailash, New Delhi",Modern Bazaar,Premium Grocery,North,Delhi / NCR,North India,Fresh Produce,27,898.45,1050.0,REORDER SOON,6.0,43.0,43.0
-14,"Modern Bazaar - Greater Kailash, New Delhi",Modern Bazaar,Premium Grocery,North,Delhi / NCR,North India,Snacks & Beverages,28,2523.08,1750.0,OK,10.1,3.9,3.9
-14,"Modern Bazaar - Greater Kailash, New Delhi",Modern Bazaar,Premium Grocery,North,Delhi / NCR,North India,Dairy & Eggs,24,326.49,560.0,REORDER SOON,4.1,61.1,61.1
-15,"Reliance Smart - Whitefield, Bengaluru",Reliance Smart,Hypermarket,National,Karnataka / Tamil Nadu,South India,Groceries & Staples,21,2266.71,2800.0,REORDER SOON,5.7,46.0,46.0
-15,"Reliance Smart - Whitefield, Bengaluru",Reliance Smart,Hypermarket,National,Karnataka / Tamil Nadu,South India,Fresh Produce,27,561.89,1050.0,REORDER SOON,3.7,64.3,64.3
-15,"Reliance Smart - Whitefield, Bengaluru",Reliance Smart,Hypermarket,National,Karnataka / Tamil Nadu,South India,Dairy & Eggs,28,248.87,560.0,REORDER NOW,3.1,70.4,70.4
-15,"Reliance Smart - Whitefield, Bengaluru",Reliance Smart,Hypermarket,National,Karnataka / Tamil Nadu,South India,Snacks & Beverages,20,41.05,1750.0,REORDER NOW,0.2,98.4,98.4
-15,"Reliance Smart - Whitefield, Bengaluru",Reliance Smart,Hypermarket,National,Karnataka / Tamil Nadu,South India,Home Care,28,973.03,840.0,OK,8.1,22.8,22.8
-15,"Reliance Smart - Whitefield, Bengaluru",Reliance Smart,Hypermarket,National,Karnataka / Tamil Nadu,South India,Personal Care,27,10.44,1260.0,REORDER NOW,0.1,99.4,99.4
-16,"DMart - Velachery, Chennai",DMart,Hypermarket,National,Karnataka / Tamil Nadu,South India,Groceries & Staples,30,835.14,2800.0,REORDER NOW,2.1,80.1,80.1
-16,"DMart - Velachery, Chennai",DMart,Hypermarket,National,Karnataka / Tamil Nadu,South India,Snacks & Beverages,27,1913.64,1750.0,OK,7.7,27.1,27.1
-16,"DMart - Velachery, Chennai",DMart,Hypermarket,National,Karnataka / Tamil Nadu,South India,Home Care,20,763.51,840.0,REORDER SOON,6.4,39.4,39.4
-16,"DMart - Velachery, Chennai",DMart,Hypermarket,National,Karnataka / Tamil Nadu,South India,Personal Care,29,677.5,1260.0,REORDER SOON,3.8,64.2,64.2
-16,"DMart - Velachery, Chennai",DMart,Hypermarket,National,Karnataka / Tamil Nadu,South India,Kitchen & Dining,28,960.71,700.0,OK,9.6,8.5,8.5
-17,"Star Bazaar - Banjara Hills, Hyderabad",Star Bazaar,Hypermarket,National,Karnataka / Tamil Nadu,South India,Groceries & Staples,28,2617.85,2800.0,REORDER SOON,6.5,37.7,37.7
-17,"Star Bazaar - Banjara Hills, Hyderabad",Star Bazaar,Hypermarket,National,Karnataka / Tamil Nadu,South India,Fresh Produce,21,150.27,1050.0,REORDER NOW,1.0,90.5,90.5
-17,"Star Bazaar - Banjara Hills, Hyderabad",Star Bazaar,Hypermarket,National,Karnataka / Tamil Nadu,South India,Dairy & Eggs,26,261.23,560.0,REORDER NOW,3.3,68.9,68.9
-17,"Star Bazaar - Banjara Hills, Hyderabad",Star Bazaar,Hypermarket,National,Karnataka / Tamil Nadu,South India,Snacks & Beverages,27,1748.05,1750.0,REORDER SOON,7.0,33.4,33.4
-17,"Star Bazaar - Banjara Hills, Hyderabad",Star Bazaar,Hypermarket,National,Karnataka / Tamil Nadu,South India,Home Care,27,346.15,840.0,REORDER NOW,2.9,72.5,72.5
-17,"Star Bazaar - Banjara Hills, Hyderabad",Star Bazaar,Hypermarket,National,Karnataka / Tamil Nadu,South India,Kitchen & Dining,22,495.83,700.0,REORDER SOON,5.0,52.8,52.8
-18,"Decathlon - Koramangala, Bengaluru",Decathlon,Sports Store,National,Karnataka / Tamil Nadu,South India,Clothing & Apparel,24,612.18,420.0,OK,10.2,2.8,2.8
-18,"Decathlon - Koramangala, Bengaluru",Decathlon,Sports Store,National,Karnataka / Tamil Nadu,South India,Health & Wellness,22,559.18,490.0,OK,8.0,23.9,23.9
-19,"Zudio - T Nagar, Chennai",Zudio,Fashion Retail,National,Karnataka / Tamil Nadu,South India,Clothing & Apparel,29,148.67,420.0,REORDER NOW,2.5,76.4,76.4
-20,"Max Fashion - Thrissur, Kerala",Max Fashion,Fashion Retail,National,Karnataka / Tamil Nadu,South India,Clothing & Apparel,26,25.47,420.0,REORDER NOW,0.4,96.0,96.0
-21,"Reliance Digital - HITEC City, Hyderabad",Reliance Digital,Electronics,National,Karnataka / Tamil Nadu,South India,Electronics & Appliances,29,8.01,210.0,REORDER NOW,0.3,97.5,97.5
-22,"Croma - Indiranagar, Bengaluru",Croma,Electronics,National,Karnataka / Tamil Nadu,South India,Electronics & Appliances,22,9.9,210.0,REORDER NOW,0.3,96.9,96.9
-23,"Lulu Hypermarket - MG Road, Kochi",Lulu Hypermarket,Hypermarket,South,Karnataka / Tamil Nadu,South India,Groceries & Staples,26,1996.55,2800.0,REORDER SOON,5.0,52.5,52.5
-23,"Lulu Hypermarket - MG Road, Kochi",Lulu Hypermarket,Hypermarket,South,Karnataka / Tamil Nadu,South India,Fresh Produce,23,1429.42,1050.0,OK,9.5,9.2,9.2
-23,"Lulu Hypermarket - MG Road, Kochi",Lulu Hypermarket,Hypermarket,South,Karnataka / Tamil Nadu,South India,Dairy & Eggs,26,507.71,560.0,REORDER SOON,6.3,39.6,39.6
-23,"Lulu Hypermarket - MG Road, Kochi",Lulu Hypermarket,Hypermarket,South,Karnataka / Tamil Nadu,South India,Snacks & Beverages,30,533.04,1750.0,REORDER NOW,2.1,79.7,79.7
-23,"Lulu Hypermarket - MG Road, Kochi",Lulu Hypermarket,Hypermarket,South,Karnataka / Tamil Nadu,South India,Personal Care,26,547.63,1260.0,REORDER NOW,3.0,71.0,71.0
-24,"Pothys - T Nagar, Chennai",Pothys,Traditional Textile,South,Karnataka / Tamil Nadu,South India,Clothing & Apparel,25,554.69,420.0,OK,9.2,12.0,12.0
-25,"Saravana Stores - Anna Nagar, Chennai",Saravana Stores,General Retail,South,Karnataka / Tamil Nadu,South India,Kitchen & Dining,29,848.53,700.0,OK,8.5,19.2,19.2
-25,"Saravana Stores - Anna Nagar, Chennai",Saravana Stores,General Retail,South,Karnataka / Tamil Nadu,South India,Personal Care,28,199.38,1260.0,REORDER NOW,1.1,89.5,89.5
-26,"Nilgiris - Jubilee Hills, Hyderabad",Nilgiris,Specialty Grocery,South,Karnataka / Tamil Nadu,South India,Dairy & Eggs,23,749.75,560.0,OK,9.4,10.7,10.7
-26,"Nilgiris - Jubilee Hills, Hyderabad",Nilgiris,Specialty Grocery,South,Karnataka / Tamil Nadu,South India,Snacks & Beverages,30,851.41,1750.0,REORDER NOW,3.4,67.6,67.6
-26,"Nilgiris - Jubilee Hills, Hyderabad",Nilgiris,Specialty Grocery,South,Karnataka / Tamil Nadu,South India,Fresh Produce,26,1411.34,1050.0,OK,9.4,10.4,10.4
-27,"Vasanth & Co - Coimbatore, Tamil Nadu",Vasanth & Co,Home Appliances,South,Karnataka / Tamil Nadu,South India,Electronics & Appliances,26,285.65,210.0,OK,9.5,9.3,9.3
-27,"Vasanth & Co - Coimbatore, Tamil Nadu",Vasanth & Co,Home Appliances,South,Karnataka / Tamil Nadu,South India,Kitchen & Dining,20,239.33,700.0,REORDER NOW,2.4,77.2,77.2
-28,"Sangeetha Mobiles - Jayanagar, Bengaluru",Sangeetha Mobiles,Electronics,South,Karnataka / Tamil Nadu,South India,Electronics & Appliances,28,257.67,210.0,OK,8.6,18.2,18.2
-29,"Reliance Smart - Andheri, Mumbai",Reliance Smart,Hypermarket,National,Maharashtra / Gujarat,West India,Groceries & Staples,28,1280.08,2800.0,REORDER NOW,3.2,69.5,69.5
-29,"Reliance Smart - Andheri, Mumbai",Reliance Smart,Hypermarket,National,Maharashtra / Gujarat,West India,Fresh Produce,25,804.43,1050.0,REORDER SOON,5.4,48.9,48.9
-29,"Reliance Smart - Andheri, Mumbai",Reliance Smart,Hypermarket,National,Maharashtra / Gujarat,West India,Dairy & Eggs,28,407.26,560.0,REORDER SOON,5.1,51.5,51.5
-29,"Reliance Smart - Andheri, Mumbai",Reliance Smart,Hypermarket,National,Maharashtra / Gujarat,West India,Snacks & Beverages,20,314.65,1750.0,REORDER NOW,1.3,88.0,88.0
-29,"Reliance Smart - Andheri, Mumbai",Reliance Smart,Hypermarket,National,Maharashtra / Gujarat,West India,Home Care,27,1188.07,840.0,OK,9.9,5.7,5.7
-29,"Reliance Smart - Andheri, Mumbai",Reliance Smart,Hypermarket,National,Maharashtra / Gujarat,West India,Personal Care,25,413.46,1260.0,REORDER NOW,2.3,78.1,78.1
-30,"DMart - SG Highway, Ahmedabad",DMart,Hypermarket,National,Maharashtra / Gujarat,West India,Groceries & Staples,27,2952.68,2800.0,OK,7.4,29.7,29.7
-30,"DMart - SG Highway, Ahmedabad",DMart,Hypermarket,National,Maharashtra / Gujarat,West India,Snacks & Beverages,20,170.34,1750.0,REORDER NOW,0.7,93.5,93.5
-30,"DMart - SG Highway, Ahmedabad",DMart,Hypermarket,National,Maharashtra / Gujarat,West India,Home Care,29,1212.68,840.0,OK,10.1,3.8,3.8
-30,"DMart - SG Highway, Ahmedabad",DMart,Hypermarket,National,Maharashtra / Gujarat,West India,Personal Care,26,939.8,1260.0,REORDER SOON,5.2,50.3,50.3
-30,"DMart - SG Highway, Ahmedabad",DMart,Hypermarket,National,Maharashtra / Gujarat,West India,Kitchen & Dining,20,155.49,700.0,REORDER NOW,1.6,85.2,85.2
-31,"Star Bazaar - FC Road, Pune",Star Bazaar,Hypermarket,National,Maharashtra / Gujarat,West India,Groceries & Staples,27,154.93,2800.0,REORDER NOW,0.4,96.3,96.3
-31,"Star Bazaar - FC Road, Pune",Star Bazaar,Hypermarket,National,Maharashtra / Gujarat,West India,Fresh Produce,20,1538.17,1050.0,OK,10.3,2.3,2.3
-31,"Star Bazaar - FC Road, Pune",Star Bazaar,Hypermarket,National,Maharashtra / Gujarat,West India,Dairy & Eggs,25,27.76,560.0,REORDER NOW,0.3,96.7,96.7
-31,"Star Bazaar - FC Road, Pune",Star Bazaar,Hypermarket,National,Maharashtra / Gujarat,West India,Snacks & Beverages,20,1665.17,1750.0,REORDER SOON,6.7,36.6,36.6
-31,"Star Bazaar - FC Road, Pune",Star Bazaar,Hypermarket,National,Maharashtra / Gujarat,West India,Home Care,21,668.98,840.0,REORDER SOON,5.6,46.9,46.9
-31,"Star Bazaar - FC Road, Pune",Star Bazaar,Hypermarket,National,Maharashtra / Gujarat,West India,Kitchen & Dining,29,1034.93,700.0,OK,10.3,1.4,1.4
-32,"Decathlon - Thane, Mumbai MMR",Decathlon,Sports Store,National,Maharashtra / Gujarat,West India,Clothing & Apparel,26,423.45,420.0,OK,7.1,32.8,32.8
-32,"Decathlon - Thane, Mumbai MMR",Decathlon,Sports Store,National,Maharashtra / Gujarat,West India,Health & Wellness,30,271.7,490.0,REORDER SOON,3.9,63.0,63.0
-33,"Zudio - Surat Ring Road, Surat",Zudio,Fashion Retail,National,Maharashtra / Gujarat,West India,Clothing & Apparel,20,458.78,420.0,OK,7.6,27.2,27.2
-34,"Max Fashion - Vadodara, Gujarat",Max Fashion,Fashion Retail,National,Maharashtra / Gujarat,West India,Clothing & Apparel,27,296.29,420.0,REORDER SOON,4.9,53.0,53.0
-35,"Reliance Digital - Bandra, Mumbai",Reliance Digital,Electronics,National,Maharashtra / Gujarat,West India,Electronics & Appliances,21,199.56,210.0,REORDER SOON,6.7,36.6,36.6
-36,"Croma - Vashi, Navi Mumbai",Croma,Electronics,National,Maharashtra / Gujarat,West India,Electronics & Appliances,30,257.18,210.0,OK,8.6,18.4,18.4
-37,"Vijay Sales - Dadar, Mumbai",Vijay Sales,Electronics,West,Maharashtra / Gujarat,West India,Electronics & Appliances,20,47.48,210.0,REORDER NOW,1.6,84.9,84.9
-37,"Vijay Sales - Dadar, Mumbai",Vijay Sales,Electronics,West,Maharashtra / Gujarat,West India,Kitchen & Dining,30,195.84,700.0,REORDER NOW,2.0,81.3,81.3
-38,"Sahakari Bhandar - Prabhadevi, Mumbai",Sahakari Bhandar,Cooperative Grocery,West,Maharashtra / Gujarat,West India,Groceries & Staples,22,2481.75,2800.0,REORDER SOON,6.2,40.9,40.9
-38,"Sahakari Bhandar - Prabhadevi, Mumbai",Sahakari Bhandar,Cooperative Grocery,West,Maharashtra / Gujarat,West India,Fresh Produce,30,346.88,1050.0,REORDER NOW,2.3,78.0,78.0
-39,"Nature's Basket - Bandra, Mumbai",Nature's Basket,Premium Grocery,West,Maharashtra / Gujarat,West India,Fresh Produce,29,806.55,1050.0,REORDER SOON,5.4,48.8,48.8
-39,"Nature's Basket - Bandra, Mumbai",Nature's Basket,Premium Grocery,West,Maharashtra / Gujarat,West India,Dairy & Eggs,22,292.88,560.0,REORDER SOON,3.7,65.1,65.1
-39,"Nature's Basket - Bandra, Mumbai",Nature's Basket,Premium Grocery,West,Maharashtra / Gujarat,West India,Snacks & Beverages,26,457.71,1750.0,REORDER NOW,1.8,82.6,82.6
-40,"Bombay Dyeing - Lower Parel, Mumbai",Bombay Dyeing,Home Textiles,West,Maharashtra / Gujarat,West India,Home Care,20,500.94,840.0,REORDER SOON,4.2,60.2,60.2
-40,"Bombay Dyeing - Lower Parel, Mumbai",Bombay Dyeing,Home Textiles,West,Maharashtra / Gujarat,West India,Kitchen & Dining,26,983.57,700.0,OK,9.8,6.3,6.3
-41,"Jade Blue - CG Road, Ahmedabad",Jade Blue,Men's Fashion,West,Maharashtra / Gujarat,West India,Clothing & Apparel,20,425.68,420.0,OK,7.1,32.4,32.4
-42,"Tirumala Sweets - Chembur, Mumbai",Tirumala Sweets,Specialty Food,West,Maharashtra / Gujarat,West India,Snacks & Beverages,28,297.87,1750.0,REORDER NOW,1.2,88.7,88.7
-43,"Reliance Smart - Park Street, Kolkata",Reliance Smart,Hypermarket,National,West Bengal / Assam,East India,Groceries & Staples,26,2274.08,2800.0,REORDER SOON,5.7,45.9,45.9
-43,"Reliance Smart - Park Street, Kolkata",Reliance Smart,Hypermarket,National,West Bengal / Assam,East India,Fresh Produce,29,406.26,1050.0,REORDER NOW,2.7,74.2,74.2
-43,"Reliance Smart - Park Street, Kolkata",Reliance Smart,Hypermarket,National,West Bengal / Assam,East India,Dairy & Eggs,29,825.02,560.0,OK,10.3,1.8,1.8
-43,"Reliance Smart - Park Street, Kolkata",Reliance Smart,Hypermarket,National,West Bengal / Assam,East India,Snacks & Beverages,23,1390.33,1750.0,REORDER SOON,5.6,47.0,47.0
-43,"Reliance Smart - Park Street, Kolkata",Reliance Smart,Hypermarket,National,West Bengal / Assam,East India,Home Care,21,1255.28,840.0,OK,10.5,0.4,0.4
-43,"Reliance Smart - Park Street, Kolkata",Reliance Smart,Hypermarket,National,West Bengal / Assam,East India,Personal Care,24,1701.79,1260.0,OK,9.5,10.0,10.0
-44,"DMart - Salt Lake, Kolkata",DMart,Hypermarket,National,West Bengal / Assam,East India,Groceries & Staples,30,792.57,2800.0,REORDER NOW,2.0,81.1,81.1
-44,"DMart - Salt Lake, Kolkata",DMart,Hypermarket,National,West Bengal / Assam,East India,Snacks & Beverages,28,916.68,1750.0,REORDER SOON,3.7,65.1,65.1
-44,"DMart - Salt Lake, Kolkata",DMart,Hypermarket,National,West Bengal / Assam,East India,Home Care,22,1078.97,840.0,OK,9.0,14.4,14.4
-44,"DMart - Salt Lake, Kolkata",DMart,Hypermarket,National,West Bengal / Assam,East India,Personal Care,25,1473.96,1260.0,OK,8.2,22.0,22.0
-44,"DMart - Salt Lake, Kolkata",DMart,Hypermarket,National,West Bengal / Assam,East India,Kitchen & Dining,27,893.47,700.0,OK,8.9,14.9,14.9
-45,"Star Bazaar - Janpath, Bhubaneswar",Star Bazaar,Hypermarket,National,West Bengal / Assam,East India,Groceries & Staples,20,678.84,2800.0,REORDER NOW,1.7,83.8,83.8
-45,"Star Bazaar - Janpath, Bhubaneswar",Star Bazaar,Hypermarket,National,West Bengal / Assam,East India,Fresh Produce,25,1053.66,1050.0,OK,7.0,33.1,33.1
-45,"Star Bazaar - Janpath, Bhubaneswar",Star Bazaar,Hypermarket,National,West Bengal / Assam,East India,Dairy & Eggs,22,312.72,560.0,REORDER SOON,3.9,62.8,62.8
-45,"Star Bazaar - Janpath, Bhubaneswar",Star Bazaar,Hypermarket,National,West Bengal / Assam,East India,Snacks & Beverages,28,1741.69,1750.0,REORDER SOON,7.0,33.6,33.6
-45,"Star Bazaar - Janpath, Bhubaneswar",Star Bazaar,Hypermarket,National,West Bengal / Assam,East India,Home Care,21,202.62,840.0,REORDER NOW,1.7,83.9,83.9
-45,"Star Bazaar - Janpath, Bhubaneswar",Star Bazaar,Hypermarket,National,West Bengal / Assam,East India,Kitchen & Dining,21,509.89,700.0,REORDER SOON,5.1,51.4,51.4
-46,"Decathlon - New Town, Kolkata",Decathlon,Sports Store,National,West Bengal / Assam,East India,Clothing & Apparel,22,410.74,420.0,REORDER SOON,6.8,34.8,34.8
-46,"Decathlon - New Town, Kolkata",Decathlon,Sports Store,National,West Bengal / Assam,East India,Health & Wellness,28,129.31,490.0,REORDER NOW,1.8,82.4,82.4
-47,"Zudio - Boring Road, Patna",Zudio,Fashion Retail,National,West Bengal / Assam,East India,Clothing & Apparel,23,149.47,420.0,REORDER NOW,2.5,76.3,76.3
-48,"Max Fashion - GS Road, Guwahati",Max Fashion,Fashion Retail,National,West Bengal / Assam,East India,Clothing & Apparel,24,112.66,420.0,REORDER NOW,1.9,82.1,82.1
-49,"Reliance Digital - South City Mall, Kolkata",Reliance Digital,Electronics,National,West Bengal / Assam,East India,Electronics & Appliances,27,204.63,210.0,REORDER SOON,6.8,35.0,35.0
-50,"Croma - Hill Cart Road, Siliguri",Croma,Electronics,National,West Bengal / Assam,East India,Electronics & Appliances,26,227.1,210.0,OK,7.6,27.9,27.9
-51,"Spencer's Retail - Forum Mall, Kolkata",Spencer's Retail,Hypermarket,East,West Bengal / Assam,East India,Fresh Produce,20,854.5,1050.0,REORDER SOON,5.7,45.7,45.7
-51,"Spencer's Retail - Forum Mall, Kolkata",Spencer's Retail,Hypermarket,East,West Bengal / Assam,East India,Groceries & Staples,30,1544.41,2800.0,REORDER SOON,3.9,63.2,63.2
-51,"Spencer's Retail - Forum Mall, Kolkata",Spencer's Retail,Hypermarket,East,West Bengal / Assam,East India,Dairy & Eggs,26,210.39,560.0,REORDER NOW,2.6,75.0,75.0
-51,"Spencer's Retail - Forum Mall, Kolkata",Spencer's Retail,Hypermarket,East,West Bengal / Assam,East India,Snacks & Beverages,25,2569.59,1750.0,OK,10.3,2.1,2.1
-52,"Style Baazar - Fancy Bazar, Guwahati",Style Baazar,Fashion Retail,East,West Bengal / Assam,East India,Clothing & Apparel,22,561.99,420.0,OK,9.4,10.8,10.8
-53,"Bazaar Kolkata - Esplanade, Kolkata",Bazaar Kolkata,Discount Retail,East,West Bengal / Assam,East India,Clothing & Apparel,30,273.67,420.0,REORDER SOON,4.6,56.6,56.6
-54,"Khadims - Hatibagan, Kolkata",Khadims,Footwear,East,West Bengal / Assam,East India,Clothing & Apparel,24,316.66,420.0,REORDER SOON,5.3,49.7,49.7
-55,Lulu Mall Hypermarket - Thiruvananthapuram,Lulu Hypermarket,Hypermarket,Regional,Kerala,South India,Dairy & Eggs,23,156.64,180.0,OK,11.9,17.8,47.7
-55,Lulu Mall Hypermarket - Thiruvananthapuram,Lulu Hypermarket,Hypermarket,Regional,Kerala,South India,Fresh Produce,25,692.28,360.0,OK,9.6,87.3,57.9
-55,Lulu Mall Hypermarket - Thiruvananthapuram,Lulu Hypermarket,Hypermarket,Regional,Kerala,South India,Groceries & Staples,28,865.47,960.0,OK,7.2,54.8,34.8
-55,Lulu Mall Hypermarket - Thiruvananthapuram,Lulu Hypermarket,Hypermarket,Regional,Kerala,South India,Snacks & Beverages,15,949.2,480.0,REORDER SOON,4.8,12.1,67.0
-55,Lulu Mall Hypermarket - Thiruvananthapuram,Lulu Hypermarket,Hypermarket,Regional,Kerala,South India,Personal Care,11,617.85,300.0,REORDER SOON,4.9,81.4,27.2
-55,Lulu Mall Hypermarket - Thiruvananthapuram,Lulu Hypermarket,Hypermarket,Regional,Kerala,South India,Home Care,15,564.6,240.0,REORDER SOON,4.7,52.8,12.5
-56,Pothys - Thiruvananthapuram,Pothys,Specialty,Regional,Kerala,South India,Clothing & Apparel,25,904.04,420.0,OK,6.5,27.8,49.6
-56,Pothys - Thiruvananthapuram,Pothys,Specialty,Regional,Kerala,South India,Dairy & Eggs,28,435.69,180.0,OK,6.1,30.7,46.4
-56,Pothys - Thiruvananthapuram,Pothys,Specialty,Regional,Kerala,South India,Fresh Produce,28,663.37,360.0,REORDER SOON,2.6,17.2,45.9
-56,Pothys - Thiruvananthapuram,Pothys,Specialty,Regional,Kerala,South India,Groceries & Staples,22,1927.5,960.0,REORDER SOON,2.6,67.1,37.1
-56,Pothys - Thiruvananthapuram,Pothys,Specialty,Regional,Kerala,South India,Snacks & Beverages,25,923.04,480.0,OK,9.6,87.3,57.9
-56,Pothys - Thiruvananthapuram,Pothys,Specialty,Regional,Kerala,South India,Personal Care,24,714.95,300.0,OK,7.8,31.2,25.4
-56,Pothys - Thiruvananthapuram,Pothys,Specialty,Regional,Kerala,South India,Home Care,20,446.82,240.0,OK,10.2,89.0,44.0
-56,Pothys - Thiruvananthapuram,Pothys,Specialty,Regional,Kerala,South India,Electronics & Appliances,19,162.79,96.0,OK,7.0,79.1,61.1
-57,Reliance Smart - Thiruvananthapuram,Reliance Smart,Hypermarket,National,Kerala,South India,Dairy & Eggs,23,473.6,180.0,OK,6.3,88.5,84.9
-57,Reliance Smart - Thiruvananthapuram,Reliance Smart,Hypermarket,National,Kerala,South India,Fresh Produce,18,851.05,360.0,OK,9.2,28.7,45.2
-57,Reliance Smart - Thiruvananthapuram,Reliance Smart,Hypermarket,National,Kerala,South India,Groceries & Staples,26,1295.4,960.0,REORDER SOON,3.7,71.8,60.4
-57,Reliance Smart - Thiruvananthapuram,Reliance Smart,Hypermarket,National,Kerala,South India,Snacks & Beverages,28,884.49,480.0,REORDER SOON,2.6,17.2,45.9
-57,Reliance Smart - Thiruvananthapuram,Reliance Smart,Hypermarket,National,Kerala,South India,Personal Care,12,426.29,300.0,REORDER SOON,3.3,71.1,80.4
-57,Reliance Smart - Thiruvananthapuram,Reliance Smart,Hypermarket,National,Kerala,South India,Home Care,27,231.49,240.0,OK,10.0,19.7,18.7
-58,Ramachandran - Thiruvananthapuram,Ramachandran,Specialty,Regional,Kerala,South India,Clothing & Apparel,16,793.81,420.0,OK,9.8,14.5,84.1
-58,Ramachandran - Thiruvananthapuram,Ramachandran,Specialty,Regional,Kerala,South India,Dairy & Eggs,28,207.96,180.0,OK,11.8,77.5,20.9
-58,Ramachandran - Thiruvananthapuram,Ramachandran,Specialty,Regional,Kerala,South India,Fresh Produce,18,786.74,360.0,REORDER SOON,4.7,26.4,18.7
-58,Ramachandran - Thiruvananthapuram,Ramachandran,Specialty,Regional,Kerala,South India,Groceries & Staples,17,904.06,960.0,REORDER NOW,1.3,66.1,27.1
-58,Ramachandran - Thiruvananthapuram,Ramachandran,Specialty,Regional,Kerala,South India,Snacks & Beverages,18,1134.74,480.0,OK,9.2,28.7,45.2
-58,Ramachandran - Thiruvananthapuram,Ramachandran,Specialty,Regional,Kerala,South India,Personal Care,17,666.93,300.0,REORDER SOON,4.0,75.4,35.2
-58,Ramachandran - Thiruvananthapuram,Ramachandran,Specialty,Regional,Kerala,South India,Home Care,17,323.63,240.0,OK,5.1,24.1,63.6
-58,Ramachandran - Thiruvananthapuram,Ramachandran,Specialty,Regional,Kerala,South India,Electronics & Appliances,28,90.29,96.0,OK,7.2,54.8,34.8
+Store_ID,Store_Name,State,Region,Category,Current_Stock,Reorder_Point,Safety_Stock,Decision,Days_Supply,Stockout_Risk,Priority_Score,Recommended_Order_Qty,Avg_Daily_Demand,Std_Daily_Demand,Chain,Store_Type,Scope,Days_Of_Supply,Num_SKUs
+1,"Reliance Smart - Connaught Place, New Delhi",Delhi / NCR,North India,Clothing & Apparel,372.49,371.1555657910295,52.157510996508925,MONITOR,8.2,0.7932,2.4,637.0,45.57115068493151,11.947688580162708,,,,,
+1,"Reliance Smart - Connaught Place, New Delhi",Delhi / NCR,North India,Dairy & Eggs,285.25,492.71160679602656,67.86473008369786,REORDER NOW,4.7,0.9995,46.4,1057.0,60.692410958904105,15.545731479998976,,,,,
+1,"Reliance Smart - Connaught Place, New Delhi",Delhi / NCR,North India,Electronics & Appliances,366.74,185.17526922437304,25.796584292866207,OK,16.1,0.0002,0.0,137.0,22.768383561643837,5.909207507691687,,,,,
+1,"Reliance Smart - Connaught Place, New Delhi",Delhi / NCR,North India,Fresh Produce,566.93,922.700503388209,127.4702020183459,REORDER SOON,5.0,0.9995,42.4,1946.0,113.60432876712328,29.199519836511417,,,,,
+1,"Reliance Smart - Connaught Place, New Delhi",Delhi / NCR,North India,Groceries & Staples,3350.65,2463.1565877306566,338.73598499093066,MONITOR,11.0,0.0031,0.0,3361.0,303.48865753424656,77.59404124627795,,,,,
+1,"Reliance Smart - Connaught Place, New Delhi",Delhi / NCR,North India,Health & Wellness,751.73,431.6791016451102,60.26082767250743,OK,14.2,0.0001,0.0,423.0,53.059753424657536,13.803910287478258,,,,,
+1,"Reliance Smart - Connaught Place, New Delhi",Delhi / NCR,North India,Home Care,699.94,739.2476373621065,103.69500722512016,WATCHLIST,7.7,0.9906,7.7,1310.0,90.79323287671232,23.75335076335185,,,,,
+1,"Reliance Smart - Connaught Place, New Delhi",Delhi / NCR,North India,Kitchen & Dining,472.97,615.7036948300661,84.80164003554563,REORDER SOON,6.2,0.9949,26.5,1205.0,75.8431506849315,19.425458900820114,,,,,
+1,"Reliance Smart - Connaught Place, New Delhi",Delhi / NCR,North India,Personal Care,796.85,1108.051260441544,154.78090427716035,REORDER SOON,5.9,0.9966,31.3,2218.0,136.1814794520548,35.455565404247615,,,,,
+1,"Reliance Smart - Connaught Place, New Delhi",Delhi / NCR,North India,Snacks & Beverages,1657.27,1547.2894267762588,220.6181665022863,MONITOR,8.7,0.6375,0.0,2543.0,189.52446575342464,50.53686608381732,,,,,
+2,"DMart - Sector 18, Noida",Delhi / NCR,North India,Clothing & Apparel,454.47,466.5591101539719,58.22283618136922,WATCHLIST,7.8,0.9698,5.2,829.0,58.33375342465753,13.337068845087142,,,,,
+2,"DMart - Sector 18, Noida",Delhi / NCR,North India,Dairy & Eggs,409.32,622.7754992367873,78.03511567514336,REORDER SOON,5.3,0.9989,38.0,1303.0,77.82005479452054,17.875455377193724,,,,,
+2,"DMart - Sector 18, Noida",Delhi / NCR,North India,Electronics & Appliances,214.43,233.5577378689603,29.18669677306989,WATCHLIST,7.3,0.9911,10.9,428.0,29.19586301369863,6.685778463462712,,,,,
+2,"DMart - Sector 18, Noida",Delhi / NCR,North India,Fresh Produce,831.09,1165.389444167835,145.23015649660235,REORDER SOON,5.7,0.9979,32.0,2375.0,145.7370410958904,33.26778155471873,,,,,
+2,"DMart - Sector 18, Noida",Delhi / NCR,North India,Groceries & Staples,4797.05,3101.9960053026066,384.5553477683599,OK,12.4,0.0003,0.0,3740.0,388.2058082191781,88.08985415887773,,,,,
+2,"DMart - Sector 18, Noida",Delhi / NCR,North India,Health & Wellness,538.19,543.4880462324036,67.71223801322546,WATCHLIST,7.9,0.8162,3.6,957.0,67.96797260273974,15.510800216329772,,,,,
+2,"DMart - Sector 18, Noida",Delhi / NCR,North India,Home Care,1208.69,932.3670040064908,116.22051085580594,MONITOR,10.4,0.0032,0.0,1356.0,116.59235616438356,26.62256008392598,,,,,
+2,"DMart - Sector 18, Noida",Delhi / NCR,North India,Kitchen & Dining,586.55,774.9928908142823,96.11313738962475,REORDER SOON,6.0,0.995,27.7,1546.0,96.98282191780822,22.016576559232107,,,,,
+2,"DMart - Sector 18, Noida",Delhi / NCR,North India,Personal Care,1927.97,1396.5110892059863,171.6986508498222,MONITOR,11.0,0.0007,0.0,1918.0,174.97320547945205,39.33090308172628,,,,,
+2,"DMart - Sector 18, Noida",Delhi / NCR,North India,Snacks & Beverages,3364.23,1938.088124706264,238.52168635009951,OK,13.9,0.0,0.0,1973.0,242.79520547945205,54.638014231871246,,,,,
+3,"Star Bazaar - Gomti Nagar, Lucknow",Delhi / NCR,North India,Clothing & Apparel,1608.61,861.9965891206127,145.45702747677717,OK,15.7,0.0001,0.0,686.0,102.36279452054794,33.319750748938645,,,,,
+3,"Star Bazaar - Gomti Nagar, Lucknow",Delhi / NCR,North India,Dairy & Eggs,913.24,1150.6006029635714,192.4110687169961,REORDER SOON,6.7,0.973,23.6,2154.0,136.8842191780822,44.07548375076463,,,,,
+3,"Star Bazaar - Gomti Nagar, Lucknow",Delhi / NCR,North India,Electronics & Appliances,487.23,430.5438084926353,72.08589068441616,MONITOR,9.5,0.0913,0.0,660.0,51.20827397260274,16.51267011147643,,,,,
+3,"Star Bazaar - Gomti Nagar, Lucknow",Delhi / NCR,North India,Fresh Produce,2644.4,2148.7623318932224,356.0047976466469,MONITOR,10.3,0.0094,0.0,3090.0,256.1082191780822,81.54979741289182,,,,,
+3,"Star Bazaar - Gomti Nagar, Lucknow",Delhi / NCR,North India,Groceries & Staples,4237.38,5711.3226521495935,936.8010083139774,REORDER SOON,6.2,0.9951,29.0,11023.0,682.0745205479452,214.5924238920637,,,,,
+3,"Star Bazaar - Gomti Nagar, Lucknow",Delhi / NCR,North India,Health & Wellness,1011.37,1005.4456276268054,167.91039475009296,MONITOR,8.5,0.105,1.7,1669.0,119.64789041095892,38.46312961484254,,,,,
+3,"Star Bazaar - Gomti Nagar, Lucknow",Delhi / NCR,North India,Home Care,972.5,1718.3717652717903,286.3282584224755,REORDER NOW,4.8,0.9992,47.3,3610.0,204.57764383561644,65.58903594078836,,,,,
+3,"Star Bazaar - Gomti Nagar, Lucknow",Delhi / NCR,North India,Kitchen & Dining,1340.42,1434.8044296080425,238.58919673132988,WATCHLIST,7.8,0.977,9.3,2487.0,170.8878904109589,54.65347879287996,,,,,
+3,"Star Bazaar - Gomti Nagar, Lucknow",Delhi / NCR,North India,Personal Care,2247.75,2581.775171182946,429.7210615939046,WATCHLIST,7.3,0.983,15.7,4638.0,307.43630136986303,98.43593611291264,,,,,
+3,"Star Bazaar - Gomti Nagar, Lucknow",Delhi / NCR,North India,Snacks & Beverages,4636.2,3589.436540369448,602.3999924242427,MONITOR,10.9,0.0018,0.0,4927.0,426.7195068493151,137.99139131963113,,,,,
+4,"Decathlon - Sector 17, Chandigarh",Delhi / NCR,North India,Clothing & Apparel,341.15,336.149123175044,53.06394509285219,MONITOR,8.4,0.3956,1.1,561.0,40.4407397260274,12.155324874430573,,,,,
+4,"Decathlon - Sector 17, Chandigarh",Delhi / NCR,North India,Dairy & Eggs,416.19,447.76033868523785,70.0623934797584,WATCHLIST,7.7,0.979,9.9,787.0,53.956849315068496,16.049148866267878,,,,,
+4,"Decathlon - Sector 17, Chandigarh",Delhi / NCR,North India,Electronics & Appliances,175.32,167.97535272718403,26.19044861759501,MONITOR,8.7,0.4083,0.0,276.0,20.25498630136986,5.999429763408813,,,,,
+4,"Decathlon - Sector 17, Chandigarh",Delhi / NCR,North India,Fresh Produce,665.72,841.418331168893,131.83772842916716,REORDER SOON,6.6,0.9896,24.0,1595.0,101.36865753424657,30.19998639300835,,,,,
+4,"Decathlon - Sector 17, Chandigarh",Delhi / NCR,North India,Groceries & Staples,3015.33,2234.613379870879,349.65740726813897,MONITOR,11.2,0.0019,0.0,2989.0,269.27942465753426,80.09580464962114,,,,,
+4,"Decathlon - Sector 17, Chandigarh",Delhi / NCR,North India,Health & Wellness,517.71,390.18418121651945,61.08157847679343,MONITOR,11.0,0.0018,0.0,531.0,47.014657534246574,13.991919163365443,,,,,
+4,"Decathlon - Sector 17, Chandigarh",Delhi / NCR,North India,Home Care,263.98,670.7198454079336,104.2422563668376,REORDER NOW,3.3,0.9998,66.0,1540.0,80.9253698630137,23.87870878362699,,,,,
+4,"Decathlon - Sector 17, Chandigarh",Delhi / NCR,North India,Kitchen & Dining,688.81,562.2473914509665,88.95054213589793,MONITOR,10.2,0.0104,0.0,820.0,67.61383561643835,20.37584532259377,,,,,
+4,"Decathlon - Sector 17, Chandigarh",Delhi / NCR,North India,Personal Care,1539.25,1006.3519263862244,156.79702227663546,OK,12.7,0.0003,0.0,1166.0,121.36498630136988,35.91739629951793,,,,,
+4,"Decathlon - Sector 17, Chandigarh",Delhi / NCR,North India,Snacks & Beverages,2562.99,1402.7503952578938,221.37612128529105,OK,15.2,0.0,0.0,1203.0,168.76775342465754,50.71049031419502,,,,,
+5,"Zudio - Saket, New Delhi",Delhi / NCR,North India,Clothing & Apparel,626.11,631.0062352056286,193.8690845206972,WATCHLIST,10.0,0.466,3.2,879.0,62.44816438356165,44.40947052342221,,,,,
+5,"Zudio - Saket, New Delhi",Delhi / NCR,North India,Dairy & Eggs,308.39,840.7888094784747,257.4999053688857,REORDER NOW,3.7,0.9966,68.7,1699.0,83.32698630136986,58.98534305010713,,,,,
+5,"Zudio - Saket, New Delhi",Delhi / NCR,North India,Electronics & Appliances,404.31,317.8416540508174,97.96513350287222,MONITOR,12.9,0.0332,0.0,353.0,31.41093150684932,22.440812156176783,,,,,
+5,"Zudio - Saket, New Delhi",Delhi / NCR,North India,Fresh Produce,1335.06,1592.0836224778366,493.4760060394804,WATCHLIST,8.5,0.6958,18.8,2454.0,156.94394520547945,113.0402415547942,,,,,
+5,"Zudio - Saket, New Delhi",Delhi / NCR,North India,Groceries & Staples,5944.38,4243.4497607500325,1317.835240202087,MONITOR,14.2,0.0004,0.0,4150.0,417.9449315068493,301.8756982278608,,,,,
+5,"Zudio - Saket, New Delhi",Delhi / NCR,North India,Health & Wellness,1153.21,740.6325804606782,228.88060785793857,OK,15.8,0.0007,0.0,611.0,73.10742465753424,52.429538382459,,,,,
+5,"Zudio - Saket, New Delhi",Delhi / NCR,North India,Home Care,1036.73,1273.13970849041,396.5883934219168,WATCHLIST,8.3,0.4576,21.2,1990.0,125.22161643835616,90.84625643714595,,,,,
+5,"Zudio - Saket, New Delhi",Delhi / NCR,North India,Kitchen & Dining,1583.94,1052.9932981742977,323.69225707840707,OK,15.2,0.0006,0.0,928.0,104.18586301369862,74.14798385685299,,,,,
+5,"Zudio - Saket, New Delhi",Delhi / NCR,North India,Personal Care,2026.86,1894.0477535297875,582.9410412010201,MONITOR,10.8,0.0063,0.0,2489.0,187.3009589041096,133.53394147454168,,,,,
+5,"Zudio - Saket, New Delhi",Delhi / NCR,North India,Snacks & Beverages,5201.16,2640.827250316396,815.0370037410539,OK,19.9,0.0002,0.0,1091.0,260.8271780821918,186.7000191527315,,,,,
+6,"Max Fashion - Ludhiana, Punjab",Delhi / NCR,North India,Clothing & Apparel,469.74,630.6152816963995,98.0238296416049,REORDER SOON,6.2,0.981,28.7,1226.0,76.08449315068493,22.454257644142704,,,,,
+6,"Max Fashion - Ludhiana, Punjab",Delhi / NCR,North India,Dairy & Eggs,1491.86,840.3226227626276,129.9093076941345,OK,14.7,0.0,0.0,769.0,101.48761643835616,29.75824425551945,,,,,
+6,"Max Fashion - Ludhiana, Punjab",Delhi / NCR,North India,Electronics & Appliances,345.91,314.20515706309783,48.11252692611152,MONITOR,9.1,0.3742,0.0,500.0,38.01323287671233,11.0211065968303,,,,,
+6,"Max Fashion - Ludhiana, Punjab",Delhi / NCR,North India,Fresh Produce,1232.48,1576.7235810298307,245.42292349558383,REORDER SOON,6.5,0.9718,24.9,3007.0,190.1858082191781,56.21887632932863,,,,,
+6,"Max Fashion - Ludhiana, Punjab",Delhi / NCR,North India,Groceries & Staples,7228.38,4197.4686697945,652.7804780136777,OK,14.3,0.0,0.0,4058.0,506.3840273972603,149.53201779584916,,,,,
+6,"Max Fashion - Ludhiana, Punjab",Delhi / NCR,North India,Health & Wellness,559.96,736.1054005762973,113.65830468588622,REORDER SOON,6.3,0.9933,27.0,1421.0,88.92101369863013,26.035637111347373,,,,,
+6,"Max Fashion - Ludhiana, Punjab",Delhi / NCR,North India,Home Care,1843.81,1259.967549554969,194.8153303768867,MONITOR,12.1,0.001,0.0,1546.0,152.16460273972604,44.62622647273847,,,,,
+6,"Max Fashion - Ludhiana, Punjab",Delhi / NCR,North India,Kitchen & Dining,1773.79,1052.5141918626073,163.72112336945648,OK,14.0,0.0001,0.0,1056.0,126.97043835616438,37.50349582716078,,,,,
+6,"Max Fashion - Ludhiana, Punjab",Delhi / NCR,North India,Personal Care,1114.36,1895.868386955183,296.60561983189524,REORDER NOW,4.9,0.9992,45.2,3980.0,228.4661095890411,67.94326472202272,,,,,
+6,"Max Fashion - Ludhiana, Punjab",Delhi / NCR,North India,Snacks & Beverages,4470.59,2626.9022415837767,405.2961319947356,OK,14.1,0.0,0.0,2600.0,317.372301369863,92.8409326921627,,,,,
+7,"Reliance Digital - Lajpat Nagar, New Delhi",Delhi / NCR,North India,Clothing & Apparel,728.36,423.4940209857021,53.085473040496666,OK,13.8,0.0001,0.0,436.0,52.915506849315065,12.1602562679981,,,,,
+7,"Reliance Digital - Lajpat Nagar, New Delhi",Delhi / NCR,North India,Dairy & Eggs,751.61,563.9969225795058,71.28629244251954,MONITOR,10.7,0.0007,0.0,798.0,70.38723287671233,16.329506639890035,,,,,
+7,"Reliance Digital - Lajpat Nagar, New Delhi",Delhi / NCR,North India,Electronics & Appliances,339.87,213.05906805765764,27.49462970149325,OK,12.8,0.0007,0.0,244.0,26.509205479452056,6.298177712550753,,,,,
+7,"Reliance Digital - Lajpat Nagar, New Delhi",Delhi / NCR,North India,Fresh Produce,1185.78,1062.8934193556113,133.95889880766603,MONITOR,8.9,0.0784,0.0,1735.0,132.7049315068493,30.68588157135509,,,,,
+7,"Reliance Digital - Lajpat Nagar, New Delhi",Delhi / NCR,North India,Groceries & Staples,4148.78,2822.079546911709,350.5954921171882,MONITOR,11.8,0.0003,0.0,3616.0,353.0691506849315,80.31069116211134,,,,,
+7,"Reliance Digital - Lajpat Nagar, New Delhi",Delhi / NCR,North India,Health & Wellness,864.38,496.7442362159651,63.87957868171857,OK,14.0,0.0,0.0,498.0,61.83780821917808,14.632855328780137,,,,,
+7,"Reliance Digital - Lajpat Nagar, New Delhi",Delhi / NCR,North India,Home Care,683.9,850.5623836685184,108.65194531235402,WATCHLIST,6.5,0.9883,22.6,1650.0,105.98720547945206,24.888833485703795,,,,,
+7,"Reliance Digital - Lajpat Nagar, New Delhi",Delhi / NCR,North India,Kitchen & Dining,502.17,710.4457423114834,90.0556875169629,REORDER SOON,5.7,0.9983,32.9,1449.0,88.62715068493151,20.62900028717123,,,,,
+7,"Reliance Digital - Lajpat Nagar, New Delhi",Delhi / NCR,North India,Personal Care,626.34,1270.6630973029526,159.45720689199374,REORDER NOW,3.9,0.9999,55.5,2867.0,158.74369863013698,36.526763133609535,,,,,
+7,"Reliance Digital - Lajpat Nagar, New Delhi",Delhi / NCR,North India,Snacks & Beverages,1560.45,1775.3430185302896,228.24060757138565,WATCHLIST,7.1,0.9904,14.7,3309.0,221.01463013698628,52.28293391516643,,,,,
+8,"Croma - Cyber Hub, Gurgaon",Delhi / NCR,North India,Clothing & Apparel,829.07,520.585371477627,62.28559065570911,OK,12.7,0.0003,0.0,608.0,65.47139726027397,14.267721483790025,,,,,
+8,"Croma - Cyber Hub, Gurgaon",Delhi / NCR,North India,Dairy & Eggs,365.96,692.2040542526884,81.62416384172941,REORDER NOW,4.2,0.9999,51.8,1547.0,87.22569863013699,18.69759640682308,,,,,
+8,"Croma - Cyber Hub, Gurgaon",Delhi / NCR,North India,Electronics & Appliances,367.87,260.2371229600084,31.031999672337182,MONITOR,11.2,0.0033,0.0,351.0,32.74358904109589,7.108480850046931,,,,,
+8,"Croma - Cyber Hub, Gurgaon",Delhi / NCR,North India,Fresh Produce,1839.59,1298.6502832873823,152.63483123258808,MONITOR,11.2,0.0007,0.0,1751.0,163.71649315068493,34.96396578768333,,,,,
+8,"Croma - Cyber Hub, Gurgaon",Delhi / NCR,North India,Groceries & Staples,2441.72,3456.153006132041,402.5830883238219,REORDER SOON,5.6,0.9998,32.9,7122.0,436.2242739726027,92.21945746711548,,,,,
+8,"Croma - Cyber Hub, Gurgaon",Delhi / NCR,North India,Health & Wellness,399.46,606.6597650369607,71.66491572189227,REORDER SOON,5.2,0.9997,38.1,1277.0,76.42783561643836,16.416237638833756,,,,,
+8,"Croma - Cyber Hub, Gurgaon",Delhi / NCR,North India,Home Care,1499.28,1038.837927172838,122.81351621393412,MONITOR,11.5,0.0005,0.0,1372.0,130.8606301369863,28.132815717702904,,,,,
+8,"Croma - Cyber Hub, Gurgaon",Delhi / NCR,North India,Kitchen & Dining,1331.31,865.7285458454919,101.71843625645084,OK,12.2,0.0003,0.0,1062.0,109.14430136986302,23.3005788818134,,,,,
+8,"Croma - Cyber Hub, Gurgaon",Delhi / NCR,North India,Personal Care,2377.11,1556.169885470492,182.4252553335055,OK,12.1,0.0003,0.0,1927.0,196.24923287671237,41.788039694364926,,,,,
+8,"Croma - Cyber Hub, Gurgaon",Delhi / NCR,North India,Snacks & Beverages,2427.42,2169.2282390933533,256.51333498376414,MONITOR,8.9,0.4295,0.0,3567.0,273.24498630136986,58.75934998604714,,,,,
+9,"Vishal Mega Mart - Karol Bagh, New Delhi",Delhi / NCR,North India,Clothing & Apparel,828.21,428.49870042872766,50.49870042872767,OK,15.3,0.0,0.0,356.0,54.0,11.567705875875694,,,,,
+9,"Vishal Mega Mart - Karol Bagh, New Delhi",Delhi / NCR,North India,Dairy & Eggs,587.43,570.362380060708,67.48640745796835,MONITOR,8.2,0.4925,0.0,989.0,71.83942465753424,15.459069351598176,,,,,
+9,"Vishal Mega Mart - Karol Bagh, New Delhi",Delhi / NCR,North India,Electronics & Appliances,320.94,214.42414253335528,25.268032944314182,MONITOR,11.9,0.001,0.0,272.0,27.02230136986301,5.788132579259093,,,,,
+9,"Vishal Mega Mart - Karol Bagh, New Delhi",Delhi / NCR,North India,Fresh Produce,667.71,1071.2517440071572,128.32259332222566,REORDER SOON,5.0,0.9997,41.4,2289.0,134.70416438356165,29.39477658194691,,,,,
+9,"Vishal Mega Mart - Karol Bagh, New Delhi",Delhi / NCR,North India,Groceries & Staples,5029.51,2853.915392229507,337.2648442843014,OK,14.0,0.0,0.0,2858.0,359.5215068493151,77.25704796027578,,,,,
+9,"Vishal Mega Mart - Karol Bagh, New Delhi",Delhi / NCR,North India,Health & Wellness,700.31,495.95597298870194,56.45608257774308,MONITOR,11.2,0.0006,0.0,675.0,62.78569863013698,12.932359696764896,,,,,
+9,"Vishal Mega Mart - Karol Bagh, New Delhi",Delhi / NCR,North India,Home Care,1502.43,859.1019731130835,102.6041100993849,OK,13.9,0.0,0.0,870.0,108.07112328767124,23.50345963775439,,,,,
+9,"Vishal Mega Mart - Karol Bagh, New Delhi",Delhi / NCR,North India,Kitchen & Dining,739.06,713.4263874435252,85.14838744352525,MONITOR,8.2,0.5269,0.0,1231.0,89.75399999999999,19.50488811374396,,,,,
+9,"Vishal Mega Mart - Karol Bagh, New Delhi",Delhi / NCR,North India,Personal Care,1279.6,1282.5288729972326,151.383722312301,WATCHLIST,7.9,0.9222,3.0,2265.0,161.59216438356165,34.67737504602669,,,,,
+9,"Vishal Mega Mart - Karol Bagh, New Delhi",Delhi / NCR,North India,Snacks & Beverages,1991.58,1790.9681252703967,215.98346773615032,MONITOR,8.9,0.2005,0.0,2949.0,224.99780821917807,49.47519852218151,,,,,
+10,"V-Mart - Gomti Nagar, Lucknow",Delhi / NCR,North India,Clothing & Apparel,687.25,591.0755898401059,82.48320627846202,MONITOR,9.5,0.042,0.0,921.0,72.65605479452054,18.894376723121383,,,,,
+10,"V-Mart - Gomti Nagar, Lucknow",Delhi / NCR,North India,Dairy & Eggs,623.8,784.8699371091906,107.62664943795764,REORDER SOON,6.4,0.9901,23.5,1516.0,96.74904109589042,24.65396959791909,,,,,
+10,"V-Mart - Gomti Nagar, Lucknow",Delhi / NCR,North India,Electronics & Appliances,317.42,293.47726127869674,39.57345305951863,MONITOR,8.8,0.4355,0.0,484.0,36.27197260273973,9.065066261088695,,,,,
+10,"V-Mart - Gomti Nagar, Lucknow",Delhi / NCR,North India,Fresh Produce,1577.06,1466.246023892733,199.99895539958237,MONITOR,8.7,0.4589,0.0,2422.0,180.8924383561644,45.81363623030247,,,,,
+10,"V-Mart - Gomti Nagar, Lucknow",Delhi / NCR,North India,Groceries & Staples,3058.58,3927.6067458365073,536.7471020008912,REORDER SOON,6.3,0.9986,25.2,7651.0,484.4085205479452,122.95232457393746,,,,,
+10,"V-Mart - Gomti Nagar, Lucknow",Delhi / NCR,North India,Health & Wellness,271.38,684.6397758500259,92.69215941166972,REORDER NOW,3.2,0.9999,66.2,1597.0,84.56394520547946,21.232935263102444,,,,,
+10,"V-Mart - Gomti Nagar, Lucknow",Delhi / NCR,North India,Home Care,1957.07,1175.4932087582083,159.61696218286608,OK,13.5,0.0001,0.0,1250.0,145.12517808219178,36.56335817865499,,,,,
+10,"V-Mart - Gomti Nagar, Lucknow",Delhi / NCR,North India,Kitchen & Dining,1120.91,980.3145827214512,133.3439251872045,MONITOR,9.3,0.1786,0.0,1553.0,120.99580821917807,30.54500994688701,,,,,
+10,"V-Mart - Gomti Nagar, Lucknow",Delhi / NCR,North India,Personal Care,1704.1,1770.735885330554,242.9176113579512,WATCHLIST,7.8,0.9891,6.2,3122.0,218.25975342465756,55.64498603731412,,,,,
+10,"V-Mart - Gomti Nagar, Lucknow",Delhi / NCR,North India,Snacks & Beverages,3549.46,2450.843263524388,335.5587155791824,MONITOR,11.7,0.0012,0.0,3132.0,302.18350684931505,76.86622611972051,,,,,
+11,"24SEVEN - Hauz Khas, New Delhi",Delhi / NCR,North India,Clothing & Apparel,646.55,543.2574135701851,67.71155055648644,MONITOR,9.5,0.0232,0.0,848.0,67.93512328767123,15.510642741042451,,,,,
+11,"24SEVEN - Hauz Khas, New Delhi",Delhi / NCR,North India,Dairy & Eggs,539.9,726.4824510085655,91.98077977568872,REORDER SOON,6.0,0.9973,28.8,1456.0,90.64309589041096,21.069979972664232,,,,,
+11,"24SEVEN - Hauz Khas, New Delhi",Delhi / NCR,North India,Electronics & Appliances,377.58,272.8727965486098,34.62444038422624,MONITOR,11.1,0.0014,0.0,372.0,34.035479452054794,7.931399007917257,,,,,
+11,"24SEVEN - Hauz Khas, New Delhi",Delhi / NCR,North India,Fresh Produce,2107.1,1366.3619219993875,176.16841515007272,OK,12.4,0.0003,0.0,1640.0,170.02764383561643,40.35478920792,,,,,
+11,"24SEVEN - Hauz Khas, New Delhi",Delhi / NCR,North India,Groceries & Staples,5086.01,3619.772104245962,451.3321864377427,MONITOR,11.2,0.0004,0.0,4871.0,452.6342739726028,103.38638302972346,,,,,
+11,"24SEVEN - Hauz Khas, New Delhi",Delhi / NCR,North India,Health & Wellness,552.76,632.2117320493633,78.87822520004816,WATCHLIST,7.0,0.9529,15.3,1186.0,79.04764383561644,18.068585951296576,,,,,
+11,"24SEVEN - Hauz Khas, New Delhi",Delhi / NCR,North India,Home Care,1794.09,1091.76030750353,139.08408832544774,OK,13.2,0.0001,0.0,1203.0,136.09660273972602,31.8599055441798,,,,,
+11,"24SEVEN - Hauz Khas, New Delhi",Delhi / NCR,North India,Kitchen & Dining,839.78,911.1281060429518,116.27868138541764,WATCHLIST,7.4,0.9934,10.5,1661.0,113.54991780821918,26.63588517093771,,,,,
+11,"24SEVEN - Hauz Khas, New Delhi",Delhi / NCR,North India,Personal Care,1796.67,1634.8138605436975,208.5061345163004,MONITOR,8.8,0.3056,0.0,2691.0,203.75824657534244,47.76237045554213,,,,,
+11,"24SEVEN - Hauz Khas, New Delhi",Delhi / NCR,North India,Snacks & Beverages,1449.86,2268.4079669237044,284.3120491154857,REORDER SOON,5.1,0.9995,39.8,4787.0,283.4422739726027,65.12718412976247,,,,,
+12,"Fabindia - Khan Market, New Delhi",Delhi / NCR,North India,Clothing & Apparel,591.88,372.0456991141297,52.281863497691326,OK,13.0,0.0,0.0,420.0,45.68054794520548,11.976173930209246,,,,,
+12,"Fabindia - Khan Market, New Delhi",Delhi / NCR,North India,Dairy & Eggs,492.12,498.7564456719995,71.86863745282136,WATCHLIST,8.1,0.6804,4.0,860.0,60.98397260273973,16.462904048937478,,,,,
+12,"Fabindia - Khan Market, New Delhi",Delhi / NCR,North India,Electronics & Appliances,361.66,186.43693739703355,26.532005890184223,OK,15.8,0.0002,0.0,145.0,22.843561643835617,6.077670075249207,,,,,
+12,"Fabindia - Khan Market, New Delhi",Delhi / NCR,North India,Fresh Produce,1347.4,933.0018636975811,131.5632335605949,MONITOR,11.8,0.0004,0.0,1188.0,114.49123287671232,30.137108024315232,,,,,
+12,"Fabindia - Khan Market, New Delhi",Delhi / NCR,North India,Groceries & Staples,1817.76,2484.059473410081,354.7969802593962,REORDER SOON,6.0,0.9981,30.0,4925.0,304.1803561643836,81.27312343576234,,,,,
+12,"Fabindia - Khan Market, New Delhi",Delhi / NCR,North India,Health & Wellness,578.9,433.541126669944,60.39011297131379,MONITOR,10.9,0.0008,0.0,601.0,53.30728767123288,13.83352559040625,,,,,
+12,"Fabindia - Khan Market, New Delhi",Delhi / NCR,North India,Home Care,403.02,748.531214226945,108.48304984338334,REORDER NOW,4.4,0.9999,50.5,1626.0,91.43545205479452,24.85014470575037,,,,,
+12,"Fabindia - Khan Market, New Delhi",Delhi / NCR,North India,Kitchen & Dining,385.17,619.5018221567017,86.93990434848253,REORDER SOON,5.1,0.9997,41.8,1299.0,76.08027397260274,19.915269776088984,,,,,
+12,"Fabindia - Khan Market, New Delhi",Delhi / NCR,North India,Personal Care,1048.43,1120.804394666054,159.76365494002678,WATCHLIST,7.6,0.982,8.7,1994.0,137.29153424657534,36.59696099723348,,,,,
+12,"Fabindia - Khan Market, New Delhi",Delhi / NCR,North India,Snacks & Beverages,2003.91,1556.6550007309938,224.1336582652405,MONITOR,10.5,0.0102,0.0,2218.0,190.3601917808219,51.34215759384961,,,,,
+13,"Liberty Shoes - Amritsar, Punjab",Delhi / NCR,North India,Clothing & Apparel,425.43,376.8538746936941,45.45450483068037,MONITOR,9.0,0.189,0.0,614.0,47.34276712328767,10.41223512983241,,,,,
+13,"Liberty Shoes - Amritsar, Punjab",Delhi / NCR,North India,Dairy & Eggs,716.1,502.66406280818336,60.80028198626554,MONITOR,11.3,0.0006,0.0,670.0,63.123397260273975,13.927482751364405,,,,,
+13,"Liberty Shoes - Amritsar, Punjab",Delhi / NCR,North India,Electronics & Appliances,217.79,188.7774555144878,23.101263733665885,MONITOR,9.2,0.2666,0.0,302.0,23.668027397260275,5.291792104813454,,,,,
+13,"Liberty Shoes - Amritsar, Punjab",Delhi / NCR,North India,Fresh Produce,776.78,942.9522657470296,115.12344382922151,WATCHLIST,6.6,0.979,20.7,1822.0,118.2612602739726,26.371255622981263,,,,,
+13,"Liberty Shoes - Amritsar, Punjab",Delhi / NCR,North India,Groceries & Staples,3372.31,2515.32091290478,307.7911320828621,MONITOR,10.7,0.0009,0.0,3558.0,315.361397260274,70.50552305128025,,,,,
+13,"Liberty Shoes - Amritsar, Punjab",Delhi / NCR,North India,Health & Wellness,421.55,439.00468255130016,52.55712090746455,WATCHLIST,7.6,0.9901,6.8,790.0,55.206794520547945,12.039226973740652,,,,,
+13,"Liberty Shoes - Amritsar, Punjab",Delhi / NCR,North India,Home Care,583.15,753.0785493899302,90.8365493899302,REORDER SOON,6.2,0.9983,25.6,1494.0,94.606,20.80787183038885,,,,,
+13,"Liberty Shoes - Amritsar, Punjab",Delhi / NCR,North India,Kitchen & Dining,1004.67,629.1751167208652,77.11311672086512,OK,12.7,0.0003,0.0,729.0,78.866,17.664253650606554,,,,,
+13,"Liberty Shoes - Amritsar, Punjab",Delhi / NCR,North India,Personal Care,387.24,1131.900126921489,139.3235241817629,REORDER NOW,2.7,1.0,72.8,2730.0,141.79665753424658,31.914752966756573,,,,,
+13,"Liberty Shoes - Amritsar, Punjab",Delhi / NCR,North India,Snacks & Beverages,2640.17,1575.7080912393346,194.17102274618395,OK,13.4,0.0,0.0,1699.0,197.3624383561644,44.47863532480248,,,,,
+14,"Modern Bazaar - Greater Kailash, New Delhi",Delhi / NCR,North India,Clothing & Apparel,953.77,512.8512343655848,59.23838505051624,OK,14.7,0.0,0.0,466.0,64.80183561643835,13.569699992446091,,,,,
+14,"Modern Bazaar - Greater Kailash, New Delhi",Delhi / NCR,North India,Dairy & Eggs,764.31,685.4175316255538,79.52687409130728,MONITOR,8.8,0.3875,0.0,1133.0,86.55580821917808,18.21717154908613,,,,,
+14,"Modern Bazaar - Greater Kailash, New Delhi",Delhi / NCR,North India,Electronics & Appliances,142.67,255.70474114127728,29.13794662072932,REORDER NOW,4.4,0.9997,48.8,566.0,32.36668493150685,6.6746112964090605,,,,,
+14,"Modern Bazaar - Greater Kailash, New Delhi",Delhi / NCR,North India,Fresh Produce,1437.43,1280.1125241551115,145.02915429209813,MONITOR,8.9,0.4456,0.0,2113.0,162.15476712328766,33.22173810484047,,,,,
+14,"Modern Bazaar - Greater Kailash, New Delhi",Delhi / NCR,North India,Groceries & Staples,3469.83,3412.1033668668315,387.46531207231095,MONITOR,8.0,0.975,0.6,5992.0,432.0911506849315,88.75643787076774,,,,,
+14,"Modern Bazaar - Greater Kailash, New Delhi",Delhi / NCR,North India,Health & Wellness,679.66,596.3400452928313,67.10360693666686,MONITOR,9.0,0.2563,0.0,975.0,75.60520547945205,15.371381474445826,,,,,
+14,"Modern Bazaar - Greater Kailash, New Delhi",Delhi / NCR,North India,Home Care,1506.25,1022.633738152954,115.58006692007724,MONITOR,11.6,0.0006,0.0,1330.0,129.57909589041097,26.475853990192853,,,,,
+14,"Modern Bazaar - Greater Kailash, New Delhi",Delhi / NCR,North India,Kitchen & Dining,698.63,853.9739991241086,98.16251967205385,WATCHLIST,6.5,0.9874,21.3,1667.0,107.97306849315068,22.486027283094383,,,,,
+14,"Modern Bazaar - Greater Kailash, New Delhi",Delhi / NCR,North India,Personal Care,2154.01,1534.6081464464198,174.84663959710477,MONITOR,11.1,0.0006,0.0,2100.0,194.25164383561645,40.05201090469939,,,,,
+14,"Modern Bazaar - Greater Kailash, New Delhi",Delhi / NCR,North India,Snacks & Beverages,2450.65,2134.906605499927,244.5004137191052,MONITOR,9.1,0.4524,0.0,3465.0,270.0580273972603,56.00755758901796,,,,,
+15,"Reliance Smart - Whitefield, Bengaluru",Karnataka / Tamil Nadu,South India,Clothing & Apparel,747.02,555.3248664380728,63.26974315040159,MONITOR,10.6,0.0029,0.0,792.0,70.29358904109588,14.493160683194365,,,,,
+15,"Reliance Smart - Whitefield, Bengaluru",Karnataka / Tamil Nadu,South India,Dairy & Eggs,886.39,738.958654042881,83.82079102918236,MONITOR,9.5,0.0646,0.0,1163.0,93.59112328767124,19.200776429431198,,,,,
+15,"Reliance Smart - Whitefield, Bengaluru",Karnataka / Tamil Nadu,South India,Electronics & Appliances,423.74,276.4136714975879,31.2203564290948,OK,12.1,0.0014,0.0,343.0,35.02761643835616,7.15162761508064,,,,,
+15,"Reliance Smart - Whitefield, Bengaluru",Karnataka / Tamil Nadu,South India,Fresh Produce,1797.69,1384.0158456189772,157.19488671486752,MONITOR,10.3,0.0117,0.0,2040.0,175.26013698630138,36.0085348587455,,,,,
+15,"Reliance Smart - Whitefield, Bengaluru",Karnataka / Tamil Nadu,South India,Groceries & Staples,2699.29,3695.1217700592215,420.123441292098,REORDER SOON,5.8,0.9996,30.4,7546.0,467.856904109589,96.23741520411563,,,,,
+15,"Reliance Smart - Whitefield, Bengaluru",Karnataka / Tamil Nadu,South India,Health & Wellness,207.87,648.0018313112,74.92813268106303,REORDER NOW,2.5,1.0,75.3,1586.0,81.86767123287672,17.163740716583906,,,,,
+15,"Reliance Smart - Whitefield, Bengaluru",Karnataka / Tamil Nadu,South India,Home Care,376.4,1108.2271177602472,125.75640543148012,REORDER NOW,2.7,1.0,73.7,2697.0,140.35295890410958,28.80694151905704,,,,,
+15,"Reliance Smart - Whitefield, Bengaluru",Karnataka / Tamil Nadu,South India,Kitchen & Dining,608.85,921.021618628222,104.98904328575628,REORDER SOON,5.2,0.9997,37.5,1944.0,116.5760821917808,24.049774798329587,,,,,
+15,"Reliance Smart - Whitefield, Bengaluru",Karnataka / Tamil Nadu,South India,Personal Care,1038.61,1672.9905518171831,192.21151072129248,REORDER SOON,4.9,0.9999,42.0,3596.0,211.53986301369864,44.02977112489742,,,,,
+15,"Reliance Smart - Whitefield, Bengaluru",Karnataka / Tamil Nadu,South India,Snacks & Beverages,2489.35,2315.9573476915384,265.1243887874289,MONITOR,8.5,0.3146,0.0,3928.0,292.97613698630136,60.73187872117215,,,,,
+16,"DMart - Velachery, Chennai",Karnataka / Tamil Nadu,South India,Clothing & Apparel,375.88,418.99689294051694,56.92409841996901,WATCHLIST,7.3,0.9864,13.1,767.0,51.72468493150684,13.0395677944418,,,,,
+16,"DMart - Velachery, Chennai",Karnataka / Tamil Nadu,South India,Dairy & Eggs,476.95,558.3091832034368,76.55134758699846,WATCHLIST,6.9,0.99,17.6,1045.0,68.82254794520547,17.535569544767306,,,,,
+16,"DMart - Velachery, Chennai",Karnataka / Tamil Nadu,South India,Electronics & Appliances,211.88,209.3753241877016,28.390036516468733,MONITOR,8.2,0.6574,1.1,359.0,25.85504109589041,6.503287994339286,,,,,
+16,"DMart - Velachery, Chennai",Karnataka / Tamil Nadu,South India,Fresh Produce,1577.37,1043.4723641725398,141.79699430952618,OK,12.2,0.0003,0.0,1269.0,128.81076712328766,32.481349229389366,,,,,
+16,"DMart - Velachery, Chennai",Karnataka / Tamil Nadu,South India,Groceries & Staples,3091.01,2780.1479562418444,372.1239836391048,MONITOR,9.0,0.3534,0.0,4505.0,344.00342465753425,85.24220931530215,,,,,
+16,"DMart - Velachery, Chennai",Karnataka / Tamil Nadu,South India,Health & Wellness,403.4,488.9260539468944,66.46282107018203,WATCHLIST,6.7,0.9856,20.4,930.0,60.3518904109589,15.224597054847225,,,,,
+16,"DMart - Velachery, Chennai",Karnataka / Tamil Nadu,South India,Home Care,1081.02,835.3999073000621,112.47308538225388,MONITOR,10.5,0.0067,0.0,1200.0,103.2752602739726,25.764139663166915,,,,,
+16,"DMart - Velachery, Chennai",Karnataka / Tamil Nadu,South India,Kitchen & Dining,877.35,695.2042826673185,92.95707718786632,MONITOR,10.2,0.0056,0.0,1022.0,86.03531506849315,21.293619813206032,,,,,
+16,"DMart - Velachery, Chennai",Karnataka / Tamil Nadu,South India,Personal Care,1947.13,1257.3530309103814,171.49903091038158,OK,12.6,0.0005,0.0,1482.0,155.122,39.28517626644579,,,,,
+16,"DMart - Velachery, Chennai",Karnataka / Tamil Nadu,South India,Snacks & Beverages,3421.12,1746.2842269248144,239.1251584316637,OK,15.9,0.0001,0.0,1339.0,215.3084383561644,54.77625120598288,,,,,
+17,"Star Bazaar - Banjara Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Clothing & Apparel,333.98,499.7293764824612,54.95992442766671,REORDER SOON,5.3,0.9996,36.9,1055.0,63.53849315068493,12.589635680563635,,,,,
+17,"Star Bazaar - Banjara Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Dairy & Eggs,956.98,669.9916372982938,76.40525373664988,MONITOR,11.3,0.001,0.0,900.0,84.79805479452055,17.50210391739949,,,,,
+17,"Star Bazaar - Banjara Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Electronics & Appliances,269.75,250.1347312799442,27.88952580049214,MONITOR,8.5,0.7303,0.0,425.0,31.74931506849315,6.388636316157732,,,,,
+17,"Star Bazaar - Banjara Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Fresh Produce,642.46,1252.1472221237564,141.68659198677005,REORDER NOW,4.0,0.9999,53.5,2831.0,158.63723287671232,32.456059438032085,,,,,
+17,"Star Bazaar - Banjara Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Groceries & Staples,2627.38,3340.825628095551,378.9096828900717,REORDER SOON,6.2,0.9995,24.5,6637.0,423.1308493150685,86.79660521917536,,,,,
+17,"Star Bazaar - Banjara Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Health & Wellness,444.06,583.7407603106849,65.18517126958893,REORDER SOON,6.0,0.9985,27.1,1177.0,74.0793698630137,14.931926610258424,,,,,
+17,"Star Bazaar - Banjara Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Home Care,959.51,1001.351661033338,113.08694870457096,WATCHLIST,7.6,0.9803,6.8,1818.0,126.89495890410956,25.904756952330104,,,,,
+17,"Star Bazaar - Banjara Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Kitchen & Dining,1244.34,834.2852571722178,93.98827087084793,MONITOR,11.8,0.0005,0.0,1071.0,105.75671232876712,21.529834708332448,,,,,
+17,"Star Bazaar - Banjara Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Personal Care,2371.64,1500.4929264922846,168.19443334159968,OK,12.5,0.0003,0.0,1793.0,190.3283561643836,38.52819415820807,,,,,
+17,"Star Bazaar - Banjara Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Snacks & Beverages,4066.94,2086.9448829234148,232.79063634807227,OK,15.4,0.0,0.0,1728.0,264.87917808219174,53.32520617501927,,,,,
+18,"Decathlon - Koramangala, Bengaluru",Karnataka / Tamil Nadu,South India,Clothing & Apparel,940.74,478.2337702242109,65.95390721051218,OK,16.0,0.0001,0.0,362.0,58.89712328767124,15.108020473770123,,,,,
+18,"Decathlon - Koramangala, Bengaluru",Karnataka / Tamil Nadu,South India,Dairy & Eggs,341.8,635.9387137757684,86.82764528261768,REORDER NOW,4.4,0.9998,50.5,1392.0,78.44443835616438,19.889554661743457,,,,,
+18,"Decathlon - Koramangala, Bengaluru",Karnataka / Tamil Nadu,South India,Electronics & Appliances,268.76,238.1985317979864,32.589929058260374,MONITOR,9.2,0.3998,0.0,381.0,29.372657534246574,7.465354764796051,,,,,
+18,"Decathlon - Koramangala, Bengaluru",Karnataka / Tamil Nadu,South India,Fresh Produce,479.33,1194.292477167276,164.90872374261838,REORDER NOW,3.3,0.9999,66.0,2774.0,147.05482191780823,37.77553870545636,,,,,
+18,"Decathlon - Koramangala, Bengaluru",Karnataka / Tamil Nadu,South India,Groceries & Staples,2318.6,3182.6425911396404,435.2597692218319,REORDER SOON,5.9,0.9992,30.4,6359.0,392.48326027397263,99.704684421847,,,,,
+18,"Decathlon - Koramangala, Bengaluru",Karnataka / Tamil Nadu,South India,Health & Wellness,416.94,554.8928931493391,75.94733150550351,REORDER SOON,6.1,0.9962,28.2,1096.0,68.42079452054794,17.39720795693013,,,,,
+18,"Decathlon - Koramangala, Bengaluru",Karnataka / Tamil Nadu,South India,Home Care,830.29,952.462368323648,130.160669693511,WATCHLIST,7.1,0.9827,15.8,1767.0,117.47167123287672,29.815823592264238,,,,,
+18,"Decathlon - Koramangala, Bengaluru",Karnataka / Tamil Nadu,South India,Kitchen & Dining,680.72,794.4983996628492,108.492262676548,WATCHLIST,6.9,0.9958,17.1,1486.0,98.00087671232876,24.85225508370916,,,,,
+18,"Decathlon - Koramangala, Bengaluru",Karnataka / Tamil Nadu,South India,Personal Care,887.85,1432.7090292939918,197.56382381453972,REORDER SOON,5.0,0.9997,41.9,3015.0,176.44931506849315,45.25582215378808,,,,,
+18,"Decathlon - Koramangala, Bengaluru",Karnataka / Tamil Nadu,South India,Snacks & Beverages,3353.38,1996.443181300112,277.3570991083312,OK,13.7,0.0,0.0,2081.0,245.5837260273973,63.53401806051418,,,,,
+19,"Zudio - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Clothing & Apparel,319.95,590.4093761738379,59.67934877657758,REORDER NOW,4.2,0.9998,50.7,1332.0,75.81857534246575,13.670711278710918,,,,,
+19,"Zudio - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Dairy & Eggs,846.92,791.387899083008,80.36088538437788,MONITOR,8.3,0.8118,0.0,1367.0,101.57528767123289,18.408217996885632,,,,,
+19,"Zudio - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Electronics & Appliances,294.56,295.5891105971033,29.665439364226565,WATCHLIST,7.8,0.9864,3.0,533.0,37.98909589041096,6.7954437308406535,,,,,
+19,"Zudio - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Fresh Produce,840.1,1477.7753589269184,148.49798906390444,REORDER NOW,4.4,0.9999,47.7,3296.0,189.8967671232877,34.01634192695068,,,,,
+19,"Zudio - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Groceries & Staples,6791.22,3951.383645840016,399.2589609085092,OK,13.4,0.0,0.0,4264.0,507.4463835616438,91.45800166908867,,,,,
+19,"Zudio - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Health & Wellness,281.57,689.7501022393611,69.75108854073095,REORDER NOW,3.2,0.9999,64.9,1648.0,88.57128767123288,15.97783843764686,,,,,
+19,"Zudio - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Home Care,1478.82,1181.5902651817012,118.84911449676984,MONITOR,9.7,0.0559,0.0,1828.0,151.82016438356163,27.224692683869648,,,,,
+19,"Zudio - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Kitchen & Dining,1098.97,982.7785265412758,97.7234580481252,MONITOR,8.7,0.5834,0.0,1654.0,126.4364383561644,22.385451710181197,,,,,
+19,"Zudio - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Personal Care,845.4,1779.1934793382777,180.64969851635985,REORDER NOW,3.7,0.9999,58.1,4131.0,228.363397260274,41.38131399940104,,,,,
+19,"Zudio - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Snacks & Beverages,4384.9,2458.252253354075,244.40674650476035,OK,13.9,0.0,0.0,2501.0,316.26364383561645,55.986101298528204,,,,,
+20,"Max Fashion - Thrissur, Kerala",Karnataka / Tamil Nadu,South India,Clothing & Apparel,790.96,405.8478965449491,50.84356777782585,OK,15.6,0.0,0.0,325.0,50.71490410958904,11.64670442488174,,,,,
+20,"Max Fashion - Thrissur, Kerala",Karnataka / Tamil Nadu,South India,Dairy & Eggs,266.62,542.1803639910846,67.67107631985171,REORDER NOW,3.9,0.9998,55.5,1225.0,67.78704109589042,15.501371332848452,,,,,
+20,"Max Fashion - Thrissur, Kerala",Karnataka / Tamil Nadu,South India,Electronics & Appliances,405.79,203.98458143838303,25.955978698657013,OK,16.0,0.0001,0.0,154.0,25.432657534246577,5.945719885016136,,,,,
+20,"Max Fashion - Thrissur, Kerala",Karnataka / Tamil Nadu,South India,Fresh Produce,1004.19,1019.1133095999028,128.4893095999026,WATCHLIST,7.9,0.7313,4.1,1796.0,127.232,29.43296617590705,,,,,
+20,"Max Fashion - Thrissur, Kerala",Karnataka / Tamil Nadu,South India,Groceries & Staples,4562.43,2715.043812157411,339.06008613001416,OK,13.4,0.0,0.0,2905.0,339.4262465753425,77.66828289248122,,,,,
+20,"Max Fashion - Thrissur, Kerala",Karnataka / Tamil Nadu,South India,Health & Wellness,350.66,476.067986373562,60.70582199000038,REORDER SOON,5.9,0.9973,29.8,956.0,59.33745205479452,13.905844858813609,,,,,
+20,"Max Fashion - Thrissur, Kerala",Karnataka / Tamil Nadu,South India,Home Care,739.09,815.9307432710476,103.36219532584204,WATCHLIST,7.3,0.9912,12.0,1502.0,101.79550684931507,23.67711374873255,,,,,
+20,"Max Fashion - Thrissur, Kerala",Karnataka / Tamil Nadu,South India,Kitchen & Dining,924.12,677.779566994065,85.6714300077637,MONITOR,10.9,0.0009,0.0,938.0,84.58687671232876,19.62470114838261,,,,,
+20,"Max Fashion - Thrissur, Kerala",Karnataka / Tamil Nadu,South India,Personal Care,511.34,1222.8739124869182,154.71418645952085,REORDER NOW,3.4,0.9999,63.7,2848.0,152.59424657534248,35.44028239528735,,,,,
+20,"Max Fashion - Thrissur, Kerala",Karnataka / Tamil Nadu,South India,Snacks & Beverages,2630.82,1693.0979295178604,210.76661444936707,OK,12.4,0.0002,0.0,2027.0,211.76161643835616,48.280177186844845,,,,,
+21,"Reliance Digital - HITEC City, Hyderabad",Karnataka / Tamil Nadu,South India,Clothing & Apparel,690.44,356.8625686851956,43.93284265779833,OK,15.4,0.0,0.0,292.0,44.70424657534247,10.063668923001238,,,,,
+21,"Reliance Digital - HITEC City, Hyderabad",Karnataka / Tamil Nadu,South India,Dairy & Eggs,163.57,475.1671499320211,57.84517732928136,REORDER NOW,2.7,0.9999,72.7,1146.0,59.61742465753425,13.250558766901287,,,,,
+21,"Reliance Digital - HITEC City, Hyderabad",Karnataka / Tamil Nadu,South India,Electronics & Appliances,144.14,178.452043020229,21.86376904762627,WATCHLIST,6.4,0.9945,22.3,347.0,22.36975342465753,5.008319967322131,,,,,
+21,"Reliance Digital - HITEC City, Hyderabad",Karnataka / Tamil Nadu,South India,Fresh Produce,1494.42,895.1209839360653,110.45531270318848,OK,13.3,0.0,0.0,970.0,112.09509589041096,25.30192973147275,,,,,
+21,"Reliance Digital - HITEC City, Hyderabad",Karnataka / Tamil Nadu,South India,Groceries & Staples,4272.21,2374.394165329676,288.8275899872102,OK,14.3,0.0,0.0,2273.0,297.9380821917808,66.16155626669155,,,,,
+21,"Reliance Digital - HITEC City, Hyderabad",Karnataka / Tamil Nadu,South India,Health & Wellness,373.89,417.7333748600616,51.49184061348627,WATCHLIST,7.1,0.9793,13.1,776.0,52.3202191780822,11.795203879849373,,,,,
+21,"Reliance Digital - HITEC City, Hyderabad",Karnataka / Tamil Nadu,South India,Home Care,1224.99,713.1900278147677,86.80663055449367,OK,13.7,0.0,0.0,741.0,89.48334246575342,19.88474083105205,,,,,
+21,"Reliance Digital - HITEC City, Hyderabad",Karnataka / Tamil Nadu,South India,Kitchen & Dining,708.23,593.825121035219,72.44920322699988,MONITOR,9.5,0.016,0.0,928.0,74.48227397260274,16.595893889473587,,,,,
+21,"Reliance Digital - HITEC City, Hyderabad",Karnataka / Tamil Nadu,South India,Personal Care,1736.97,1071.270464921136,131.7492594416838,OK,12.9,0.0002,0.0,1213.0,134.21731506849315,30.179720857110283,,,,,
+21,"Reliance Digital - HITEC City, Hyderabad",Karnataka / Tamil Nadu,South India,Snacks & Beverages,2859.54,1482.7694002152955,182.24687966735016,OK,15.4,0.0,0.0,1224.0,185.7889315068493,41.74717929154306,,,,,
+22,"Croma - Indiranagar, Bengaluru",Karnataka / Tamil Nadu,South India,Clothing & Apparel,357.09,413.9407540719731,53.14330201717866,WATCHLIST,6.9,0.9815,16.5,778.0,51.542493150684926,12.173503115692808,,,,,
+22,"Croma - Indiranagar, Bengaluru",Karnataka / Tamil Nadu,South India,Dairy & Eggs,573.58,550.8183405761797,69.730970713166,MONITOR,8.3,0.4694,0.0,939.0,68.72676712328767,15.973230059408271,,,,,
+22,"Croma - Indiranagar, Bengaluru",Karnataka / Tamil Nadu,South India,Electronics & Appliances,234.4,207.3341960093583,26.743401488810303,MONITOR,9.1,0.1847,0.0,334.0,25.79868493150685,6.126094333449921,,,,,
+22,"Croma - Indiranagar, Bengaluru",Karnataka / Tamil Nadu,South India,Fresh Produce,1736.36,1033.835752098019,131.54860141308748,OK,13.5,0.0,0.0,1102.0,128.89816438356164,30.13375624739303,,,,,
+22,"Croma - Indiranagar, Bengaluru",Karnataka / Tamil Nadu,South India,Groceries & Staples,4504.98,2745.6497170091206,343.9510594748742,OK,13.1,0.0,0.0,3044.0,343.09980821917804,78.78865511235527,,,,,
+22,"Croma - Indiranagar, Bengaluru",Karnataka / Tamil Nadu,South India,Health & Wellness,293.26,481.6614413237567,60.80705776211288,REORDER SOON,4.9,0.9997,43.0,1030.0,60.122054794520544,13.929034874120385,,,,,
+22,"Croma - Indiranagar, Bengaluru",Karnataka / Tamil Nadu,South India,Home Care,783.25,823.2648917007813,102.76678211174011,WATCHLIST,7.6,0.9935,7.3,1481.0,102.92830136986302,23.540722814374504,,,,,
+22,"Croma - Indiranagar, Bengaluru",Karnataka / Tamil Nadu,South India,Kitchen & Dining,798.49,687.5120332523064,86.44178667696397,MONITOR,9.3,0.1438,0.0,1091.0,85.86717808219178,19.801166271111956,,,,,
+22,"Croma - Indiranagar, Bengaluru",Karnataka / Tamil Nadu,South India,Personal Care,1734.02,1235.386687899868,155.06383858479975,MONITOR,11.2,0.0017,0.0,1662.0,154.33183561643835,35.52037698999498,,,,,
+22,"Croma - Indiranagar, Bengaluru",Karnataka / Tamil Nadu,South India,Snacks & Beverages,1841.79,1720.4842906782003,217.51659204806344,MONITOR,8.6,0.1963,0.0,2885.0,214.7096712328767,49.82639035406628,,,,,
+23,"Lulu Hypermarket - MG Road, Kochi",Karnataka / Tamil Nadu,South India,Clothing & Apparel,593.53,656.3291931859393,67.36472743251454,WATCHLIST,7.1,0.9936,12.6,1241.0,84.13778082191781,15.431196183903388,,,,,
+23,"Lulu Hypermarket - MG Road, Kochi",Karnataka / Tamil Nadu,South India,Dairy & Eggs,663.51,875.4440285090309,90.73616549533216,REORDER SOON,5.9,0.9983,27.5,1781.0,112.10112328767124,20.784876954134088,,,,,
+23,"Lulu Hypermarket - MG Road, Kochi",Karnataka / Tamil Nadu,South India,Electronics & Appliances,581.83,329.1039437125729,34.2436149454496,OK,13.8,0.0001,0.0,337.0,42.12290410958904,7.844163561689549,,,,,
+23,"Lulu Hypermarket - MG Road, Kochi",Karnataka / Tamil Nadu,South India,Fresh Produce,895.7,1644.6392704511657,174.30672250596038,REORDER NOW,4.3,0.9999,50.0,3690.0,210.04750684931503,39.9283324326854,,,,,
+23,"Lulu Hypermarket - MG Road, Kochi",Karnataka / Tamil Nadu,South India,Groceries & Staples,6550.58,4387.392046411811,462.6140190145501,MONITOR,11.7,0.0005,0.0,5686.0,560.6825753424658,105.97070539606972,,,,,
+23,"Lulu Hypermarket - MG Road, Kochi",Karnataka / Tamil Nadu,South India,Health & Wellness,1308.65,766.493912987213,79.80541983652805,OK,13.3,0.0001,0.0,831.0,98.09835616438356,18.28097784957179,,,,,
+23,"Lulu Hypermarket - MG Road, Kochi",Karnataka / Tamil Nadu,South India,Home Care,989.63,1316.1050295766966,136.03352272738155,REORDER SOON,5.9,0.9992,28.1,2687.0,168.58164383561643,31.1611143813597,,,,,
+23,"Lulu Hypermarket - MG Road, Kochi",Karnataka / Tamil Nadu,South India,Kitchen & Dining,1255.62,1094.861424159464,114.2701638854915,MONITOR,9.0,0.7208,0.0,1800.0,140.08446575342467,26.17579531736838,,,,,
+23,"Lulu Hypermarket - MG Road, Kochi",Karnataka / Tamil Nadu,South India,Personal Care,958.44,1982.6063060368103,213.18868959845423,REORDER NOW,3.8,0.9999,56.6,4563.0,252.77394520547944,48.83500043370151,,,,,
+23,"Lulu Hypermarket - MG Road, Kochi",Karnataka / Tamil Nadu,South India,Snacks & Beverages,2940.7,2741.291162487128,287.0923131720591,MONITOR,8.4,0.6757,0.0,4709.0,350.5998356164384,65.76405748671354,,,,,
+24,"Pothys - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Clothing & Apparel,1341.45,1019.259090006788,193.8526516506236,MONITOR,11.4,0.0009,0.0,1329.0,117.91520547945208,44.40570625610257,,,,,
+24,"Pothys - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Dairy & Eggs,567.33,1349.0619862381868,253.1554108957212,REORDER NOW,3.6,0.9997,63.4,2974.0,156.5580821917808,57.99015240523372,,,,,
+24,"Pothys - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Electronics & Appliances,891.65,506.6685252567145,95.9008540238378,OK,15.2,0.0001,0.0,437.0,58.68109589041096,21.96794894076042,,,,,
+24,"Pothys - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Fresh Produce,2486.22,2531.3326605213365,477.0725783295553,WATCHLIST,8.5,0.8671,3.8,4154.0,293.4657260273973,109.282718579081,,,,,
+24,"Pothys - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Groceries & Staples,9472.15,6733.6849955321695,1255.4094338883335,MONITOR,12.1,0.0009,0.0,8218.0,782.610794520548,287.57585763055533,,,,,
+24,"Pothys - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Health & Wellness,996.07,1182.6324566071453,222.9000456482412,WATCHLIST,7.3,0.9537,18.4,2106.0,137.10463013698632,51.05957471949708,,,,,
+24,"Pothys - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Home Care,2246.6,2028.9449244211185,385.3387874348167,MONITOR,9.6,0.418,0.0,3070.0,234.8008767123288,88.26931619564553,,,,,
+24,"Pothys - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Kitchen & Dining,2094.07,1683.6555710465525,315.70080392326446,MONITOR,10.7,0.0028,0.0,2325.0,195.42210958904116,72.31738665663396,,,,,
+24,"Pothys - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Personal Care,2680.79,3034.989596121157,570.1609111896498,WATCHLIST,7.6,0.983,14.5,5284.0,352.11838356164384,130.60640504742838,,,,,
+24,"Pothys - T Nagar, Chennai",Karnataka / Tamil Nadu,South India,Snacks & Beverages,4188.24,4212.952851182983,788.9155087172297,WATCHLIST,8.6,0.5871,2.8,6873.0,489.1481917808219,180.71638454612977,,,,,
+25,"Saravana Stores - Anna Nagar, Chennai",Karnataka / Tamil Nadu,South India,Clothing & Apparel,704.73,512.8645867499405,58.72587442117341,MONITOR,10.9,0.0008,0.0,716.0,64.87695890410959,13.452299501578706,,,,,
+25,"Saravana Stores - Anna Nagar, Chennai",Karnataka / Tamil Nadu,South India,Dairy & Eggs,540.75,680.0931393259413,76.72823521635232,REORDER SOON,6.3,0.9976,23.5,1346.0,86.19498630136985,17.576089083925233,,,,,
+25,"Saravana Stores - Anna Nagar, Chennai",Karnataka / Tamil Nadu,South India,Electronics & Appliances,392.54,255.7747252151084,29.334506037026213,OK,12.1,0.0011,0.0,316.0,32.348602739726026,6.719637039557944,,,,,
+25,"Saravana Stores - Anna Nagar, Chennai",Karnataka / Tamil Nadu,South India,Fresh Produce,981.08,1277.9845771890436,145.74761828493402,REORDER SOON,6.1,0.9982,26.5,2561.0,161.74813698630138,33.386316204494,,,,,
+25,"Saravana Stores - Anna Nagar, Chennai",Karnataka / Tamil Nadu,South India,Groceries & Staples,2978.56,3424.6853452658984,398.4125507453505,WATCHLIST,6.9,0.9962,15.8,6499.0,432.32468493150685,91.2641150198354,,,,,
+25,"Saravana Stores - Anna Nagar, Chennai",Karnataka / Tamil Nadu,South India,Health & Wellness,533.33,596.3047571130107,67.52609957876419,WATCHLIST,7.1,0.9855,13.1,1121.0,75.53980821917808,15.468161601003764,,,,,
+25,"Saravana Stores - Anna Nagar, Chennai",Karnataka / Tamil Nadu,South India,Home Care,814.96,1025.2788166840028,118.82043312235884,REORDER SOON,6.3,0.9946,23.5,2023.0,129.49405479452057,27.21812265928514,,,,,
+25,"Saravana Stores - Anna Nagar, Chennai",Karnataka / Tamil Nadu,South India,Kitchen & Dining,442.41,851.3404851652399,95.87843037071934,REORDER NOW,4.1,0.9999,52.9,1920.0,107.9231506849315,21.962812368497467,,,,,
+25,"Saravana Stores - Anna Nagar, Chennai",Karnataka / Tamil Nadu,South India,Personal Care,1363.23,1535.509262388711,175.74679663528624,WATCHLIST,7.0,0.9864,14.2,2892.0,194.2517808219178,40.25820931716108,,,,,
+25,"Saravana Stores - Anna Nagar, Chennai",Karnataka / Tamil Nadu,South India,Snacks & Beverages,3430.85,2130.709141011824,244.67516840908425,OK,12.7,0.0002,0.0,2472.0,269.43342465753426,56.04758853708087,,,,,
+26,"Nilgiris - Jubilee Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Clothing & Apparel,709.83,611.7926076912274,57.09074467752869,MONITOR,9.0,0.4078,0.0,1011.0,79.24312328767124,13.077741348937256,,,,,
+26,"Nilgiris - Jubilee Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Dairy & Eggs,408.18,814.0031196877837,75.65328407134542,REORDER NOW,3.9,0.9999,54.8,1883.0,105.47854794520548,17.329850694208144,,,,,
+26,"Nilgiris - Jubilee Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Electronics & Appliances,564.37,306.7406017532464,28.46682093132859,OK,14.2,0.0001,0.0,299.0,39.75339726027397,6.520876952459181,,,,,
+26,"Nilgiris - Jubilee Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Fresh Produce,2552.22,1528.3628841465463,140.68134989997114,OK,12.9,0.0004,0.0,1752.0,198.24021917808216,32.22578925889048,,,,,
+26,"Nilgiris - Jubilee Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Groceries & Staples,2989.22,4068.310996118525,372.1023385842781,REORDER SOON,5.7,0.9999,29.9,8472.0,528.0298082191781,85.23725109606528,,,,,
+26,"Nilgiris - Jubilee Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Health & Wellness,1194.55,713.7658606874602,65.63662781074791,OK,12.9,0.0004,0.0,815.0,92.5898904109589,15.03534147914674,,,,,
+26,"Nilgiris - Jubilee Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Home Care,1501.84,1226.4992977618858,117.07907858380362,MONITOR,9.5,0.1278,0.0,1943.0,158.48860273972602,26.819231658989843,,,,,
+26,"Nilgiris - Jubilee Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Kitchen & Dining,1161.16,1019.9926043044876,93.57923444147394,MONITOR,8.8,0.7992,0.0,1712.0,132.34476712328765,21.43613698804765,,,,,
+26,"Nilgiris - Jubilee Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Personal Care,2938.36,1843.21151808557,172.61434000337815,OK,12.3,0.0004,0.0,2246.0,238.6567397260274,39.540659426189336,,,,,
+26,"Nilgiris - Jubilee Hills, Hyderabad",Karnataka / Tamil Nadu,South India,Snacks & Beverages,4746.99,2549.763575376658,233.88626030816476,OK,14.3,0.0,0.0,2435.0,330.8396164383562,53.57618007362086,,,,,
+27,"Vasanth & Co - Coimbatore, Tamil Nadu",Karnataka / Tamil Nadu,South India,Clothing & Apparel,345.3,352.2405840065197,40.57584428049236,WATCHLIST,7.8,0.9863,4.6,630.0,44.52353424657535,9.29468339417016,,,,,
+27,"Vasanth & Co - Coimbatore, Tamil Nadu",Karnataka / Tamil Nadu,South India,Dairy & Eggs,691.45,466.9820250206258,53.51791543158474,MONITOR,11.7,0.0003,0.0,602.0,59.06630136986301,12.259315577364434,,,,,
+27,"Vasanth & Co - Coimbatore, Tamil Nadu",Karnataka / Tamil Nadu,South India,Electronics & Appliances,261.93,175.56574998196592,20.08539381758237,MONITOR,11.8,0.0009,0.0,225.0,22.211479452054792,4.600948660269886,,,,,
+27,"Vasanth & Co - Coimbatore, Tamil Nadu",Karnataka / Tamil Nadu,South India,Fresh Produce,611.47,875.8031463230706,100.04416002170068,REORDER SOON,5.5,0.9996,33.9,1816.0,110.82271232876712,22.917053466819937,,,,,
+27,"Vasanth & Co - Coimbatore, Tamil Nadu",Karnataka / Tamil Nadu,South India,Groceries & Staples,999.08,2354.1810643723097,274.2321328654602,REORDER NOW,3.4,0.9999,63.7,5515.0,297.1355616438356,62.818183988297,,,,,
+27,"Vasanth & Co - Coimbatore, Tamil Nadu",Karnataka / Tamil Nadu,South India,Health & Wellness,372.96,409.1155502154848,46.75546802370389,WATCHLIST,7.2,0.9814,11.6,761.0,51.765726027397264,10.710245958714554,,,,,
+27,"Vasanth & Co - Coimbatore, Tamil Nadu",Karnataka / Tamil Nadu,South India,Home Care,1064.02,703.3892949852282,81.49280183454319,OK,12.0,0.0005,0.0,883.0,88.84235616438356,18.667505393599093,,,,,
+27,"Vasanth & Co - Coimbatore, Tamil Nadu",Karnataka / Tamil Nadu,South India,Kitchen & Dining,682.56,584.7612124600776,66.52263711761194,MONITOR,9.2,0.0718,0.0,939.0,74.03408219178081,15.238299079601363,,,,,
+27,"Vasanth & Co - Coimbatore, Tamil Nadu",Karnataka / Tamil Nadu,South India,Personal Care,789.3,1053.628035757453,121.5210768533435,REORDER SOON,5.9,0.9982,28.4,2129.0,133.15813698630137,27.83675743781077,,,,,
+27,"Vasanth & Co - Coimbatore, Tamil Nadu",Karnataka / Tamil Nadu,South India,Snacks & Beverages,2734.19,1462.8840291570511,165.45320723924277,OK,14.8,0.0,0.0,1324.0,185.3472602739726,37.90026320113142,,,,,
+28,"Sangeetha Mobiles - Jayanagar, Bengaluru",Karnataka / Tamil Nadu,South India,Clothing & Apparel,394.07,567.3364555587495,58.783195284776994,REORDER SOON,5.4,0.9994,34.1,1190.0,72.65046575342465,13.465429956126805,,,,,
+28,"Sangeetha Mobiles - Jayanagar, Bengaluru",Karnataka / Tamil Nadu,South India,Dairy & Eggs,523.76,752.3883992565804,76.84448144836114,REORDER SOON,5.4,0.999,34.1,1580.0,96.50627397260274,17.60271753593767,,,,,
+28,"Sangeetha Mobiles - Jayanagar, Bengaluru",Karnataka / Tamil Nadu,South India,Electronics & Appliances,441.18,283.05946822300444,29.166783291497573,OK,12.2,0.0004,0.0,350.0,36.27038356164384,6.681216894633463,,,,,
+28,"Sangeetha Mobiles - Jayanagar, Bengaluru",Karnataka / Tamil Nadu,South India,Fresh Produce,1512.44,1421.409336921252,152.16914514043015,MONITOR,8.3,0.8767,0.0,2447.0,181.32002739726028,34.85729136440442,,,,,
+28,"Sangeetha Mobiles - Jayanagar, Bengaluru",Karnataka / Tamil Nadu,South India,Groceries & Staples,1785.51,3770.7906402826975,391.2266950772189,REORDER NOW,3.7,1.0,58.1,8744.0,482.79484931506846,89.61805553454707,,,,,
+28,"Sangeetha Mobiles - Jayanagar, Bengaluru",Karnataka / Tamil Nadu,South India,Health & Wellness,492.1,660.3573733475467,69.37997608727264,REORDER SOON,5.8,0.9986,28.9,1350.0,84.42534246575343,15.892827938920478,,,,,
+28,"Sangeetha Mobiles - Jayanagar, Bengaluru",Karnataka / Tamil Nadu,South India,Home Care,1956.51,1133.762571281706,119.13673566526757,OK,13.5,0.0001,0.0,1207.0,144.94654794520548,27.290577885916644,,,,,
+28,"Sangeetha Mobiles - Jayanagar, Bengaluru",Karnataka / Tamil Nadu,South India,Kitchen & Dining,1120.14,944.2438443260496,99.41998131235108,MONITOR,9.3,0.5067,0.0,1514.0,120.68912328767124,22.77407323836969,,,,,
+28,"Sangeetha Mobiles - Jayanagar, Bengaluru",Karnataka / Tamil Nadu,South India,Personal Care,2371.12,1703.1943261138013,178.46429871654087,MONITOR,10.9,0.001,0.0,2382.0,217.81857534246572,40.8807058274901,,,,,
+28,"Sangeetha Mobiles - Jayanagar, Bengaluru",Karnataka / Tamil Nadu,South India,Snacks & Beverages,3758.71,2357.1008554593536,245.6223897059288,OK,12.5,0.0003,0.0,2821.0,301.63978082191784,56.26456792998086,,,,,
+29,"Reliance Smart - Andheri, Mumbai",Maharashtra / Gujarat,West India,Clothing & Apparel,484.08,347.0287924839668,45.41854590862438,MONITOR,11.2,0.0011,0.0,466.0,43.08717808219178,10.40399804193855,,,,,
+29,"Reliance Smart - Andheri, Mumbai",Maharashtra / Gujarat,West India,Dairy & Eggs,257.29,463.5548203907772,61.19923134968126,REORDER NOW,4.5,0.9996,48.8,1011.0,57.4793698630137,14.01886983372852,,,,,
+29,"Reliance Smart - Andheri, Mumbai",Maharashtra / Gujarat,West India,Electronics & Appliances,188.12,173.45422088035156,22.730029099529645,MONITOR,8.7,0.1967,0.0,287.0,21.532027397260272,5.206753618235226,,,,,
+29,"Reliance Smart - Andheri, Mumbai",Maharashtra / Gujarat,West India,Fresh Produce,280.84,868.8201620688598,114.2682990551613,REORDER NOW,2.6,0.9999,74.9,2097.0,107.79312328767122,26.175368141845343,,,,,
+29,"Reliance Smart - Andheri, Mumbai",Maharashtra / Gujarat,West India,Groceries & Staples,3315.04,2315.581793730129,303.07469783971874,MONITOR,11.5,0.0007,0.0,3026.0,287.5010136986301,69.42513239480004,,,,,
+29,"Reliance Smart - Andheri, Mumbai",Maharashtra / Gujarat,West India,Health & Wellness,682.97,407.6024182117144,54.06847300623488,OK,13.5,0.0001,0.0,432.0,50.5048493150685,12.38543145831224,,,,,
+29,"Reliance Smart - Andheri, Mumbai",Maharashtra / Gujarat,West India,Home Care,646.47,694.6921868297258,90.68635121328737,WATCHLIST,7.5,0.9951,9.4,1256.0,86.28654794520548,20.77346602755142,,,,,
+29,"Reliance Smart - Andheri, Mumbai",Maharashtra / Gujarat,West India,Kitchen & Dining,291.62,581.0101778120522,77.52721890794254,REORDER NOW,4.1,0.9999,54.5,1296.0,71.92613698630137,17.759111780855452,,,,,
+29,"Reliance Smart - Andheri, Mumbai",Maharashtra / Gujarat,West India,Personal Care,558.68,1044.5566288791058,136.27805353664002,REORDER NOW,4.3,0.9997,51.1,2302.0,129.7540821917808,31.217128901636,,,,,
+29,"Reliance Smart - Andheri, Mumbai",Maharashtra / Gujarat,West India,Snacks & Beverages,1404.96,1449.6014844359988,193.8734022442179,WATCHLIST,7.8,0.9834,5.7,2556.0,179.38972602739727,44.41045958166167,,,,,
+30,"DMart - SG Highway, Ahmedabad",Maharashtra / Gujarat,West India,Clothing & Apparel,776.66,477.9068012145798,62.22244505019618,OK,13.1,0.0,0.0,533.0,59.3834794520548,14.25325675923818,,,,,
+30,"DMart - SG Highway, Ahmedabad",Maharashtra / Gujarat,West India,Dairy & Eggs,837.84,635.2882612932749,81.30615170423384,MONITOR,10.6,0.003,0.0,905.0,79.14030136986301,18.62474956442365,,,,,
+30,"DMart - SG Highway, Ahmedabad",Maharashtra / Gujarat,West India,Electronics & Appliances,172.14,238.82516868222245,30.75410018907175,REORDER SOON,5.8,0.9976,31.3,483.0,29.724438356164384,7.04482258838514,,,,,
+30,"DMart - SG Highway, Ahmedabad",Maharashtra / Gujarat,West India,Fresh Produce,1518.0,1194.2592021741452,154.88980491387116,MONITOR,10.2,0.0043,0.0,1755.0,148.48134246575344,35.48051120531717,,,,,
+30,"DMart - SG Highway, Ahmedabad",Maharashtra / Gujarat,West India,Groceries & Staples,3232.52,3169.5816394111266,405.5002695481131,MONITOR,8.2,0.8686,0.5,5465.0,394.8687671232877,92.88769435445587,,,,,
+30,"DMart - SG Highway, Ahmedabad",Maharashtra / Gujarat,West India,Health & Wellness,267.26,557.6165599618525,72.5953818796607,REORDER NOW,3.9,0.9998,56.5,1260.0,69.2887397260274,16.62937894245428,,,,,
+30,"DMart - SG Highway, Ahmedabad",Maharashtra / Gujarat,West India,Home Care,1401.91,948.0173514736408,118.47631037775038,MONITOR,11.8,0.0004,0.0,1205.0,118.50586301369864,27.13929467636609,,,,,
+30,"DMart - SG Highway, Ahmedabad",Maharashtra / Gujarat,West India,Kitchen & Dining,974.29,797.0224171514142,102.97721167196212,MONITOR,9.8,0.0236,0.0,1211.0,99.14931506849317,23.58892578275928,,,,,
+30,"DMart - SG Highway, Ahmedabad",Maharashtra / Gujarat,West India,Personal Care,1274.39,1431.6908430020228,184.1142128650365,WATCHLIST,7.2,0.9721,13.6,2652.0,178.22523287671234,42.17492814487407,,,,,
+30,"DMart - SG Highway, Ahmedabad",Maharashtra / Gujarat,West India,Snacks & Beverages,1431.0,1995.465443699317,262.6048957541112,REORDER SOON,5.8,0.9984,31.6,4030.0,247.55150684931507,60.1547400202095,,,,,
+31,"Star Bazaar - FC Road, Pune",Maharashtra / Gujarat,West India,Clothing & Apparel,534.72,295.5645412971544,39.95599335194894,OK,14.6,0.0001,0.0,272.0,36.51550684931507,9.152694527775497,,,,,
+31,"Star Bazaar - FC Road, Pune",Maharashtra / Gujarat,West India,Dairy & Eggs,231.72,393.89515187051336,53.01797378832154,REORDER NOW,4.8,0.9993,45.3,844.0,48.6967397260274,12.144794256315135,,,,,
+31,"Star Bazaar - FC Road, Pune",Maharashtra / Gujarat,West India,Electronics & Appliances,114.18,147.57904613377235,19.785895448840847,REORDER SOON,6.3,0.9909,25.8,289.0,18.256164383561643,4.532342755355635,,,,,
+31,"Star Bazaar - FC Road, Pune",Maharashtra / Gujarat,West India,Fresh Produce,256.71,742.7077783596425,100.84536740073835,REORDER NOW,2.8,0.9999,72.6,1770.0,91.6946301369863,23.10058554244968,,,,,
+31,"Star Bazaar - FC Road, Pune",Maharashtra / Gujarat,West India,Groceries & Staples,1649.02,1981.935978904004,273.53036246564807,WATCHLIST,6.8,0.9967,19.7,3750.0,244.05794520547943,62.65742987960701,,,,,
+31,"Star Bazaar - FC Road, Pune",Maharashtra / Gujarat,West India,Health & Wellness,309.82,345.6971381117112,46.68974085143725,WATCHLIST,7.3,0.9894,13.1,634.0,42.71534246575342,10.695189876273252,,,,,
+31,"Star Bazaar - FC Road, Pune",Maharashtra / Gujarat,West India,Home Care,410.29,591.3360994224731,78.88412681973338,REORDER SOON,5.6,0.9996,33.9,1206.0,73.20742465753425,18.06993783164459,,,,,
+31,"Star Bazaar - FC Road, Pune",Maharashtra / Gujarat,West India,Kitchen & Dining,786.79,495.7698708832504,68.3851585544832,OK,12.9,0.0003,0.0,564.0,61.05495890410959,15.66494570587739,,,,,
+31,"Star Bazaar - FC Road, Pune",Maharashtra / Gujarat,West India,Personal Care,712.89,886.7308070324847,118.6045056626216,WATCHLIST,6.5,0.9871,22.6,1710.0,109.73232876712328,27.16866029048041,,,,,
+31,"Star Bazaar - FC Road, Pune",Maharashtra / Gujarat,West India,Snacks & Beverages,1524.9,1236.9845702928735,166.72772097780518,MONITOR,10.0,0.0336,0.0,1853.0,152.89383561643837,38.19221526994279,,,,,
+32,"Decathlon - Thane, Mumbai MMR",Maharashtra / Gujarat,West India,Clothing & Apparel,773.69,757.4827484675518,124.25354298809974,MONITOR,8.6,0.3617,0.0,1250.0,90.46131506849316,28.462681754561505,,,,,
+32,"Decathlon - Thane, Mumbai MMR",Maharashtra / Gujarat,West India,Dairy & Eggs,489.3,1006.8113546339472,163.9768340860021,REORDER NOW,4.1,0.9995,56.3,2203.0,120.40493150684932,37.562071321840776,,,,,
+32,"Decathlon - Thane, Mumbai MMR",Maharashtra / Gujarat,West India,Electronics & Appliances,242.56,376.6224055753038,61.66536447941338,REORDER SOON,5.4,0.9957,38.9,764.0,44.99386301369863,14.125646659626304,,,,,
+32,"Decathlon - Thane, Mumbai MMR",Maharashtra / Gujarat,West India,Fresh Produce,628.73,1882.8370214436543,307.2056789779009,REORDER NOW,2.8,0.9999,73.5,4405.0,225.09019178082195,70.37141367292372,,,,,
+32,"Decathlon - Thane, Mumbai MMR",Maharashtra / Gujarat,West India,Groceries & Staples,4748.01,5047.753977947706,834.8304437011302,WATCHLIST,7.9,0.8968,8.7,8726.0,601.8462191780822,191.23409012458,,,,,
+32,"Decathlon - Thane, Mumbai MMR",Maharashtra / Gujarat,West India,Health & Wellness,552.7,878.6481270383531,142.2899352575311,REORDER SOON,5.3,0.998,40.7,1799.0,105.19402739726029,32.59426690553322,,,,,
+32,"Decathlon - Thane, Mumbai MMR",Maharashtra / Gujarat,West India,Home Care,1959.32,1509.3038805281417,246.1063188843061,MONITOR,10.9,0.0014,0.0,2076.0,180.45679452054796,56.37542128566521,,,,,
+32,"Decathlon - Thane, Mumbai MMR",Maharashtra / Gujarat,West India,Kitchen & Dining,1367.68,1257.7253405391236,204.5920254706305,MONITOR,9.1,0.5492,0.0,1996.0,150.44761643835616,46.86576793266501,,,,,
+32,"Decathlon - Thane, Mumbai MMR",Maharashtra / Gujarat,West India,Personal Care,2067.23,2261.791343484533,366.269206498232,WATCHLIST,7.6,0.9864,11.4,3986.0,270.7888767123288,83.90105915976488,,,,,
+32,"Decathlon - Thane, Mumbai MMR",Maharashtra / Gujarat,West India,Snacks & Beverages,3648.1,3164.2524847887,527.0588683503432,MONITOR,9.7,0.0248,0.0,4791.0,376.74194520547945,120.73304692174374,,,,,
+33,"Zudio - Surat Ring Road, Surat",Maharashtra / Gujarat,West India,Clothing & Apparel,727.53,643.6611159531993,81.36070499429515,MONITOR,9.1,0.044,0.0,1041.0,80.3286301369863,18.63724605262301,,,,,
+33,"Zudio - Surat Ring Road, Surat",Maharashtra / Gujarat,West India,Dairy & Eggs,1015.72,855.2482571540334,108.8979009896499,MONITOR,9.5,0.0692,0.0,1332.0,106.6214794520548,24.945174399614565,,,,,
+33,"Zudio - Surat Ring Road, Surat",Maharashtra / Gujarat,West India,Electronics & Appliances,368.14,320.0274483843656,40.48139358984501,MONITOR,9.2,0.2323,0.0,511.0,39.93515068493151,9.273047633251442,,,,,
+33,"Zudio - Surat Ring Road, Surat",Maharashtra / Gujarat,West India,Fresh Produce,2272.43,1609.7081220609207,205.7378754855781,MONITOR,11.3,0.0007,0.0,2145.0,200.5671780821918,47.12824708239062,,,,,
+33,"Zudio - Surat Ring Road, Surat",Maharashtra / Gujarat,West India,Groceries & Staples,3032.19,4277.421958109704,538.084095096005,REORDER SOON,5.7,0.9996,32.6,8724.0,534.1911232876713,123.25858875006573,,,,,
+33,"Zudio - Surat Ring Road, Surat",Maharashtra / Gujarat,West India,Health & Wellness,727.17,750.6723531642971,94.93057234237928,WATCHLIST,7.8,0.9814,5.7,1335.0,93.67739726027398,21.745687119910126,,,,,
+33,"Zudio - Surat Ring Road, Surat",Maharashtra / Gujarat,West India,Home Care,991.3,1285.231772999071,162.1918551908518,REORDER SOON,6.2,0.9975,25.9,2540.0,160.43427397260274,37.15318731733285,,,,,
+33,"Zudio - Surat Ring Road, Surat",Maharashtra / Gujarat,West India,Kitchen & Dining,471.22,1072.867319074726,137.0035656500686,REORDER NOW,3.5,0.9999,61.5,2473.0,133.6948219178082,31.38332150988681,,,,,
+33,"Zudio - Surat Ring Road, Surat",Maharashtra / Gujarat,West India,Personal Care,807.79,1925.2554483428853,245.3444346442551,REORDER NOW,3.4,0.9999,63.7,4477.0,239.98728767123288,56.20089693700768,,,,,
+33,"Zudio - Surat Ring Road, Surat",Maharashtra / Gujarat,West India,Snacks & Beverages,4066.7,2679.774455063901,344.884756433764,OK,12.2,0.0002,0.0,3283.0,333.5556712328767,79.00253649357775,,,,,
+34,"Max Fashion - Vadodara, Gujarat",Maharashtra / Gujarat,West India,Clothing & Apparel,1329.63,696.4163909944514,81.3833498985609,OK,15.1,0.0001,0.0,597.0,87.86186301369864,18.642433306748558,,,,,
+34,"Max Fashion - Vadodara, Gujarat",Maharashtra / Gujarat,West India,Dairy & Eggs,990.53,927.5970356375597,105.80221371975126,MONITOR,8.4,0.3272,0.0,1581.0,117.39926027397262,24.23604724351237,,,,,
+34,"Max Fashion - Vadodara, Gujarat",Maharashtra / Gujarat,West India,Electronics & Appliances,616.95,347.7526228421739,40.50344475998208,OK,14.1,0.0001,0.0,345.0,43.8927397260274,9.27809888106968,,,,,
+34,"Max Fashion - Vadodara, Gujarat",Maharashtra / Gujarat,West India,Fresh Produce,1212.15,1732.887088389436,196.27106099217585,REORDER SOON,5.5,0.9994,33.5,3594.0,219.51657534246576,44.959689778708864,,,,,
+34,"Max Fashion - Vadodara, Gujarat",Maharashtra / Gujarat,West India,Groceries & Staples,6125.88,4618.590137272397,523.3880002860959,MONITOR,10.5,0.0027,0.0,6683.0,585.0288767123288,119.89216345908336,,,,,
+34,"Max Fashion - Vadodara, Gujarat",Maharashtra / Gujarat,West India,Health & Wellness,1184.39,811.2843260437152,94.15216166015348,MONITOR,11.6,0.0003,0.0,1061.0,102.44745205479452,21.567377069429988,,,,,
+34,"Max Fashion - Vadodara, Gujarat",Maharashtra / Gujarat,West India,Home Care,806.09,1388.967245324035,158.11735491307607,REORDER NOW,4.6,0.9999,46.5,3045.0,175.835698630137,36.219844074747726,,,,,
+34,"Max Fashion - Vadodara, Gujarat",Maharashtra / Gujarat,West India,Kitchen & Dining,945.95,1156.8255970327384,135.13685730671114,WATCHLIST,6.5,0.9966,21.3,2254.0,145.95553424657533,30.955715791548005,,,,,
+34,"Max Fashion - Vadodara, Gujarat",Maharashtra / Gujarat,West India,Personal Care,1045.1,2095.371769681591,246.21533132542652,REORDER NOW,4.0,0.9999,55.3,4749.0,264.1652054794521,56.400392697701285,,,,,
+34,"Max Fashion - Vadodara, Gujarat",Maharashtra / Gujarat,West India,Snacks & Beverages,4315.18,2891.6266669498277,331.63326968955323,MONITOR,11.8,0.0005,0.0,3696.0,365.7133424657534,75.9670266730539,,,,,
+35,"Reliance Digital - Bandra, Mumbai",Maharashtra / Gujarat,West India,Clothing & Apparel,970.42,712.7112950318544,84.10419914144343,MONITOR,10.8,0.0013,0.0,1000.0,89.80101369863014,19.265696549308345,,,,,
+35,"Reliance Digital - Bandra, Mumbai",Maharashtra / Gujarat,West India,Dairy & Eggs,1299.01,953.3148069156186,113.03327266904334,MONITOR,10.8,0.0007,0.0,1335.0,120.0402191780822,25.89246141628076,,,,,
+35,"Reliance Digital - Bandra, Mumbai",Maharashtra / Gujarat,West India,Electronics & Appliances,344.77,355.3805259927776,40.7100054448324,WATCHLIST,7.7,0.9895,5.7,640.0,44.95293150684932,9.32541560858112,,,,,
+35,"Reliance Digital - Bandra, Mumbai",Maharashtra / Gujarat,West India,Fresh Produce,1764.9,1786.7600438209329,212.044454779837,WATCHLIST,7.8,0.9837,3.5,3171.0,224.9593698630137,48.57289127599394,,,,,
+35,"Reliance Digital - Bandra, Mumbai",Maharashtra / Gujarat,West India,Groceries & Staples,2463.74,4771.515835146953,570.0857255579109,REORDER NOW,4.1,0.9999,52.9,10711.0,600.2043013698631,130.58918232156287,,,,,
+35,"Reliance Digital - Bandra, Mumbai",Maharashtra / Gujarat,West India,Health & Wellness,1428.99,831.9709446404892,99.17297203774942,OK,13.7,0.0,0.0,869.0,104.68542465753424,22.71749097757987,,,,,
+35,"Reliance Digital - Bandra, Mumbai",Maharashtra / Gujarat,West India,Home Care,1799.06,1427.514265770597,169.0325945377202,MONITOR,10.0,0.0156,0.0,2145.0,179.78309589041098,38.72019122171624,,,,,
+35,"Reliance Digital - Bandra, Mumbai",Maharashtra / Gujarat,West India,Kitchen & Dining,607.3,1186.560956063829,138.06049031040448,REORDER NOW,4.1,0.9999,53.5,2676.0,149.7857808219178,31.62543058398033,,,,,
+35,"Reliance Digital - Bandra, Mumbai",Maharashtra / Gujarat,West India,Personal Care,1875.11,2137.546941571882,255.5156265033889,WATCHLIST,7.0,0.9961,15.3,4026.0,268.8616164383562,58.53080552543994,,,,,
+35,"Reliance Digital - Bandra, Mumbai",Maharashtra / Gujarat,West India,Snacks & Beverages,2837.58,2971.963187789624,351.489023406062,WATCHLIST,7.6,0.9883,7.3,5375.0,374.35345205479456,80.51537181830311,,,,,
+36,"Croma - Vashi, Navi Mumbai",Maharashtra / Gujarat,West India,Clothing & Apparel,812.99,557.6099397401628,82.22363837029982,MONITOR,12.0,0.0007,0.0,695.0,67.91232876712328,18.83491766395857,,,,,
+36,"Croma - Vashi, Navi Mumbai",Maharashtra / Gujarat,West India,Dairy & Eggs,1270.75,747.7402407219735,111.7789256534803,OK,14.0,0.0001,0.0,749.0,90.85161643835616,25.60512892615471,,,,,
+36,"Croma - Vashi, Navi Mumbai",Maharashtra / Gujarat,West India,Electronics & Appliances,462.02,280.1496595433288,42.29483762552061,OK,13.6,0.0003,0.0,294.0,33.979260273972606,9.68845212978226,,,,,
+36,"Croma - Vashi, Navi Mumbai",Maharashtra / Gujarat,West India,Fresh Produce,854.35,1392.5127567257723,205.21571562988217,REORDER SOON,5.0,0.9996,42.4,2913.0,169.61386301369862,47.00863624924839,,,,,
+36,"Croma - Vashi, Navi Mumbai",Maharashtra / Gujarat,West India,Groceries & Staples,3134.09,3718.328570235672,548.7673099616991,WATCHLIST,6.9,0.99,18.6,6923.0,452.7944657534247,125.7057861299181,,,,,
+36,"Croma - Vashi, Navi Mumbai",Maharashtra / Gujarat,West India,Health & Wellness,372.43,653.5641460150605,97.84814601506056,REORDER NOW,4.7,0.9999,47.4,1393.0,79.38799999999999,22.41401390515896,,,,,
+36,"Croma - Vashi, Navi Mumbai",Maharashtra / Gujarat,West India,Home Care,733.78,1110.0771716691936,160.34191139522082,REORDER SOON,5.4,0.9991,37.4,2276.0,135.67646575342468,36.729421843507176,,,,,
+36,"Croma - Vashi, Navi Mumbai",Maharashtra / Gujarat,West India,Kitchen & Dining,347.46,928.8678987538506,135.90924121960398,REORDER NOW,3.1,1.0,68.8,2167.0,113.27980821917808,31.13264529372822,,,,,
+36,"Croma - Vashi, Navi Mumbai",Maharashtra / Gujarat,West India,Personal Care,1217.7,1666.7845689201265,242.90785659135923,REORDER SOON,6.0,0.9946,30.4,3297.0,203.4109589041096,55.642751519002445,,,,,
+36,"Croma - Vashi, Navi Mumbai",Maharashtra / Gujarat,West India,Snacks & Beverages,2764.19,2333.889767891498,348.9728363846492,MONITOR,9.7,0.0861,0.0,3540.0,283.55956164383565,79.93899042342983,,,,,
+37,"Vijay Sales - Dadar, Mumbai",Maharashtra / Gujarat,West India,Clothing & Apparel,1142.94,739.1066037413495,232.9415900427194,OK,15.8,0.0004,0.0,608.0,72.30928767123288,53.3597850438957,,,,,
+37,"Vijay Sales - Dadar, Mumbai",Maharashtra / Gujarat,West India,Dairy & Eggs,1749.95,989.8929597980118,315.1353433596556,OK,18.2,0.0003,0.0,589.0,96.39394520547944,72.18785695728128,,,,,
+37,"Vijay Sales - Dadar, Mumbai",Maharashtra / Gujarat,West India,Electronics & Appliances,455.55,369.5072933451736,116.51808786572155,MONITOR,12.6,0.0135,0.0,420.0,36.14131506849315,26.690725864369867,,,,,
+37,"Vijay Sales - Dadar, Mumbai",Maharashtra / Gujarat,West India,Fresh Produce,1951.95,1854.714074336352,586.8844305007356,MONITOR,10.8,0.0124,0.0,2438.0,181.1185205479452,134.43725120698846,,,,,
+37,"Vijay Sales - Dadar, Mumbai",Maharashtra / Gujarat,West India,Groceries & Staples,4179.9,4889.765930638663,1531.5163142003069,WATCHLIST,8.7,0.8846,17.2,7426.0,479.7499452054795,350.8234888495473,,,,,
+37,"Vijay Sales - Dadar, Mumbai",Maharashtra / Gujarat,West India,Health & Wellness,893.79,858.7761148719983,269.852690214464,MONITOR,10.6,0.0723,0.0,1143.0,84.13191780821919,61.81498778608008,,,,,
+37,"Vijay Sales - Dadar, Mumbai",Maharashtra / Gujarat,West India,Home Care,1946.09,1488.2862722513812,474.8571489637098,MONITOR,13.4,0.0002,0.0,1569.0,144.7755890410959,108.77523155317132,,,,,
+37,"Vijay Sales - Dadar, Mumbai",Maharashtra / Gujarat,West India,Kitchen & Dining,1918.95,1231.24206789403,387.2885062501944,OK,15.9,0.0003,0.0,1000.0,120.56479452054796,88.71593707114275,,,,,
+37,"Vijay Sales - Dadar, Mumbai",Maharashtra / Gujarat,West India,Personal Care,2750.81,2215.435979014001,697.4313214797543,MONITOR,12.7,0.0023,0.0,2501.0,216.8578082191781,159.7601587171056,,,,,
+37,"Vijay Sales - Dadar, Mumbai",Maharashtra / Gujarat,West India,Snacks & Beverages,4718.79,3077.56295683368,968.0080527240904,OK,15.7,0.0002,0.0,2578.0,301.36498630136987,221.74100213124188,,,,,
+38,"Sahakari Bhandar - Prabhadevi, Mumbai",Maharashtra / Gujarat,West India,Clothing & Apparel,456.55,354.0052443692406,45.77318957472008,MONITOR,10.4,0.0145,0.0,514.0,44.03315068493151,10.48523604579426,,,,,
+38,"Sahakari Bhandar - Prabhadevi, Mumbai",Maharashtra / Gujarat,West India,Dairy & Eggs,141.54,471.0296851300383,60.029767321819136,REORDER NOW,2.4,0.9999,77.5,1151.0,58.71427397260274,13.750981436762364,,,,,
+38,"Sahakari Bhandar - Prabhadevi, Mumbai",Maharashtra / Gujarat,West India,Electronics & Appliances,282.19,177.29944850291912,23.02865398237116,OK,12.8,0.0012,0.0,204.0,22.03868493150685,5.275159434278034,,,,,
+38,"Sahakari Bhandar - Prabhadevi, Mumbai",Maharashtra / Gujarat,West India,Fresh Produce,1186.69,882.2587153498073,113.55668795254704,MONITOR,10.8,0.0008,0.0,1233.0,109.81457534246576,26.01235982948952,,,,,
+38,"Sahakari Bhandar - Prabhadevi, Mumbai",Maharashtra / Gujarat,West India,Groceries & Staples,1501.52,2359.0881336750645,302.4396131271194,REORDER SOON,5.1,0.9998,40.3,4971.0,293.8069315068493,69.27965393497348,,,,,
+38,"Sahakari Bhandar - Prabhadevi, Mumbai",Maharashtra / Gujarat,West India,Health & Wellness,518.33,412.0327451975196,53.17170410162916,MONITOR,10.1,0.0122,0.0,611.0,51.26586301369864,12.180009163499898,,,,,
+38,"Sahakari Bhandar - Prabhadevi, Mumbai",Maharashtra / Gujarat,West India,Home Care,978.03,706.7282199088556,90.39490484036244,MONITOR,11.1,0.0006,0.0,961.0,88.04761643835617,20.70670458830717,,,,,
+38,"Sahakari Bhandar - Prabhadevi, Mumbai",Maharashtra / Gujarat,West India,Kitchen & Dining,452.35,588.6345413167368,74.67248652221619,REORDER SOON,6.2,0.9926,26.2,1164.0,73.42315068493151,17.105180010095797,,,,,
+38,"Sahakari Bhandar - Prabhadevi, Mumbai",Maharashtra / Gujarat,West India,Personal Care,1855.14,1063.541518348585,137.30650464995475,OK,14.0,0.0,0.0,1061.0,132.31928767123287,31.45271555803585,,,,,
+38,"Sahakari Bhandar - Prabhadevi, Mumbai",Maharashtra / Gujarat,West India,Snacks & Beverages,2318.4,1477.992131722767,191.5311728186576,OK,12.6,0.0001,0.0,1733.0,183.78013698630136,43.873926544995854,,,,,
+39,"Nature's Basket - Bandra, Mumbai",Maharashtra / Gujarat,West India,Clothing & Apparel,328.01,363.3771024221176,48.83104762759698,WATCHLIST,7.3,0.986,12.6,664.0,44.93515068493152,11.185697686698887,,,,,
+39,"Nature's Basket - Bandra, Mumbai",Maharashtra / Gujarat,West India,Dairy & Eggs,537.6,484.0813918988114,64.84237820018126,MONITOR,9.0,0.1657,0.0,785.0,59.89128767123288,14.85340321521001,,,,,
+39,"Nature's Basket - Bandra, Mumbai",Maharashtra / Gujarat,West India,Electronics & Appliances,91.79,182.4065491821092,24.824083428684517,REORDER NOW,4.1,0.9997,54.4,406.0,22.511780821917807,5.686437340036262,,,,,
+39,"Nature's Basket - Bandra, Mumbai",Maharashtra / Gujarat,West India,Fresh Produce,936.41,913.5473417652768,123.07147875157824,MONITOR,8.3,0.3223,0.1,1558.0,112.92512328767124,28.191907035640345,,,,,
+39,"Nature's Basket - Bandra, Mumbai",Maharashtra / Gujarat,West India,Groceries & Staples,3630.04,2426.305825720552,329.0177983232915,MONITOR,12.1,0.0014,0.0,2991.0,299.61257534246573,75.36790227510248,,,,,
+39,"Nature's Basket - Bandra, Mumbai",Maharashtra / Gujarat,West India,Health & Wellness,619.0,425.3218583296982,58.04432408312289,MONITOR,11.8,0.0003,0.0,541.0,52.468219178082194,13.296177189851116,,,,,
+39,"Nature's Basket - Bandra, Mumbai",Maharashtra / Gujarat,West India,Home Care,694.06,726.8891848025894,97.98118480258952,WATCHLIST,7.7,0.9928,7.3,1291.0,89.844,22.4444890174124,,,,,
+39,"Nature's Basket - Bandra, Mumbai",Maharashtra / Gujarat,West India,Kitchen & Dining,1016.15,603.8797191712833,79.77226711648886,OK,13.6,0.0,0.0,636.0,74.87249315068493,18.273383576627285,,,,,
+39,"Nature's Basket - Bandra, Mumbai",Maharashtra / Gujarat,West India,Personal Care,820.99,1096.3788104392147,150.36122139811886,REORDER SOON,6.1,0.9924,28.2,2167.0,135.14536986301368,34.44315139803863,,,,,
+39,"Nature's Basket - Bandra, Mumbai",Maharashtra / Gujarat,West India,Snacks & Beverages,1737.14,1511.313233567551,201.5046856223456,MONITOR,9.3,0.2404,0.0,2394.0,187.11550684931507,46.15855291523627,,,,,
+40,"Bombay Dyeing - Lower Parel, Mumbai",Maharashtra / Gujarat,West India,Clothing & Apparel,961.89,497.0904984455801,63.38814228119658,OK,15.5,0.0,0.0,403.0,61.95747945205479,14.520282298391743,,,,,
+40,"Bombay Dyeing - Lower Parel, Mumbai",Maharashtra / Gujarat,West India,Dairy & Eggs,582.74,661.4366619906542,82.15348390846246,WATCHLIST,7.0,0.9946,14.7,1237.0,82.7547397260274,18.818847425050937,,,,,
+40,"Bombay Dyeing - Lower Parel, Mumbai",Maharashtra / Gujarat,West India,Electronics & Appliances,155.09,247.52893048153453,31.180985276055083,REORDER SOON,5.0,0.9993,41.3,525.0,30.90684931506849,7.142608889559171,,,,,
+40,"Bombay Dyeing - Lower Parel, Mumbai",Maharashtra / Gujarat,West India,Fresh Produce,531.44,1243.544445116581,157.30439032206058,REORDER NOW,3.4,0.9999,62.8,2885.0,155.17715068493152,36.03361878188813,,,,,
+40,"Bombay Dyeing - Lower Parel, Mumbai",Maharashtra / Gujarat,West India,Groceries & Staples,1790.37,3313.6957634450114,417.8312428970661,REORDER NOW,4.3,0.9998,50.6,7315.0,413.6949315068493,95.71234274447272,,,,,
+40,"Bombay Dyeing - Lower Parel, Mumbai",Maharashtra / Gujarat,West India,Health & Wellness,770.47,578.7688509942716,73.1521386655045,MONITOR,10.7,0.0003,0.0,820.0,72.23095890410958,16.75691487285171,,,,,
+40,"Bombay Dyeing - Lower Parel, Mumbai",Maharashtra / Gujarat,West India,Home Care,1053.96,991.9751912125362,125.3523692947279,MONITOR,8.5,0.1289,0.0,1671.0,123.8032602739726,28.714389212690826,,,,,
+40,"Bombay Dyeing - Lower Parel, Mumbai",Maharashtra / Gujarat,West India,Kitchen & Dining,1057.4,827.9166383199797,104.70770681313032,MONITOR,10.2,0.0068,0.0,1217.0,103.31556164383562,23.98532922765423,,,,,
+40,"Bombay Dyeing - Lower Parel, Mumbai",Maharashtra / Gujarat,West India,Personal Care,1691.55,1493.7875942469705,193.60318328806628,MONITOR,9.1,0.407,0.0,2403.0,185.7406301369863,44.34856069356533,,,,,
+40,"Bombay Dyeing - Lower Parel, Mumbai",Maharashtra / Gujarat,West India,Snacks & Beverages,2267.16,2065.1278132896123,260.45205986495495,MONITOR,8.8,0.1549,0.0,3407.0,257.8108219178082,59.6615912430457,,,,,
+41,"Jade Blue - CG Road, Ahmedabad",Maharashtra / Gujarat,West India,Clothing & Apparel,706.76,735.4404837135762,87.93300426152138,WATCHLIST,7.6,0.9936,6.2,1324.0,92.50106849315068,20.142758555044885,,,,,
+41,"Jade Blue - CG Road, Ahmedabad",Maharashtra / Gujarat,West India,Dairy & Eggs,527.36,981.0843121246394,119.55001075477642,REORDER NOW,4.3,0.9997,50.6,2177.0,123.07632876712329,27.385246553440314,,,,,
+41,"Jade Blue - CG Road, Ahmedabad",Maharashtra / Gujarat,West India,Electronics & Appliances,481.52,366.18021546311167,43.57342094256378,MONITOR,10.4,0.0046,0.0,530.0,46.086684931506845,9.981336414403238,,,,,
+41,"Jade Blue - CG Road, Ahmedabad",Maharashtra / Gujarat,West India,Fresh Produce,1382.65,1838.9199683461516,220.217146428343,REORDER SOON,6.0,0.9991,28.0,3694.0,231.2432602739726,50.44500466508151,,,,,
+41,"Jade Blue - CG Road, Ahmedabad",Maharashtra / Gujarat,West India,Groceries & Staples,4876.93,4888.993919000287,587.539754616725,WATCHLIST,7.9,0.9416,3.0,8615.0,614.4934520547945,134.58736589435222,,,,,
+41,"Jade Blue - CG Road, Ahmedabad",Maharashtra / Gujarat,West India,Health & Wellness,870.05,858.6571790273691,102.77282286298556,MONITOR,8.1,0.5709,1.2,1500.0,107.9834794520548,23.542106565502426,,,,,
+41,"Jade Blue - CG Road, Ahmedabad",Maharashtra / Gujarat,West India,Home Care,783.97,1468.5011387639854,174.03045383247886,REORDER NOW,4.2,0.9999,51.2,3273.0,184.92438356164385,39.86504773960576,,,,,
+41,"Jade Blue - CG Road, Ahmedabad",Maharashtra / Gujarat,West India,Kitchen & Dining,2108.02,1227.1323422506305,148.17458882597285,OK,13.7,0.0,0.0,1277.0,154.13682191780822,33.94226083573803,,,,,
+41,"Jade Blue - CG Road, Ahmedabad",Maharashtra / Gujarat,West India,Personal Care,1135.85,2207.7588925736777,266.04231723121205,REORDER NOW,4.1,0.9999,53.4,4955.0,277.3880821917808,60.94214801845377,,,,,
+41,"Jade Blue - CG Road, Ahmedabad",Maharashtra / Gujarat,West India,Snacks & Beverages,2897.32,3063.950951230298,370.52412931248966,WATCHLIST,7.5,0.991,7.8,5553.0,384.7752602739726,84.87573168048358,,,,,
+42,"Tirumala Sweets - Chembur, Mumbai",Maharashtra / Gujarat,West India,Clothing & Apparel,819.43,489.02210939606834,57.86621898510944,OK,13.3,0.0001,0.0,532.0,61.59369863013699,13.255378765905109,,,,,
+42,"Tirumala Sweets - Chembur, Mumbai",Maharashtra / Gujarat,West India,Dairy & Eggs,996.71,651.0596232680552,76.11548628175382,OK,12.1,0.0012,0.0,804.0,82.13487671232876,17.43572706686312,,,,,
+42,"Tirumala Sweets - Chembur, Mumbai",Maharashtra / Gujarat,West India,Electronics & Appliances,209.44,244.57086472628248,29.005193493405784,WATCHLIST,6.8,0.9919,17.1,466.0,30.79509589041096,6.6442016201610805,,,,,
+42,"Tirumala Sweets - Chembur, Mumbai",Maharashtra / Gujarat,West India,Fresh Produce,941.9,1224.2254511644187,145.01742376715865,REORDER SOON,6.1,0.9979,26.3,2441.0,154.17257534246573,33.21905100079388,,,,,
+42,"Tirumala Sweets - Chembur, Mumbai",Maharashtra / Gujarat,West India,Groceries & Staples,1305.62,3252.1347585998537,376.9518818875249,REORDER NOW,3.2,1.0,66.1,7697.0,410.74041095890414,86.34813296209381,,,,,
+42,"Tirumala Sweets - Chembur, Mumbai",Maharashtra / Gujarat,West India,Health & Wellness,496.47,573.2459070926853,69.02267421597294,WATCHLIST,6.9,0.9783,16.4,1085.0,72.03189041095891,15.810981021653207,,,,,
+42,"Tirumala Sweets - Chembur, Mumbai",Maharashtra / Gujarat,West India,Home Care,1505.11,976.0135014940248,114.08087135703865,OK,12.2,0.0002,0.0,1195.0,123.13323287671231,26.13243419569488,,,,,
+42,"Tirumala Sweets - Chembur, Mumbai",Maharashtra / Gujarat,West India,Kitchen & Dining,710.88,817.0242203877419,97.91652175760495,WATCHLIST,6.9,0.9875,15.8,1544.0,102.72967123287673,22.429676693945268,,,,,
+42,"Tirumala Sweets - Chembur, Mumbai",Maharashtra / Gujarat,West India,Personal Care,1017.66,1467.7129544252712,173.7019681239015,REORDER SOON,5.5,0.9993,34.4,3038.0,184.8587123287671,39.789801722797584,,,,,
+42,"Tirumala Sweets - Chembur, Mumbai",Maharashtra / Gujarat,West India,Snacks & Beverages,3287.81,2040.008486590704,240.8138290564575,OK,12.8,0.0002,0.0,2351.0,257.02780821917804,55.1630739349443,,,,,
+43,"Reliance Smart - Park Street, Kolkata",West Bengal / Assam,East India,Clothing & Apparel,1260.05,685.9922717018986,214.18997033203564,OK,18.7,0.0004,0.0,370.0,67.40032876712328,49.06436318812719,,,,,
+43,"Reliance Smart - Park Street, Kolkata",West Bengal / Assam,East India,Dairy & Eggs,752.76,915.3304338003512,286.25347489624147,WATCHLIST,8.4,0.6915,20.4,1421.0,89.86813698630138,65.57190532498058,,,,,
+43,"Reliance Smart - Park Street, Kolkata",West Bengal / Assam,East India,Electronics & Appliances,655.32,342.79131919839614,107.21638769154684,OK,19.5,0.0005,0.0,159.0,33.653561643835616,24.55999119502333,,,,,
+43,"Reliance Smart - Park Street, Kolkata",West Bengal / Assam,East India,Fresh Produce,2666.27,1724.549830663777,542.616323814462,OK,15.8,0.0003,0.0,1422.0,168.84764383561642,124.296783561659,,,,,
+43,"Reliance Smart - Park Street, Kolkata",West Bengal / Assam,East India,Groceries & Staples,8109.98,4583.880318963663,1440.88703129243,OK,18.1,0.0004,0.0,2760.0,448.9990410958904,330.06309542319593,,,,,
+43,"Reliance Smart - Park Street, Kolkata",West Bengal / Assam,East India,Health & Wellness,936.17,807.3002411551813,255.80476170312647,MONITOR,11.9,0.0071,0.0,974.0,78.78506849315069,58.59703754568069,,,,,
+43,"Reliance Smart - Park Street, Kolkata",West Bengal / Assam,East India,Home Care,915.53,1376.6662186868225,430.62868444024696,REORDER SOON,6.8,0.9574,36.8,2353.0,135.1482191780822,98.64384471340288,,,,,
+43,"Reliance Smart - Park Street, Kolkata",West Bengal / Assam,East India,Kitchen & Dining,1571.1,1141.9234462909835,356.38574766084673,MONITOR,14.0,0.0003,0.0,1142.0,112.2196712328767,81.63706139553416,,,,,
+43,"Reliance Smart - Park Street, Kolkata",West Bengal / Assam,East India,Personal Care,1992.57,2068.030096947229,651.55919283764,WATCHLIST,9.8,0.1421,5.8,2908.0,202.35298630136987,149.25225876072489,,,,,
+43,"Reliance Smart - Park Street, Kolkata",West Bengal / Assam,East India,Snacks & Beverages,4612.09,2858.2335175223334,893.9598736867167,OK,16.4,0.0002,0.0,2175.0,280.6105205479452,204.77883184811836,,,,,
+44,"DMart - Salt Lake, Kolkata",West Bengal / Assam,East India,Clothing & Apparel,472.28,427.0541048037644,63.684680146230086,MONITOR,9.1,0.2204,0.0,682.0,51.90991780821918,14.588210042564272,,,,,
+44,"DMart - Salt Lake, Kolkata",West Bengal / Assam,East India,Dairy & Eggs,300.69,569.5236770442358,84.97236197574266,REORDER NOW,4.3,0.9995,51.7,1238.0,69.22161643835616,19.46456606940053,,,,,
+44,"DMart - Salt Lake, Kolkata",West Bengal / Assam,East India,Electronics & Appliances,409.69,213.0267617354773,31.72024118753207,OK,15.8,0.0001,0.0,166.0,25.900931506849314,7.266135905558269,,,,,
+44,"DMart - Salt Lake, Kolkata",West Bengal / Assam,East India,Fresh Produce,660.52,1066.6626356312495,158.16792330248228,REORDER SOON,5.1,0.9989,41.8,2223.0,129.7849589041096,36.231427744234296,,,,,
+44,"DMart - Salt Lake, Kolkata",West Bengal / Assam,East India,Groceries & Staples,3313.81,2848.093762480437,425.6756802886556,MONITOR,9.6,0.3525,0.0,4379.0,346.0597260273973,97.50926313524,,,,,
+44,"DMart - Salt Lake, Kolkata",West Bengal / Assam,East India,Health & Wellness,353.57,500.1424982399252,76.30803248650057,REORDER SOON,5.8,0.9906,32.8,994.0,60.54778082191781,17.479833506140107,,,,,
+44,"DMart - Salt Lake, Kolkata",West Bengal / Assam,East India,Home Care,386.18,856.5501620426069,128.91473738507264,REORDER NOW,3.7,0.9997,60.2,1926.0,103.94791780821916,29.53041865386176,,,,,
+44,"DMart - Salt Lake, Kolkata",West Bengal / Assam,East India,Kitchen & Dining,688.93,712.9786266658664,106.81506502203086,WATCHLIST,8.0,0.9087,5.6,1236.0,86.59479452054794,24.468060460908024,,,,,
+44,"DMart - Salt Lake, Kolkata",West Bengal / Assam,East India,Personal Care,1610.14,1282.66833516551,192.5495132477017,MONITOR,10.3,0.024,0.0,1853.0,155.73126027397262,44.1071971532429,,,,,
+44,"DMart - Salt Lake, Kolkata",West Bengal / Assam,East India,Snacks & Beverages,1876.64,1781.5996543022202,269.04598306934355,MONITOR,8.7,0.3745,0.0,2930.0,216.0790958904109,61.63019588245692,,,,,
+45,"Star Bazaar - Janpath, Bhubaneswar",West Bengal / Assam,East India,Clothing & Apparel,684.95,407.3661817710624,62.61349683955551,OK,13.9,0.0,0.0,412.0,49.25038356164384,14.342834749228794,,,,,
+45,"Star Bazaar - Janpath, Bhubaneswar",West Bengal / Assam,East India,Dairy & Eggs,263.32,540.6457882311698,81.226007409252,REORDER NOW,4.0,0.9992,56.5,1196.0,65.63139726027397,18.606390960655467,,,,,
+45,"Star Bazaar - Janpath, Bhubaneswar",West Bengal / Assam,East India,Electronics & Appliances,307.14,204.51879591787335,31.914330164448728,OK,12.5,0.0008,0.0,243.0,24.657780821917807,7.310595746695968,,,,,
+45,"Star Bazaar - Janpath, Bhubaneswar",West Bengal / Assam,East India,Fresh Produce,1126.36,1019.4325672800508,156.65073166361236,MONITOR,9.1,0.1994,0.0,1619.0,123.25454794520547,35.883885599846735,,,,,
+45,"Star Bazaar - Janpath, Bhubaneswar",West Bengal / Assam,East India,Groceries & Staples,4198.55,2712.858262055101,412.1272209592102,OK,12.8,0.0003,0.0,3116.0,328.67586301369863,94.40572598945772,,,,,
+45,"Star Bazaar - Janpath, Bhubaneswar",West Bengal / Assam,East India,Health & Wellness,840.93,476.7403949167981,73.76592916337341,OK,14.6,0.0,0.0,442.0,57.567780821917815,16.89751548016389,,,,,
+45,"Star Bazaar - Janpath, Bhubaneswar",West Bengal / Assam,East India,Home Care,879.87,815.342037324236,123.6589962283455,MONITOR,8.9,0.1596,0.0,1319.0,98.81186301369864,28.32648929836159,,,,,
+45,"Star Bazaar - Janpath, Bhubaneswar",West Bengal / Assam,East India,Kitchen & Dining,443.32,679.5018494758048,105.181767284024,REORDER SOON,5.4,0.9972,38.5,1385.0,82.04572602739725,24.093921964657767,,,,,
+45,"Star Bazaar - Janpath, Bhubaneswar",West Bengal / Assam,East India,Personal Care,1418.13,1220.7697793130603,184.37145054593725,MONITOR,9.6,0.2098,0.0,1875.0,148.05690410958903,42.23385342032847,,,,,
+45,"Star Bazaar - Janpath, Bhubaneswar",West Bengal / Assam,East India,Snacks & Beverages,2749.58,1699.7804684762928,260.31753696944344,OK,13.4,0.0,0.0,1829.0,205.6375616438356,59.63077616710044,,,,,
+46,"Decathlon - New Town, Kolkata",West Bengal / Assam,East India,Clothing & Apparel,755.57,536.8004699375638,65.31786719783774,MONITOR,11.2,0.0011,0.0,724.0,67.35465753424658,14.96232318394996,,,,,
+46,"Decathlon - New Town, Kolkata",West Bengal / Assam,East India,Dairy & Eggs,990.4,714.9917273445607,86.99104241305382,MONITOR,11.0,0.0012,0.0,981.0,89.71438356164384,19.926983940711043,,,,,
+46,"Decathlon - New Town, Kolkata",West Bengal / Assam,East India,Electronics & Appliances,196.72,270.0785588495862,33.546449260545174,REORDER SOON,5.8,0.995,30.4,546.0,33.79030136986301,7.684464252177417,,,,,
+46,"Decathlon - New Town, Kolkata",West Bengal / Assam,East India,Fresh Produce,985.38,1343.9278523281548,165.0001263007576,REORDER SOON,5.9,0.9969,30.1,2716.0,168.4182465753425,37.79647623255865,,,,,
+46,"Decathlon - New Town, Kolkata",West Bengal / Assam,East India,Groceries & Staples,4413.75,3571.518794785993,429.2222468407879,MONITOR,9.8,0.0241,0.0,5442.0,448.8995068493151,98.3216729278878,,,,,
+46,"Decathlon - New Town, Kolkata",West Bengal / Assam,East India,Health & Wellness,407.12,625.6728680867278,76.97067630590581,REORDER SOON,5.2,0.999,38.6,1316.0,78.38602739726028,17.631624913409397,,,,,
+46,"Decathlon - New Town, Kolkata",West Bengal / Assam,East India,Home Care,744.07,1072.4137948239684,130.0482879746534,REORDER SOON,5.5,0.9989,33.9,2213.0,134.62364383561643,29.790080381873995,,,,,
+46,"Decathlon - New Town, Kolkata",West Bengal / Assam,East India,Kitchen & Dining,608.61,893.4395037791182,107.04703802569358,REORDER SOON,5.4,0.9989,35.7,1858.0,112.3417808219178,24.52119837247272,,,,,
+46,"Decathlon - New Town, Kolkata",West Bengal / Assam,East India,Personal Care,1791.41,1613.5414670485056,194.49283691151933,MONITOR,8.8,0.2473,0.0,2660.0,202.72123287671232,44.55235309535272,,,,,
+46,"Decathlon - New Town, Kolkata",West Bengal / Assam,East India,Snacks & Beverages,3673.54,2236.800512487303,271.5652796105905,OK,13.1,0.0001,0.0,2494.0,280.7478904109589,62.2072895731032,,,,,
+47,"Zudio - Boring Road, Patna",West Bengal / Assam,East India,Clothing & Apparel,1145.77,610.5416238016885,221.4643635277159,OK,20.6,0.0004,0.0,243.0,55.58246575342466,50.73070390974368,,,,,
+47,"Zudio - Boring Road, Patna",West Bengal / Assam,East India,Dairy & Eggs,703.86,815.8764061855471,296.9309267334924,WATCHLIST,9.5,0.3297,16.1,1150.0,74.13506849315068,68.01778257149448,,,,,
+47,"Zudio - Boring Road, Patna",West Bengal / Assam,East India,Electronics & Appliances,431.55,307.67857817309846,112.54370146076974,MONITOR,15.5,0.0012,0.0,266.0,27.876410958904103,25.780315644319774,,,,,
+47,"Zudio - Boring Road, Patna",West Bengal / Assam,East India,Fresh Produce,2576.62,1532.2908882540046,557.0058197608538,OK,18.5,0.0003,0.0,906.0,139.32643835616437,127.59297644180832,,,,,
+47,"Zudio - Boring Road, Patna",West Bengal / Assam,East India,Groceries & Staples,3763.61,4088.481462541359,1484.7915721304005,WATCHLIST,10.1,0.937,10.1,5532.0,371.95569863013696,340.12028126594475,,,,,
+47,"Zudio - Boring Road, Patna",West Bengal / Assam,East India,Health & Wellness,919.2,708.7110529725564,255.7504502328304,MONITOR,14.2,0.0006,0.0,695.0,64.70865753424657,58.58459645098445,,,,,
+47,"Zudio - Boring Road, Patna",West Bengal / Assam,East India,Home Care,1138.43,1226.7454586788194,447.30658196649057,WATCHLIST,10.2,0.3282,9.6,1647.0,111.34841095890413,102.46424031910504,,,,,
+47,"Zudio - Boring Road, Patna",West Bengal / Assam,East India,Kitchen & Dining,391.51,1022.9582500015264,371.8932363028963,REORDER NOW,4.2,0.9925,66.1,1934.0,93.00928767123288,85.1893521666183,,,,,
+47,"Zudio - Boring Road, Patna",West Bengal / Assam,East India,Personal Care,638.89,1834.4971808613868,663.7899479846748,REORDER NOW,3.8,0.9883,70.5,3537.0,167.2438904109589,152.05395022960604,,,,,
+47,"Zudio - Boring Road, Patna",West Bengal / Assam,East India,Snacks & Beverages,2263.53,2557.2572321562675,927.6821636631169,WATCHLIST,9.7,0.1707,13.8,3553.0,232.7964383561644,212.5035758236301,,,,,
+48,"Max Fashion - GS Road, Guwahati",West Bengal / Assam,East India,Clothing & Apparel,1026.24,546.6920432543674,69.30124873381938,OK,15.0,0.0001,0.0,475.0,68.19868493150685,15.874793913066314,,,,,
+48,"Max Fashion - GS Road, Guwahati",West Bengal / Assam,East India,Dairy & Eggs,973.99,731.8512861270676,93.18777927775253,MONITOR,10.7,0.0008,0.0,1035.0,91.23764383561644,21.346466597342975,,,,,
+48,"Max Fashion - GS Road, Guwahati",West Bengal / Assam,East India,Electronics & Appliances,383.23,274.4765172100021,34.931530908632254,MONITOR,11.2,0.0019,0.0,370.0,34.22071232876712,8.001744043204074,,,,,
+48,"Max Fashion - GS Road, Guwahati",West Bengal / Assam,East India,Fresh Produce,1308.35,1369.431075680416,173.8663633516489,WATCHLIST,7.7,0.962,7.3,2452.0,170.7949589041096,39.82745963529504,,,,,
+48,"Max Fashion - GS Road, Guwahati",West Bengal / Assam,East India,Groceries & Staples,1590.89,3651.1052156472615,466.3365033184944,REORDER NOW,3.5,0.9999,61.5,8430.0,454.9669589041096,106.82341255863058,,,,,
+48,"Max Fashion - GS Road, Guwahati",West Bengal / Assam,East India,Health & Wellness,497.21,641.961307257757,82.14829355912688,REORDER SOON,6.2,0.9834,25.6,1264.0,79.97328767123288,18.81765847495921,,,,,
+48,"Max Fashion - GS Road, Guwahati",West Bengal / Assam,East India,Home Care,1241.7,1099.815336600204,142.37758317554622,MONITOR,9.1,0.159,0.0,1773.0,136.77682191780823,32.61434435955924,,,,,
+48,"Max Fashion - GS Road, Guwahati",West Bengal / Assam,East India,Kitchen & Dining,596.61,910.582119197378,115.4958452247753,REORDER SOON,5.3,0.9986,38.0,1904.0,113.58375342465752,26.456561378871196,,,,,
+48,"Max Fashion - GS Road, Guwahati",West Bengal / Assam,East India,Personal Care,830.9,1638.6446233085862,206.68243152776424,REORDER NOW,4.1,0.9999,54.0,3672.0,204.56602739726029,47.34461594706491,,,,,
+48,"Max Fashion - GS Road, Guwahati",West Bengal / Assam,East India,Snacks & Beverages,3720.44,2291.200296708256,294.1585980781189,OK,13.0,0.0001,0.0,2565.0,285.29167123287675,67.38272697195715,,,,,
+49,"Reliance Digital - South City Mall, Kolkata",West Bengal / Assam,East India,Clothing & Apparel,563.77,364.2727232190972,59.49042184923422,OK,12.9,0.0002,0.0,410.0,43.540328767123285,13.627433905056018,,,,,
+49,"Reliance Digital - South City Mall, Kolkata",West Bengal / Assam,East India,Dairy & Eggs,536.59,487.57074986142777,80.36617451896197,MONITOR,9.2,0.0946,0.0,765.0,58.17208219178082,18.409429575652755,,,,,
+49,"Reliance Digital - South City Mall, Kolkata",West Bengal / Assam,East India,Electronics & Appliances,121.99,182.41953124179597,29.727284666453457,REORDER SOON,5.6,0.9942,36.6,366.0,21.813178082191783,6.809610595728098,,,,,
+49,"Reliance Digital - South City Mall, Kolkata",West Bengal / Assam,East India,Fresh Produce,334.08,914.2154750425952,150.3029818919102,REORDER NOW,3.1,0.9998,69.8,2108.0,109.13035616438356,34.42981051060077,,,,,
+49,"Reliance Digital - South City Mall, Kolkata",West Bengal / Assam,East India,Groceries & Staples,1858.82,2438.392224003388,402.10142948284016,REORDER SOON,6.4,0.9933,27.0,4652.0,290.89868493150686,92.10912417620524,,,,,
+49,"Reliance Digital - South City Mall, Kolkata",West Bengal / Assam,East India,Health & Wellness,435.76,425.5285498690144,69.82633069093211,MONITOR,8.6,0.0947,0.0,701.0,50.814602739726034,15.995074110161324,,,,,
+49,"Reliance Digital - South City Mall, Kolkata",West Bengal / Assam,East India,Home Care,1276.3,736.2656324490699,123.66379683263156,OK,14.6,0.0,0.0,685.0,87.51454794520548,28.32758896979741,,,,,
+49,"Reliance Digital - South City Mall, Kolkata",West Bengal / Assam,East India,Kitchen & Dining,904.76,608.6513250382965,100.10631133966628,MONITOR,12.5,0.0002,0.0,721.0,72.64928767123288,22.93129043054218,,,,,
+49,"Reliance Digital - South City Mall, Kolkata",West Bengal / Assam,East India,Personal Care,898.35,1095.367603238819,176.68184981416118,WATCHLIST,6.8,0.9765,20.9,2034.0,131.24082191780823,40.47240136685144,,,,,
+49,"Reliance Digital - South City Mall, Kolkata",West Bengal / Assam,East India,Snacks & Beverages,2058.8,1525.2717894260215,252.90518668629565,MONITOR,11.3,0.0008,0.0,2011.0,181.76665753424655,57.93283370132483,,,,,
+50,"Croma - Hill Cart Road, Siliguri",West Bengal / Assam,East India,Clothing & Apparel,402.47,511.7878179118416,60.90305078855398,REORDER SOON,6.2,0.9934,24.5,1011.0,64.4121095890411,13.951023936939398,,,,,
+50,"Croma - Hill Cart Road, Siliguri",West Bengal / Assam,East India,Dairy & Eggs,575.7,684.8489137414319,82.00354387841817,WATCHLIST,6.7,0.9923,19.0,1315.0,86.12076712328768,18.78450075569416,,,,,
+50,"Croma - Hill Cart Road, Siliguri",West Bengal / Assam,East India,Electronics & Appliances,497.58,256.9442612479236,30.36020645340303,OK,15.4,0.0001,0.0,213.0,32.369150684931505,6.954593595522313,,,,,
+50,"Croma - Hill Cart Road, Siliguri",West Bengal / Assam,East India,Fresh Produce,1331.56,1280.2456947516623,150.85495502563472,MONITOR,8.3,0.4594,0.0,2207.0,161.34153424657535,34.55625065278467,,,,,
+50,"Croma - Hill Cart Road, Siliguri",West Bengal / Assam,East India,Groceries & Staples,5580.26,3411.8222929864846,407.42766284949806,OK,13.0,0.0,0.0,3840.0,429.1992328767124,93.32920113835856,,,,,
+50,"Croma - Hill Cart Road, Siliguri",West Bengal / Assam,East India,Health & Wellness,550.49,594.9583281776034,70.05517749267197,WATCHLIST,7.3,0.9344,10.0,1094.0,74.98616438356164,16.047495904597355,,,,,
+50,"Croma - Hill Cart Road, Siliguri",West Bengal / Assam,East India,Home Care,394.99,1026.537883305084,123.8664038530292,REORDER NOW,3.1,0.9999,67.5,2437.0,128.95306849315068,28.37400003385351,,,,,
+50,"Croma - Hill Cart Road, Siliguri",West Bengal / Assam,East India,Kitchen & Dining,406.74,855.944009822753,102.63143448028714,REORDER NOW,3.8,0.9998,57.8,1956.0,107.61608219178083,23.50971881668046,,,,,
+50,"Croma - Hill Cart Road, Siliguri",West Bengal / Assam,East India,Personal Care,1077.78,1538.1601494150902,183.79305352467912,REORDER SOON,5.6,0.9988,33.5,3169.0,193.48101369863016,42.101360374673966,,,,,
+50,"Croma - Hill Cart Road, Siliguri",West Bengal / Assam,East India,Snacks & Beverages,1279.57,2138.633794363925,257.86938340502155,REORDER NOW,4.8,0.9998,44.2,4621.0,268.6806301369863,59.06997915387475,,,,,
+51,"Spencer's Retail - Forum Mall, Kolkata",West Bengal / Assam,East India,Clothing & Apparel,835.11,533.067615788232,67.77013633617727,OK,12.6,0.0002,0.0,629.0,66.47106849315068,15.524062949131348,,,,,
+51,"Spencer's Retail - Forum Mall, Kolkata",West Bengal / Assam,East India,Dairy & Eggs,797.34,710.7325441954816,90.6451195379474,MONITOR,9.0,0.1618,0.0,1154.0,88.58391780821918,20.76402111334467,,,,,
+51,"Spencer's Retail - Forum Mall, Kolkata",West Bengal / Assam,East India,Electronics & Appliances,263.31,266.64115970344443,33.38255696371842,WATCHLIST,7.9,0.8752,3.5,470.0,33.322657534246574,7.646921545752935,,,,,
+51,"Spencer's Retail - Forum Mall, Kolkata",West Bengal / Assam,East India,Fresh Produce,569.25,1331.0647834441477,168.01113960853132,REORDER NOW,3.4,0.9998,62.8,3088.0,166.1505205479452,38.48620717685954,,,,,
+51,"Spencer's Retail - Forum Mall, Kolkata",West Bengal / Assam,East India,Groceries & Staples,2971.34,3544.3524815179853,447.8735226138755,WATCHLIST,6.7,0.9925,19.2,6766.0,442.3541369863014,102.59410906032709,,,,,
+51,"Spencer's Retail - Forum Mall, Kolkata",West Bengal / Assam,East India,Health & Wellness,546.76,621.3772981222107,78.95650360166283,WATCHLIST,7.1,0.934,14.7,1159.0,77.48868493150685,18.086517136032512,,,,,
+51,"Spencer's Retail - Forum Mall, Kolkata",West Bengal / Assam,East India,Home Care,1047.34,1063.2700176049395,134.12588061863815,WATCHLIST,7.9,0.7296,4.1,1874.0,132.73487671232877,30.72413199086187,,,,,
+51,"Spencer's Retail - Forum Mall, Kolkata",West Bengal / Assam,East India,Kitchen & Dining,1014.18,888.2352527243607,111.8729239572374,MONITOR,9.1,0.1701,0.0,1427.0,110.90890410958905,25.62666105909005,,,,,
+51,"Spencer's Retail - Forum Mall, Kolkata",West Bengal / Assam,East India,Personal Care,1520.24,1593.875667417777,198.48953043147603,WATCHLIST,7.6,0.9806,7.3,2864.0,199.3408767123288,45.46787319235261,,,,,
+51,"Spencer's Retail - Forum Mall, Kolkata",West Bengal / Assam,East India,Snacks & Beverages,3462.36,2219.8820105242157,282.44444888037987,OK,12.5,0.0007,0.0,2632.0,276.7767945205479,64.699374106336,,,,,
+52,"Style Baazar - Fancy Bazar, Guwahati",West Bengal / Assam,East India,Clothing & Apparel,462.02,415.3500279361807,67.86331560741357,MONITOR,9.3,0.1448,0.0,648.0,49.64095890410959,15.54540746679693,,,,,
+52,"Style Baazar - Fancy Bazar, Guwahati",West Bengal / Assam,East India,Dairy & Eggs,283.9,553.8895209841317,91.1899045457754,REORDER NOW,4.3,0.9995,53.3,1195.0,66.09994520547946,20.888814676003477,,,,,
+52,"Style Baazar - Fancy Bazar, Guwahati",West Bengal / Assam,East India,Electronics & Appliances,199.21,208.40637801461827,34.42550130228949,WATCHLIST,8.0,0.8035,6.6,357.0,24.85441095890411,7.885828156241401,,,,,
+52,"Style Baazar - Fancy Bazar, Guwahati",West Bengal / Assam,East India,Fresh Produce,467.36,1046.646229893452,174.65066824961653,REORDER NOW,3.8,0.9994,59.9,2323.0,124.57079452054792,40.00711987010647,,,,,
+52,"Style Baazar - Fancy Bazar, Guwahati",West Bengal / Assam,East India,Groceries & Staples,2278.51,2775.481842459347,457.747321911402,WATCHLIST,6.9,0.9776,20.9,5132.0,331.1049315068493,104.85589411977465,,,,,
+52,"Style Baazar - Fancy Bazar, Guwahati",West Bengal / Assam,East India,Health & Wellness,445.5,486.3850237154495,80.86620179764128,WATCHLIST,7.7,0.9341,10.8,852.0,57.931260273972605,18.52397051315352,,,,,
+52,"Style Baazar - Fancy Bazar, Guwahati",West Bengal / Assam,East India,Home Care,806.83,829.9636377797403,136.3731446290553,WATCHLIST,8.1,0.6693,5.0,1410.0,99.08435616438356,31.2389113589891,,,,,
+52,"Style Baazar - Fancy Bazar, Guwahati",West Bengal / Assam,East India,Kitchen & Dining,622.85,696.6105642496376,116.0877149345691,WATCHLIST,7.5,0.9908,12.9,1235.0,82.93183561643835,26.592140604902912,,,,,
+52,"Style Baazar - Fancy Bazar, Guwahati",West Bengal / Assam,East India,Personal Care,1657.19,1249.2733268367006,207.23932683670063,MONITOR,11.1,0.0016,0.0,1676.0,148.862,47.47218360886095,,,,,
+52,"Style Baazar - Fancy Bazar, Guwahati",West Bengal / Assam,East India,Snacks & Beverages,2247.21,1727.7651609158263,284.0571609158264,MONITOR,10.9,0.0005,0.0,2368.0,206.244,65.06879704851367,,,,,
+53,"Bazaar Kolkata - Esplanade, Kolkata",West Bengal / Assam,East India,Clothing & Apparel,1065.2,614.3022712018512,75.820846544317,OK,13.8,0.0,0.0,626.0,76.92591780821918,17.368234125597734,,,,,
+53,"Bazaar Kolkata - Esplanade, Kolkata",West Bengal / Assam,East India,Dairy & Eggs,732.35,814.7439435169676,98.16123118820052,WATCHLIST,7.2,0.9882,13.1,1516.0,102.3689589041096,22.48573213090008,,,,,
+53,"Bazaar Kolkata - Esplanade, Kolkata",West Bengal / Assam,East India,Electronics & Appliances,447.33,306.13055162053223,37.14682559313497,MONITOR,11.6,0.0004,0.0,397.0,38.42624657534247,8.509200217742384,,,,,
+53,"Bazaar Kolkata - Esplanade, Kolkata",West Bengal / Assam,East India,Fresh Produce,2476.64,1526.412040109705,184.54982093162272,OK,12.9,0.0002,0.0,1733.0,191.69460273972604,42.27471261355638,,,,,
+53,"Bazaar Kolkata - Esplanade, Kolkata",West Bengal / Assam,East India,Groceries & Staples,1635.41,4102.152443738519,505.94674510838144,REORDER NOW,3.2,1.0,66.2,9659.0,513.7436712328767,115.8969059912868,,,,,
+53,"Bazaar Kolkata - Esplanade, Kolkata",West Bengal / Assam,East India,Health & Wellness,528.26,715.017232417857,87.43904063703505,REORDER SOON,5.9,0.9928,29.5,1442.0,89.65402739726028,20.029606615035977,,,,,
+53,"Bazaar Kolkata - Esplanade, Kolkata",West Bengal / Assam,East India,Home Care,1363.65,1227.4903951859933,152.52206641887,MONITOR,8.9,0.4035,0.0,2014.0,153.56690410958905,34.938134821991845,,,,,
+53,"Bazaar Kolkata - Esplanade, Kolkata",West Bengal / Assam,East India,Kitchen & Dining,1568.82,1018.853416554313,124.23596449951845,OK,12.3,0.0002,0.0,1239.0,127.80249315068494,28.458655061123363,,,,,
+53,"Bazaar Kolkata - Esplanade, Kolkata",West Bengal / Assam,East India,Personal Care,698.56,1833.4515686029472,224.2923357262349,REORDER NOW,3.0,0.9999,68.7,4353.0,229.8798904109589,51.37850574107579,,,,,
+53,"Bazaar Kolkata - Esplanade, Kolkata",West Bengal / Assam,East India,Snacks & Beverages,4488.79,2548.839594550343,312.5505534544526,OK,14.1,0.0,0.0,2533.0,319.4698630136986,71.59576074251787,,,,,
+54,"Khadims - Hatibagan, Kolkata",West Bengal / Assam,East India,Clothing & Apparel,473.62,663.783570293282,221.27003604670665,REORDER SOON,7.5,0.8989,31.5,1075.0,63.21621917808218,50.68618943462192,,,,,
+54,"Khadims - Hatibagan, Kolkata",West Bengal / Assam,East India,Dairy & Eggs,1325.18,883.2286042960567,294.13679607687857,OK,15.7,0.0004,0.0,736.0,84.15597260273972,67.377732801103,,,,,
+54,"Khadims - Hatibagan, Kolkata",West Bengal / Assam,East India,Electronics & Appliances,654.05,330.1752650725975,109.52471712739198,OK,20.7,0.0006,0.0,117.0,31.52150684931507,25.088758782145085,,,,,
+54,"Khadims - Hatibagan, Kolkata",West Bengal / Assam,East India,Fresh Produce,2579.51,1665.9801997052518,555.8482818970325,OK,16.3,0.0003,0.0,1307.0,158.59027397260274,127.32781996381593,,,,,
+54,"Khadims - Hatibagan, Kolkata",West Bengal / Assam,East India,Groceries & Staples,5817.73,4407.208985110025,1459.2905467538606,MONITOR,13.8,0.0005,0.0,4485.0,421.1312054794521,334.27877725525457,,,,,
+54,"Khadims - Hatibagan, Kolkata",West Bengal / Assam,East India,Health & Wellness,418.46,769.0997082406217,253.5107767337724,REORDER NOW,5.7,0.9663,49.4,1382.0,73.65556164383561,58.07155583656979,,,,,
+54,"Khadims - Hatibagan, Kolkata",West Bengal / Assam,East India,Home Care,1299.26,1324.7227253171602,438.892095180174,WATCHLIST,10.3,0.2777,4.2,1797.0,126.54723287671231,100.536739068297,,,,,
+54,"Khadims - Hatibagan, Kolkata",West Bengal / Assam,East India,Kitchen & Dining,473.62,1104.301319150364,368.1034561366652,REORDER NOW,4.5,0.9828,61.6,2103.0,105.17112328767124,84.3212295827696,,,,,
+54,"Khadims - Hatibagan, Kolkata",West Bengal / Assam,East India,Personal Care,1683.41,1987.6240048757336,656.4504980264185,WATCHLIST,8.9,0.4118,17.9,2967.0,190.16764383561645,150.3727069958788,,,,,
+54,"Khadims - Hatibagan, Kolkata",West Bengal / Assam,East India,Snacks & Beverages,2669.51,2760.7859680676524,918.3867351909402,WATCHLIST,10.1,0.286,5.3,3776.0,263.1998904109589,210.3742778091566,,,,,
+55,Lulu Mall Hypermarket - Thiruvananthapuram,Kerala,South India,Dairy & Eggs,262.18,180.0,,REORDER SOON,,80.4,71.1,,,,Lulu Hypermarket,Hypermarket,Regional,3.3,12.0
+55,Lulu Mall Hypermarket - Thiruvananthapuram,Kerala,South India,Fresh Produce,304.53,360.0,,OK,,25.5,89.6,,,,Lulu Hypermarket,Hypermarket,Regional,9.4,28.0
+55,Lulu Mall Hypermarket - Thiruvananthapuram,Kerala,South India,Groceries & Staples,1755.89,960.0,,OK,,84.1,14.5,,,,Lulu Hypermarket,Hypermarket,Regional,9.8,16.0
+55,Lulu Mall Hypermarket - Thiruvananthapuram,Kerala,South India,Snacks & Beverages,1142.26,480.0,,OK,,45.1,46.3,,,,Lulu Hypermarket,Hypermarket,Regional,10.3,23.0
+55,Lulu Mall Hypermarket - Thiruvananthapuram,Kerala,South India,Personal Care,617.85,300.0,,REORDER SOON,,27.2,81.4,,,,Lulu Hypermarket,Hypermarket,Regional,4.9,11.0
+55,Lulu Mall Hypermarket - Thiruvananthapuram,Kerala,South India,Home Care,367.52,240.0,,OK,,24.6,60.5,,,,Lulu Hypermarket,Hypermarket,Regional,6.5,21.0
+56,Pothys - Thiruvananthapuram,Kerala,South India,Clothing & Apparel,355.75,420.0,,OK,,32.4,50.2,,,,Pothys,Specialty,Regional,10.2,28.0
+56,Pothys - Thiruvananthapuram,Kerala,South India,Dairy & Eggs,415.32,180.0,,REORDER SOON,,35.2,75.4,,,,Pothys,Specialty,Regional,4.0,17.0
+56,Pothys - Thiruvananthapuram,Kerala,South India,Fresh Produce,579.17,360.0,,OK,,6.9,24.0,,,,Pothys,Specialty,Regional,6.9,28.0
+56,Pothys - Thiruvananthapuram,Kerala,South India,Groceries & Staples,1945.79,960.0,,OK,,40.6,43.5,,,,Pothys,Specialty,Regional,10.6,20.0
+56,Pothys - Thiruvananthapuram,Kerala,South India,Snacks & Beverages,1081.8,480.0,,REORDER SOON,,18.1,54.9,,,,Pothys,Specialty,Regional,2.9,15.0
+56,Pothys - Thiruvananthapuram,Kerala,South India,Personal Care,714.95,300.0,,OK,,25.4,31.2,,,,Pothys,Specialty,Regional,7.8,24.0
+56,Pothys - Thiruvananthapuram,Kerala,South India,Home Care,442.96,240.0,,REORDER SOON,,81.2,24.8,,,,Pothys,Specialty,Regional,3.1,25.0
+56,Pothys - Thiruvananthapuram,Kerala,South India,Electronics & Appliances,202.9,96.0,,OK,,41.8,74.9,,,,Pothys,Specialty,Regional,6.9,27.0
+57,Reliance Smart - Thiruvananthapuram,Kerala,South India,Dairy & Eggs,466.28,180.0,,OK,,84.0,57.2,,,,Reliance Smart,Hypermarket,National,10.9,15.0
+57,Reliance Smart - Thiruvananthapuram,Kerala,South India,Fresh Produce,472.84,360.0,,OK,,46.5,69.9,,,,Reliance Smart,Hypermarket,National,11.8,28.0
+57,Reliance Smart - Thiruvananthapuram,Kerala,South India,Groceries & Staples,2106.5,960.0,,OK,,18.7,34.3,,,,Reliance Smart,Hypermarket,National,9.7,18.0
+57,Reliance Smart - Thiruvananthapuram,Kerala,South India,Snacks & Beverages,762.07,480.0,,OK,,59.4,54.6,,,,Reliance Smart,Hypermarket,National,8.1,23.0
+57,Reliance Smart - Thiruvananthapuram,Kerala,South India,Personal Care,426.29,300.0,,REORDER SOON,,80.4,71.1,,,,Reliance Smart,Hypermarket,National,3.3,12.0
+57,Reliance Smart - Thiruvananthapuram,Kerala,South India,Home Care,225.43,240.0,,OK,,77.1,34.9,,,,Reliance Smart,Hypermarket,National,6.2,25.0
+58,Ramachandran - Thiruvananthapuram,Kerala,South India,Clothing & Apparel,985.7,420.0,,OK,,12.2,14.8,,,,Ramachandran,Specialty,Regional,10.4,23.0
+58,Ramachandran - Thiruvananthapuram,Kerala,South India,Dairy & Eggs,356.45,180.0,,OK,,77.7,13.9,,,,Ramachandran,Specialty,Regional,10.3,25.0
+58,Ramachandran - Thiruvananthapuram,Kerala,South India,Fresh Produce,353.43,360.0,,OK,,10.4,86.7,,,,Ramachandran,Specialty,Regional,6.5,26.0
+58,Ramachandran - Thiruvananthapuram,Kerala,South India,Groceries & Staples,1352.55,960.0,,REORDER SOON,,69.7,30.4,,,,Ramachandran,Specialty,Regional,3.2,24.0
+58,Ramachandran - Thiruvananthapuram,Kerala,South India,Snacks & Beverages,1163.05,480.0,,OK,,67.8,40.8,,,,Ramachandran,Specialty,Regional,8.1,27.0
+58,Ramachandran - Thiruvananthapuram,Kerala,South India,Personal Care,666.93,300.0,,REORDER SOON,,35.2,75.4,,,,Ramachandran,Specialty,Regional,4.0,17.0
+58,Ramachandran - Thiruvananthapuram,Kerala,South India,Home Care,305.62,240.0,,OK,,72.6,12.6,,,,Ramachandran,Specialty,Regional,10.8,11.0
+58,Ramachandran - Thiruvananthapuram,Kerala,South India,Electronics & Appliances,257.94,96.0,,OK,,79.4,24.3,,,,Ramachandran,Specialty,Regional,10.2,18.0

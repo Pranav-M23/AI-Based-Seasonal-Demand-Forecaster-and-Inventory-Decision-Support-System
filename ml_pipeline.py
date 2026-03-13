@@ -11,6 +11,7 @@ Orchestrates the full ML-powered pipeline:
 """
 
 import os
+import json
 import warnings
 import numpy as np
 import pandas as pd
@@ -52,6 +53,60 @@ def norm_region(x):
         "kerala": "Kerala",
     }
     return mapping.get(s.lower(), s)
+
+
+def load_regional_festival_calendar():
+    calendar_path = os.path.join(DATA_DIR, "festival_calendar_regional.json")
+    if not os.path.exists(calendar_path):
+        raise FileNotFoundError(f"Regional festival file not found: {calendar_path}")
+    with open(calendar_path, "r", encoding="utf-8") as fp:
+        return json.load(fp)
+
+
+def load_state_festival_calendar():
+    calendar_path = os.path.join(DATA_DIR, "festival_calendar_state.json")
+    if not os.path.exists(calendar_path):
+        return {}
+    with open(calendar_path, "r", encoding="utf-8") as fp:
+        return json.load(fp)
+
+
+def build_regional_festival_events(calendar_obj):
+    rows = []
+    for region_name, region_data in (calendar_obj or {}).items():
+        for fest in region_data.get("festivals", []):
+            start = pd.to_datetime(fest["date"])
+            duration = max(1, int(fest.get("duration_days", 1)))
+            end = start + pd.Timedelta(days=duration - 1)
+            rows.append({
+                "Region": region_name,
+                "Festival": fest.get("name"),
+                "StartDate": start,
+                "EndDate": end,
+                "Weight": float(max(0.0, float(fest.get("impact_multiplier", 1.0)) - 1.0)),
+                "Type": fest.get("type", "local"),
+            })
+    return pd.DataFrame(rows)
+
+
+def build_state_festival_events(state_calendar_obj, state_to_region_map):
+    rows = []
+    for state_name, festivals in (state_calendar_obj or {}).items():
+        region_name = state_to_region_map.get(state_name)
+        for fest in festivals:
+            start = pd.to_datetime(fest["date"])
+            duration = max(1, int(fest.get("duration_days", 1)))
+            end = start + pd.Timedelta(days=duration - 1)
+            rows.append({
+                "Region": region_name,
+                "State": state_name,
+                "Festival": fest.get("name"),
+                "StartDate": start,
+                "EndDate": end,
+                "Weight": float(max(0.0, float(fest.get("impact_multiplier", 1.0)) - 1.0)),
+                "Type": "state-local",
+            })
+    return pd.DataFrame(rows)
 
 
 # ============================================================================
@@ -161,9 +216,12 @@ def generate_ml_forecast(models, stores_df, cats_df):
     le_as = joblib.load(os.path.join(MODEL_DIR, "le_assortment.pkl"))
 
     dates = pd.date_range(start=f"{PLANNING_YEAR}-01-01", end=f"{PLANNING_YEAR}-12-31", freq="D")
-    festival_cal = pd.read_csv(os.path.join(DATA_DIR, "festival_calender.csv"))
-    festival_cal["StartDate"] = pd.to_datetime(festival_cal["StartDate"])
-    festival_cal["EndDate"] = pd.to_datetime(festival_cal["EndDate"])
+    regional_calendar = load_regional_festival_calendar()
+    state_calendar = load_state_festival_calendar()
+    state_to_region = stores_df.set_index("State")["Region"].to_dict()
+    regional_events = build_regional_festival_events(regional_calendar)
+    state_events = build_state_festival_events(state_calendar, state_to_region)
+    festival_events = pd.concat([state_events, regional_events], ignore_index=True)
 
     # Map Indian stores to Rossmann store IDs for feature compatibility
     # Each Indian store maps to a Rossmann store proportionally
@@ -235,31 +293,98 @@ def generate_ml_forecast(models, stores_df, cats_df):
         big_frame["Festival"] = None
         big_frame["Festival_Weight"] = 0.0
 
-        for _, fest in festival_cal.iterrows():
+        for _, fest in festival_events.iterrows():
             fest_name = fest["Festival"]
-            fest_region = norm_region(fest.get("Region", "Pan-India"))
+            fest_region = fest.get("Region", "")
+            fest_type = (fest.get("Type") or "local").lower()
             start = fest["StartDate"]
             end = fest["EndDate"]
+            fest_name_l = str(fest_name).lower()
+            is_diwali = "diwali" in fest_name_l
 
-            date_mask = (big_frame["Date"] >= start) & (big_frame["Date"] <= end)
-            if fest_region == "Pan-India":
+            # Temporal profile: pre-festival, core festival, post-festival
+            pre_days = 7
+            post_days = 2
+            pre_factor = 0.35
+            core_factor = 1.0
+            post_factor = 0.45
+
+            # Diwali should peak in the core window (not only lead-up)
+            if is_diwali:
+                pre_days = 5
+                post_days = 3
+                pre_factor = 0.45
+                core_factor = 1.25
+                post_factor = 0.60
+
+            core_mask = (big_frame["Date"] >= start) & (big_frame["Date"] <= end)
+            pre_mask = (big_frame["Date"] >= (start - pd.Timedelta(days=pre_days))) & (big_frame["Date"] < start)
+            post_mask = (big_frame["Date"] > end) & (big_frame["Date"] <= (end + pd.Timedelta(days=post_days)))
+
+            if fest_type == "pan-indian":
                 region_mask = pd.Series(True, index=big_frame.index)
+            elif fest_type == "state-local":
+                region_mask = (big_frame["_State"].astype(str) == str(fest.get("State", "")))
             else:
-                # Map Indian region names to festival regions
-                region_map = {
-                    "North India": "North-India",
-                    "South India": "Kerala",  # approximate
-                    "West India": "West-India",
-                    "East India": "East-India",
-                    "Central India": "Pan-India",
-                    "Northeast India": "East-India",
-                }
-                mapped = big_frame["_Region"].map(region_map).fillna(big_frame["_Region"])
-                region_mask = (mapped == fest_region) | (big_frame["_Region"] == fest_region)
+                region_mask = (big_frame["_Region"].astype(str) == str(fest_region))
 
-            mask = date_mask & region_mask
-            big_frame.loc[mask, "Festival"] = fest_name
-            big_frame.loc[mask, "Festival_Weight"] = max(fest["Weight"], big_frame.loc[mask, "Festival_Weight"].max())
+            base_weight = float(fest["Weight"])
+
+            pre_weight = base_weight * pre_factor
+            core_weight = base_weight * core_factor
+            post_weight = base_weight * post_factor
+
+            pre_apply_mask = pre_mask & region_mask
+            core_apply_mask = core_mask & region_mask
+            post_apply_mask = post_mask & region_mask
+
+            if pre_apply_mask.any():
+                big_frame.loc[pre_apply_mask, "Festival_Weight"] = np.maximum(
+                    big_frame.loc[pre_apply_mask, "Festival_Weight"].values,
+                    pre_weight
+                )
+
+            if core_apply_mask.any():
+                core_updated_idx = []
+
+                if is_diwali:
+                    south_rows = big_frame["_Region"].astype(str) == "South India"
+                    core_apply_south = core_apply_mask & south_rows
+                    core_apply_non_south = core_apply_mask & (~south_rows)
+
+                    if core_apply_non_south.any():
+                        non_south_core_weight = max(core_weight, 1.65)
+                        prev_non_south = big_frame.loc[core_apply_non_south, "Festival_Weight"].values
+                        new_non_south = np.maximum(prev_non_south, non_south_core_weight)
+                        write_non_south = new_non_south > prev_non_south
+                        big_frame.loc[core_apply_non_south, "Festival_Weight"] = new_non_south
+                        idx_non_south = big_frame.loc[core_apply_non_south].index
+                        core_updated_idx.extend(idx_non_south[write_non_south].tolist())
+
+                    if core_apply_south.any():
+                        south_core_weight = max(core_weight, 1.15)
+                        prev_south = big_frame.loc[core_apply_south, "Festival_Weight"].values
+                        new_south = np.maximum(prev_south, south_core_weight)
+                        write_south = new_south > prev_south
+                        big_frame.loc[core_apply_south, "Festival_Weight"] = new_south
+                        idx_south = big_frame.loc[core_apply_south].index
+                        core_updated_idx.extend(idx_south[write_south].tolist())
+                else:
+                    prev_core_weights = big_frame.loc[core_apply_mask, "Festival_Weight"].values
+                    new_core_weights = np.maximum(prev_core_weights, core_weight)
+                    write_core = new_core_weights > prev_core_weights
+                    big_frame.loc[core_apply_mask, "Festival_Weight"] = new_core_weights
+                    core_idx = big_frame.loc[core_apply_mask].index
+                    core_updated_idx.extend(core_idx[write_core].tolist())
+
+                if core_updated_idx:
+                    big_frame.loc[core_updated_idx, "Festival"] = fest_name
+
+            if post_apply_mask.any():
+                big_frame.loc[post_apply_mask, "Festival_Weight"] = np.maximum(
+                    big_frame.loc[post_apply_mask, "Festival_Weight"].values,
+                    post_weight
+                )
 
         # Use festival impact model for uplift prediction
         festival_model = models["festival_uplift"]
@@ -277,11 +402,30 @@ def generate_ml_forecast(models, stores_df, cats_df):
             # Blend ML uplift with calendar weight: 60% ML, 40% calendar
             calendar_weight = big_frame.loc[fest_rows, "Festival_Weight"].values
             blended_uplift = 0.6 * np.clip(ml_uplift, 0, 0.5) + 0.4 * calendar_weight
+
+            fest_names = big_frame.loc[fest_rows, "Festival"].fillna("").astype(str).str.lower()
+            fest_regions = big_frame.loc[fest_rows, "_Region"].astype(str)
+            fest_states = big_frame.loc[fest_rows, "_State"].astype(str)
+
+            diwali_mask = fest_names.str.contains("diwali", regex=False)
+            if diwali_mask.any():
+                diwali_floor = np.where(
+                    (fest_regions == "South India").values,
+                    1.15,
+                    1.65
+                )
+                blended_uplift = np.where(diwali_mask.values, np.maximum(blended_uplift, diwali_floor), blended_uplift)
+
+            # East realism: Durga core in West Bengal can outshine Diwali
+            durga_wb_mask = fest_names.str.contains("durga", regex=False) & (fest_states.str.lower() == "west bengal")
+            if durga_wb_mask.any():
+                blended_uplift = np.where(durga_wb_mask.values, np.maximum(blended_uplift, 2.0), blended_uplift)
+
             big_frame.loc[fest_rows, "Festival_Weight"] = np.round(blended_uplift, 4)
 
         # Adjusted forecast
         big_frame["Adjusted"] = np.round(big_frame["Baseline"] * (1 + big_frame["Festival_Weight"]), 2)
-        big_frame["FSI"] = np.where(big_frame["Festival"].notna(), np.round(big_frame["Festival_Weight"] * 1000, 1), 0)
+        big_frame["FSI"] = np.where(big_frame["Festival"].notna(), np.round(big_frame["Festival_Weight"] * 100, 1), 0)
 
         # Collect as DataFrame slice (vectorized, no row-by-row loop)
         chunk = pd.DataFrame({
@@ -519,18 +663,31 @@ def generate_ml_inventory(models, forecast_df, discount_df):
     stats["Days_Supply"] = (stats["Current_Stock"] / stats["Avg_Daily_Demand"]).round(1)
     stats["Inventory_Position"] = stats["Current_Stock"] / stats["Reorder_Point"]
 
-    # Check upcoming festivals (next 7 days from "today")
+    # Check upcoming festivals (next 30 days from "today") by region
     today = pd.Timestamp(f"{PLANNING_YEAR}-03-03")  # simulation date
-    festival_cal = pd.read_csv(os.path.join(DATA_DIR, "festival_calender.csv"))
-    festival_cal["StartDate"] = pd.to_datetime(festival_cal["StartDate"])
-    upcoming_festivals = festival_cal[
-        (festival_cal["StartDate"] >= today) &
-        (festival_cal["StartDate"] <= today + pd.Timedelta(days=30))
+    regional_calendar = load_regional_festival_calendar()
+    state_calendar = load_state_festival_calendar()
+    state_to_region = forecast_df[["State", "Region"]].drop_duplicates().set_index("State")["Region"].to_dict()
+    regional_events = build_regional_festival_events(regional_calendar)
+    state_events = build_state_festival_events(state_calendar, state_to_region)
+    festival_events = pd.concat([state_events, regional_events], ignore_index=True)
+    upcoming = festival_events[
+        (festival_events["StartDate"] >= today) &
+        (festival_events["StartDate"] <= today + pd.Timedelta(days=30))
     ]
-    has_upcoming = len(upcoming_festivals) > 0
+    upcoming_regions = set(upcoming["Region"].astype(str).tolist())
+    upcoming_states = set(upcoming["State"].astype(str).tolist()) if "State" in upcoming.columns else set()
+    has_upcoming_pan = (upcoming["Type"].str.lower() == "pan-indian").any() if not upcoming.empty else False
 
     # Prepare ML features
-    stats["Festival_Upcoming"] = 1 if has_upcoming else 0
+    stats["Festival_Upcoming"] = stats.apply(
+        lambda row: 1 if (
+            has_upcoming_pan
+            or str(row["Region"]) in upcoming_regions
+            or str(row["State"]) in upcoming_states
+        ) else 0,
+        axis=1
+    )
     stats["Month"] = today.month
     stats["Region_enc"] = stats["Region"].map(region_to_enc).fillna(0).astype(int)
     stats["Category_enc"] = stats["Category"].map(cat_to_enc).fillna(0).astype(int)

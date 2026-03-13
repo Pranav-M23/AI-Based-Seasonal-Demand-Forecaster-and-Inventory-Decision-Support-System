@@ -1,4 +1,4 @@
-import React, { useMemo, useRef } from 'react';
+import React, { useMemo, useRef, useImperativeHandle } from 'react';
 import { Line } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -12,23 +12,12 @@ import {
   Filler
 } from 'chart.js';
 import { TrendingUp } from 'lucide-react';
+import { buildFestivalMarkers, FestivalMarkersLegend } from './FestivalMarkers';
 
 ChartJS.register(
   CategoryScale, LinearScale, PointElement,
   LineElement, Title, Tooltip, Legend, Filler
 );
-
-// Indian festival calendar 2026 — drives vertical annotations
-const FESTIVAL_CALENDAR = [
-  { date: '2026-01-14', name: 'Pongal / Makar Sankranti', color: '#f59e0b', short: 'Pongal'   },
-  { date: '2026-03-25', name: 'Holi / Spring Season',     color: '#ec4899', short: 'Holi'     },
-  { date: '2026-04-14', name: 'Vishu / Tamil New Year',   color: '#10b981', short: 'Vishu'    },
-  { date: '2026-08-15', name: 'Independence Day',          color: '#f97316', short: 'I-Day'    },
-  { date: '2026-08-22', name: 'Onam (Peak)',               color: '#84cc16', short: 'Onam'     },
-  { date: '2026-10-02', name: 'Navaratri / Dussehra',     color: '#a855f7', short: 'Navratri' },
-  { date: '2026-10-20', name: 'Diwali Shopping Peak',     color: '#eab308', short: 'Diwali'   },
-  { date: '2026-12-25', name: 'Christmas / Year-End',     color: '#06b6d4', short: 'X-Mas'    },
-];
 
 function getWeekStart(dateStr) {
   const d = new Date(dateStr + 'T00:00:00');
@@ -37,8 +26,11 @@ function getWeekStart(dateStr) {
   return d.toISOString().split('T')[0];
 }
 
-function ForecastChart({ data, category }) {
+const ForecastChart = React.forwardRef(function ForecastChart({ data, category, festivals = [] }, forwardedRef) {
   const chartRef = useRef(null);
+
+  // Expose chart instance to parent for PDF capture
+  useImperativeHandle(forwardedRef, () => chartRef.current, []);
 
   // ── 1. Aggregate daily → weekly + rolling avg + festival markers ──────────
   const { weeklyLabels, weeklyValues, rollingAvg, festivalMarkers } = useMemo(() => {
@@ -70,20 +62,10 @@ function ForecastChart({ data, category }) {
     });
 
     // Match festival dates → nearest week index
-    const markers = FESTIVAL_CALENDAR.map(fest => {
-      const festWS = getWeekStart(fest.date);
-      let closestIdx = -1, minDiff = Infinity;
-      sorted.forEach((ws, i) => {
-        const diff = Math.abs(new Date(ws) - new Date(festWS));
-        if (diff < minDiff) { minDiff = diff; closestIdx = i; }
-      });
-      if (closestIdx < 0 || minDiff > 8 * 86400000) return null;
-      const backendFsi = weekMap.get(sorted[closestIdx])?.fsi || 0;
-      return { index: closestIdx, ...fest, fsi: backendFsi };
-    }).filter(Boolean);
+    const markers = buildFestivalMarkers(sorted, festivals, new Map(sorted.map((ws) => [ws, weekMap.get(ws)?.fsi || 0])));
 
     return { weeklyLabels: labels, weeklyValues: values, rollingAvg: rolling, festivalMarkers: markers };
-  }, [data]);
+  }, [data, festivals]);
 
   // ── 2. Custom plugin: vertical festival lines + badge labels ──────────────
   const festivalLinesPlugin = useMemo(() => ({
@@ -109,7 +91,7 @@ function ForecastChart({ data, category }) {
         // Floating badge
         ctx.globalAlpha = 1;
         ctx.setLineDash([]);
-        const label = fsi > 0 ? `${short} +${Math.round(fsi)}%` : short;
+        const label = `${short}`;
         const pad = 5;
         ctx.font = 'bold 9px Inter, system-ui, sans-serif';
         const tw = ctx.measureText(label).width;
@@ -228,15 +210,23 @@ function ForecastChart({ data, category }) {
               const idx = items[0]?.dataIndex;
               const fest = festByIndex[idx];
               return fest
-                ? `📅 Week of ${weeklyLabels[idx]}   🎉 ${fest.name}`
+                ? `📅 Week of ${weeklyLabels[idx]}   ${fest.markerEmoji || '🎉'} ${fest.name}`
                 : `📅 Week of ${weeklyLabels[idx]}`;
             },
             label: (context) => {
               const val = context.parsed.y;
               if (context.datasetIndex === 0) {
                 const fest = festByIndex[context.dataIndex];
-                const fsiTag = fest?.fsi > 0 ? `  │  FSI: +${Math.round(fest.fsi)}%` : '';
-                return `  Weekly Sales: ${val.toLocaleString('en-IN')}${fsiTag}`;
+                if (fest) {
+                  return [
+                    `  Weekly Sales: ${val.toLocaleString('en-IN')}`,
+                    `  Festival: ${fest.name}`,
+                    `  Date: ${fest.date}`,
+                    `  Type: ${fest.type === 'pan-indian' ? 'Pan-Indian' : 'Local'}`,
+                    `  Impact: ${fest.impactMultiplier.toFixed(1)}×`,
+                  ];
+                }
+                return `  Weekly Sales: ${val.toLocaleString('en-IN')}`;
               }
               return `  4-Wk Trend: ${val.toLocaleString('en-IN')}`;
             },
@@ -278,18 +268,19 @@ function ForecastChart({ data, category }) {
         <h3>Sales Forecast — {category} Category</h3>
         <div className="festival-pills">
           {festivalMarkers.map(f => (
-            <span key={f.short} className="festival-pill"
+            <span key={`${f.short}-${f.date}`} className="festival-pill"
               style={{ borderColor: f.color, color: f.color }} title={f.name}>
               {f.short}
             </span>
           ))}
         </div>
       </div>
+      <FestivalMarkersLegend festivals={festivalMarkers} />
       <div className="chart-container">
         <Line ref={chartRef} data={chartData} options={options} plugins={[festivalLinesPlugin, monthGridPlugin]} />
       </div>
     </div>
   );
-}
+});
 
 export default ForecastChart;

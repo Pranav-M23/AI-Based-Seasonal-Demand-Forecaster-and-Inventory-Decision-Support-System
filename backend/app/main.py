@@ -10,6 +10,8 @@ from datetime import date
 from typing import Optional
 
 from .data_loader import store
+from .database import init_db, create_prediction, get_all_predictions, get_prediction, update_prediction, delete_prediction, bulk_delete_predictions, get_catalog_stats
+from .festival_mapper import get_context_calendar, normalize_region_name
 from .schemas import (
     HealthResponse, MetaResponse,
     RegionsResponse, StoresResponse, CategoriesResponse,
@@ -17,7 +19,9 @@ from .schemas import (
     DiscountSeriesResponse, DiscountPoint,
     InventoryExecSummary, RegionActionsResponse,
     StoreDecisionsResponse, StoreDecisionRow,
-    KPIRegionResponse, KPIRegionRow
+    KPIRegionResponse, KPIRegionRow,
+    PredictionCreate, PredictionUpdate, PredictionResponse,
+    PredictionListResponse, BulkDeleteRequest, CatalogStatsResponse
 )
 
 app = FastAPI(
@@ -36,6 +40,10 @@ app.add_middleware(
 
 @app.on_event("startup")
 def _startup():
+    # Initialize predictions database
+    init_db()
+    print("✅ Predictions database initialized")
+
     try:
         store.load()
         print("✅ Data loaded successfully")
@@ -102,7 +110,7 @@ def meta():
         "categories": store.categories,
         "months": list(range(1, 13)),  # 1-12
         "years": [2026],  # Available years
-        "store_names": {str(k): v for k, v in store.store_names.items()},  # {store_id: "Chain - Location"}
+        "store_names": {str(int(k)): v for k, v in store.store_names.items()},  # {store_id: "Chain - Location"}
     }
 
 @app.post("/refresh")
@@ -141,6 +149,13 @@ def stores(region: str | None = None, state: str | None = None):
 @app.get("/categories", response_model=CategoriesResponse)
 def categories():
     return {"categories": store.categories}
+
+
+@app.get("/festivals/region/{region_name}")
+def festivals_by_region(region_name: str, state: str | None = Query(None)):
+    """Return festivals for selected region/state (state-local + region-local + pan-indian)."""
+    normalized = normalize_region_name(region_name)
+    return get_context_calendar(normalized, state)
 
 # ============================================================================
 # ENHANCED FORECAST ENDPOINTS WITH MONTH/YEAR FILTERING
@@ -558,3 +573,74 @@ def debug_data_status():
         "categories": store.categories,
         "stores_count": len(store.stores) if store.stores else 0
     }
+
+
+# ============================================================================
+# PREDICTIONS CATALOG ENDPOINTS
+# ============================================================================
+
+@app.post("/predictions", response_model=PredictionResponse)
+def create_prediction_endpoint(data: PredictionCreate):
+    """Save a new prediction to the catalog"""
+    result = create_prediction(data.model_dump())
+    return result
+
+
+@app.get("/predictions", response_model=PredictionListResponse)
+def list_predictions(
+    status: str | None = None,
+    month: int | None = Query(None, ge=1, le=12),
+    year: int | None = None,
+    category: str | None = None,
+    region: str | None = None,
+    search: str | None = None,
+    sort_by: str = "created_at",
+    sort_order: str = "desc",
+):
+    """List all saved predictions with optional filters"""
+    rows = get_all_predictions(
+        status=status, month=month, year=year,
+        category=category, region=region, search=search,
+        sort_by=sort_by, sort_order=sort_order,
+    )
+    return {"predictions": rows, "total": len(rows)}
+
+
+@app.get("/predictions/stats", response_model=CatalogStatsResponse)
+def predictions_stats():
+    """Get catalog analytics/statistics"""
+    return get_catalog_stats()
+
+
+@app.get("/predictions/{prediction_id}", response_model=PredictionResponse)
+def get_prediction_endpoint(prediction_id: int):
+    """Get a single prediction by ID"""
+    result = get_prediction(prediction_id)
+    if not result:
+        raise HTTPException(status_code=404, detail="Prediction not found")
+    return result
+
+
+@app.put("/predictions/{prediction_id}", response_model=PredictionResponse)
+def update_prediction_endpoint(prediction_id: int, data: PredictionUpdate):
+    """Update an existing prediction"""
+    update_data = {k: v for k, v in data.model_dump().items() if v is not None}
+    result = update_prediction(prediction_id, update_data)
+    if not result:
+        raise HTTPException(status_code=404, detail="Prediction not found")
+    return result
+
+
+@app.delete("/predictions/{prediction_id}")
+def delete_prediction_endpoint(prediction_id: int):
+    """Delete a prediction"""
+    if not delete_prediction(prediction_id):
+        raise HTTPException(status_code=404, detail="Prediction not found")
+    return {"status": "deleted", "id": prediction_id}
+
+
+@app.post("/predictions/bulk-delete")
+def bulk_delete_endpoint(req: BulkDeleteRequest):
+    """Delete multiple predictions at once"""
+    deleted = bulk_delete_predictions(req.ids)
+    return {"status": "deleted", "count": deleted}

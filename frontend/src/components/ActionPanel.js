@@ -1,9 +1,25 @@
 ﻿import React, { useMemo } from 'react';
 import { Lightbulb } from 'lucide-react';
-import { FESTIVAL_CALENDAR_FULL, QUARTERS, MONTHS } from './StockSection';
+import { QUARTERS, MONTHS } from './StockSection';
 
-function ActionPanel({ decision, discounts, forecastData, filterMode, selectedMonth, selectedWeek, selectedQuarter }) {
+function toFestivalCalendar(festivals = []) {
+  return (festivals || []).map((f) => {
+    const d = new Date(`${f.date}T00:00:00`);
+    return {
+      month: d.getMonth(),
+      week: Math.min(4, Math.ceil(d.getDate() / 7)),
+      name: f.name,
+      date: f.date,
+      fsiBoost: Number(f.impact_multiplier || 1),
+      type: f.type,
+      color: f.type === 'pan-indian' ? '#f59e0b' : '#10b981',
+    };
+  });
+}
+
+function ActionPanel({ decision, discounts, forecastData, festivals = [], filterMode, selectedMonth, selectedWeek, selectedQuarter }) {
   const { scenario, actions, scenarioClass, festivalAlert, fsi, periodLabel } = useMemo(() => {
+    const festivalCalendar = toFestivalCalendar(festivals);
     // â”€â”€ Derive FSI for the selected period (mirrors StockSection logic) â”€â”€â”€
     let fsi = 1.0;
     let dataFsi = 1.0;
@@ -12,12 +28,12 @@ function ActionPanel({ decision, discounts, forecastData, filterMode, selectedMo
     let festivalMatch = null;
     if (filterMode === 'quarter') {
       const qMonths = QUARTERS[selectedQuarter].months;
-      const hits = FESTIVAL_CALENDAR_FULL.filter(f => qMonths.includes(f.month));
+      const hits = festivalCalendar.filter(f => qMonths.includes(f.month));
       festivalMatch = hits.sort((a, b) => b.fsiBoost - a.fsiBoost)[0] || null;
     } else {
-      festivalMatch = FESTIVAL_CALENDAR_FULL.find(
+      festivalMatch = festivalCalendar.find(
         f => f.month === selectedMonth && f.week === selectedWeek
-      ) || FESTIVAL_CALENDAR_FULL.filter(f => f.month === selectedMonth)
+      ) || festivalCalendar.filter(f => f.month === selectedMonth)
          .sort((a, b) => b.fsiBoost - a.fsiBoost)[0] || null;
     }
 
@@ -48,7 +64,7 @@ function ActionPanel({ decision, discounts, forecastData, filterMode, selectedMo
         dataFsi = avg / baseline;
       }
       const maxBackendFsi = Math.max(...periodPoints.map(p => p.fsi || 0));
-      if (maxBackendFsi > 0) dataFsi = Math.max(dataFsi, 1 + maxBackendFsi);
+      if (maxBackendFsi > 0) dataFsi = Math.max(dataFsi, 1 + (maxBackendFsi / 100));
     }
     fsi = festivalMatch ? Math.max(dataFsi, festivalMatch.fsiBoost) : dataFsi;
 
@@ -149,7 +165,7 @@ function ActionPanel({ decision, discounts, forecastData, filterMode, selectedMo
       // â”€â”€ âœ… Balanced â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       scenario      = '✅ Healthy Movement. Inventory levels are stable.';
       scenarioClass = 'scenario--ok';
-      const nextFest = FESTIVAL_CALENDAR_FULL
+      const nextFest = festivalCalendar
         .filter(f => {
           const now = new Date();
           const d   = new Date(now.getFullYear(), f.month, f.week * 7 - 3);
@@ -173,7 +189,7 @@ function ActionPanel({ decision, discounts, forecastData, filterMode, selectedMo
     }
 
     return { scenario, actions, scenarioClass, festivalAlert: festivalMatch, fsi, periodLabel };
-  }, [decision, discounts, forecastData, filterMode, selectedMonth, selectedWeek, selectedQuarter]);
+  }, [decision, discounts, forecastData, festivals, filterMode, selectedMonth, selectedWeek, selectedQuarter]);
 
   return (
     <div className={`action-panel ${scenarioClass}`}>

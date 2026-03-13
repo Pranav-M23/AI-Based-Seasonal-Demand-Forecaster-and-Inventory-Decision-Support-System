@@ -53,3 +53,7 @@ Store_ID,Store_Name,Chain,Store_Type,Scope,State,Region,Categories,Num_Categorie
 52,"Style Baazar - Fancy Bazar, Guwahati",Style Baazar,Fashion Retail,East,West Bengal / Assam,East India,Clothing & Apparel,1,33306,2.2,True,False
 53,"Bazaar Kolkata - Esplanade, Kolkata",Bazaar Kolkata,Discount Retail,East,West Bengal / Assam,East India,Clothing & Apparel,1,19371,4.5,True,True
 54,"Khadims - Hatibagan, Kolkata",Khadims,Footwear,East,West Bengal / Assam,East India,Clothing & Apparel,1,23932,7.3,True,True
+55,Lulu Mall Hypermarket - Thiruvananthapuram,Lulu Hypermarket,Hypermarket,South,Kerala,South India,"Dairy & Eggs,Bakery & Snacks,Beverages,Fruits & Vegetables,Meat & Seafood,Frozen Foods,Personal Care,Household Items,Clothing & Apparel",9,95000,3.2,True,True
+56,"Pothys - MG Road, Thiruvananthapuram",Pothys,Specialty Retail,South,Kerala,South India,Clothing & Apparel,1,45000,1.5,True,False
+57,"Reliance Smart - Kazhakkoottam, Thiruvananthapuram",Reliance Smart,Supermarket,South,Kerala,South India,"Dairy & Eggs,Bakery & Snacks,Beverages,Fruits & Vegetables,Personal Care,Household Items",6,28000,2.8,True,True
+58,"Ramachandran - East Fort, Thiruvananthapuram",Ramachandran,Department Store,South,Kerala,South India,Clothing & Apparel,1,18500,0.9,False,False

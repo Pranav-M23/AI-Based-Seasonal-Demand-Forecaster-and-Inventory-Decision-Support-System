@@ -43,7 +43,7 @@ class DataStore:
         
         if os.path.exists(new_forecast_file):
             print(f"   ✅ Found NEW Indian stores forecast: {new_forecast_file}")
-            fc = pd.read_csv(new_forecast_file)
+            fc = pd.read_csv(new_forecast_file, low_memory=False)
             
             # Map new columns to expected format
             column_mapping = {
@@ -60,6 +60,18 @@ class DataStore:
                     fc = fc.rename(columns={old_col: new_col})
                     print(f"      Mapped: {old_col} → {new_col}")
             
+            # If both Store_ID and Store columns exist, fill NaN Store values with Store_ID
+            if 'Store_ID' in fc.columns and 'Store' in fc.columns:
+                fc['Store'] = fc['Store'].fillna(fc['Store_ID'])
+            
+            # Ensure Store column is integer
+            if 'Store' in fc.columns:
+                fc['Store'] = fc['Store'].astype(float).astype('Int64')
+
+            # If StoreName has NaN rows but Store_Name exists, fill from Store_Name
+            if 'StoreName' in fc.columns and 'Store_Name' in fc.columns:
+                fc['StoreName'] = fc['StoreName'].fillna(fc['Store_Name'])
+
             # Ensure ForecastValue exists
             if 'ForecastValue' not in fc.columns:
                 if 'Adjusted_Forecast' in fc.columns:
@@ -69,9 +81,15 @@ class DataStore:
                 elif 'Baseline_Forecast' in fc.columns:
                     fc['ForecastValue'] = fc['Baseline_Forecast']
             
-            # Store name mapping (optional)
-            if 'StoreName' in fc.columns:
-                self.store_names = fc.set_index('Store')['StoreName'].to_dict()
+            # Store name mapping - merge Store_Name and StoreName sources
+            name_col = 'StoreName' if 'StoreName' in fc.columns else ('Store_Name' if 'Store_Name' in fc.columns else None)
+            if name_col:
+                valid_names = fc[['Store', name_col]].dropna(subset=[name_col])
+                if not valid_names.empty:
+                    self.store_names = {
+                        int(k): v
+                        for k, v in valid_names.drop_duplicates('Store').set_index('Store')[name_col].to_dict().items()
+                    }
                 print(f"      ✅ Loaded {len(self.store_names)} store names")
             
         else:
@@ -366,11 +384,6 @@ class DataStore:
     def stores(self):
         if self.forecast is None or self.forecast.empty:
             return []
-        s_list = self.forecast["Store"].astype(str).str.strip()
-        s_list = s_list[s_list != ""].unique().tolist()
-        try:
-            return sorted([int(float(s)) for s in s_list])
-        except ValueError:
-            return sorted(s_list)
+        return sorted(self.forecast["Store"].dropna().astype(int).unique().tolist())
 
 store = DataStore()

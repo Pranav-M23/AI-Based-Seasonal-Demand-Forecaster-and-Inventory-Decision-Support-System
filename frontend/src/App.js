@@ -1,13 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { dashboardAPI } from './services/api';
+import React, { useState, useEffect, useRef } from 'react';
+import { dashboardAPI, predictionsAPI } from './services/api';
+import Sidebar from './components/Sidebar';
+import ShopOwnerAnalytics from './components/ShopOwnerAnalytics';
+import PredictionsCatalog from './components/PredictionsCatalog';
 import Header from './components/Header';
 import SummaryCards from './components/SummaryCards';
 import ForecastChart from './components/ForecastChart';
 import StockSection from './components/StockSection';
 import ActionPanel from './components/ActionPanel';
+import { generateInventoryPDF } from './components/InventoryPDFExport';
 import './App.css';
 
 function App() {
+  const [activePage, setActivePage] = useState('inventory');
   const [metadata, setMetadata] = useState(null);
   const [selectedStore, setSelectedStore] = useState(null);
   const [selectedRegion, setSelectedRegion] = useState(null);
@@ -20,6 +25,15 @@ function App() {
   const [storeDecisions, setStoreDecisions] = useState(null);
   const [discounts, setDiscounts] = useState(null);
   const [chartLoading, setChartLoading] = useState(false);
+  const [pdfBusy, setPdfBusy] = useState(false);
+  const [regionalFestivals, setRegionalFestivals] = useState([]);
+  const [selectedState, setSelectedState] = useState('');
+
+  // Predictions Catalog state
+  const [showCatalog, setShowCatalog] = useState(false);
+  const [catalogCount, setCatalogCount] = useState(0);
+
+  const forecastChartRef = useRef(null);
 
   // Shared period filter — owned here so StockSection + ActionPanel stay in sync
   const now = new Date();
@@ -42,24 +56,63 @@ function App() {
       console.error('Error loading metadata:', error);
       alert('Cannot connect to backend. Make sure it is running on http://127.0.0.1:8000');
     }
+    // Fetch catalog count silently
+    try {
+      const stats = await predictionsAPI.getStats();
+      setCatalogCount(stats.total || 0);
+    } catch { /* catalog may not be set up yet */ }
   };
 
   // When region changes: fetch stores for that region, reset store + dashboard
   const handleRegionChange = async (region) => {
     setSelectedRegion(region);
+    setSelectedState('');
     setSelectedStore(null);
     setSummary(null);
     setForecastData(null);
     setStoreDecisions(null);
     setDiscounts(null);
     try {
-      const data = await dashboardAPI.getStoresByRegion(region);
+      const [data, festivalData] = await Promise.all([
+        dashboardAPI.getStoresByRegion(region),
+        dashboardAPI.getFestivalsByRegion(region),
+      ]);
       setRegionStores(data.stores || []);
+      setRegionalFestivals(festivalData?.festivals || []);
       if (data.stores?.length > 0) setSelectedStore(data.stores[0]);
     } catch (error) {
       console.error('Error loading stores for region:', error);
+      setRegionalFestivals([]);
     }
   };
+
+  useEffect(() => {
+    if (!selectedStore || !metadata?.store_names) {
+      setSelectedState('');
+      return;
+    }
+    const storeName = metadata.store_names[String(selectedStore)] || '';
+    const parts = storeName.split(' - ');
+    if (parts.length < 2) {
+      setSelectedState('');
+      return;
+    }
+    const statePart = parts[1].split('#')[0].trim();
+    setSelectedState(statePart);
+  }, [selectedStore, metadata]);
+
+  useEffect(() => {
+    const loadFestivals = async () => {
+      if (!selectedRegion) return;
+      try {
+        const festData = await dashboardAPI.getFestivalsByRegion(selectedRegion, selectedState || null);
+        setRegionalFestivals(festData?.festivals || []);
+      } catch {
+        setRegionalFestivals([]);
+      }
+    };
+    loadFestivals();
+  }, [selectedRegion, selectedState]);
 
   const loadDashboard = async () => {
     if (!selectedStore || !selectedRegion) return;
@@ -106,6 +159,28 @@ function App() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedCategory]);
 
+  const handleInventoryPDF = async () => {
+    setPdfBusy(true);
+    try {
+      const storeName = (metadata.store_names && metadata.store_names[String(selectedStore)])
+        ? metadata.store_names[String(selectedStore)]
+        : `Store ${selectedStore}`;
+      await generateInventoryPDF({
+        forecastData,
+        summary,
+        storeDecisions,
+        selectedCategory,
+        storeName,
+        region: selectedRegion,
+        chartRef: forecastChartRef,
+      });
+    } catch (err) {
+      console.error('PDF export error:', err);
+    } finally {
+      setPdfBusy(false);
+    }
+  };
+
   if (!metadata) {
     return (
       <div className="loading-container">
@@ -116,21 +191,36 @@ function App() {
   }
 
   return (
-    <div className="app">
-      <Header
-        stores={regionStores}
-        allStores={metadata.stores}
-        storeNames={metadata.store_names || {}}
-        regions={metadata.regions}
-        selectedStore={selectedStore}
-        selectedRegion={selectedRegion}
-        onStoreChange={setSelectedStore}
-        onRegionChange={handleRegionChange}
-        onLoadDashboard={loadDashboard}
-        loading={loading}
+    <div className="app-layout">
+      <Sidebar
+        activePage={activePage}
+        onPageChange={setActivePage}
+        catalogCount={catalogCount}
       />
+      <div className="main-content">
+        {activePage === 'predictions-catalog' ? (
+          <PredictionsCatalog fullPage />
+        ) : activePage === 'shop-owner' ? (
+          <ShopOwnerAnalytics categories={metadata.categories} />
+        ) : (
+          <div className="app">
+            <Header
+              stores={regionStores}
+              allStores={metadata.stores}
+              storeNames={metadata.store_names || {}}
+              regions={metadata.regions}
+              selectedStore={selectedStore}
+              selectedRegion={selectedRegion}
+              onStoreChange={setSelectedStore}
+              onRegionChange={handleRegionChange}
+              onLoadDashboard={loadDashboard}
+              loading={loading}
+              onExportPDF={handleInventoryPDF}
+              pdfReady={!!summary && !!forecastData}
+              pdfBusy={pdfBusy}
+            />
 
-      {summary && (
+            {summary && (
         <div className="dashboard-content">
           <div className="store-title">
             <span className="store-icon">🏪</span>
@@ -164,8 +254,10 @@ function App() {
 
             <div className="forecast-container">
               <ForecastChart
+                ref={forecastChartRef}
                 data={forecastData}
                 category={selectedCategory}
+                festivals={regionalFestivals}
               />
             </div>
           </div>
@@ -177,6 +269,7 @@ function App() {
                 category={selectedCategory}
                 discounts={discounts}
                 forecastData={forecastData}
+                festivals={regionalFestivals}
                 filterMode={filterMode}       setFilterMode={setFilterMode}
                 selectedMonth={selectedMonth} setSelectedMonth={setSelectedMonth}
                 selectedWeek={selectedWeek}   setSelectedWeek={setSelectedWeek}
@@ -187,6 +280,7 @@ function App() {
                 decision={storeDecisions.rows[0]}
                 discounts={discounts}
                 forecastData={forecastData}
+                festivals={regionalFestivals}
                 filterMode={filterMode}
                 selectedMonth={selectedMonth}
                 selectedWeek={selectedWeek}
@@ -197,13 +291,26 @@ function App() {
         </div>
       )}
 
-      {!summary && !loading && (
-        <div className="empty-state">
-          <div className="empty-icon">📊</div>
-          <h3>Welcome to Seasonal Demand Forecaster</h3>
-          <p>Select a store and region above, then click <strong>[Load Dashboard]</strong> to view insights</p>
-        </div>
-      )}
+            {!summary && !loading && (
+              <div className="empty-state">
+                <div className="empty-icon">📊</div>
+                <h3>Welcome to Seasonal Demand Forecaster</h3>
+                <p>Select a store and region above, then click <strong>[Load Dashboard]</strong> to view insights</p>
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+
+      {/* Predictions Catalog Sidebar (accessible from anywhere) */}
+      <PredictionsCatalog
+        isOpen={showCatalog}
+        onClose={() => {
+          setShowCatalog(false);
+          // Refresh count
+          predictionsAPI.getStats().then(s => setCatalogCount(s.total || 0)).catch(() => {});
+        }}
+      />
     </div>
   );
 }

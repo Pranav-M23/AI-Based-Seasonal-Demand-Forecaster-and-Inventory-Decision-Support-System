@@ -1,0 +1,118 @@
+{
+  "Delhi": [
+    {"id":"delhi_001","name":"Phool Walon Ki Sair","date":"2026-09-26","duration_days":2,"type":"local","impact_multiplier":1.6,"retail_score":6,"affected_categories":["Clothing & Apparel","Snacks & Beverages","Home Care"],"description":"Local fair season drives apparel, food and outing purchases in Delhi markets.","chart_color":"#10b981","marker_emoji":"🌸"},
+    {"id":"delhi_002","name":"Chhath Bazaar Rush","date":"2026-11-16","duration_days":2,"type":"local","impact_multiplier":1.7,"retail_score":7,"affected_categories":["Groceries & Staples","Fresh Produce","Kitchen & Dining"],"description":"Migrant-community shopping creates short-term spikes in groceries and ritual goods.","chart_color":"#10b981","marker_emoji":"🛍️"}
+  ],
+  "Haryana": [
+    {"id":"haryana_001","name":"Teej","date":"2026-08-16","duration_days":1,"type":"local","impact_multiplier":1.6,"retail_score":6,"affected_categories":["Clothing & Apparel","Personal Care","Snacks & Beverages"],"description":"Monsoon festival increases apparel and celebration spending.","chart_color":"#10b981","marker_emoji":"🌿"},
+    {"id":"haryana_002","name":"Guga Naumi","date":"2026-08-22","duration_days":1,"type":"local","impact_multiplier":1.5,"retail_score":5,"affected_categories":["Groceries & Staples","Snacks & Beverages","Home Care"],"description":"Rural and town-level event adds moderate FMCG demand.","chart_color":"#10b981","marker_emoji":"🐍"}
+  ],
+  "Punjab": [
+    {"id":"punjab_001","name":"Maghi Mela","date":"2026-01-14","duration_days":1,"type":"local","impact_multiplier":1.7,"retail_score":7,"affected_categories":["Groceries & Staples","Snacks & Beverages","Clothing & Apparel"],"description":"Post-Lohri shopping remains elevated in Punjab clusters.","chart_color":"#10b981","marker_emoji":"🔥"},
+    {"id":"punjab_002","name":"Hola Mohalla","date":"2026-03-05","duration_days":2,"type":"local","impact_multiplier":1.8,"retail_score":7,"affected_categories":["Groceries & Staples","Fresh Produce","Personal Care"],"description":"Large gatherings around Anandpur Sahib boost daily consumption.","chart_color":"#10b981","marker_emoji":"🥁"}
+  ],
+  "Uttar Pradesh": [
+    {"id":"up_001","name":"Dev Deepawali","date":"2026-11-25","duration_days":1,"type":"local","impact_multiplier":1.8,"retail_score":7,"affected_categories":["Clothing & Apparel","Home Care","Snacks & Beverages"],"description":"Varanasi-centric celebrations drive post-Diwali festive spending.","chart_color":"#10b981","marker_emoji":"🕯️"},
+    {"id":"up_002","name":"Janmashtami Bazaar","date":"2026-09-04","duration_days":1,"type":"local","impact_multiplier":1.6,"retail_score":6,"affected_categories":["Groceries & Staples","Personal Care","Kitchen & Dining"],"description":"Temple and market traffic increases milk, sweets and household shopping.","chart_color":"#10b981","marker_emoji":"🦚"}
+  ],
+  "Uttarakhand": [
+    {"id":"uk_001","name":"Harela","date":"2026-07-16","duration_days":1,"type":"local","impact_multiplier":1.5,"retail_score":5,"affected_categories":["Groceries & Staples","Home Care","Health & Wellness"],"description":"Seasonal local festival lifts essentials demand in hill markets.","chart_color":"#10b981","marker_emoji":"🌱"},
+    {"id":"uk_002","name":"Nanda Devi Festival","date":"2026-09-08","duration_days":2,"type":"local","impact_multiplier":1.6,"retail_score":6,"affected_categories":["Clothing & Apparel","Snacks & Beverages","Groceries & Staples"],"description":"Fair season boosts local retail and pilgrimage-linked spending.","chart_color":"#10b981","marker_emoji":"🏔️"}
+  ],
+  "Himachal Pradesh": [
+    {"id":"hp_001","name":"Kullu Dussehra","date":"2026-10-22","duration_days":3,"type":"local","impact_multiplier":1.9,"retail_score":7,"affected_categories":["Clothing & Apparel","Snacks & Beverages","Home Care"],"description":"Tourism-heavy festival supports strong local consumption.","chart_color":"#10b981","marker_emoji":"🏕️"},
+    {"id":"hp_002","name":"Minjar Fair","date":"2026-08-01","duration_days":2,"type":"local","impact_multiplier":1.5,"retail_score":5,"affected_categories":["Groceries & Staples","Fresh Produce","Personal Care"],"description":"Regional fair contributes moderate FMCG uplift.","chart_color":"#10b981","marker_emoji":"🎪"}
+  ],
+  "Kerala": [
+    {"id":"kerala_001","name":"Thrissur Pooram","date":"2026-05-01","duration_days":2,"type":"local","impact_multiplier":1.8,"retail_score":7,"affected_categories":["Snacks & Beverages","Clothing & Apparel","Home Care"],"description":"Major temple festival drives city-level shopping and food demand.","chart_color":"#10b981","marker_emoji":"🎺"},
+    {"id":"kerala_002","name":"Vishu","date":"2026-04-14","duration_days":1,"type":"local","impact_multiplier":1.9,"retail_score":8,"affected_categories":["Groceries & Staples","Clothing & Apparel","Health & Wellness"],"description":"Kerala new year gift and grocery purchases produce visible demand uplift.","chart_color":"#10b981","marker_emoji":"🪙"}
+  ],
+  "Tamil Nadu": [
+    {"id":"tn_001","name":"Pongal","date":"2026-01-14","duration_days":4,"type":"local","impact_multiplier":2.3,"retail_score":9,"affected_categories":["Groceries & Staples","Clothing & Apparel","Kitchen & Dining"],"description":"Tamil Nadu’s largest harvest shopping window across food and household goods.","chart_color":"#10b981","marker_emoji":"🌾"},
+    {"id":"tn_002","name":"Aadi Sale Season","date":"2026-07-22","duration_days":3,"type":"local","impact_multiplier":1.8,"retail_score":7,"affected_categories":["Clothing & Apparel","Home Care","Personal Care"],"description":"Aadi retail offers create high apparel and household conversion in TN.","chart_color":"#10b981","marker_emoji":"🏷️"}
+  ],
+  "Karnataka": [
+    {"id":"kar_001","name":"Mysuru Dasara","date":"2026-10-13","duration_days":3,"type":"local","impact_multiplier":2.0,"retail_score":8,"affected_categories":["Clothing & Apparel","Snacks & Beverages","Home Care"],"description":"Tourism plus festival shopping significantly boosts urban retail.","chart_color":"#10b981","marker_emoji":"🐘"},
+    {"id":"kar_002","name":"Ugadi","date":"2026-03-20","duration_days":1,"type":"local","impact_multiplier":1.8,"retail_score":7,"affected_categories":["Groceries & Staples","Fresh Produce","Personal Care"],"description":"New-year purchases increase demand in food and essentials.","chart_color":"#10b981","marker_emoji":"🌸"}
+  ],
+  "Andhra Pradesh": [
+    {"id":"ap_001","name":"Ugadi","date":"2026-03-20","duration_days":1,"type":"local","impact_multiplier":1.9,"retail_score":7,"affected_categories":["Groceries & Staples","Fresh Produce","Personal Care"],"description":"New year shopping boosts staples and daily-use categories.","chart_color":"#10b981","marker_emoji":"🌼"},
+    {"id":"ap_002","name":"Sankranti","date":"2026-01-14","duration_days":3,"type":"local","impact_multiplier":2.0,"retail_score":8,"affected_categories":["Groceries & Staples","Clothing & Apparel","Kitchen & Dining"],"description":"Major harvest shopping period in Andhra drives broad category uplift.","chart_color":"#10b981","marker_emoji":"🪁"}
+  ],
+  "Telangana": [
+    {"id":"tel_001","name":"Bonalu (Hyderabad)","date":"2026-07-19","duration_days":2,"type":"local","impact_multiplier":1.9,"retail_score":8,"affected_categories":["Groceries & Staples","Snacks & Beverages","Personal Care"],"description":"Hyderabad-centric festival creates local FMCG and food demand spikes.","chart_color":"#10b981","marker_emoji":"🥁"},
+    {"id":"tel_002","name":"Bathukamma (Hyderabad)","date":"2026-10-11","duration_days":2,"type":"local","impact_multiplier":1.8,"retail_score":7,"affected_categories":["Clothing & Apparel","Personal Care","Home Care"],"description":"Floral festival shopping supports strong urban category movement.","chart_color":"#10b981","marker_emoji":"🌺"}
+  ],
+  "West Bengal": [
+    {"id":"wb_001","name":"Durga Puja","date":"2026-10-20","duration_days":5,"type":"local","impact_multiplier":3.0,"retail_score":10,"affected_categories":["Clothing & Apparel","Groceries & Staples","Electronics & Appliances"],"description":"West Bengal’s biggest shopping season with massive discretionary demand.","chart_color":"#10b981","marker_emoji":"🪷"},
+    {"id":"wb_002","name":"Poila Boishakh","date":"2026-04-15","duration_days":1,"type":"local","impact_multiplier":1.8,"retail_score":7,"affected_categories":["Clothing & Apparel","Groceries & Staples","Personal Care"],"description":"Bengali new-year shopping boosts food and fashion retail.","chart_color":"#10b981","marker_emoji":"📜"}
+  ],
+  "Odisha": [
+    {"id":"od_001","name":"Rath Yatra","date":"2026-07-16","duration_days":1,"type":"local","impact_multiplier":2.0,"retail_score":8,"affected_categories":["Groceries & Staples","Fresh Produce","Snacks & Beverages"],"description":"Pilgrimage-driven demand boosts food and retail in Odisha.","chart_color":"#10b981","marker_emoji":"🚩"},
+    {"id":"od_002","name":"Nuakhai","date":"2026-09-20","duration_days":1,"type":"local","impact_multiplier":1.7,"retail_score":6,"affected_categories":["Groceries & Staples","Kitchen & Dining","Home Care"],"description":"Harvest festival contributes meaningful rural and town demand uplift.","chart_color":"#10b981","marker_emoji":"🌾"}
+  ],
+  "Bihar": [
+    {"id":"bihar_001","name":"Chhath Puja","date":"2026-11-16","duration_days":2,"type":"local","impact_multiplier":2.2,"retail_score":9,"affected_categories":["Groceries & Staples","Fresh Produce","Kitchen & Dining"],"description":"Bihar’s most impactful consumption event after Diwali.","chart_color":"#10b981","marker_emoji":"🌅"},
+    {"id":"bihar_002","name":"Sama-Chakeva","date":"2026-11-24","duration_days":1,"type":"local","impact_multiplier":1.5,"retail_score":5,"affected_categories":["Snacks & Beverages","Personal Care","Home Care"],"description":"Community festivities add a short retail bump in Bihar markets.","chart_color":"#10b981","marker_emoji":"🕊️"}
+  ],
+  "Jharkhand": [
+    {"id":"jhar_001","name":"Sarhul","date":"2026-03-29","duration_days":1,"type":"local","impact_multiplier":1.6,"retail_score":6,"affected_categories":["Groceries & Staples","Snacks & Beverages","Home Care"],"description":"Traditional spring festival lifts local essential-category demand.","chart_color":"#10b981","marker_emoji":"🌳"},
+    {"id":"jhar_002","name":"Karam Festival","date":"2026-09-10","duration_days":1,"type":"local","impact_multiplier":1.5,"retail_score":5,"affected_categories":["Groceries & Staples","Personal Care","Kitchen & Dining"],"description":"Seasonal tribal festivities bring moderate shopping uplift.","chart_color":"#10b981","marker_emoji":"🌿"}
+  ],
+  "Tripura": [
+    {"id":"trip_001","name":"Kharchi Puja","date":"2026-07-15","duration_days":2,"type":"local","impact_multiplier":1.6,"retail_score":6,"affected_categories":["Groceries & Staples","Snacks & Beverages","Home Care"],"description":"Agartala-focused celebrations support short retail peaks.","chart_color":"#10b981","marker_emoji":"🛕"},
+    {"id":"trip_002","name":"Durga Puja (Tripura)","date":"2026-10-20","duration_days":3,"type":"local","impact_multiplier":2.4,"retail_score":9,"affected_categories":["Clothing & Apparel","Groceries & Staples","Electronics & Appliances"],"description":"Major festive shopping wave across Tripura cities.","chart_color":"#10b981","marker_emoji":"🪷"}
+  ],
+  "Maharashtra": [
+    {"id":"mh_001","name":"Ganesh Chaturthi","date":"2026-09-11","duration_days":5,"type":"local","impact_multiplier":2.5,"retail_score":10,"affected_categories":["Groceries & Staples","Home Care","Electronics & Appliances"],"description":"Top retail demand event in Maharashtra before Diwali.","chart_color":"#10b981","marker_emoji":"🐘"},
+    {"id":"mh_002","name":"Gudi Padwa","date":"2026-03-20","duration_days":1,"type":"local","impact_multiplier":1.9,"retail_score":7,"affected_categories":["Clothing & Apparel","Groceries & Staples","Personal Care"],"description":"New-year shopping raises fashion and essentials demand.","chart_color":"#10b981","marker_emoji":"🏳️"}
+  ],
+  "Gujarat": [
+    {"id":"guj_001","name":"Navratri Garba","date":"2026-10-12","duration_days":9,"type":"local","impact_multiplier":2.4,"retail_score":9,"affected_categories":["Clothing & Apparel","Personal Care","Snacks & Beverages"],"description":"Garba season creates sustained lifestyle and FMCG uplift.","chart_color":"#10b981","marker_emoji":"💃"},
+    {"id":"guj_002","name":"Uttarayan","date":"2026-01-14","duration_days":1,"type":"local","impact_multiplier":1.8,"retail_score":7,"affected_categories":["Snacks & Beverages","Groceries & Staples","Clothing & Apparel"],"description":"Kite festival boosts seasonal and celebration shopping.","chart_color":"#10b981","marker_emoji":"🪁"}
+  ],
+  "Goa": [
+    {"id":"goa_001","name":"Sao Joao","date":"2026-06-24","duration_days":1,"type":"local","impact_multiplier":1.6,"retail_score":6,"affected_categories":["Snacks & Beverages","Personal Care","Home Care"],"description":"Tourism and celebration spending create localized uplift.","chart_color":"#10b981","marker_emoji":"🌊"},
+    {"id":"goa_002","name":"Ganesh Chaturthi (Goa)","date":"2026-09-11","duration_days":2,"type":"local","impact_multiplier":2.0,"retail_score":8,"affected_categories":["Groceries & Staples","Home Care","Clothing & Apparel"],"description":"Family festival period drives household and grocery demand.","chart_color":"#10b981","marker_emoji":"🐘"}
+  ],
+  "Rajasthan": [
+    {"id":"raj_001","name":"Gangaur","date":"2026-03-24","duration_days":2,"type":"local","impact_multiplier":1.7,"retail_score":6,"affected_categories":["Clothing & Apparel","Personal Care","Home Care"],"description":"Traditional celebration supports apparel and gifting demand.","chart_color":"#10b981","marker_emoji":"👑"},
+    {"id":"raj_002","name":"Teej (Rajasthan)","date":"2026-08-16","duration_days":1,"type":"local","impact_multiplier":1.6,"retail_score":6,"affected_categories":["Clothing & Apparel","Snacks & Beverages","Personal Care"],"description":"Monsoon festive buying drives local fashion and FMCG.","chart_color":"#10b981","marker_emoji":"🌧️"}
+  ],
+  "Madhya Pradesh": [
+    {"id":"mp_001","name":"Lokrang Festival","date":"2026-01-26","duration_days":2,"type":"local","impact_multiplier":1.5,"retail_score":5,"affected_categories":["Clothing & Apparel","Snacks & Beverages","Home Care"],"description":"Cultural event period adds moderate urban retail lift.","chart_color":"#10b981","marker_emoji":"🎭"},
+    {"id":"mp_002","name":"Makar Sankranti (MP)","date":"2026-01-14","duration_days":1,"type":"local","impact_multiplier":1.6,"retail_score":6,"affected_categories":["Groceries & Staples","Snacks & Beverages","Clothing & Apparel"],"description":"Seasonal buying increases essentials demand in MP.","chart_color":"#10b981","marker_emoji":"☀️"}
+  ],
+  "Chhattisgarh": [
+    {"id":"cg_001","name":"Bastar Dussehra","date":"2026-10-15","duration_days":3,"type":"local","impact_multiplier":1.9,"retail_score":7,"affected_categories":["Groceries & Staples","Clothing & Apparel","Home Care"],"description":"Long-running regional event drives town-level retail activity.","chart_color":"#10b981","marker_emoji":"🏹"},
+    {"id":"cg_002","name":"Hareli","date":"2026-07-19","duration_days":1,"type":"local","impact_multiplier":1.5,"retail_score":5,"affected_categories":["Groceries & Staples","Kitchen & Dining","Home Care"],"description":"Agrarian festival increases seasonal essentials demand.","chart_color":"#10b981","marker_emoji":"🌱"}
+  ],
+  "Assam": [
+    {"id":"assam_001","name":"Rongali Bihu (Guwahati)","date":"2026-04-14","duration_days":3,"type":"local","impact_multiplier":2.4,"retail_score":10,"affected_categories":["Clothing & Apparel","Groceries & Staples","Snacks & Beverages"],"description":"Guwahati and Assam retail see one of the biggest annual spikes.","chart_color":"#10b981","marker_emoji":"🎋"},
+    {"id":"assam_002","name":"Bhogali Bihu","date":"2026-01-15","duration_days":2,"type":"local","impact_multiplier":1.9,"retail_score":8,"affected_categories":["Groceries & Staples","Fresh Produce","Kitchen & Dining"],"description":"Harvest feast period drives high grocery and fresh food demand.","chart_color":"#10b981","marker_emoji":"🔥"}
+  ],
+  "Manipur": [
+    {"id":"man_001","name":"Yaoshang","date":"2026-03-03","duration_days":2,"type":"local","impact_multiplier":1.8,"retail_score":7,"affected_categories":["Snacks & Beverages","Clothing & Apparel","Personal Care"],"description":"Statewide celebration creates strong youth-driven retail activity.","chart_color":"#10b981","marker_emoji":"🏮"},
+    {"id":"man_002","name":"Ningol Chakouba","date":"2026-10-29","duration_days":1,"type":"local","impact_multiplier":1.7,"retail_score":6,"affected_categories":["Groceries & Staples","Kitchen & Dining","Personal Care"],"description":"Family feast day boosts food and household purchases.","chart_color":"#10b981","marker_emoji":"🍽️"}
+  ],
+  "Nagaland": [
+    {"id":"nag_001","name":"Hornbill Festival","date":"2026-12-01","duration_days":5,"type":"local","impact_multiplier":2.0,"retail_score":8,"affected_categories":["Clothing & Apparel","Snacks & Beverages","Home Care"],"description":"Tourism and event demand increase hospitality-linked retail.","chart_color":"#10b981","marker_emoji":"🪶"},
+    {"id":"nag_002","name":"Moatsu","date":"2026-05-01","duration_days":2,"type":"local","impact_multiplier":1.6,"retail_score":6,"affected_categories":["Groceries & Staples","Personal Care","Home Care"],"description":"Community festivities add moderate uplift in urban centers.","chart_color":"#10b981","marker_emoji":"🌿"}
+  ],
+  "Mizoram": [
+    {"id":"miz_001","name":"Chapchar Kut","date":"2026-03-06","duration_days":2,"type":"local","impact_multiplier":1.7,"retail_score":6,"affected_categories":["Clothing & Apparel","Snacks & Beverages","Personal Care"],"description":"Spring festival triggers apparel and FMCG buying.","chart_color":"#10b981","marker_emoji":"🎉"},
+    {"id":"miz_002","name":"Pawl Kut","date":"2026-12-21","duration_days":1,"type":"local","impact_multiplier":1.5,"retail_score":5,"affected_categories":["Groceries & Staples","Snacks & Beverages","Home Care"],"description":"Year-end local celebration creates moderate essentials demand.","chart_color":"#10b981","marker_emoji":"🌾"}
+  ],
+  "Arunachal Pradesh": [
+    {"id":"ar_001","name":"Losar","date":"2026-02-18","duration_days":2,"type":"local","impact_multiplier":1.8,"retail_score":7,"affected_categories":["Groceries & Staples","Clothing & Apparel","Health & Wellness"],"description":"New year festival drives concentrated town-level shopping.","chart_color":"#10b981","marker_emoji":"🏔️"},
+    {"id":"ar_002","name":"Solung","date":"2026-09-01","duration_days":2,"type":"local","impact_multiplier":1.6,"retail_score":6,"affected_categories":["Groceries & Staples","Kitchen & Dining","Personal Care"],"description":"Harvest festivities produce steady local demand growth.","chart_color":"#10b981","marker_emoji":"🌾"}
+  ],
+  "Meghalaya": [
+    {"id":"meg_001","name":"Wangala","date":"2026-11-13","duration_days":2,"type":"local","impact_multiplier":1.7,"retail_score":6,"affected_categories":["Groceries & Staples","Snacks & Beverages","Clothing & Apparel"],"description":"Harvest celebration raises festive consumption in Meghalaya markets.","chart_color":"#10b981","marker_emoji":"🥁"},
+    {"id":"meg_002","name":"Shad Suk Mynsiem","date":"2026-04-11","duration_days":1,"type":"local","impact_multiplier":1.5,"retail_score":5,"affected_categories":["Clothing & Apparel","Personal Care","Snacks & Beverages"],"description":"Cultural festival supports moderate lifestyle-category demand.","chart_color":"#10b981","marker_emoji":"🎶"}
+  ],
+  "Sikkim": [
+    {"id":"sik_001","name":"Losoong","date":"2026-12-18","duration_days":2,"type":"local","impact_multiplier":1.7,"retail_score":6,"affected_categories":["Groceries & Staples","Clothing & Apparel","Home Care"],"description":"New-year harvest festivities boost winter retail demand.","chart_color":"#10b981","marker_emoji":"❄️"},
+    {"id":"sik_002","name":"Losar (Sikkim)","date":"2026-02-18","duration_days":1,"type":"local","impact_multiplier":1.6,"retail_score":6,"affected_categories":["Groceries & Staples","Clothing & Apparel","Health & Wellness"],"description":"Tibetan new-year celebrations create focused local demand peaks.","chart_color":"#10b981","marker_emoji":"🏔️"}
+  ]
+}

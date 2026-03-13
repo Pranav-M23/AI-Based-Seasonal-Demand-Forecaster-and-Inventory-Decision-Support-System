@@ -42,6 +42,53 @@ export const dashboardAPI = {
     const response = await api.get('/stores', { params: { region } });
     return response.data;
   },
+
+  getFestivalsByRegion: async (region, state = null) => {
+    const params = {};
+    if (state) params.state = state;
+    const response = await api.get(`/festivals/region/${encodeURIComponent(region)}`, { params });
+    return response.data;
+  },
+};
+
+// ============================================================================
+// PREDICTIONS CATALOG API
+// ============================================================================
+export const predictionsAPI = {
+  create: async (data) => {
+    const response = await api.post('/predictions', data);
+    return response.data;
+  },
+
+  getAll: async (filters = {}) => {
+    const response = await api.get('/predictions', { params: filters });
+    return response.data;
+  },
+
+  getById: async (id) => {
+    const response = await api.get(`/predictions/${id}`);
+    return response.data;
+  },
+
+  update: async (id, data) => {
+    const response = await api.put(`/predictions/${id}`, data);
+    return response.data;
+  },
+
+  delete: async (id) => {
+    const response = await api.delete(`/predictions/${id}`);
+    return response.data;
+  },
+
+  bulkDelete: async (ids) => {
+    const response = await api.post('/predictions/bulk-delete', { ids });
+    return response.data;
+  },
+
+  getStats: async () => {
+    const response = await api.get('/predictions/stats');
+    return response.data;
+  },
 };
 
 export default api;

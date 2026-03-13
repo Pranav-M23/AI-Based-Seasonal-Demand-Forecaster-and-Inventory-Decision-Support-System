@@ -97,3 +97,89 @@ class KPIRegionRow(BaseModel):
 
 class KPIRegionResponse(BaseModel):
     rows: List[KPIRegionRow]
+
+
+# ---------- Predictions Catalog ----------
+class PredictionCreate(BaseModel):
+    owner_name: str
+    business_name: str
+    category: str = ""
+    region: str = ""
+    state: str = ""
+    month: int
+    year: int
+    predicted_sales: int = 0
+    predicted_range_min: int = 0
+    predicted_range_max: int = 0
+    baseline_sales: int = 0
+    growth_percent: float = 0.0
+    discount_recommendation: str = ""
+    stock_range_min: int = 0
+    stock_range_max: int = 0
+    demand_level: str = ""
+    festival_name: Optional[str] = None
+    status: str = "Draft"
+    notes: str = ""
+    prediction_name: str = ""
+
+class PredictionUpdate(BaseModel):
+    owner_name: Optional[str] = None
+    business_name: Optional[str] = None
+    category: Optional[str] = None
+    region: Optional[str] = None
+    state: Optional[str] = None
+    month: Optional[int] = None
+    year: Optional[int] = None
+    predicted_sales: Optional[int] = None
+    predicted_range_min: Optional[int] = None
+    predicted_range_max: Optional[int] = None
+    baseline_sales: Optional[int] = None
+    growth_percent: Optional[float] = None
+    discount_recommendation: Optional[str] = None
+    stock_range_min: Optional[int] = None
+    stock_range_max: Optional[int] = None
+    demand_level: Optional[str] = None
+    festival_name: Optional[str] = None
+    status: Optional[str] = None
+    notes: Optional[str] = None
+    prediction_name: Optional[str] = None
+
+class PredictionResponse(BaseModel):
+    id: int
+    owner_name: str
+    business_name: str
+    category: str
+    region: str
+    state: str
+    month: int
+    year: int
+    predicted_sales: int
+    predicted_range_min: int
+    predicted_range_max: int
+    baseline_sales: int
+    growth_percent: float
+    discount_recommendation: str
+    stock_range_min: int
+    stock_range_max: int
+    demand_level: str
+    festival_name: Optional[str] = None
+    status: str
+    notes: str
+    prediction_name: str
+    created_at: str
+    updated_at: str
+    history: List[Dict[str, Any]] = []
+
+class PredictionListResponse(BaseModel):
+    predictions: List[PredictionResponse]
+    total: int
+
+class BulkDeleteRequest(BaseModel):
+    ids: List[int]
+
+class CatalogStatsResponse(BaseModel):
+    total: int
+    this_month: int
+    status_breakdown: Dict[str, int]
+    top_categories: List[Dict[str, Any]]
+    region_breakdown: Dict[str, int]

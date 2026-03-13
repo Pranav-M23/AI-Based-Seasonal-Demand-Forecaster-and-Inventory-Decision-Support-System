@@ -1,0 +1,542 @@
+/* ══════════════════════════════════════════════════════════
+   ExportButton.css — Smart Export & Document Generation
+   Theme: Dark-mode (#1a1d2e) with Cyan/Green (#10b981)
+   ══════════════════════════════════════════════════════════ */
+
+/* ── Wrapper ─────────────────────────────────────── */
+.export-wrapper {
+  position: relative;
+  display: inline-block;
+  z-index: 50;
+}
+
+/* ── Toggle Button ───────────────────────────────── */
+.export-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #e2e8f0;
+  background: linear-gradient(135deg, #1a1d2e 0%, #252a3a 100%);
+  border: 1.5px solid rgba(16, 185, 129, 0.45);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  letter-spacing: 0.3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.export-toggle:hover {
+  background: linear-gradient(135deg, #252a3a 0%, #2f364a 100%);
+  border-color: #10b981;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.25);
+  transform: translateY(-1px);
+}
+
+.export-toggle:active {
+  transform: translateY(0);
+}
+
+/* ── Dropdown Menu ───────────────────────────────── */
+.export-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 330px;
+  background: #1a1d2e;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px) scale(0.97);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.export-dropdown--open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+/* ── Category label inside dropdown ──────────────── */
+.export-category-label {
+  padding: 6px 14px 8px;
+  font-size: 11px;
+  color: #94a3b8;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  margin-bottom: 4px;
+}
+
+.export-category-label strong {
+  color: #10b981;
+}
+
+/* ── Dropdown Option Buttons ─────────────────────── */
+.export-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 14px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.18s ease;
+  color: #e2e8f0;
+}
+
+.export-option:hover:not(:disabled) {
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.export-option:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.export-option-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.export-option-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.export-option-text strong {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.export-option-text small {
+  font-size: 11px;
+  color: #94a3b8;
+  line-height: 1.35;
+}
+
+.export-option--po .export-option-text strong {
+  color: #10b981;
+}
+
+/* ── Divider ─────────────────────────────────────── */
+.export-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 6px 10px;
+}
+
+/* ══════════════════════════════════════════════════════
+   PO Dialog / Modal Overlay
+   ══════════════════════════════════════════════════════ */
+.po-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  animation: poFadeIn 0.25s ease;
+}
+
+@keyframes poFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.po-dialog {
+  width: 94%;
+  max-width: 640px;
+  background: #1e2235;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  animation: poSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes poSlideUp {
+  from { transform: translateY(24px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.po-dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: #1a1d2e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  flex-shrink: 0;
+}
+
+.po-dialog-header h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin: 0;
+}
+
+.po-close {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: none;
+  border-radius: 8px;
+  color: #94a3b8;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.po-close:hover {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+/* ── Dialog Body ─────────────────────────────────── */
+.po-dialog-body {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.po-item-count {
+  margin: 0 0 16px;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+.po-reorder-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.po-label {
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.po-select,
+.po-date {
+  width: 100%;
+  padding: 10px 12px;
+  background: #151827;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.po-select:focus,
+.po-date:focus {
+  border-color: #10b981;
+}
+
+/* ── PO Preview Table with Checkboxes ────────────── */
+.po-preview {
+  margin-top: 16px;
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.po-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.po-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.po-table th {
+  padding: 8px 10px;
+  background: #1a1d2e;
+  color: #10b981;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.po-table td {
+  padding: 8px 10px;
+  color: #cbd5e1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.po-table tr:hover td {
+  background: rgba(16, 185, 129, 0.04);
+}
+
+.po-row-selected td {
+  background: rgba(16, 185, 129, 0.08) !important;
+}
+
+/* ── PO Checkbox ─────────────────────────────────── */
+.po-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  background: #151827;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  transition: all 0.15s;
+}
+
+.po-checkbox:checked {
+  background: #10b981;
+  border-color: #10b981;
+}
+
+.po-checkbox:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.po-checkbox:hover {
+  border-color: #10b981;
+}
+
+/* ── Festival badge in PO table ──────────────────── */
+.po-fest-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  font-size: 9px;
+  font-weight: 600;
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+/* ── Decision tags in PO table ───────────────────── */
+.po-decision-tag {
+  display: inline-block;
+  padding: 2px 7px;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 4px;
+  letter-spacing: 0.3px;
+}
+
+.po-decision-reorder {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+.po-decision-watch {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+}
+
+.po-decision-ok {
+  background: rgba(16, 185, 129, 0.12);
+  color: #10b981;
+}
+
+/* ── PO Totals summary ──────────────────────────── */
+.po-totals {
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: #151827;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.po-total-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.po-total-grand {
+  border-top: 1px solid rgba(16, 185, 129, 0.3);
+  margin-top: 6px;
+  padding-top: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #10b981;
+}
+
+/* ── Dialog Footer ───────────────────────────────── */
+.po-dialog-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 14px 20px;
+  background: #1a1d2e;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  flex-shrink: 0;
+}
+
+.po-selected-info {
+  margin-right: auto;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.po-btn {
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.po-btn--cancel {
+  background: rgba(255, 255, 255, 0.06);
+  color: #94a3b8;
+}
+
+.po-btn--cancel:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #e2e8f0;
+}
+
+.po-btn--generate {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(16, 185, 129, 0.3);
+}
+
+.po-btn--generate:hover:not(:disabled) {
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.45);
+  transform: translateY(-1px);
+}
+
+.po-btn--generate:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ══════════════════════════════════════════════════════
+   Mobile Responsive
+   ══════════════════════════════════════════════════════ */
+@media (max-width: 640px) {
+  .export-dropdown {
+    min-width: 260px;
+    right: -10px;
+  }
+
+  .export-toggle {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .po-dialog {
+    width: 98%;
+    max-width: none;
+    margin: 8px;
+    border-radius: 12px;
+    max-height: 95vh;
+  }
+
+  .po-dialog-body {
+    padding: 14px;
+  }
+
+  .po-table {
+    font-size: 11px;
+  }
+
+  .po-table th,
+  .po-table td {
+    padding: 6px 6px;
+  }
+
+  .po-btn {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .po-dialog-footer {
+    flex-wrap: wrap;
+  }
+
+  .po-selected-info {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 400px) {
+  .export-dropdown {
+    min-width: 220px;
+    right: -20px;
+  }
+
+  .export-option {
+    padding: 10px 10px;
+    gap: 8px;
+  }
+
+  .export-option-icon {
+    font-size: 18px;
+  }
+
+  .export-option-text strong {
+    font-size: 12px;
+  }
+
+  .export-option-text small {
+    font-size: 10px;
+  }
+}

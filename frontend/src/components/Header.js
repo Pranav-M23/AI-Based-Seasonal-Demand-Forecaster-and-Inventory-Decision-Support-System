@@ -1,7 +1,7 @@
 import React from 'react';
 import { Package } from 'lucide-react';
 
-function Header({ stores, storeNames, regions, selectedStore, selectedRegion, onStoreChange, onRegionChange, onLoadDashboard, loading }) {
+function Header({ stores, storeNames, regions, selectedStore, selectedRegion, onStoreChange, onRegionChange, onLoadDashboard, loading, onExportPDF, pdfReady, pdfBusy }) {
   return (
     <header className="header">
       <div className="header-title">
@@ -53,6 +53,15 @@ function Header({ stores, storeNames, regions, selectedStore, selectedRegion, on
           disabled={loading || !selectedStore || !selectedRegion}
         >
           {loading ? 'Loading...' : '[Load Dashboard]'}
+        </button>
+
+        <button
+          onClick={onExportPDF}
+          className="export-pdf-btn"
+          disabled={!pdfReady || pdfBusy || loading}
+          title="Export current dashboard view as PDF report"
+        >
+          {pdfBusy ? '⏳ Generating…' : '📄 Export to PDF'}
         </button>
       </div>
     </header>

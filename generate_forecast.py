@@ -29,7 +29,7 @@ FESTIVALS = {
     '2026-08-25': {'name': 'Onam',             'boost': 2.5, 'regions': ['South India']},
     '2026-10-02': {'name': 'Gandhi Jayanti',   'boost': 1.2, 'regions': 'All'},
     '2026-10-12': {'name': 'Durga Puja',       'boost': 2.3, 'regions': ['East India']},
-    '2026-10-24': {'name': 'Diwali',           'boost': 2.8, 'regions': 'All'},
+    '2026-10-24': {'name': 'Diwali',           'boost': {'default': 2.8, 'South India': 2.4}, 'regions': 'All'},
     '2026-11-05': {'name': 'Diwali Sales',     'boost': 1.6, 'regions': 'All'},
     '2026-12-25': {'name': 'Christmas',        'boost': 1.5, 'regions': 'All'},
     '2026-12-31': {'name': "New Year's Eve",   'boost': 1.4, 'regions': 'All'},
@@ -57,7 +57,11 @@ for _, s in stores.iterrows():
                 fest_regions = fest_info['regions']
                 if fest_regions == 'All' or region in fest_regions:
                     fest_name = fest_info['name']
-                    boost     = fest_info['boost']
+                    boost_info = fest_info['boost']
+                    if isinstance(boost_info, dict):
+                        boost = boost_info.get(region, boost_info.get('default', 1.0))
+                    else:
+                        boost = boost_info
                     fsi       = round((boost - 1.0) * 100, 1)
 
             adj = round(val * boost, 2)
