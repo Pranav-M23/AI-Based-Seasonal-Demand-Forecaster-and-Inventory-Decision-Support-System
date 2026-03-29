@@ -1,0 +1,1826 @@
+Date,Category,Sales_Units
+2025-01-01,Staples,100
+2025-01-01,Snacks,90
+2025-01-01,Beverages,80
+2025-01-01,Dairy,80
+2025-01-01,Fruits & Vegetables,80
+2025-01-02,Staples,100
+2025-01-02,Snacks,90
+2025-01-02,Beverages,80
+2025-01-02,Dairy,80
+2025-01-02,Fruits & Vegetables,80
+2025-01-03,Staples,100
+2025-01-03,Snacks,90
+2025-01-03,Beverages,80
+2025-01-03,Dairy,80
+2025-01-03,Fruits & Vegetables,80
+2025-01-04,Staples,100
+2025-01-04,Snacks,90
+2025-01-04,Beverages,80
+2025-01-04,Dairy,80
+2025-01-04,Fruits & Vegetables,80
+2025-01-05,Staples,100
+2025-01-05,Snacks,90
+2025-01-05,Beverages,80
+2025-01-05,Dairy,80
+2025-01-05,Fruits & Vegetables,80
+2025-01-06,Staples,100
+2025-01-06,Snacks,90
+2025-01-06,Beverages,80
+2025-01-06,Dairy,80
+2025-01-06,Fruits & Vegetables,80
+2025-01-07,Staples,100
+2025-01-07,Snacks,90
+2025-01-07,Beverages,80
+2025-01-07,Dairy,80
+2025-01-07,Fruits & Vegetables,80
+2025-01-08,Staples,100
+2025-01-08,Snacks,90
+2025-01-08,Beverages,80
+2025-01-08,Dairy,80
+2025-01-08,Fruits & Vegetables,80
+2025-01-09,Staples,100
+2025-01-09,Snacks,90
+2025-01-09,Beverages,80
+2025-01-09,Dairy,80
+2025-01-09,Fruits & Vegetables,80
+2025-01-10,Staples,100
+2025-01-10,Snacks,90
+2025-01-10,Beverages,80
+2025-01-10,Dairy,80
+2025-01-10,Fruits & Vegetables,80
+2025-01-11,Staples,100
+2025-01-11,Snacks,90
+2025-01-11,Beverages,80
+2025-01-11,Dairy,80
+2025-01-11,Fruits & Vegetables,80
+2025-01-12,Staples,100
+2025-01-12,Snacks,90
+2025-01-12,Beverages,80
+2025-01-12,Dairy,80
+2025-01-12,Fruits & Vegetables,80
+2025-01-13,Staples,100
+2025-01-13,Snacks,90
+2025-01-13,Beverages,80
+2025-01-13,Dairy,80
+2025-01-13,Fruits & Vegetables,80
+2025-01-14,Staples,280
+2025-01-14,Snacks,270
+2025-01-14,Beverages,260
+2025-01-14,Dairy,260
+2025-01-14,Fruits & Vegetables,260
+2025-01-15,Staples,100
+2025-01-15,Snacks,90
+2025-01-15,Beverages,80
+2025-01-15,Dairy,80
+2025-01-15,Fruits & Vegetables,80
+2025-01-16,Staples,100
+2025-01-16,Snacks,90
+2025-01-16,Beverages,80
+2025-01-16,Dairy,80
+2025-01-16,Fruits & Vegetables,80
+2025-01-17,Staples,100
+2025-01-17,Snacks,90
+2025-01-17,Beverages,80
+2025-01-17,Dairy,80
+2025-01-17,Fruits & Vegetables,80
+2025-01-18,Staples,100
+2025-01-18,Snacks,90
+2025-01-18,Beverages,80
+2025-01-18,Dairy,80
+2025-01-18,Fruits & Vegetables,80
+2025-01-19,Staples,100
+2025-01-19,Snacks,90
+2025-01-19,Beverages,80
+2025-01-19,Dairy,80
+2025-01-19,Fruits & Vegetables,80
+2025-01-20,Staples,100
+2025-01-20,Snacks,90
+2025-01-20,Beverages,80
+2025-01-20,Dairy,80
+2025-01-20,Fruits & Vegetables,80
+2025-01-21,Staples,100
+2025-01-21,Snacks,90
+2025-01-21,Beverages,80
+2025-01-21,Dairy,80
+2025-01-21,Fruits & Vegetables,80
+2025-01-22,Staples,100
+2025-01-22,Snacks,90
+2025-01-22,Beverages,80
+2025-01-22,Dairy,80
+2025-01-22,Fruits & Vegetables,80
+2025-01-23,Staples,100
+2025-01-23,Snacks,90
+2025-01-23,Beverages,80
+2025-01-23,Dairy,80
+2025-01-23,Fruits & Vegetables,80
+2025-01-24,Staples,100
+2025-01-24,Snacks,90
+2025-01-24,Beverages,80
+2025-01-24,Dairy,80
+2025-01-24,Fruits & Vegetables,80
+2025-01-25,Staples,100
+2025-01-25,Snacks,90
+2025-01-25,Beverages,80
+2025-01-25,Dairy,80
+2025-01-25,Fruits & Vegetables,80
+2025-01-26,Staples,100
+2025-01-26,Snacks,90
+2025-01-26,Beverages,80
+2025-01-26,Dairy,80
+2025-01-26,Fruits & Vegetables,80
+2025-01-27,Staples,100
+2025-01-27,Snacks,90
+2025-01-27,Beverages,80
+2025-01-27,Dairy,80
+2025-01-27,Fruits & Vegetables,80
+2025-01-28,Staples,100
+2025-01-28,Snacks,90
+2025-01-28,Beverages,80
+2025-01-28,Dairy,80
+2025-01-28,Fruits & Vegetables,80
+2025-01-29,Staples,100
+2025-01-29,Snacks,90
+2025-01-29,Beverages,80
+2025-01-29,Dairy,80
+2025-01-29,Fruits & Vegetables,80
+2025-01-30,Staples,100
+2025-01-30,Snacks,90
+2025-01-30,Beverages,80
+2025-01-30,Dairy,80
+2025-01-30,Fruits & Vegetables,80
+2025-01-31,Staples,100
+2025-01-31,Snacks,90
+2025-01-31,Beverages,80
+2025-01-31,Dairy,80
+2025-01-31,Fruits & Vegetables,80
+2025-02-01,Staples,100
+2025-02-01,Snacks,90
+2025-02-01,Beverages,80
+2025-02-01,Dairy,80
+2025-02-01,Fruits & Vegetables,80
+2025-02-02,Staples,100
+2025-02-02,Snacks,90
+2025-02-02,Beverages,80
+2025-02-02,Dairy,80
+2025-02-02,Fruits & Vegetables,80
+2025-02-03,Staples,100
+2025-02-03,Snacks,90
+2025-02-03,Beverages,80
+2025-02-03,Dairy,80
+2025-02-03,Fruits & Vegetables,80
+2025-02-04,Staples,100
+2025-02-04,Snacks,90
+2025-02-04,Beverages,80
+2025-02-04,Dairy,80
+2025-02-04,Fruits & Vegetables,80
+2025-02-05,Staples,100
+2025-02-05,Snacks,90
+2025-02-05,Beverages,80
+2025-02-05,Dairy,80
+2025-02-05,Fruits & Vegetables,80
+2025-02-06,Staples,100
+2025-02-06,Snacks,90
+2025-02-06,Beverages,80
+2025-02-06,Dairy,80
+2025-02-06,Fruits & Vegetables,80
+2025-02-07,Staples,100
+2025-02-07,Snacks,90
+2025-02-07,Beverages,80
+2025-02-07,Dairy,80
+2025-02-07,Fruits & Vegetables,80
+2025-02-08,Staples,100
+2025-02-08,Snacks,90
+2025-02-08,Beverages,80
+2025-02-08,Dairy,80
+2025-02-08,Fruits & Vegetables,80
+2025-02-09,Staples,100
+2025-02-09,Snacks,90
+2025-02-09,Beverages,80
+2025-02-09,Dairy,80
+2025-02-09,Fruits & Vegetables,80
+2025-02-10,Staples,100
+2025-02-10,Snacks,90
+2025-02-10,Beverages,80
+2025-02-10,Dairy,80
+2025-02-10,Fruits & Vegetables,80
+2025-02-11,Staples,100
+2025-02-11,Snacks,90
+2025-02-11,Beverages,80
+2025-02-11,Dairy,80
+2025-02-11,Fruits & Vegetables,80
+2025-02-12,Staples,100
+2025-02-12,Snacks,90
+2025-02-12,Beverages,80
+2025-02-12,Dairy,80
+2025-02-12,Fruits & Vegetables,80
+2025-02-13,Staples,100
+2025-02-13,Snacks,90
+2025-02-13,Beverages,80
+2025-02-13,Dairy,80
+2025-02-13,Fruits & Vegetables,80
+2025-02-14,Staples,100
+2025-02-14,Snacks,90
+2025-02-14,Beverages,80
+2025-02-14,Dairy,80
+2025-02-14,Fruits & Vegetables,80
+2025-02-15,Staples,100
+2025-02-15,Snacks,90
+2025-02-15,Beverages,80
+2025-02-15,Dairy,80
+2025-02-15,Fruits & Vegetables,80
+2025-02-16,Staples,100
+2025-02-16,Snacks,90
+2025-02-16,Beverages,80
+2025-02-16,Dairy,80
+2025-02-16,Fruits & Vegetables,80
+2025-02-17,Staples,100
+2025-02-17,Snacks,90
+2025-02-17,Beverages,80
+2025-02-17,Dairy,80
+2025-02-17,Fruits & Vegetables,80
+2025-02-18,Staples,100
+2025-02-18,Snacks,90
+2025-02-18,Beverages,80
+2025-02-18,Dairy,80
+2025-02-18,Fruits & Vegetables,80
+2025-02-19,Staples,100
+2025-02-19,Snacks,90
+2025-02-19,Beverages,80
+2025-02-19,Dairy,80
+2025-02-19,Fruits & Vegetables,80
+2025-02-20,Staples,100
+2025-02-20,Snacks,90
+2025-02-20,Beverages,80
+2025-02-20,Dairy,80
+2025-02-20,Fruits & Vegetables,80
+2025-02-21,Staples,100
+2025-02-21,Snacks,90
+2025-02-21,Beverages,80
+2025-02-21,Dairy,80
+2025-02-21,Fruits & Vegetables,80
+2025-02-22,Staples,100
+2025-02-22,Snacks,90
+2025-02-22,Beverages,80
+2025-02-22,Dairy,80
+2025-02-22,Fruits & Vegetables,80
+2025-02-23,Staples,100
+2025-02-23,Snacks,90
+2025-02-23,Beverages,80
+2025-02-23,Dairy,80
+2025-02-23,Fruits & Vegetables,80
+2025-02-24,Staples,100
+2025-02-24,Snacks,90
+2025-02-24,Beverages,80
+2025-02-24,Dairy,80
+2025-02-24,Fruits & Vegetables,80
+2025-02-25,Staples,100
+2025-02-25,Snacks,90
+2025-02-25,Beverages,80
+2025-02-25,Dairy,80
+2025-02-25,Fruits & Vegetables,80
+2025-02-26,Staples,100
+2025-02-26,Snacks,90
+2025-02-26,Beverages,80
+2025-02-26,Dairy,80
+2025-02-26,Fruits & Vegetables,80
+2025-02-27,Staples,100
+2025-02-27,Snacks,90
+2025-02-27,Beverages,80
+2025-02-27,Dairy,80
+2025-02-27,Fruits & Vegetables,80
+2025-02-28,Staples,100
+2025-02-28,Snacks,90
+2025-02-28,Beverages,80
+2025-02-28,Dairy,80
+2025-02-28,Fruits & Vegetables,80
+2025-03-01,Staples,100
+2025-03-01,Snacks,90
+2025-03-01,Beverages,80
+2025-03-01,Dairy,80
+2025-03-01,Fruits & Vegetables,80
+2025-03-02,Staples,100
+2025-03-02,Snacks,90
+2025-03-02,Beverages,80
+2025-03-02,Dairy,80
+2025-03-02,Fruits & Vegetables,80
+2025-03-03,Staples,100
+2025-03-03,Snacks,90
+2025-03-03,Beverages,80
+2025-03-03,Dairy,80
+2025-03-03,Fruits & Vegetables,80
+2025-03-04,Staples,100
+2025-03-04,Snacks,90
+2025-03-04,Beverages,80
+2025-03-04,Dairy,80
+2025-03-04,Fruits & Vegetables,80
+2025-03-05,Staples,100
+2025-03-05,Snacks,90
+2025-03-05,Beverages,80
+2025-03-05,Dairy,80
+2025-03-05,Fruits & Vegetables,80
+2025-03-06,Staples,100
+2025-03-06,Snacks,90
+2025-03-06,Beverages,80
+2025-03-06,Dairy,80
+2025-03-06,Fruits & Vegetables,80
+2025-03-07,Staples,100
+2025-03-07,Snacks,90
+2025-03-07,Beverages,80
+2025-03-07,Dairy,80
+2025-03-07,Fruits & Vegetables,80
+2025-03-08,Staples,100
+2025-03-08,Snacks,90
+2025-03-08,Beverages,80
+2025-03-08,Dairy,80
+2025-03-08,Fruits & Vegetables,80
+2025-03-09,Staples,100
+2025-03-09,Snacks,90
+2025-03-09,Beverages,80
+2025-03-09,Dairy,80
+2025-03-09,Fruits & Vegetables,80
+2025-03-10,Staples,100
+2025-03-10,Snacks,90
+2025-03-10,Beverages,80
+2025-03-10,Dairy,80
+2025-03-10,Fruits & Vegetables,80
+2025-03-11,Staples,100
+2025-03-11,Snacks,90
+2025-03-11,Beverages,80
+2025-03-11,Dairy,80
+2025-03-11,Fruits & Vegetables,80
+2025-03-12,Staples,100
+2025-03-12,Snacks,90
+2025-03-12,Beverages,80
+2025-03-12,Dairy,80
+2025-03-12,Fruits & Vegetables,80
+2025-03-13,Staples,100
+2025-03-13,Snacks,90
+2025-03-13,Beverages,80
+2025-03-13,Dairy,80
+2025-03-13,Fruits & Vegetables,80
+2025-03-14,Staples,300
+2025-03-14,Snacks,290
+2025-03-14,Beverages,280
+2025-03-14,Dairy,280
+2025-03-14,Fruits & Vegetables,280
+2025-03-15,Staples,100
+2025-03-15,Snacks,90
+2025-03-15,Beverages,80
+2025-03-15,Dairy,80
+2025-03-15,Fruits & Vegetables,80
+2025-03-16,Staples,100
+2025-03-16,Snacks,90
+2025-03-16,Beverages,80
+2025-03-16,Dairy,80
+2025-03-16,Fruits & Vegetables,80
+2025-03-17,Staples,100
+2025-03-17,Snacks,90
+2025-03-17,Beverages,80
+2025-03-17,Dairy,80
+2025-03-17,Fruits & Vegetables,80
+2025-03-18,Staples,100
+2025-03-18,Snacks,90
+2025-03-18,Beverages,80
+2025-03-18,Dairy,80
+2025-03-18,Fruits & Vegetables,80
+2025-03-19,Staples,100
+2025-03-19,Snacks,90
+2025-03-19,Beverages,80
+2025-03-19,Dairy,80
+2025-03-19,Fruits & Vegetables,80
+2025-03-20,Staples,100
+2025-03-20,Snacks,90
+2025-03-20,Beverages,80
+2025-03-20,Dairy,80
+2025-03-20,Fruits & Vegetables,80
+2025-03-21,Staples,100
+2025-03-21,Snacks,90
+2025-03-21,Beverages,80
+2025-03-21,Dairy,80
+2025-03-21,Fruits & Vegetables,80
+2025-03-22,Staples,100
+2025-03-22,Snacks,90
+2025-03-22,Beverages,80
+2025-03-22,Dairy,80
+2025-03-22,Fruits & Vegetables,80
+2025-03-23,Staples,100
+2025-03-23,Snacks,90
+2025-03-23,Beverages,80
+2025-03-23,Dairy,80
+2025-03-23,Fruits & Vegetables,80
+2025-03-24,Staples,100
+2025-03-24,Snacks,90
+2025-03-24,Beverages,80
+2025-03-24,Dairy,80
+2025-03-24,Fruits & Vegetables,80
+2025-03-25,Staples,100
+2025-03-25,Snacks,90
+2025-03-25,Beverages,80
+2025-03-25,Dairy,80
+2025-03-25,Fruits & Vegetables,80
+2025-03-26,Staples,100
+2025-03-26,Snacks,90
+2025-03-26,Beverages,80
+2025-03-26,Dairy,80
+2025-03-26,Fruits & Vegetables,80
+2025-03-27,Staples,100
+2025-03-27,Snacks,90
+2025-03-27,Beverages,80
+2025-03-27,Dairy,80
+2025-03-27,Fruits & Vegetables,80
+2025-03-28,Staples,100
+2025-03-28,Snacks,90
+2025-03-28,Beverages,80
+2025-03-28,Dairy,80
+2025-03-28,Fruits & Vegetables,80
+2025-03-29,Staples,100
+2025-03-29,Snacks,90
+2025-03-29,Beverages,80
+2025-03-29,Dairy,80
+2025-03-29,Fruits & Vegetables,80
+2025-03-30,Staples,100
+2025-03-30,Snacks,90
+2025-03-30,Beverages,80
+2025-03-30,Dairy,80
+2025-03-30,Fruits & Vegetables,80
+2025-03-31,Staples,100
+2025-03-31,Snacks,90
+2025-03-31,Beverages,80
+2025-03-31,Dairy,80
+2025-03-31,Fruits & Vegetables,80
+2025-04-01,Staples,100
+2025-04-01,Snacks,90
+2025-04-01,Beverages,80
+2025-04-01,Dairy,80
+2025-04-01,Fruits & Vegetables,80
+2025-04-02,Staples,100
+2025-04-02,Snacks,90
+2025-04-02,Beverages,80
+2025-04-02,Dairy,80
+2025-04-02,Fruits & Vegetables,80
+2025-04-03,Staples,100
+2025-04-03,Snacks,90
+2025-04-03,Beverages,80
+2025-04-03,Dairy,80
+2025-04-03,Fruits & Vegetables,80
+2025-04-04,Staples,100
+2025-04-04,Snacks,90
+2025-04-04,Beverages,80
+2025-04-04,Dairy,80
+2025-04-04,Fruits & Vegetables,80
+2025-04-05,Staples,100
+2025-04-05,Snacks,90
+2025-04-05,Beverages,80
+2025-04-05,Dairy,80
+2025-04-05,Fruits & Vegetables,80
+2025-04-06,Staples,100
+2025-04-06,Snacks,90
+2025-04-06,Beverages,80
+2025-04-06,Dairy,80
+2025-04-06,Fruits & Vegetables,80
+2025-04-07,Staples,100
+2025-04-07,Snacks,90
+2025-04-07,Beverages,80
+2025-04-07,Dairy,80
+2025-04-07,Fruits & Vegetables,80
+2025-04-08,Staples,100
+2025-04-08,Snacks,90
+2025-04-08,Beverages,80
+2025-04-08,Dairy,80
+2025-04-08,Fruits & Vegetables,80
+2025-04-09,Staples,100
+2025-04-09,Snacks,90
+2025-04-09,Beverages,80
+2025-04-09,Dairy,80
+2025-04-09,Fruits & Vegetables,80
+2025-04-10,Staples,270
+2025-04-10,Snacks,260
+2025-04-10,Beverages,250
+2025-04-10,Dairy,250
+2025-04-10,Fruits & Vegetables,250
+2025-04-11,Staples,100
+2025-04-11,Snacks,90
+2025-04-11,Beverages,80
+2025-04-11,Dairy,80
+2025-04-11,Fruits & Vegetables,80
+2025-04-12,Staples,100
+2025-04-12,Snacks,90
+2025-04-12,Beverages,80
+2025-04-12,Dairy,80
+2025-04-12,Fruits & Vegetables,80
+2025-04-13,Staples,100
+2025-04-13,Snacks,90
+2025-04-13,Beverages,80
+2025-04-13,Dairy,80
+2025-04-13,Fruits & Vegetables,80
+2025-04-14,Staples,100
+2025-04-14,Snacks,90
+2025-04-14,Beverages,80
+2025-04-14,Dairy,80
+2025-04-14,Fruits & Vegetables,80
+2025-04-15,Staples,100
+2025-04-15,Snacks,90
+2025-04-15,Beverages,80
+2025-04-15,Dairy,80
+2025-04-15,Fruits & Vegetables,80
+2025-04-16,Staples,100
+2025-04-16,Snacks,90
+2025-04-16,Beverages,80
+2025-04-16,Dairy,80
+2025-04-16,Fruits & Vegetables,80
+2025-04-17,Staples,100
+2025-04-17,Snacks,90
+2025-04-17,Beverages,80
+2025-04-17,Dairy,80
+2025-04-17,Fruits & Vegetables,80
+2025-04-18,Staples,100
+2025-04-18,Snacks,90
+2025-04-18,Beverages,80
+2025-04-18,Dairy,80
+2025-04-18,Fruits & Vegetables,80
+2025-04-19,Staples,100
+2025-04-19,Snacks,90
+2025-04-19,Beverages,80
+2025-04-19,Dairy,80
+2025-04-19,Fruits & Vegetables,80
+2025-04-20,Staples,100
+2025-04-20,Snacks,90
+2025-04-20,Beverages,80
+2025-04-20,Dairy,80
+2025-04-20,Fruits & Vegetables,80
+2025-04-21,Staples,320
+2025-04-21,Snacks,310
+2025-04-21,Beverages,300
+2025-04-21,Dairy,300
+2025-04-21,Fruits & Vegetables,300
+2025-04-22,Staples,100
+2025-04-22,Snacks,90
+2025-04-22,Beverages,80
+2025-04-22,Dairy,80
+2025-04-22,Fruits & Vegetables,80
+2025-04-23,Staples,100
+2025-04-23,Snacks,90
+2025-04-23,Beverages,80
+2025-04-23,Dairy,80
+2025-04-23,Fruits & Vegetables,80
+2025-04-24,Staples,100
+2025-04-24,Snacks,90
+2025-04-24,Beverages,80
+2025-04-24,Dairy,80
+2025-04-24,Fruits & Vegetables,80
+2025-04-25,Staples,100
+2025-04-25,Snacks,90
+2025-04-25,Beverages,80
+2025-04-25,Dairy,80
+2025-04-25,Fruits & Vegetables,80
+2025-04-26,Staples,100
+2025-04-26,Snacks,90
+2025-04-26,Beverages,80
+2025-04-26,Dairy,80
+2025-04-26,Fruits & Vegetables,80
+2025-04-27,Staples,100
+2025-04-27,Snacks,90
+2025-04-27,Beverages,80
+2025-04-27,Dairy,80
+2025-04-27,Fruits & Vegetables,80
+2025-04-28,Staples,100
+2025-04-28,Snacks,90
+2025-04-28,Beverages,80
+2025-04-28,Dairy,80
+2025-04-28,Fruits & Vegetables,80
+2025-04-29,Staples,100
+2025-04-29,Snacks,90
+2025-04-29,Beverages,80
+2025-04-29,Dairy,80
+2025-04-29,Fruits & Vegetables,80
+2025-04-30,Staples,100
+2025-04-30,Snacks,90
+2025-04-30,Beverages,80
+2025-04-30,Dairy,80
+2025-04-30,Fruits & Vegetables,80
+2025-05-01,Staples,100
+2025-05-01,Snacks,90
+2025-05-01,Beverages,80
+2025-05-01,Dairy,80
+2025-05-01,Fruits & Vegetables,80
+2025-05-02,Staples,100
+2025-05-02,Snacks,90
+2025-05-02,Beverages,80
+2025-05-02,Dairy,80
+2025-05-02,Fruits & Vegetables,80
+2025-05-03,Staples,100
+2025-05-03,Snacks,90
+2025-05-03,Beverages,80
+2025-05-03,Dairy,80
+2025-05-03,Fruits & Vegetables,80
+2025-05-04,Staples,100
+2025-05-04,Snacks,90
+2025-05-04,Beverages,80
+2025-05-04,Dairy,80
+2025-05-04,Fruits & Vegetables,80
+2025-05-05,Staples,100
+2025-05-05,Snacks,90
+2025-05-05,Beverages,80
+2025-05-05,Dairy,80
+2025-05-05,Fruits & Vegetables,80
+2025-05-06,Staples,100
+2025-05-06,Snacks,90
+2025-05-06,Beverages,80
+2025-05-06,Dairy,80
+2025-05-06,Fruits & Vegetables,80
+2025-05-07,Staples,100
+2025-05-07,Snacks,90
+2025-05-07,Beverages,80
+2025-05-07,Dairy,80
+2025-05-07,Fruits & Vegetables,80
+2025-05-08,Staples,100
+2025-05-08,Snacks,90
+2025-05-08,Beverages,80
+2025-05-08,Dairy,80
+2025-05-08,Fruits & Vegetables,80
+2025-05-09,Staples,100
+2025-05-09,Snacks,90
+2025-05-09,Beverages,80
+2025-05-09,Dairy,80
+2025-05-09,Fruits & Vegetables,80
+2025-05-10,Staples,100
+2025-05-10,Snacks,90
+2025-05-10,Beverages,80
+2025-05-10,Dairy,80
+2025-05-10,Fruits & Vegetables,80
+2025-05-11,Staples,100
+2025-05-11,Snacks,90
+2025-05-11,Beverages,80
+2025-05-11,Dairy,80
+2025-05-11,Fruits & Vegetables,80
+2025-05-12,Staples,100
+2025-05-12,Snacks,90
+2025-05-12,Beverages,80
+2025-05-12,Dairy,80
+2025-05-12,Fruits & Vegetables,80
+2025-05-13,Staples,100
+2025-05-13,Snacks,90
+2025-05-13,Beverages,80
+2025-05-13,Dairy,80
+2025-05-13,Fruits & Vegetables,80
+2025-05-14,Staples,100
+2025-05-14,Snacks,90
+2025-05-14,Beverages,80
+2025-05-14,Dairy,80
+2025-05-14,Fruits & Vegetables,80
+2025-05-15,Staples,100
+2025-05-15,Snacks,90
+2025-05-15,Beverages,80
+2025-05-15,Dairy,80
+2025-05-15,Fruits & Vegetables,80
+2025-05-16,Staples,100
+2025-05-16,Snacks,90
+2025-05-16,Beverages,80
+2025-05-16,Dairy,80
+2025-05-16,Fruits & Vegetables,80
+2025-05-17,Staples,100
+2025-05-17,Snacks,90
+2025-05-17,Beverages,80
+2025-05-17,Dairy,80
+2025-05-17,Fruits & Vegetables,80
+2025-05-18,Staples,100
+2025-05-18,Snacks,90
+2025-05-18,Beverages,80
+2025-05-18,Dairy,80
+2025-05-18,Fruits & Vegetables,80
+2025-05-19,Staples,100
+2025-05-19,Snacks,90
+2025-05-19,Beverages,80
+2025-05-19,Dairy,80
+2025-05-19,Fruits & Vegetables,80
+2025-05-20,Staples,100
+2025-05-20,Snacks,90
+2025-05-20,Beverages,80
+2025-05-20,Dairy,80
+2025-05-20,Fruits & Vegetables,80
+2025-05-21,Staples,100
+2025-05-21,Snacks,90
+2025-05-21,Beverages,80
+2025-05-21,Dairy,80
+2025-05-21,Fruits & Vegetables,80
+2025-05-22,Staples,100
+2025-05-22,Snacks,90
+2025-05-22,Beverages,80
+2025-05-22,Dairy,80
+2025-05-22,Fruits & Vegetables,80
+2025-05-23,Staples,100
+2025-05-23,Snacks,90
+2025-05-23,Beverages,80
+2025-05-23,Dairy,80
+2025-05-23,Fruits & Vegetables,80
+2025-05-24,Staples,100
+2025-05-24,Snacks,90
+2025-05-24,Beverages,80
+2025-05-24,Dairy,80
+2025-05-24,Fruits & Vegetables,80
+2025-05-25,Staples,100
+2025-05-25,Snacks,90
+2025-05-25,Beverages,80
+2025-05-25,Dairy,80
+2025-05-25,Fruits & Vegetables,80
+2025-05-26,Staples,100
+2025-05-26,Snacks,90
+2025-05-26,Beverages,80
+2025-05-26,Dairy,80
+2025-05-26,Fruits & Vegetables,80
+2025-05-27,Staples,100
+2025-05-27,Snacks,90
+2025-05-27,Beverages,80
+2025-05-27,Dairy,80
+2025-05-27,Fruits & Vegetables,80
+2025-05-28,Staples,100
+2025-05-28,Snacks,90
+2025-05-28,Beverages,80
+2025-05-28,Dairy,80
+2025-05-28,Fruits & Vegetables,80
+2025-05-29,Staples,100
+2025-05-29,Snacks,90
+2025-05-29,Beverages,80
+2025-05-29,Dairy,80
+2025-05-29,Fruits & Vegetables,80
+2025-05-30,Staples,100
+2025-05-30,Snacks,90
+2025-05-30,Beverages,80
+2025-05-30,Dairy,80
+2025-05-30,Fruits & Vegetables,80
+2025-05-31,Staples,100
+2025-05-31,Snacks,90
+2025-05-31,Beverages,80
+2025-05-31,Dairy,80
+2025-05-31,Fruits & Vegetables,80
+2025-06-01,Staples,100
+2025-06-01,Snacks,90
+2025-06-01,Beverages,80
+2025-06-01,Dairy,80
+2025-06-01,Fruits & Vegetables,80
+2025-06-02,Staples,100
+2025-06-02,Snacks,90
+2025-06-02,Beverages,80
+2025-06-02,Dairy,80
+2025-06-02,Fruits & Vegetables,80
+2025-06-03,Staples,100
+2025-06-03,Snacks,90
+2025-06-03,Beverages,80
+2025-06-03,Dairy,80
+2025-06-03,Fruits & Vegetables,80
+2025-06-04,Staples,100
+2025-06-04,Snacks,90
+2025-06-04,Beverages,80
+2025-06-04,Dairy,80
+2025-06-04,Fruits & Vegetables,80
+2025-06-05,Staples,100
+2025-06-05,Snacks,90
+2025-06-05,Beverages,80
+2025-06-05,Dairy,80
+2025-06-05,Fruits & Vegetables,80
+2025-06-06,Staples,100
+2025-06-06,Snacks,90
+2025-06-06,Beverages,80
+2025-06-06,Dairy,80
+2025-06-06,Fruits & Vegetables,80
+2025-06-07,Staples,100
+2025-06-07,Snacks,90
+2025-06-07,Beverages,80
+2025-06-07,Dairy,80
+2025-06-07,Fruits & Vegetables,80
+2025-06-08,Staples,100
+2025-06-08,Snacks,90
+2025-06-08,Beverages,80
+2025-06-08,Dairy,80
+2025-06-08,Fruits & Vegetables,80
+2025-06-09,Staples,100
+2025-06-09,Snacks,90
+2025-06-09,Beverages,80
+2025-06-09,Dairy,80
+2025-06-09,Fruits & Vegetables,80
+2025-06-10,Staples,100
+2025-06-10,Snacks,90
+2025-06-10,Beverages,80
+2025-06-10,Dairy,80
+2025-06-10,Fruits & Vegetables,80
+2025-06-11,Staples,100
+2025-06-11,Snacks,90
+2025-06-11,Beverages,80
+2025-06-11,Dairy,80
+2025-06-11,Fruits & Vegetables,80
+2025-06-12,Staples,100
+2025-06-12,Snacks,90
+2025-06-12,Beverages,80
+2025-06-12,Dairy,80
+2025-06-12,Fruits & Vegetables,80
+2025-06-13,Staples,100
+2025-06-13,Snacks,90
+2025-06-13,Beverages,80
+2025-06-13,Dairy,80
+2025-06-13,Fruits & Vegetables,80
+2025-06-14,Staples,100
+2025-06-14,Snacks,90
+2025-06-14,Beverages,80
+2025-06-14,Dairy,80
+2025-06-14,Fruits & Vegetables,80
+2025-06-15,Staples,100
+2025-06-15,Snacks,90
+2025-06-15,Beverages,80
+2025-06-15,Dairy,80
+2025-06-15,Fruits & Vegetables,80
+2025-06-16,Staples,100
+2025-06-16,Snacks,90
+2025-06-16,Beverages,80
+2025-06-16,Dairy,80
+2025-06-16,Fruits & Vegetables,80
+2025-06-17,Staples,100
+2025-06-17,Snacks,90
+2025-06-17,Beverages,80
+2025-06-17,Dairy,80
+2025-06-17,Fruits & Vegetables,80
+2025-06-18,Staples,100
+2025-06-18,Snacks,90
+2025-06-18,Beverages,80
+2025-06-18,Dairy,80
+2025-06-18,Fruits & Vegetables,80
+2025-06-19,Staples,100
+2025-06-19,Snacks,90
+2025-06-19,Beverages,80
+2025-06-19,Dairy,80
+2025-06-19,Fruits & Vegetables,80
+2025-06-20,Staples,100
+2025-06-20,Snacks,90
+2025-06-20,Beverages,80
+2025-06-20,Dairy,80
+2025-06-20,Fruits & Vegetables,80
+2025-06-21,Staples,100
+2025-06-21,Snacks,90
+2025-06-21,Beverages,80
+2025-06-21,Dairy,80
+2025-06-21,Fruits & Vegetables,80
+2025-06-22,Staples,100
+2025-06-22,Snacks,90
+2025-06-22,Beverages,80
+2025-06-22,Dairy,80
+2025-06-22,Fruits & Vegetables,80
+2025-06-23,Staples,100
+2025-06-23,Snacks,90
+2025-06-23,Beverages,80
+2025-06-23,Dairy,80
+2025-06-23,Fruits & Vegetables,80
+2025-06-24,Staples,100
+2025-06-24,Snacks,90
+2025-06-24,Beverages,80
+2025-06-24,Dairy,80
+2025-06-24,Fruits & Vegetables,80
+2025-06-25,Staples,100
+2025-06-25,Snacks,90
+2025-06-25,Beverages,80
+2025-06-25,Dairy,80
+2025-06-25,Fruits & Vegetables,80
+2025-06-26,Staples,100
+2025-06-26,Snacks,90
+2025-06-26,Beverages,80
+2025-06-26,Dairy,80
+2025-06-26,Fruits & Vegetables,80
+2025-06-27,Staples,100
+2025-06-27,Snacks,90
+2025-06-27,Beverages,80
+2025-06-27,Dairy,80
+2025-06-27,Fruits & Vegetables,80
+2025-06-28,Staples,100
+2025-06-28,Snacks,90
+2025-06-28,Beverages,80
+2025-06-28,Dairy,80
+2025-06-28,Fruits & Vegetables,80
+2025-06-29,Staples,100
+2025-06-29,Snacks,90
+2025-06-29,Beverages,80
+2025-06-29,Dairy,80
+2025-06-29,Fruits & Vegetables,80
+2025-06-30,Staples,100
+2025-06-30,Snacks,90
+2025-06-30,Beverages,80
+2025-06-30,Dairy,80
+2025-06-30,Fruits & Vegetables,80
+2025-07-01,Staples,100
+2025-07-01,Snacks,90
+2025-07-01,Beverages,80
+2025-07-01,Dairy,80
+2025-07-01,Fruits & Vegetables,80
+2025-07-02,Staples,100
+2025-07-02,Snacks,90
+2025-07-02,Beverages,80
+2025-07-02,Dairy,80
+2025-07-02,Fruits & Vegetables,80
+2025-07-03,Staples,100
+2025-07-03,Snacks,90
+2025-07-03,Beverages,80
+2025-07-03,Dairy,80
+2025-07-03,Fruits & Vegetables,80
+2025-07-04,Staples,100
+2025-07-04,Snacks,90
+2025-07-04,Beverages,80
+2025-07-04,Dairy,80
+2025-07-04,Fruits & Vegetables,80
+2025-07-05,Staples,100
+2025-07-05,Snacks,90
+2025-07-05,Beverages,80
+2025-07-05,Dairy,80
+2025-07-05,Fruits & Vegetables,80
+2025-07-06,Staples,100
+2025-07-06,Snacks,90
+2025-07-06,Beverages,80
+2025-07-06,Dairy,80
+2025-07-06,Fruits & Vegetables,80
+2025-07-07,Staples,100
+2025-07-07,Snacks,90
+2025-07-07,Beverages,80
+2025-07-07,Dairy,80
+2025-07-07,Fruits & Vegetables,80
+2025-07-08,Staples,100
+2025-07-08,Snacks,90
+2025-07-08,Beverages,80
+2025-07-08,Dairy,80
+2025-07-08,Fruits & Vegetables,80
+2025-07-09,Staples,100
+2025-07-09,Snacks,90
+2025-07-09,Beverages,80
+2025-07-09,Dairy,80
+2025-07-09,Fruits & Vegetables,80
+2025-07-10,Staples,100
+2025-07-10,Snacks,90
+2025-07-10,Beverages,80
+2025-07-10,Dairy,80
+2025-07-10,Fruits & Vegetables,80
+2025-07-11,Staples,100
+2025-07-11,Snacks,90
+2025-07-11,Beverages,80
+2025-07-11,Dairy,80
+2025-07-11,Fruits & Vegetables,80
+2025-07-12,Staples,100
+2025-07-12,Snacks,90
+2025-07-12,Beverages,80
+2025-07-12,Dairy,80
+2025-07-12,Fruits & Vegetables,80
+2025-07-13,Staples,100
+2025-07-13,Snacks,90
+2025-07-13,Beverages,80
+2025-07-13,Dairy,80
+2025-07-13,Fruits & Vegetables,80
+2025-07-14,Staples,100
+2025-07-14,Snacks,90
+2025-07-14,Beverages,80
+2025-07-14,Dairy,80
+2025-07-14,Fruits & Vegetables,80
+2025-07-15,Staples,100
+2025-07-15,Snacks,90
+2025-07-15,Beverages,80
+2025-07-15,Dairy,80
+2025-07-15,Fruits & Vegetables,80
+2025-07-16,Staples,100
+2025-07-16,Snacks,90
+2025-07-16,Beverages,80
+2025-07-16,Dairy,80
+2025-07-16,Fruits & Vegetables,80
+2025-07-17,Staples,100
+2025-07-17,Snacks,90
+2025-07-17,Beverages,80
+2025-07-17,Dairy,80
+2025-07-17,Fruits & Vegetables,80
+2025-07-18,Staples,100
+2025-07-18,Snacks,90
+2025-07-18,Beverages,80
+2025-07-18,Dairy,80
+2025-07-18,Fruits & Vegetables,80
+2025-07-19,Staples,100
+2025-07-19,Snacks,90
+2025-07-19,Beverages,80
+2025-07-19,Dairy,80
+2025-07-19,Fruits & Vegetables,80
+2025-07-20,Staples,100
+2025-07-20,Snacks,90
+2025-07-20,Beverages,80
+2025-07-20,Dairy,80
+2025-07-20,Fruits & Vegetables,80
+2025-07-21,Staples,100
+2025-07-21,Snacks,90
+2025-07-21,Beverages,80
+2025-07-21,Dairy,80
+2025-07-21,Fruits & Vegetables,80
+2025-07-22,Staples,100
+2025-07-22,Snacks,90
+2025-07-22,Beverages,80
+2025-07-22,Dairy,80
+2025-07-22,Fruits & Vegetables,80
+2025-07-23,Staples,100
+2025-07-23,Snacks,90
+2025-07-23,Beverages,80
+2025-07-23,Dairy,80
+2025-07-23,Fruits & Vegetables,80
+2025-07-24,Staples,100
+2025-07-24,Snacks,90
+2025-07-24,Beverages,80
+2025-07-24,Dairy,80
+2025-07-24,Fruits & Vegetables,80
+2025-07-25,Staples,100
+2025-07-25,Snacks,90
+2025-07-25,Beverages,80
+2025-07-25,Dairy,80
+2025-07-25,Fruits & Vegetables,80
+2025-07-26,Staples,100
+2025-07-26,Snacks,90
+2025-07-26,Beverages,80
+2025-07-26,Dairy,80
+2025-07-26,Fruits & Vegetables,80
+2025-07-27,Staples,100
+2025-07-27,Snacks,90
+2025-07-27,Beverages,80
+2025-07-27,Dairy,80
+2025-07-27,Fruits & Vegetables,80
+2025-07-28,Staples,100
+2025-07-28,Snacks,90
+2025-07-28,Beverages,80
+2025-07-28,Dairy,80
+2025-07-28,Fruits & Vegetables,80
+2025-07-29,Staples,100
+2025-07-29,Snacks,90
+2025-07-29,Beverages,80
+2025-07-29,Dairy,80
+2025-07-29,Fruits & Vegetables,80
+2025-07-30,Staples,100
+2025-07-30,Snacks,90
+2025-07-30,Beverages,80
+2025-07-30,Dairy,80
+2025-07-30,Fruits & Vegetables,80
+2025-07-31,Staples,100
+2025-07-31,Snacks,90
+2025-07-31,Beverages,80
+2025-07-31,Dairy,80
+2025-07-31,Fruits & Vegetables,80
+2025-08-01,Staples,100
+2025-08-01,Snacks,90
+2025-08-01,Beverages,80
+2025-08-01,Dairy,80
+2025-08-01,Fruits & Vegetables,80
+2025-08-02,Staples,100
+2025-08-02,Snacks,90
+2025-08-02,Beverages,80
+2025-08-02,Dairy,80
+2025-08-02,Fruits & Vegetables,80
+2025-08-03,Staples,100
+2025-08-03,Snacks,90
+2025-08-03,Beverages,80
+2025-08-03,Dairy,80
+2025-08-03,Fruits & Vegetables,80
+2025-08-04,Staples,100
+2025-08-04,Snacks,90
+2025-08-04,Beverages,80
+2025-08-04,Dairy,80
+2025-08-04,Fruits & Vegetables,80
+2025-08-05,Staples,100
+2025-08-05,Snacks,90
+2025-08-05,Beverages,80
+2025-08-05,Dairy,80
+2025-08-05,Fruits & Vegetables,80
+2025-08-06,Staples,100
+2025-08-06,Snacks,90
+2025-08-06,Beverages,80
+2025-08-06,Dairy,80
+2025-08-06,Fruits & Vegetables,80
+2025-08-07,Staples,100
+2025-08-07,Snacks,90
+2025-08-07,Beverages,80
+2025-08-07,Dairy,80
+2025-08-07,Fruits & Vegetables,80
+2025-08-08,Staples,100
+2025-08-08,Snacks,90
+2025-08-08,Beverages,80
+2025-08-08,Dairy,80
+2025-08-08,Fruits & Vegetables,80
+2025-08-09,Staples,100
+2025-08-09,Snacks,90
+2025-08-09,Beverages,80
+2025-08-09,Dairy,80
+2025-08-09,Fruits & Vegetables,80
+2025-08-10,Staples,100
+2025-08-10,Snacks,90
+2025-08-10,Beverages,80
+2025-08-10,Dairy,80
+2025-08-10,Fruits & Vegetables,80
+2025-08-11,Staples,100
+2025-08-11,Snacks,90
+2025-08-11,Beverages,80
+2025-08-11,Dairy,80
+2025-08-11,Fruits & Vegetables,80
+2025-08-12,Staples,100
+2025-08-12,Snacks,90
+2025-08-12,Beverages,80
+2025-08-12,Dairy,80
+2025-08-12,Fruits & Vegetables,80
+2025-08-13,Staples,100
+2025-08-13,Snacks,90
+2025-08-13,Beverages,80
+2025-08-13,Dairy,80
+2025-08-13,Fruits & Vegetables,80
+2025-08-14,Staples,100
+2025-08-14,Snacks,90
+2025-08-14,Beverages,80
+2025-08-14,Dairy,80
+2025-08-14,Fruits & Vegetables,80
+2025-08-15,Staples,260
+2025-08-15,Snacks,250
+2025-08-15,Beverages,240
+2025-08-15,Dairy,240
+2025-08-15,Fruits & Vegetables,240
+2025-08-16,Staples,100
+2025-08-16,Snacks,90
+2025-08-16,Beverages,80
+2025-08-16,Dairy,80
+2025-08-16,Fruits & Vegetables,80
+2025-08-17,Staples,100
+2025-08-17,Snacks,90
+2025-08-17,Beverages,80
+2025-08-17,Dairy,80
+2025-08-17,Fruits & Vegetables,80
+2025-08-18,Staples,100
+2025-08-18,Snacks,90
+2025-08-18,Beverages,80
+2025-08-18,Dairy,80
+2025-08-18,Fruits & Vegetables,80
+2025-08-19,Staples,100
+2025-08-19,Snacks,90
+2025-08-19,Beverages,80
+2025-08-19,Dairy,80
+2025-08-19,Fruits & Vegetables,80
+2025-08-20,Staples,100
+2025-08-20,Snacks,90
+2025-08-20,Beverages,80
+2025-08-20,Dairy,80
+2025-08-20,Fruits & Vegetables,80
+2025-08-21,Staples,100
+2025-08-21,Snacks,90
+2025-08-21,Beverages,80
+2025-08-21,Dairy,80
+2025-08-21,Fruits & Vegetables,80
+2025-08-22,Staples,100
+2025-08-22,Snacks,90
+2025-08-22,Beverages,80
+2025-08-22,Dairy,80
+2025-08-22,Fruits & Vegetables,80
+2025-08-23,Staples,100
+2025-08-23,Snacks,90
+2025-08-23,Beverages,80
+2025-08-23,Dairy,80
+2025-08-23,Fruits & Vegetables,80
+2025-08-24,Staples,100
+2025-08-24,Snacks,90
+2025-08-24,Beverages,80
+2025-08-24,Dairy,80
+2025-08-24,Fruits & Vegetables,80
+2025-08-25,Staples,100
+2025-08-25,Snacks,90
+2025-08-25,Beverages,80
+2025-08-25,Dairy,80
+2025-08-25,Fruits & Vegetables,80
+2025-08-26,Staples,100
+2025-08-26,Snacks,90
+2025-08-26,Beverages,80
+2025-08-26,Dairy,80
+2025-08-26,Fruits & Vegetables,80
+2025-08-27,Staples,100
+2025-08-27,Snacks,90
+2025-08-27,Beverages,80
+2025-08-27,Dairy,80
+2025-08-27,Fruits & Vegetables,80
+2025-08-28,Staples,100
+2025-08-28,Snacks,90
+2025-08-28,Beverages,80
+2025-08-28,Dairy,80
+2025-08-28,Fruits & Vegetables,80
+2025-08-29,Staples,100
+2025-08-29,Snacks,90
+2025-08-29,Beverages,80
+2025-08-29,Dairy,80
+2025-08-29,Fruits & Vegetables,80
+2025-08-30,Staples,100
+2025-08-30,Snacks,90
+2025-08-30,Beverages,80
+2025-08-30,Dairy,80
+2025-08-30,Fruits & Vegetables,80
+2025-08-31,Staples,100
+2025-08-31,Snacks,90
+2025-08-31,Beverages,80
+2025-08-31,Dairy,80
+2025-08-31,Fruits & Vegetables,80
+2025-09-01,Staples,100
+2025-09-01,Snacks,90
+2025-09-01,Beverages,80
+2025-09-01,Dairy,80
+2025-09-01,Fruits & Vegetables,80
+2025-09-02,Staples,100
+2025-09-02,Snacks,90
+2025-09-02,Beverages,80
+2025-09-02,Dairy,80
+2025-09-02,Fruits & Vegetables,80
+2025-09-03,Staples,100
+2025-09-03,Snacks,90
+2025-09-03,Beverages,80
+2025-09-03,Dairy,80
+2025-09-03,Fruits & Vegetables,80
+2025-09-04,Staples,100
+2025-09-04,Snacks,90
+2025-09-04,Beverages,80
+2025-09-04,Dairy,80
+2025-09-04,Fruits & Vegetables,80
+2025-09-05,Staples,100
+2025-09-05,Snacks,90
+2025-09-05,Beverages,80
+2025-09-05,Dairy,80
+2025-09-05,Fruits & Vegetables,80
+2025-09-06,Staples,100
+2025-09-06,Snacks,90
+2025-09-06,Beverages,80
+2025-09-06,Dairy,80
+2025-09-06,Fruits & Vegetables,80
+2025-09-07,Staples,100
+2025-09-07,Snacks,90
+2025-09-07,Beverages,80
+2025-09-07,Dairy,80
+2025-09-07,Fruits & Vegetables,80
+2025-09-08,Staples,100
+2025-09-08,Snacks,90
+2025-09-08,Beverages,80
+2025-09-08,Dairy,80
+2025-09-08,Fruits & Vegetables,80
+2025-09-09,Staples,100
+2025-09-09,Snacks,90
+2025-09-09,Beverages,80
+2025-09-09,Dairy,80
+2025-09-09,Fruits & Vegetables,80
+2025-09-10,Staples,100
+2025-09-10,Snacks,90
+2025-09-10,Beverages,80
+2025-09-10,Dairy,80
+2025-09-10,Fruits & Vegetables,80
+2025-09-11,Staples,100
+2025-09-11,Snacks,90
+2025-09-11,Beverages,80
+2025-09-11,Dairy,80
+2025-09-11,Fruits & Vegetables,80
+2025-09-12,Staples,100
+2025-09-12,Snacks,90
+2025-09-12,Beverages,80
+2025-09-12,Dairy,80
+2025-09-12,Fruits & Vegetables,80
+2025-09-13,Staples,100
+2025-09-13,Snacks,90
+2025-09-13,Beverages,80
+2025-09-13,Dairy,80
+2025-09-13,Fruits & Vegetables,80
+2025-09-14,Staples,100
+2025-09-14,Snacks,90
+2025-09-14,Beverages,80
+2025-09-14,Dairy,80
+2025-09-14,Fruits & Vegetables,80
+2025-09-15,Staples,100
+2025-09-15,Snacks,90
+2025-09-15,Beverages,80
+2025-09-15,Dairy,80
+2025-09-15,Fruits & Vegetables,80
+2025-09-16,Staples,100
+2025-09-16,Snacks,90
+2025-09-16,Beverages,80
+2025-09-16,Dairy,80
+2025-09-16,Fruits & Vegetables,80
+2025-09-17,Staples,100
+2025-09-17,Snacks,90
+2025-09-17,Beverages,80
+2025-09-17,Dairy,80
+2025-09-17,Fruits & Vegetables,80
+2025-09-18,Staples,100
+2025-09-18,Snacks,90
+2025-09-18,Beverages,80
+2025-09-18,Dairy,80
+2025-09-18,Fruits & Vegetables,80
+2025-09-19,Staples,100
+2025-09-19,Snacks,90
+2025-09-19,Beverages,80
+2025-09-19,Dairy,80
+2025-09-19,Fruits & Vegetables,80
+2025-09-20,Staples,100
+2025-09-20,Snacks,90
+2025-09-20,Beverages,80
+2025-09-20,Dairy,80
+2025-09-20,Fruits & Vegetables,80
+2025-09-21,Staples,100
+2025-09-21,Snacks,90
+2025-09-21,Beverages,80
+2025-09-21,Dairy,80
+2025-09-21,Fruits & Vegetables,80
+2025-09-22,Staples,100
+2025-09-22,Snacks,90
+2025-09-22,Beverages,80
+2025-09-22,Dairy,80
+2025-09-22,Fruits & Vegetables,80
+2025-09-23,Staples,100
+2025-09-23,Snacks,90
+2025-09-23,Beverages,80
+2025-09-23,Dairy,80
+2025-09-23,Fruits & Vegetables,80
+2025-09-24,Staples,100
+2025-09-24,Snacks,90
+2025-09-24,Beverages,80
+2025-09-24,Dairy,80
+2025-09-24,Fruits & Vegetables,80
+2025-09-25,Staples,100
+2025-09-25,Snacks,90
+2025-09-25,Beverages,80
+2025-09-25,Dairy,80
+2025-09-25,Fruits & Vegetables,80
+2025-09-26,Staples,100
+2025-09-26,Snacks,90
+2025-09-26,Beverages,80
+2025-09-26,Dairy,80
+2025-09-26,Fruits & Vegetables,80
+2025-09-27,Staples,100
+2025-09-27,Snacks,90
+2025-09-27,Beverages,80
+2025-09-27,Dairy,80
+2025-09-27,Fruits & Vegetables,80
+2025-09-28,Staples,100
+2025-09-28,Snacks,90
+2025-09-28,Beverages,80
+2025-09-28,Dairy,80
+2025-09-28,Fruits & Vegetables,80
+2025-09-29,Staples,100
+2025-09-29,Snacks,90
+2025-09-29,Beverages,80
+2025-09-29,Dairy,80
+2025-09-29,Fruits & Vegetables,80
+2025-09-30,Staples,100
+2025-09-30,Snacks,90
+2025-09-30,Beverages,80
+2025-09-30,Dairy,80
+2025-09-30,Fruits & Vegetables,80
+2025-10-01,Staples,100
+2025-10-01,Snacks,90
+2025-10-01,Beverages,80
+2025-10-01,Dairy,80
+2025-10-01,Fruits & Vegetables,80
+2025-10-02,Staples,250
+2025-10-02,Snacks,240
+2025-10-02,Beverages,230
+2025-10-02,Dairy,230
+2025-10-02,Fruits & Vegetables,230
+2025-10-03,Staples,100
+2025-10-03,Snacks,90
+2025-10-03,Beverages,80
+2025-10-03,Dairy,80
+2025-10-03,Fruits & Vegetables,80
+2025-10-04,Staples,100
+2025-10-04,Snacks,90
+2025-10-04,Beverages,80
+2025-10-04,Dairy,80
+2025-10-04,Fruits & Vegetables,80
+2025-10-05,Staples,100
+2025-10-05,Snacks,90
+2025-10-05,Beverages,80
+2025-10-05,Dairy,80
+2025-10-05,Fruits & Vegetables,80
+2025-10-06,Staples,100
+2025-10-06,Snacks,90
+2025-10-06,Beverages,80
+2025-10-06,Dairy,80
+2025-10-06,Fruits & Vegetables,80
+2025-10-07,Staples,100
+2025-10-07,Snacks,90
+2025-10-07,Beverages,80
+2025-10-07,Dairy,80
+2025-10-07,Fruits & Vegetables,80
+2025-10-08,Staples,100
+2025-10-08,Snacks,90
+2025-10-08,Beverages,80
+2025-10-08,Dairy,80
+2025-10-08,Fruits & Vegetables,80
+2025-10-09,Staples,100
+2025-10-09,Snacks,90
+2025-10-09,Beverages,80
+2025-10-09,Dairy,80
+2025-10-09,Fruits & Vegetables,80
+2025-10-10,Staples,100
+2025-10-10,Snacks,90
+2025-10-10,Beverages,80
+2025-10-10,Dairy,80
+2025-10-10,Fruits & Vegetables,80
+2025-10-11,Staples,100
+2025-10-11,Snacks,90
+2025-10-11,Beverages,80
+2025-10-11,Dairy,80
+2025-10-11,Fruits & Vegetables,80
+2025-10-12,Staples,100
+2025-10-12,Snacks,90
+2025-10-12,Beverages,80
+2025-10-12,Dairy,80
+2025-10-12,Fruits & Vegetables,80
+2025-10-13,Staples,100
+2025-10-13,Snacks,90
+2025-10-13,Beverages,80
+2025-10-13,Dairy,80
+2025-10-13,Fruits & Vegetables,80
+2025-10-14,Staples,100
+2025-10-14,Snacks,90
+2025-10-14,Beverages,80
+2025-10-14,Dairy,80
+2025-10-14,Fruits & Vegetables,80
+2025-10-15,Staples,100
+2025-10-15,Snacks,90
+2025-10-15,Beverages,80
+2025-10-15,Dairy,80
+2025-10-15,Fruits & Vegetables,80
+2025-10-16,Staples,100
+2025-10-16,Snacks,90
+2025-10-16,Beverages,80
+2025-10-16,Dairy,80
+2025-10-16,Fruits & Vegetables,80
+2025-10-17,Staples,100
+2025-10-17,Snacks,90
+2025-10-17,Beverages,80
+2025-10-17,Dairy,80
+2025-10-17,Fruits & Vegetables,80
+2025-10-18,Staples,100
+2025-10-18,Snacks,90
+2025-10-18,Beverages,80
+2025-10-18,Dairy,80
+2025-10-18,Fruits & Vegetables,80
+2025-10-19,Staples,100
+2025-10-19,Snacks,90
+2025-10-19,Beverages,80
+2025-10-19,Dairy,80
+2025-10-19,Fruits & Vegetables,80
+2025-10-20,Staples,400
+2025-10-20,Snacks,390
+2025-10-20,Beverages,380
+2025-10-20,Dairy,380
+2025-10-20,Fruits & Vegetables,380
+2025-10-21,Staples,100
+2025-10-21,Snacks,90
+2025-10-21,Beverages,80
+2025-10-21,Dairy,80
+2025-10-21,Fruits & Vegetables,80
+2025-10-22,Staples,100
+2025-10-22,Snacks,90
+2025-10-22,Beverages,80
+2025-10-22,Dairy,80
+2025-10-22,Fruits & Vegetables,80
+2025-10-23,Staples,100
+2025-10-23,Snacks,90
+2025-10-23,Beverages,80
+2025-10-23,Dairy,80
+2025-10-23,Fruits & Vegetables,80
+2025-10-24,Staples,100
+2025-10-24,Snacks,90
+2025-10-24,Beverages,80
+2025-10-24,Dairy,80
+2025-10-24,Fruits & Vegetables,80
+2025-10-25,Staples,100
+2025-10-25,Snacks,90
+2025-10-25,Beverages,80
+2025-10-25,Dairy,80
+2025-10-25,Fruits & Vegetables,80
+2025-10-26,Staples,100
+2025-10-26,Snacks,90
+2025-10-26,Beverages,80
+2025-10-26,Dairy,80
+2025-10-26,Fruits & Vegetables,80
+2025-10-27,Staples,100
+2025-10-27,Snacks,90
+2025-10-27,Beverages,80
+2025-10-27,Dairy,80
+2025-10-27,Fruits & Vegetables,80
+2025-10-28,Staples,100
+2025-10-28,Snacks,90
+2025-10-28,Beverages,80
+2025-10-28,Dairy,80
+2025-10-28,Fruits & Vegetables,80
+2025-10-29,Staples,100
+2025-10-29,Snacks,90
+2025-10-29,Beverages,80
+2025-10-29,Dairy,80
+2025-10-29,Fruits & Vegetables,80
+2025-10-30,Staples,100
+2025-10-30,Snacks,90
+2025-10-30,Beverages,80
+2025-10-30,Dairy,80
+2025-10-30,Fruits & Vegetables,80
+2025-10-31,Staples,100
+2025-10-31,Snacks,90
+2025-10-31,Beverages,80
+2025-10-31,Dairy,80
+2025-10-31,Fruits & Vegetables,80
+2025-11-01,Staples,350
+2025-11-01,Snacks,340
+2025-11-01,Beverages,330
+2025-11-01,Dairy,330
+2025-11-01,Fruits & Vegetables,330
+2025-11-02,Staples,100
+2025-11-02,Snacks,90
+2025-11-02,Beverages,80
+2025-11-02,Dairy,80
+2025-11-02,Fruits & Vegetables,80
+2025-11-03,Staples,100
+2025-11-03,Snacks,90
+2025-11-03,Beverages,80
+2025-11-03,Dairy,80
+2025-11-03,Fruits & Vegetables,80
+2025-11-04,Staples,100
+2025-11-04,Snacks,90
+2025-11-04,Beverages,80
+2025-11-04,Dairy,80
+2025-11-04,Fruits & Vegetables,80
+2025-11-05,Staples,100
+2025-11-05,Snacks,90
+2025-11-05,Beverages,80
+2025-11-05,Dairy,80
+2025-11-05,Fruits & Vegetables,80
+2025-11-06,Staples,100
+2025-11-06,Snacks,90
+2025-11-06,Beverages,80
+2025-11-06,Dairy,80
+2025-11-06,Fruits & Vegetables,80
+2025-11-07,Staples,100
+2025-11-07,Snacks,90
+2025-11-07,Beverages,80
+2025-11-07,Dairy,80
+2025-11-07,Fruits & Vegetables,80
+2025-11-08,Staples,100
+2025-11-08,Snacks,90
+2025-11-08,Beverages,80
+2025-11-08,Dairy,80
+2025-11-08,Fruits & Vegetables,80
+2025-11-09,Staples,100
+2025-11-09,Snacks,90
+2025-11-09,Beverages,80
+2025-11-09,Dairy,80
+2025-11-09,Fruits & Vegetables,80
+2025-11-10,Staples,100
+2025-11-10,Snacks,90
+2025-11-10,Beverages,80
+2025-11-10,Dairy,80
+2025-11-10,Fruits & Vegetables,80
+2025-11-11,Staples,100
+2025-11-11,Snacks,90
+2025-11-11,Beverages,80
+2025-11-11,Dairy,80
+2025-11-11,Fruits & Vegetables,80
+2025-11-12,Staples,100
+2025-11-12,Snacks,90
+2025-11-12,Beverages,80
+2025-11-12,Dairy,80
+2025-11-12,Fruits & Vegetables,80
+2025-11-13,Staples,100
+2025-11-13,Snacks,90
+2025-11-13,Beverages,80
+2025-11-13,Dairy,80
+2025-11-13,Fruits & Vegetables,80
+2025-11-14,Staples,100
+2025-11-14,Snacks,90
+2025-11-14,Beverages,80
+2025-11-14,Dairy,80
+2025-11-14,Fruits & Vegetables,80
+2025-11-15,Staples,100
+2025-11-15,Snacks,90
+2025-11-15,Beverages,80
+2025-11-15,Dairy,80
+2025-11-15,Fruits & Vegetables,80
+2025-11-16,Staples,100
+2025-11-16,Snacks,90
+2025-11-16,Beverages,80
+2025-11-16,Dairy,80
+2025-11-16,Fruits & Vegetables,80
+2025-11-17,Staples,100
+2025-11-17,Snacks,90
+2025-11-17,Beverages,80
+2025-11-17,Dairy,80
+2025-11-17,Fruits & Vegetables,80
+2025-11-18,Staples,100
+2025-11-18,Snacks,90
+2025-11-18,Beverages,80
+2025-11-18,Dairy,80
+2025-11-18,Fruits & Vegetables,80
+2025-11-19,Staples,100
+2025-11-19,Snacks,90
+2025-11-19,Beverages,80
+2025-11-19,Dairy,80
+2025-11-19,Fruits & Vegetables,80
+2025-11-20,Staples,100
+2025-11-20,Snacks,90
+2025-11-20,Beverages,80
+2025-11-20,Dairy,80
+2025-11-20,Fruits & Vegetables,80
+2025-11-21,Staples,100
+2025-11-21,Snacks,90
+2025-11-21,Beverages,80
+2025-11-21,Dairy,80
+2025-11-21,Fruits & Vegetables,80
+2025-11-22,Staples,100
+2025-11-22,Snacks,90
+2025-11-22,Beverages,80
+2025-11-22,Dairy,80
+2025-11-22,Fruits & Vegetables,80
+2025-11-23,Staples,100
+2025-11-23,Snacks,90
+2025-11-23,Beverages,80
+2025-11-23,Dairy,80
+2025-11-23,Fruits & Vegetables,80
+2025-11-24,Staples,100
+2025-11-24,Snacks,90
+2025-11-24,Beverages,80
+2025-11-24,Dairy,80
+2025-11-24,Fruits & Vegetables,80
+2025-11-25,Staples,100
+2025-11-25,Snacks,90
+2025-11-25,Beverages,80
+2025-11-25,Dairy,80
+2025-11-25,Fruits & Vegetables,80
+2025-11-26,Staples,100
+2025-11-26,Snacks,90
+2025-11-26,Beverages,80
+2025-11-26,Dairy,80
+2025-11-26,Fruits & Vegetables,80
+2025-11-27,Staples,100
+2025-11-27,Snacks,90
+2025-11-27,Beverages,80
+2025-11-27,Dairy,80
+2025-11-27,Fruits & Vegetables,80
+2025-11-28,Staples,100
+2025-11-28,Snacks,90
+2025-11-28,Beverages,80
+2025-11-28,Dairy,80
+2025-11-28,Fruits & Vegetables,80
+2025-11-29,Staples,100
+2025-11-29,Snacks,90
+2025-11-29,Beverages,80
+2025-11-29,Dairy,80
+2025-11-29,Fruits & Vegetables,80
+2025-11-30,Staples,100
+2025-11-30,Snacks,90
+2025-11-30,Beverages,80
+2025-11-30,Dairy,80
+2025-11-30,Fruits & Vegetables,80
+2025-12-01,Staples,100
+2025-12-01,Snacks,90
+2025-12-01,Beverages,80
+2025-12-01,Dairy,80
+2025-12-01,Fruits & Vegetables,80
+2025-12-02,Staples,100
+2025-12-02,Snacks,90
+2025-12-02,Beverages,80
+2025-12-02,Dairy,80
+2025-12-02,Fruits & Vegetables,80
+2025-12-03,Staples,100
+2025-12-03,Snacks,90
+2025-12-03,Beverages,80
+2025-12-03,Dairy,80
+2025-12-03,Fruits & Vegetables,80
+2025-12-04,Staples,100
+2025-12-04,Snacks,90
+2025-12-04,Beverages,80
+2025-12-04,Dairy,80
+2025-12-04,Fruits & Vegetables,80
+2025-12-05,Staples,100
+2025-12-05,Snacks,90
+2025-12-05,Beverages,80
+2025-12-05,Dairy,80
+2025-12-05,Fruits & Vegetables,80
+2025-12-06,Staples,100
+2025-12-06,Snacks,90
+2025-12-06,Beverages,80
+2025-12-06,Dairy,80
+2025-12-06,Fruits & Vegetables,80
+2025-12-07,Staples,100
+2025-12-07,Snacks,90
+2025-12-07,Beverages,80
+2025-12-07,Dairy,80
+2025-12-07,Fruits & Vegetables,80
+2025-12-08,Staples,100
+2025-12-08,Snacks,90
+2025-12-08,Beverages,80
+2025-12-08,Dairy,80
+2025-12-08,Fruits & Vegetables,80
+2025-12-09,Staples,100
+2025-12-09,Snacks,90
+2025-12-09,Beverages,80
+2025-12-09,Dairy,80
+2025-12-09,Fruits & Vegetables,80
+2025-12-10,Staples,100
+2025-12-10,Snacks,90
+2025-12-10,Beverages,80
+2025-12-10,Dairy,80
+2025-12-10,Fruits & Vegetables,80
+2025-12-11,Staples,100
+2025-12-11,Snacks,90
+2025-12-11,Beverages,80
+2025-12-11,Dairy,80
+2025-12-11,Fruits & Vegetables,80
+2025-12-12,Staples,100
+2025-12-12,Snacks,90
+2025-12-12,Beverages,80
+2025-12-12,Dairy,80
+2025-12-12,Fruits & Vegetables,80
+2025-12-13,Staples,100
+2025-12-13,Snacks,90
+2025-12-13,Beverages,80
+2025-12-13,Dairy,80
+2025-12-13,Fruits & Vegetables,80
+2025-12-14,Staples,100
+2025-12-14,Snacks,90
+2025-12-14,Beverages,80
+2025-12-14,Dairy,80
+2025-12-14,Fruits & Vegetables,80
+2025-12-15,Staples,100
+2025-12-15,Snacks,90
+2025-12-15,Beverages,80
+2025-12-15,Dairy,80
+2025-12-15,Fruits & Vegetables,80
+2025-12-16,Staples,100
+2025-12-16,Snacks,90
+2025-12-16,Beverages,80
+2025-12-16,Dairy,80
+2025-12-16,Fruits & Vegetables,80
+2025-12-17,Staples,100
+2025-12-17,Snacks,90
+2025-12-17,Beverages,80
+2025-12-17,Dairy,80
+2025-12-17,Fruits & Vegetables,80
+2025-12-18,Staples,100
+2025-12-18,Snacks,90
+2025-12-18,Beverages,80
+2025-12-18,Dairy,80
+2025-12-18,Fruits & Vegetables,80
+2025-12-19,Staples,100
+2025-12-19,Snacks,90
+2025-12-19,Beverages,80
+2025-12-19,Dairy,80
+2025-12-19,Fruits & Vegetables,80
+2025-12-20,Staples,100
+2025-12-20,Snacks,90
+2025-12-20,Beverages,80
+2025-12-20,Dairy,80
+2025-12-20,Fruits & Vegetables,80
+2025-12-21,Staples,100
+2025-12-21,Snacks,90
+2025-12-21,Beverages,80
+2025-12-21,Dairy,80
+2025-12-21,Fruits & Vegetables,80
+2025-12-22,Staples,100
+2025-12-22,Snacks,90
+2025-12-22,Beverages,80
+2025-12-22,Dairy,80
+2025-12-22,Fruits & Vegetables,80
+2025-12-23,Staples,100
+2025-12-23,Snacks,90
+2025-12-23,Beverages,80
+2025-12-23,Dairy,80
+2025-12-23,Fruits & Vegetables,80
+2025-12-24,Staples,100
+2025-12-24,Snacks,90
+2025-12-24,Beverages,80
+2025-12-24,Dairy,80
+2025-12-24,Fruits & Vegetables,80
+2025-12-25,Staples,310
+2025-12-25,Snacks,300
+2025-12-25,Beverages,290
+2025-12-25,Dairy,290
+2025-12-25,Fruits & Vegetables,290
+2025-12-26,Staples,100
+2025-12-26,Snacks,90
+2025-12-26,Beverages,80
+2025-12-26,Dairy,80
+2025-12-26,Fruits & Vegetables,80
+2025-12-27,Staples,100
+2025-12-27,Snacks,90
+2025-12-27,Beverages,80
+2025-12-27,Dairy,80
+2025-12-27,Fruits & Vegetables,80
+2025-12-28,Staples,100
+2025-12-28,Snacks,90
+2025-12-28,Beverages,80
+2025-12-28,Dairy,80
+2025-12-28,Fruits & Vegetables,80
+2025-12-29,Staples,100
+2025-12-29,Snacks,90
+2025-12-29,Beverages,80
+2025-12-29,Dairy,80
+2025-12-29,Fruits & Vegetables,80
+2025-12-30,Staples,100
+2025-12-30,Snacks,90
+2025-12-30,Beverages,80
+2025-12-30,Dairy,80
+2025-12-30,Fruits & Vegetables,80
+2025-12-31,Staples,100
+2025-12-31,Snacks,90
+2025-12-31,Beverages,80
+2025-12-31,Dairy,80
+2025-12-31,Fruits & Vegetables,80

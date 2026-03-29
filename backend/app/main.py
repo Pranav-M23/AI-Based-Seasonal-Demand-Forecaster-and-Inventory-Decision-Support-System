@@ -5,6 +5,7 @@ Version 15.2 - With Indian stores, month filtering, and enhanced recommendations
 
 from fastapi import FastAPI, Query, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+import math
 import pandas as pd
 from datetime import date
 from typing import Optional
@@ -37,6 +38,35 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+def _finite_float(value, default: float = 0.0) -> float:
+    """Return a JSON-safe finite float, or default for NaN/inf/invalid values."""
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        return default
+    return number if math.isfinite(number) else default
+
+
+def _finite_optional_float(value) -> Optional[float]:
+    """Return a finite float or None when value is NaN/inf/invalid."""
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        return None
+    return number if math.isfinite(number) else None
+
+
+def _optional_int(value) -> Optional[int]:
+    """Return an int when value is finite and present, otherwise None."""
+    try:
+        if pd.isna(value):
+            return None
+        number = float(value)
+    except (TypeError, ValueError):
+        return None
+    return int(number) if math.isfinite(number) else None
 
 @app.on_event("startup")
 def _startup():
@@ -187,7 +217,7 @@ def forecast_region(
             df = df[df["_date"].dt.year == year]
     
     daily = df.groupby("Date")["ForecastValue"].sum().reset_index()
-    series = [ForecastPoint(date=d.date(), value=float(v)) for d, v in zip(daily["Date"], daily["ForecastValue"])]
+    series = [ForecastPoint(date=d.date(), value=_finite_float(v)) for d, v in zip(daily["Date"], daily["ForecastValue"])]
     return {"region": region, "store": None, "category": None, "series": series}
 
 @app.get("/forecast/store", response_model=ForecastSeriesResponse)
@@ -220,7 +250,7 @@ def forecast_store(
     
     daily = df.groupby(["Date", "Region"])["ForecastValue"].sum().reset_index()
     region = str(daily["Region"].iloc[0]) if not daily.empty else "Unknown"
-    series = [ForecastPoint(date=d.date(), value=float(v)) for d, v in zip(daily["Date"], daily["ForecastValue"])]
+    series = [ForecastPoint(date=d.date(), value=_finite_float(v)) for d, v in zip(daily["Date"], daily["ForecastValue"])]
     return {"region": region, "store": store_id, "category": None, "series": series}
 
 @app.get("/forecast/store-category", response_model=ForecastSeriesResponse)
@@ -277,14 +307,16 @@ def forecast_store_category(
     for _, row in daily.iterrows():
         point = {
             "date": row["Date"].date() if hasattr(row["Date"], 'date') else row["Date"],
-            "value": float(row["ForecastValue"])
+            "value": _finite_float(row["ForecastValue"])
         }
         
         # Add festival info if available
         if "Festival_Name" in row and pd.notna(row["Festival_Name"]):
             point["festival"] = str(row["Festival_Name"])
         if "FSI" in row:
-            point["fsi"] = float(row["FSI"])
+            fsi_value = _finite_optional_float(row["FSI"])
+            if fsi_value is not None:
+                point["fsi"] = fsi_value
         
         series.append(ForecastPoint(**point))
     
@@ -426,14 +458,14 @@ def inventory_store_decisions(
             region=str(r["Region"]),
             category=str(r["Category"]),
             decision=str(r["Decision"]),
-            stockout_risk=float(r.get("Stockout_Risk", 0.0)),
-            reorder_point=float(r.get("Reorder_Point", 0.0)),
-            safety_stock=float(r.get("Safety_Stock", 0.0)),
-            days_of_supply=float(r.get("Days_Of_Supply", r.get("DaysOfSupply", 0.0))),
-            current_inventory=float(r.get("Current_Stock", r.get("Current_Inventory", 0.0))),  # Enhanced field
-            priority_score=float(r.get("Priority_Score", 0.0)),
-            recommended_order_qty=float(r.get("Recommended_Order_Qty", 0.0)),
-            days_until_stockout=int(r.get("Days_Until_Stockout", 0)) if pd.notna(r.get("Days_Until_Stockout")) else None
+            stockout_risk=_finite_float(r.get("Stockout_Risk", 0.0)),
+            reorder_point=_finite_float(r.get("Reorder_Point", 0.0)),
+            safety_stock=_finite_float(r.get("Safety_Stock", 0.0)),
+            days_of_supply=_finite_float(r.get("Days_Of_Supply", r.get("DaysOfSupply", 0.0))),
+            current_inventory=_finite_optional_float(r.get("Current_Stock", r.get("Current_Inventory", None))),
+            priority_score=_finite_optional_float(r.get("Priority_Score", None)),
+            recommended_order_qty=_finite_optional_float(r.get("Recommended_Order_Qty", None)),
+            days_until_stockout=_optional_int(r.get("Days_Until_Stockout", None))
         ))
     
     return {"store": store_id, "total_rows": total_rows, "offset": offset, "limit": limit, "rows": rows}

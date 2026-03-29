@@ -130,6 +130,22 @@ class DataStore:
         if "Product_Category" not in fc.columns:
             fc["Product_Category"] = "All"
 
+        # If both Product_Category and Category exist, fill missing category values
+        if "Product_Category" in fc.columns and "Category" in fc.columns:
+            fc["Product_Category"] = fc["Product_Category"].fillna(fc["Category"])
+
+        # Ensure ForecastValue is usable even when column exists but is mostly NaN
+        # (common in yearly_forecast_indian.csv where Adjusted is populated)
+        fc["ForecastValue"] = pd.to_numeric(fc["ForecastValue"], errors="coerce")
+        fallback_value_cols = ["Adjusted", "Adjusted_Forecast", "Baseline_Forecast", "Baseline"]
+        for col in fallback_value_cols:
+            if col in fc.columns:
+                fc[col] = pd.to_numeric(fc[col], errors="coerce")
+                fc["ForecastValue"] = fc["ForecastValue"].fillna(fc[col])
+
+        # Keep rows with valid forecast values only
+        fc = fc[fc["ForecastValue"].notna()].copy()
+
         # Keep essentials + optional enhanced fields
         keep = ["Date", "Store", "Region", "Product_Category", "ForecastValue"]
         
