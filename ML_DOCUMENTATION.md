@@ -72,6 +72,37 @@ reorder = current_stock < 500  # arbitrary threshold
 
 ## 3. Dataset
 
+### Dataset Creation and Processing
+
+The dataset is built in two layers: a robust training layer from the Rossmann Kaggle data and a localized Indian retail layer that drives the final forecasts and downstream decisions.
+
+**1) Rossmann data preparation**
+- Merge `train.csv` with `store.csv` so each transaction inherits store metadata.
+- Keep only open days and positive sales to remove closed-store noise.
+- Parse `Date` and derive `Year`, `Month`, and `WeekOfYear` while retaining `DayOfWeek`.
+- Encode `StoreType` and `Assortment`, persisting encoders for consistent reuse.
+- Fill missing numeric values (e.g., competition distance, promo flags) with safe defaults.
+
+**2) Indian store and category synthesis**
+- Generate 258 Indian stores across 6 regions and 16 chains, each with state, region, store type, area, and competition distance.
+- Create 10 product categories with typical item counts per store.
+- Map each Indian store to a Rossmann store ID (modulo mapping) to keep feature compatibility.
+
+**3) Baseline forecast generation**
+- Use the RF + XGBoost ensemble to predict daily demand for every store-category-date in 2026.
+- Scale Rossmann revenue predictions to category-level item counts using each category's average items per store.
+- Inject small stochastic noise (3%) and floor low values to avoid flat or zero sales.
+
+**4) Festival enrichment and FSI**
+- Load regional and state calendars from JSON and expand them into festival windows with pre, core, and post-festival weights.
+- Apply region and state rules, with stronger core weights for Diwali and regional realism (e.g., Durga in West Bengal).
+- Predict ML festival uplift and blend with calendar weights (60% ML, 40% calendar).
+- Compute `FSI = Festival_Weight * 100` and adjust demand as `Adjusted = Baseline * (1 + Festival_Weight)`.
+
+**5) Final outputs**
+- Write the localized, festival-aware dataset to `outputs/yearly_forecast_indian.csv`.
+- Aggregate store-category-month features to feed discount, inventory, and stockout models.
+
 ### Primary Training Dataset: Rossmann Store Sales
 - **Source**: Real German retail chain (Kaggle competition)  
 - **Size**: 1,017,211 transaction rows × 18 features  
